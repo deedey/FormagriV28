@@ -1,0 +1,61 @@
+<?php
+if (!isset($_SESSION)) session_start();
+header("Content-type  : text/plain");
+header("Cache-Control: no-cache, max-age=0");
+require "../admin.inc.php";
+require "../fonction.inc.php";
+include "../include/UrlParam2PhpVar.inc.php";
+require "../lang$lg.inc.php";
+require "../langues/module.inc.php";
+require "../fonction_html.inc.php";
+dbConnect();
+if (!empty($_GET['id_parc']) && !empty($_GET['numero']))
+{
+  $module = $_GET['id_parc'];
+  $monnum = $_GET['numero'];
+  if (!isset($_GET['recuperation']))
+  {
+    if ($_GET['objet'] == 'visible')
+    {
+      $requete = mysql_query("update forums_modules set fm_visible_on = 1 where fm_cdn = ".$_GET['numero']);
+      $mess_notif = $msg_SjtVis;
+    }
+    elseif ($_GET['objet'] == 'invisible')
+    {
+      $requete = mysql_query("update forums_modules set fm_visible_on = 0 where fm_cdn = ".$_GET['numero']);
+      $mess_notif = $msg_SjtNoVis;
+    }
+    sleep(1);
+    echo  utf2Charset($mess_notif,$charset);
+  }
+  elseif (isset($_GET['recuperation']) && $_GET['recuperation'] == 1)
+  {
+    if ($_GET['objet'] == 'visible')
+    {
+       $lien = "formation/forum_mod_modif.php?numero=$monnum&dl=oeil$monnum&objet=invisible&id_parc=$module";
+       $envoi = "<A HREF=\"javascript:appelle_ajax('$lien'); ".
+          "var mon_content=document.getElementById('mien');mon_content.style.visibility='hidden'; ".
+          "var mon_div=document.getElementById('oeil$monnum');mon_div.innerHTML=''; ".
+          "addContent_forum('$lien');\" ".
+          "onMouseOver=\"overlib('<TABLE border=0 cellspacing=2 cellpadding=6><TR>".
+          "<TD align=left><font size=2>$makevisible</font></TD></TR></TABLE>'".
+          ",ol_hpos,LEFT,ABOVE,WIDTH,'100')\" ".
+          "onMouseOut=\"nd();\"><IMG SRC='images/modules/visible.gif' BORDER='0'></A>";
+    }
+    elseif ($_GET['objet'] == 'invisible')
+    {
+       $lien = "formation/forum_mod_modif.php?numero=$monnum&dl=oeil$monnum&objet=visible&id_parc=$module";
+       $envoi = "<A HREF=\"javascript:appelle_ajax('$lien'); ".
+          "var mon_content=document.getElementById('mien');mon_content.style.visibility='hidden'; ".
+          "var mon_div=document.getElementById('oeil$monnum');mon_div.innerHTML=''; ".
+          "addContent_forum('$lien');\" ".
+          "onMouseOver=\"overlib('<TABLE border=0 cellspacing=2 cellpadding=6><TR>".
+          "<TD align=left><font size=2>$hide</font></TD></TR></TABLE>'".
+          ",ol_hpos,LEFT,ABOVE,WIDTH,'80')\" ".
+          "onMouseOut=\"nd();\"><IMG SRC='images/modules/invisible.gif' BORDER='0'></A>";
+    }
+    echo utf2Charset($envoi,$charset);
+    exit();
+  }
+}
+?>

@@ -1,0 +1,15 @@
+class DateLocale {
+    var $iLocale=1;         // Default to english
+    var $iDayAbb = array(
+        array("L","M","M","J","V","S","D"),                                // English locale
+        array("П","В","С","Ч","П","С","В"));                        // Russian locale
+    var $iShortDay = array(
+        array("Lun","Mar","Mer","Jeu","Ven","Sam","Dim"),
+        array("Пн","Вт","Ср","Чт","Пт","Сб","Вс"));
+    var $iShortMonth = array(
+        array("Jan","F?v","Mar","Avr","Mai","Juin","Juil","Aout","Sept","Oct","Nov","D?c"),
+        array("Янв","Фев","Март","Апр","Май","Июнь","Июль","Авг","Сен","Окт","Нояб","Дек"));
+    var $iMonthName = array(
+        array("Janvier","F?vrier","Mars","Avril","Mai","Juin","Juillet","Aout","Septembre","Octobre","Novembre","D?cembre"),
+        array("Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"));
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script src="xapi-scripts/TinCanJS/build/tincan-min.js" type="text/javascript"></script>
+<script src="xapi-scripts/common.js" type="text/javascript"></script>
+<script type="text/javascript">
+     if (window.location.href.indexOf("?endpoint") != -1)
+     {
+        var pageArray = [
+                "Aremplacer",
+             ],
+            currentPage = "Aremplacer",
+            startTimeStamp = null,
+            processedUnload = false,
+            reachedEnd = false,
+            maxPageReached = 0,
+            tincan = new TinCan (
+                {
+                    url: window.location.href,
+                    activity: Opale.CourseActivity
+                }
+            );
+
+        tincan.sendStatement(
+            {
+                verb: "attempted",
+                context: Opale.getContext()
+            }
+        );
+
+        //
+        // functions for sizing the iFrame
+        //
+        function setIframeHeight(id, navWidth,leLink)
+        {
+            if ( document.getElementById ) {
+                var theIframe = document.getElementById(id);
+                if (theIframe) {
+                    var height = getWindowHeight();
+                    theIframe.style.height = Math.round( height ) - navWidth + "px";
+                    theIframe.style.marginTop = Math.round( ((height - navWidth) - parseInt(theIframe.style.height) )/2 ) + "px";
+                    theIframe.src = leLink;
+                }
+            }
+        }
+
+        function getWindowHeight() {
+            var height = 0;
+            if (window.innerHeight){
+                height = window.innerHeight;// - 18;
+            }
+            else if (document.documentElement && document.documentElement.clientHeight){
+                height = document.documentElement.clientHeight;
+            }
+            else if (document.body && document.body.clientHeight) {
+                height = document.body.clientHeight;
+            }
+            return height;
+        }
+
+        function SetupIFrame(leLink)
+        {
+            //set our iFrame for the content to take up the full screen except for our navigation
+            var navWidth = 25;//80;
+            setIframeHeight("contentFrame", navWidth,leLink);
+            window.onresize = function() { setIframeHeight("contentFrame", navWidth,leLink); }
+        }
+
+        //
+        // navigation functions
+        //
+        function doStart(){
+            //get the iFrame sized correctly and set up
+
+            //get activity_id bookmark if it exists
+            var stateResult = tincan.getState("location");
+            if (stateResult.err === null && stateResult.state !== null && stateResult.state.contents !== "") {
+                if (confirm("Souhaitez-vous poursuivre ou reprendre depuis le commencement? ")) {
+                    currentPage = stateResult.state.contents;//parseInt(stateResult.state.contents, 10);
+                }
+                else
+                   currentPage = "Aremplacer";
+            }
+            else {
+                // if there isn"t a stored bookmark, start the user at the first page
+                currentPage = "Aremplacer";
+            }
+
+            goToPage();
+        }
+
+        function goToPage()
+        {
+            //pass the TC arguments to the iframe
+            var tc_argStr = (currentPage.indexOf("?") != -1) ? "&" + location.search.slice(1) : location.search;
+            //navigate the iFrame to the content
+            var leLink = currentPage + tc_argStr;
+            SetupIFrame(leLink);
+            //theIframe.src = currentPage + tc_argStr;
+           // save the current location as the bookmark
+            tincan.setState("location", currentPage, function () {});
+        }
+
+
+        function doFinish(){
+        }
+     }
+     else
+     {
+        document.location.replace("Aremplacer");
+     }
+
+</script>
+</head>
+<body onload="doStart(false);">
+<iframe width="100%" id="contentFrame" src=""></iframe>
+</body>
+</html>

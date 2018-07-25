@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This is a Reload version 2.0.2 Content Package document-->
+<!--Spawned from the Reload Content Package Generator - http://www.reload.ac.uk-->
+<manifest xmlns="http://www.imsglobal.org/xsd/imscp_v1p1" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_v1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" identifier="MANIFEST-C6DCF802-DA4F-6E70-AABD-2CDCE1893CC7" xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd http://www.imsglobal.org/xsd/imsmd_v1p2 imsmd_v1p2p2.xsd">
+  <metadata>
+    <schema>IMSContent</schema>
+    <schemaversion>1.2.2</schemaversion>
+    <imsmd:lom>
+      <imsmd:general>
+        <imsmd:title>
+          <imsmd:langstring xml:lang="en">QCM - Anglais médical</imsmd:langstring>
+        </imsmd:title>
+        <imsmd:language>fr</imsmd:language>
+        <imsmd:description>
+          <imsmd:langstring xml:lang="en">Ensemble de QCM sur l'apprentissage de l'anglais médical</imsmd:langstring>
+        </imsmd:description>
+        <imsmd:keyword>
+          <imsmd:langstring xml:lang="en">qcm, comparaison, déterminants, infinitif, modalité, passé, présent, passif, quantificateurs, subordonnées circonstancielles, vocabulaire</imsmd:langstring>
+        </imsmd:keyword>
+      </imsmd:general>
+      <imsmd:lifecycle>
+        <imsmd:status>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="x-none">Final</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:status>
+        <imsmd:contribute>
+          <imsmd:role>
+            <imsmd:source>
+              <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+            </imsmd:source>
+            <imsmd:value>
+              <imsmd:langstring xml:lang="x-none">Technical Implementer</imsmd:langstring>
+            </imsmd:value>
+          </imsmd:role>
+          <imsmd:centity>
+            <imsmd:vcard>julien.regniaud@u-bourgogne.fr</imsmd:vcard>
+          </imsmd:centity>
+        </imsmd:contribute>
+      </imsmd:lifecycle>
+      <imsmd:technical>
+        <imsmd:format>application/x-shockwave-flash</imsmd:format>
+        <imsmd:requirement>
+          <imsmd:type>
+            <imsmd:source>
+              <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+            </imsmd:source>
+            <imsmd:value>
+              <imsmd:langstring xml:lang="x-none">Browser</imsmd:langstring>
+            </imsmd:value>
+          </imsmd:type>
+        </imsmd:requirement>
+      </imsmd:technical>
+      <imsmd:educational>
+        <imsmd:interactivitytype>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="x-none">Active</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:interactivitytype>
+        <imsmd:learningresourcetype>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="x-none">Exercise</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:learningresourcetype>
+        <imsmd:interactivitylevel>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="x-none">high</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:interactivitylevel>
+        <imsmd:context>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="x-none">Higher Education</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:context>
+        <imsmd:language>fr</imsmd:language>
+      </imsmd:educational>
+    </imsmd:lom>
+  </metadata>
+  <organizations default="ORG-C4E0FBEB-9B57-C0F7-E638-F97306D9EFDA">
+    <organization identifier="ORG-C4E0FBEB-9B57-C0F7-E638-F97306D9EFDA" structure="hierarchical">
+      <title>QCM - Anglais médical</title>
+      <item identifier="ITEM-4F73DA28-0FBA-6479-0891-A9343A3906A0" isvisible="true" identifierref="RES-00B05D51-9F60-0A2E-33D3-EDAF576DAEB3">
+        <title>Comparaison</title>
+      </item>
+      <item identifier="ITEM-8CA81259-8691-A456-A0B1-E85F28232566" isvisible="true" identifierref="RES-C0BF3ABC-1FDF-B979-2F87-7D76F3D8F280">
+        <title>Déterminants</title>
+      </item>
+      <item identifier="ITEM-277236B8-5643-0FB6-12B5-41DC6A9C6ED4" isvisible="true" identifierref="RES-A488CB6A-B2C4-BC86-1C30-D26D49C45B88">
+        <title>Infinitif</title>
+      </item>
+      <item identifier="ITEM-A213A080-F54E-5B9C-3FE9-0153B4113B3E" isvisible="true" identifierref="RES-AE4470DB-45EF-C109-3AD8-AA1760683D58">
+        <title>Modalité 1</title>
+      </item>
+      <item identifier="ITEM-D0F427A3-5A52-6634-C548-78967A53DAD3" isvisible="true" identifierref="RES-46C0CC09-B74D-C05A-977B-64CF1C32A187">
+        <title>Modalité 2</title>
+      </item>
+      <item identifier="ITEM-5780B2D5-53A4-534E-6917-217B015E2853" isvisible="true" identifierref="RES-AE6A2FDC-1955-CA98-0C16-081D074821B2">
+        <title>Passé-Présent</title>
+      </item>
+      <item identifier="ITEM-D6E570DE-C088-5D11-50D1-A8A5FE54AC07" isvisible="true" identifierref="RES-5A86649B-71DC-7D14-8C73-28137D67C4F5">
+        <title>Passé-Présent 2</title>
+      </item>
+      <item identifier="ITEM-6C5AFC4E-AF35-0C6D-6792-3E6B15509A7E" isvisible="true" identifierref="RES-7CDC910D-2BC6-C1F9-C6AE-9E0AC5A4031E">
+        <title>Passé-Présent 3</title>
+      </item>
+      <item identifier="ITEM-2DE97F0D-556D-C1D3-4C70-3AE76F668BB5" isvisible="true" identifierref="RES-13B4976D-B25C-8E57-0D1E-595265D2B6A8">
+        <title>Passé-Présent 4</title>
+      </item>
+      <item identifier="ITEM-06BE3161-CF32-8D46-B497-07649FFBA294" isvisible="true" identifierref="RES-0EF0A351-B36B-6361-585C-89DA51B4D079">
+        <title>Passif 1</title>
+      </item>
+      <item identifier="ITEM-5477B34D-9087-0B0D-096F-B073373CBF28" isvisible="true" identifierref="RES-099FA0F3-CE3E-DBDB-8E26-F49191846111">
+        <title>Passif 2</title>
+      </item>
+      <item identifier="ITEM-CA7A12F3-8D3A-C875-AD6C-50276365848F" isvisible="true" identifierref="RES-CC9EFE3E-4E54-C148-1DF1-D7EA8617B1CA">
+        <title>Propositions relatives</title>
+      </item>
+      <item identifier="ITEM-7E6D5888-F872-FE38-DFD7-306CDD8E9865" isvisible="true" identifierref="RES-D6E7EFDA-808C-4328-F078-B003BED4239F">
+        <title>Quantificateurs 1</title>
+      </item>
+      <item identifier="ITEM-06BBD730-57A4-49C6-E8E9-151307C86C22" isvisible="true" identifierref="RES-566DD04B-0C3F-6D2C-95B3-87DC00091604">
+        <title>Quantificateurs 2</title>
+      </item>
+      <item identifier="ITEM-CD6917BD-7B89-DE82-7E9F-20D9E8970178" isvisible="true" identifierref="RES-5C0154AD-C9BF-BB85-89B5-D45CBA48E9AB">
+        <title>Subordonnées circonstancielles</title>
+      </item>
+      <item identifier="ITEM-96EDC549-1968-E790-1055-A2A8FC4389E7" isvisible="true" identifierref="RES-09607D20-BC0C-699A-9B2C-0F47B1176F9F">
+        <title>Vocabulaire 1</title>
+      </item>
+      <item identifier="ITEM-F7F09151-87CD-31B8-83DB-3FB4D0B6E3CA" isvisible="true" identifierref="RES-3C991CA0-986F-3D4E-7EE8-CE251FCD105C">
+        <title>Vocabulaire 2</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="RES-00B05D51-9F60-0A2E-33D3-EDAF576DAEB3" type="webcontent" href="comparaison/comparaison.html">
+      <file href="comparaison/comparaison.html" />
+      <file href="assets/cmi.js" />
+      <file href="assets/qcm.swf" />
+      <file href="comparaison/comparaison.xml" />
+    </resource>
+    <resource identifier="RES-C0BF3ABC-1FDF-B979-2F87-7D76F3D8F280" type="webcontent" href="determinants/determinants.html">
+      <file href="determinants/determinants.html" />
+      <file href="assets/cmi.js" />
+      <file href="determinants/determinants.xml" />
+      <file href="assets/qcm.swf" />
+    </resource>
+    <resource identifier="RES-A488CB6A-B2C4-BC86-1C30-D26D49C45B88" type="webcontent" href="infinitif/infinitif.html">
+      <file href="infinitif/infinitif.html" />
+      <file href="assets/cmi.js" />
+      <file href="assets/qcm.swf" />
+      <file href="infinitif/infinitif.xml" />
+    </resource>
+    <resource identifier="RES-AE4470DB-45EF-C109-3AD8-AA1760683D58" type="webcontent" href="modalite_01/modalite_01.html">
+      <file href="modalite_01/modalite_01.html" />
+      <file href="assets/cmi.js" />
+      <file href="modalite_01/modalite_01.xml" />
+      <file href="assets/qcm.swf" />
+    </resource>
+    <resource identifier="RES-46C0CC09-B74D-C05A-977B-64CF1C32A187" type="webcontent" href="modalite_02/modalite_02.html">
+      <file href="modalite_02/modalite_02.html" />
+      <file href="assets/cmi.js" />
+      <file href="modalite_02/modalite_02.xml" />
+      <file href="assets/qcm.swf" />
+    </resource>
+    <resource identifier="RES-AE6A2FDC-1955-CA98-0C16-081D074821B2" type="webcontent" href="passe_present_01/passe_present_01.html">
+      <file href="passe_present_01/passe_present_01.html" />
+      <file href="assets/cmi.js" />
+      <file href="passe_present_01/passe_present_01.xml" />
+      <file href="assets/qcm.swf" />
+    </resource>
+    <resource identifier="RES-5A86649B-71DC-7D14-8C73-28137D67C4F5" type="webcontent" href="passe_present_02/passe_present_02.html">
+      <file href="passe_present_02/passe_present_02.html" />
+      <file href="assets/cmi.js" />
+      <file href="assets/qcm.swf" />
+      <file href="passe_present_02/passe_present_02.xml" />
+    </resource>
+    <resource identifier="RES-7CDC910D-2BC6-C1F9-C6AE-9E0AC5A4031E" type="webcontent" href="passe_present_03/passe_present_03.html">
+      <file href="passe_present_03/passe_present_03.html" />
+      <file href="assets/cmi.js" />
+      <file href="passe_present_03/passe_present_03.xml" />
+      <file href="assets/qcm.swf" />
+    </resource>
+    <resource identifier="RES-13B4976D-B25C-8E57-0D1E-595265D2B6A8" type="webcontent" href="passe_present_04/passe_present_04.html">
+      <file href="passe_present_04/passe_present_04.html" />
+      <file href="assets/cmi.js" />
+      <file href="passe_present_04/passe_present_04.xml" />
+      <file href="assets/qcm.swf" />
+    </resource>
+    <resource identifier="RES-0EF0A351-B36B-6361-585C-89DA51B4D079" type="webcontent" href="passif_01/passif_01.html">
+      <file href="passif_01/passif_01.html" />
+      <file href="assets/cmi.js" />
+      <file href="assets/qcm.swf" />
+      <file href="passif_01/passif_01.xml" />
+    </resource>
+    <resource identifier="RES-099FA0F3-CE3E-DBDB-8E26-F49191846111" type="webcontent" href="passif_02/passif_02.html">
+      <file href="passif_02/passif_02.html" />
+      <file href="assets/cmi.js" />
+      <file href="assets/qcm.swf" />
+      <file href="passif_02/passif_02.xml" />
+    </resource>
+    <resource identifier="RES-CC9EFE3E-4E54-C148-1DF1-D7EA8617B1CA" type="webcontent" href="prop_relatives/prop_relatives.html">
+      <file href="prop_relatives/prop_relatives.html" />
+      <file href="assets/cmi.js" />
+      <file href="assets/qcm.swf" />
+      <file href="prop_relatives/prop_relatives.xml" />
+    </resource>
+    <resource identifier="RES-D6E7EFDA-808C-4328-F078-B003BED4239F" type="webcontent" href="quantificateurs_01/quantificateurs_01.html">
+      <file href="quantificateurs_01/quantificateurs_01.html" />
+      <file href="assets/cmi.js" />
+      <file href="assets/qcm.swf" />
+      <file href="quantificateurs_01/quantificateurs_01.xml" />
+    </resource>
+    <resource identifier="RES-566DD04B-0C3F-6D2C-95B3-87DC00091604" type="webcontent" href="quantificateurs_02/quantificateurs_02.html">
+      <file href="quantificateurs_02/quantificateurs_02.html" />
+      <file href="assets/cmi.js" />
+      <file href="assets/qcm.swf" />
+      <file href="quantificateurs_02/quantificateurs_02.xml" />
+    </resource>
+    <resource identifier="RES-5C0154AD-C9BF-BB85-89B5-D45CBA48E9AB" type="webcontent" href="sub_circonst/sub_circonst.html">
+      <file href="sub_circonst/sub_circonst.html" />
+      <file href="assets/cmi.js" />
+      <file href="sub_circonst/sub_circonst.xml" />
+      <file href="assets/qcm.swf" />
+    </resource>
+    <resource identifier="RES-09607D20-BC0C-699A-9B2C-0F47B1176F9F" type="webcontent" href="vocabulaire_01/vocabulaire_01.html">
+      <file href="vocabulaire_01/vocabulaire_01.html" />
+      <file href="assets/cmi.js" />
+      <file href="assets/qcm.swf" />
+      <file href="vocabulaire_01/vocabulaire_01.xml" />
+    </resource>
+    <resource identifier="RES-3C991CA0-986F-3D4E-7EE8-CE251FCD105C" type="webcontent" href="vocabulaire_02/vocabulaire_02.html">
+      <file href="vocabulaire_02/vocabulaire_02.html" />
+      <file href="assets/cmi.js" />
+      <file href="vocabulaire_02/vocabulaire_02.xml" />
+      <file href="assets/qcm.swf" />
+    </resource>
+  </resources>
+</manifest>
+

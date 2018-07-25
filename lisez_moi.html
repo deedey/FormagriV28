@@ -1,0 +1,222 @@
+<HTML>
+<HEAD>
+  <TITLE>Téléchargement de la plate-forme FOAD Formagri</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff" TEXT="#000000" LINK="#008080" VLINK="#804040">
+<P>
+<TABLE cellspacing="0" cellspadding="0" align="center" valign="MIDDLE" border=0 width=80%>
+<TR><TD style="font-size: 12px;font-family:  verdana, tahoma,arial;border:1px solid #D45211;background-color: #F4F4F4;padding-left:5px;">
+&nbsp;<br><span style="width:450px;font-size:14px;padding:4px;font-family: arial, tahoma, verdana;
+font-weight:bold;color:#008080; border:1px solid #D45211;background-color: #FFFFFF;">
+Equipe de développement de Formagri/Cnerta/Eduter/AgroSupDijon Version 2.7.0.4 Septembre 2013
+</span>
+<P>
+***************************************************************************
+<BR><span style="width:450px;font-size:11px;padding:4px;font-family: arial, tahoma, verdana;">
+Note de version:<br />
+Septembre 2013: Implémentation des blogs, commentaires et rating dans Wikis et Blogs
+</span><br />
+***************************************************************************
+
+<P>
+<span style="width:450px;font-size:14px;padding:4px;font-family: arial, tahoma, verdana;
+font-weight:bold;color:#008080; border:1px solid #D45211;background-color: #FFFFFF;">
+&nbsp;Au lancement, un utilitaire installe automatiquement et en deux passes Formagri sur votre serveur
+</span>
+<br />
+<P>
+<div style="width:700px;height:auto;padding:4px;font-size:11px;font-weight:bold;color:red;border:1px solid #D45211;background-color: #FFFFFF;">
+<span>Attention !!!! Sachez que certains serveurs exigent la création de la base de données via leur interface (Free, Amen, Ovh, etc..)
+</span></div><br />
+Pour peu que vous disposiez d'un serveur bien configuré, que ce soit
+sous <FONT COLOR="#008080"><B>Microsoft NT et IIS ou sous Linux et Apache,<BR>
+tout cela couplé à PHP doté de toutes ses
+librairies (gd, gzip etc..) et Mysql /PhpMyAdmin installés, fonctionnels et
+activés</B></FONT>,<BR> vous pouvez installer sans problème Formagri..<br />
+Dans le cas où votre installation n'est pas faite sur un serveur en ligne (Free Ovh ou autre prestataire),<br />
+et que vous voulez l'installer en Locahost (127.0.0.1 ou + ou encore sur 192.168.0.1 ou +) uniquement,<br />
+vous devez vous affranchir de tout ce qui peut faire appel aux protocoles
+FTP et SMTP<BR> puisque vous ne pouvez envoyer de courrier si vous n'avez pas
+de serveur SMTP ni d'uploader des fichiers via FTP. <BR>
+<BR>
+<FONT COLOR="#004080"><B><BIG>Utilisation en localhost:</BIG></B></FONT> <BR>
+Vous pouvez la tester sur votre machine en téléchargeant de préférence
+<A HREF="http://www.wampserver.com/presentation.php">Wamp</A>,
+<A HREF="http://sourceforge.net/projects/xampp/files/latest/download">Xamp</A>
+ou encore  <A HREF="http://www.clubic.com/telecharger-fiche32659-mov-amp.html">Movamp</A> ou EasyPhp
+Ce sont des logiciels libres et
+ils vous installent directement Apache, Php , Mysql et Phpmyadmin ainsi qu'une interface d'administration. <BR>
+Vous pourrez dès lors l'utiliser sur votre machine transformée
+pour l'occasion en serveur web et même partager cette application en
+réseau local. <BR><FONT COLOR="red">**Attention**  UwAmp exige un mot de passe 'root' pour la Bdd.</FONT><BR>
+
+et <A HREF="http://www.uwamp.com/?page=download">UwAmp</A> ces derniers étant des serveurs locaux sur clef USB. <BR><br>
+<b>Dans le cas de EasyPhp, modifiez obligatoirement le .htaccess en conservant 'php_value' plutôt que SetEnv.</b><br><br>
+Vous venez de décompresser cette application LMS(learning management system)
+dans le dossier "formagri" dans le répertoire "www" de votre serveur<BR>
+<BR>Elle se présente en une série de répertoires composé des
+différents scripts nécessaires pour faire fonctionner la plateforme
+FOAD Formagri et interroger la base de données.</FONT></B> <BR>
+<BR>
+En localhost, il vaut mieux nommer votre répertoire "formagri"
+afin qu'il reste en conformité avec la base de données qui portera le même nom<BR>
+Mais vous pouvez en décider autrement car il vous est possible d'installer plusieurs versions de Formagri
+si vous êtes coutumier de ce LMS ou de ce type d'opérations.<BR>
+<BR>
+-----------------------------------------------------------------------------------------------------------------
+<BR>N'oubliez pas de démarrer le service (Apache, php et Mysql) sur l'icône
+de votre serveur <BR>en bas à droite de votre écran après l'avoir lancé.<BR>
+-----------------------------------------------------------------------------------------------------------------
+<BR>Si vous êtes chez OVH ou chez FREE ou autre hébergeur un fichier <FONT COLOR="#004080">.htaccess</FONT><BR>
+ est inclus dans lequel sont insérées les lignes nécessaires à son bon fonctionnement :
+<FONT COLOR="#004080"><BR>#php 1<BR>
+SetEnv etc..<BR>
+SetEnv etc</FONT><BR>
+Certains serveurs nécessitent une écriture différente dans le .HTACCESS<BR>
+<FONT COLOR="#004080">php_value etc..<BR>
+php_value etc</FONT><BR>
+A vous de faire le bon choix<BR>
+Vous trouverz un .HTACCESS avec les deux options:
+<span style="color:red;font-weight:bold;border:2px solid red;padding:2px;">Vous devez supprimer l'option inutile</span><BR>
+-----------------------------------------------------------------------------------------------------------------
+<BR>
+<BR>
+En supposant que le répertoire dans lequel vous avez décompressé l'archive s'appelle "formagri",
+<BR>
+il suffira de lancer dans le navigateur "<b>http://localhost/nom du répertoire Formagri</b>"<br>
+Le formulaire suivant vous permettra de saisir les informations relatives à la configuration<p>
+  <TABLE cellspacing="2" cellspadding="1" align="MIDDLE" valign="MIDDLE" border=0 width=100%>
+   <TR>
+      <INPUT TYPE="HIDDEN"  class="input" name="envoi" value="1">
+      <TD nowrap><small>Nom de domaine ou Adresse IP  *</small></TD>
+      <TD nowrap><INPUT TYPE="TEXT" class="input" value="http://localhost/formagri" size='40'align="middle"></TD>
+      <TD ><small>Cet exemple est pour EasyPhp ou Wamp avec répertoire sous formagri<small></TD>
+   </TR>
+   <TR>
+      <TD nowrap><small>Répertoire dans lequel se trouve votre page de lancement  *</small></TD>
+      <TD nowrap><INPUT TYPE="text"  class="input" value="C:\wamp\www\formagri" size='40'align="middle"></TD>
+      <TD ><small>Cet exemple est pour Wamp installé à la racine de C:\<small></TD>
+   </TR>
+   <TR>
+      <TD nowrap><small>Adresse de la base de données MYSQL  *</small></TD>
+      <TD nowrap><INPUT TYPE="TEXT"  class="input" value="localhost" size="40" align="middle"></TD>
+      <TD ><small>Localhost en général sauf si serveur différent<small></TD>
+   </TR>
+   <TR>
+      <TD nowrap><small>Nom de la base de données MYSQL  *</small></TD>
+      <TD nowrap><INPUT TYPE="TEXT"  class="input" value="formagri" align="middle"></TD>
+      <TD ><small>Intitulé de la base de données qui sera créée<small></TD>
+   </TR>
+   <TR>
+      <TD nowrap><small>Login pour accéder à la base de données MYSQL  *</small></TD>
+      <TD nowrap><INPUT TYPE="TEXT"  class="input" value="root" align="middle"></TD>
+      <TD><small>Votre login pour y accéder ("root" est prédéfini avec EasyPhp ou Wamp)<small></TD>
+   </TR>
+   <TR>
+      <TD nowrap><small>Mot de passe pour accéder à la base de données  </small></TD>
+      <TD nowrap><INPUT TYPE="PASSWORD"  class="input" value="" align="middle"> <br>
+      <span style='font-size:9px;'>UwAmp exige "root" en mot de passe</span></TD>
+      <TD ><small>Vide avec EasyPhp ou Wamp en localhost</small></TD>
+   </TR>
+   <TR>
+      <TD nowrap><small>Login en tant qu'utilisateur  *</small></TD>
+      <TD nowrap><INPUT TYPE="text"  class="input" style="color:red;" value="super" size='40'align="middle"> <br>
+      <span style='font-size:9px;'>Installé par défaut</span></TD>
+      <TD><small> Pour utiliser votre profil Administrateur</small></TD>
+   </TR>
+   <TR>
+      <TD nowrap><small>Mot de passe utilisateur  *</small></TD>
+      <TD nowrap><INPUT TYPE="text"  class="input" style="color:red;" value="super" size='40'align="middle"> <br>
+      <span style='font-size:9px;'>Installé par défaut</span></TD>
+      <TD><small>Votre mot de passe Administrateur</small></TD>
+   </TR>
+   <TR>
+      <TD nowrap><small>Mot de passe pour l'administration des forums  *</small></TD>
+      <TD nowrap><INPUT TYPE="TEXT"  class="input" value="" align="middle"></TD>
+      <TD><small>Afin de gérér en dur les différents forums</small></TD>
+   </TR>
+   <TR>
+      <TD nowrap><small>Adresse email pour l'administration des forums  *</small></TD>
+      <TD nowrap><INPUT TYPE="TEXT" class="input" value="moi@chez_untel.fr" size="40" align="middle"></TD>
+      <TD><small></small></TD>
+   </TR>
+   <TR>
+      <TD nowrap><small>Adresse email pour la modération des forums  *</small></TD>
+      <TD nowrap><INPUT TYPE="TEXT"  class="input" value="moi@chez_untel.fr" size="40" align="middle"></TD>
+      <TD><small>Pour approuver les messages à afficher</small></TD>
+   </TR>
+   <TR>
+      <TD nowrap><small>Mot de passe pour la modération des forums  *</small></TD>
+      <TD nowrap><INPUT TYPE="PASSWORD"  value="" align="middle"></TD>
+      <TD><small>Le mot de passe pour accéder à la modération</small></TD>
+   </TR>
+   <TR>
+      <TD colspan = "2"
+      style="font-size:12px;padding:4px;font-family: arial, tahoma, verdana;font-weight:bold;color:#D45211; border:2px dotted #D45211;background-color: #FFFFFF;">
+      <small>*  Les valeurs qui sont données sont les valeurs
+      pour une configuration en localhost sous Easyphp ou encore Wamp</small></TD><TD></TD>
+   </TR></TABLE>
+
+
+Vous devez donner l'accés en écriture à l'invité
+internet (chmod 775) pour les dossiers suivants :
+<BR>
+Tous les dossiers commençant par  <BR>
+- "export_" <BR>
+- MindMapping <BR>
+- QcmScorm <BR>
+- forum/admin/forums <BR>
+- forum/config <BR>
+- graphique <BR>
+- ressources <BR>
+- images/galerie <BR>
+- flash_chat/chat/required <BR>
+<BR>
+*****************************************************************************************************************************
+<BR>
+<BR>
+Utilitaires et plug'ins: <BR>
+----------------------- <BR>
+<BR>
+Les générateurs de QCM et autres types de questionnaires
+Hotpotatoes v5 et Quizz Faber peuvent être téléchargés
+via la plateforme à l'espace "Bo&icirc;te à outils&gt;Plug'ins".
+<BR>
+Les fichiers qu'ils générent peuvent, via une moulinette être
+configurés pour renvoyer une page de résultats et un scrore
+(pour Quizz Faber) ou seulement un score (Hot potatoes). <BR>
+Il est vital pour cela que Formagri soit installé sur le répertoire
+principal. <BR>
+<BR>
+Vous pourrez accéder à la plateforme en tant qu'administrateur
+avec les codes "super" et "super" . <BR>
+Ne modifiez jamais le login de quiconque en dur dans la table utilisateur
+<BR>
+Car l'espace serveur de chaque utilisateur est composé de son login
+(issu de l'identifiant email lors de l'inscription) et de son ID d'insertion dans la table MySql "utilisateurs". <BR>
+L'administrateur peut modifier la fiche de chaque utilisateur.
+<BR>
+<BR>
+Pour <b>configurer Twitter</b> et pouvoir l'utiliser, vous devez créer une application liée à votre compte Twitter et <BR>
+récupérer les 4 constantes d'authentification après avoir lié l'adresse de votre plate-forme à cette application.<BR>
+Les 4 constantes à renseigner dans le script "<b>ApiTweet/lib/config.php</b>" sont :<BR>
+<b>CONSUMER_KEY,<BR>
+CONSUMER_SECRET,<BR>
+ACCESS_TOKEN,<BR>
+ACCESS_TOKEN_SECRET</b>
+<BR>
+
+Si vous ne savez pas faire, adressez un mail à <span style="width:450px;font-size:12px;padding:2px;font-family: arial, tahoma, verdana;
+font-weight:bold;color:#008080; border:1px solid #D45211;background-color: #FFFFFF;">dey.bendifallah@educagri.fr</span>
+accompagné de l'adresse de votre plate-forme en ligne sur un serveur distant.<br>
+Nous associerons votre plate-forme à une de nos applications "Twitter Formagri" et vous communiquerons les 4 constantes à renseigner.<br><BR>
+<span style="color:red;font-weight:bold">Très important:</span>
+<span style="font-weight:bold;">
+    Vous devez activer l'extension CURL dans PHP pour que les appels à Twitter fonctionnent
+</span>
+<BR><BR>
+Votre plateforme est prête à être utilisée <BR>
+<BR>
+Bonne découverte<p>
+</td></tr></table>
+</BODY></HTML>

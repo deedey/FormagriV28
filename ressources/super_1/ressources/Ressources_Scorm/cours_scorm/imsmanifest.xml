@@ -1,0 +1,490 @@
+<?xml version="1.0"?>
+<manifest identifier="SingleCourseManifest" version="1.1"
+          xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+          xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+                              http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd
+                              http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+   <metadata/>
+   <organizations default="B0">
+
+      <organization identifier="B0">
+
+         <title>Maritime Navigation</title>
+
+         <item identifier="B100" isvisible="true">
+            <title>Inland Rules of the Road (HTML Format)</title>
+
+            <item identifier="S100001" identifierref="R_S100001" isvisible="true">
+               <title>References and Lesson Objective</title>
+            </item>
+
+            <item identifier="B110" isvisible="true">
+               <title>Steering &amp; Sailing Rules</title>
+
+               <item identifier="S110001" identifierref="R_S110001">
+                  <title>Conduct of Vessels in any Condition of Visibility</title>
+                  <adlcp:prerequisites type="aicc_script"><![CDATA[S100001]]></adlcp:prerequisites>
+                  <adlcp:maxtimeallowed>0000:30:00.00</adlcp:maxtimeallowed>
+               </item>
+
+               <item identifier="S110002" identifierref="R_S110002">
+                  <title>Conduct of Vessels in Sight of One Another</title>
+                  <adlcp:prerequisites type="aicc_script"><![CDATA[S110001]]></adlcp:prerequisites>
+               </item>
+
+               <item identifier="S110003" identifierref="R_S110003">
+                  <title>Conduct of Vessels in Restricted Visibility</title>
+                  <adlcp:prerequisites type="aicc_script"><![CDATA[S110002]]></adlcp:prerequisites>
+               </item>
+
+            </item>
+
+            <item identifier="S100002" identifierref="R_S100002" isvisible="true">
+               <title>Lights &amp; Shapes</title>
+               <adlcp:prerequisites type="aicc_script"><![CDATA[B110]]></adlcp:prerequisites>
+            </item>
+
+            <item identifier="S100003" identifierref="R_S100003" isvisible="true">
+               <title>Sound &amp; Light Signals</title>
+               <adlcp:prerequisites type="aicc_script"><![CDATA[S100002]]></adlcp:prerequisites>
+            </item>
+
+            <item identifier="S100004" identifierref="R_S100004" isvisible="true">
+               <title>Exam</title>
+               <adlcp:prerequisites type="aicc_script"><![CDATA[S100003]]></adlcp:prerequisites>
+               <adlcp:maxtimeallowed>0001:00:00.00</adlcp:maxtimeallowed>
+               <adlcp:timelimitaction>continue,no message</adlcp:timelimitaction>
+               <adlcp:masteryscore>75</adlcp:masteryscore>
+            </item>
+            <metadata>
+               <schema>ADL SCORM</schema>
+               <schemaversion>1.2</schemaversion>
+               <adlcp:location>Course01/Lesson01.xml</adlcp:location>
+            </metadata>
+         </item>
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01.xml</adlcp:location>
+         </metadata>
+      </organization>
+   </organizations>
+   <resources>
+
+      <resource identifier="R_S100001" type="webcontent"
+                adlcp:scormtype="sco" href="Course01/Lesson01/sco01.htm">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/sco01.xml</adlcp:location>
+         </metadata>
+         <file href="Course01/Lesson01/sco01.htm" />
+         <dependency identifierref="R_D1"/>
+      </resource>
+
+      <resource identifier="R_S110001" type="webcontent"
+                adlcp:scormtype="sco" href="Course01/Lesson01/sco02.htm">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/sco02.xml</adlcp:location>
+         </metadata>
+         <file href="Course01/Lesson01/sco02.htm" />
+         <dependency identifierref="R_D1"/>
+      </resource>
+
+      <resource identifier="R_S110002" type="webcontent"
+                adlcp:scormtype="sco" href="Course01/Lesson01/sco03.htm">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/sco03.xml</adlcp:location>
+         </metadata>
+         <file href="Course01/Lesson01/sco03.htm" />
+         <dependency identifierref="R_D1"/>
+      </resource>
+
+      <resource identifier="R_S110003" type="webcontent"
+                adlcp:scormtype="sco" href="Course01/Lesson01/sco04.htm">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/sco04.xml</adlcp:location>
+         </metadata>
+         <file href="Course01/Lesson01/sco04.htm" />
+         <dependency identifierref="R_D1"/>
+      </resource>
+
+      <resource identifier="R_S100002" type="webcontent"
+                adlcp:scormtype="sco" href="Course01/Lesson01/sco05.htm">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/sco05.xml</adlcp:location>
+         </metadata>
+         <file href="Course01/Lesson01/sco05.htm" />
+         <dependency identifierref="R_D1"/>
+         <dependency identifierref="R_A1"/>
+         <dependency identifierref="R_A2"/>
+         <dependency identifierref="R_A3"/>
+         <dependency identifierref="R_A4"/>
+         <dependency identifierref="R_A5"/>
+         <dependency identifierref="R_A6"/>
+         <dependency identifierref="R_A7"/>
+         <dependency identifierref="R_A8"/>
+         <dependency identifierref="R_A9"/>
+         <dependency identifierref="R_A10"/>
+         <dependency identifierref="R_A11"/>
+         <dependency identifierref="R_A12"/>
+         <dependency identifierref="R_A13"/>
+         <dependency identifierref="R_A14"/>
+         <dependency identifierref="R_A15"/>
+         <dependency identifierref="R_A16"/>
+         <dependency identifierref="R_A17"/>
+         <dependency identifierref="R_A18"/>
+         <dependency identifierref="R_A19"/>
+         <dependency identifierref="R_A20"/>
+         <dependency identifierref="R_A21"/>
+         <dependency identifierref="R_A22"/>
+         <dependency identifierref="R_A23"/>
+         <dependency identifierref="R_A24"/>
+         <dependency identifierref="R_A25"/>
+         <dependency identifierref="R_A26"/>
+         <dependency identifierref="R_A27"/>
+      </resource>
+
+      <resource identifier="R_S100003" type="webcontent"
+                adlcp:scormtype="sco" href="Course01/Lesson01/sco06.htm">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/sco06.xml</adlcp:location>
+         </metadata>
+         <file href="Course01/Lesson01/sco06.htm" />
+         <dependency identifierref="R_D1"/>
+         <dependency identifierref="R_A28"/>
+         <dependency identifierref="R_A29"/>
+         <dependency identifierref="R_A30"/>
+      </resource>
+
+      <resource identifier="R_S100004" type="webcontent"
+                adlcp:scormtype="sco" href="Course01/Lesson01/sco07.htm">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/sco07.xml</adlcp:location>
+         </metadata>
+         <file href="Course01/Lesson01/sco07.htm" />
+         <dependency identifierref="R_D1"/>
+      </resource>
+
+      <resource identifier="R_D1" adlcp:scormtype="asset" 
+                type="webcontent" xml:base="Course01">
+         <file href="SCOFunctions.js"/>
+         <file href="APIWrapper.js"/>
+      </resource>
+
+      <resource identifier="R_A1" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/underway_lights_big.xml</adlcp:location>
+         </metadata>
+         <file href="pics/underway_lights_big.jpg" />
+      </resource>
+
+      <resource identifier="R_A2" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/underway_lights_small.xml</adlcp:location>
+         </metadata>
+         <file href="pics/underway_lights_small.jpg" />
+      </resource>
+
+      <resource identifier="R_A3" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/underway_lights_hover.xml</adlcp:location>
+         </metadata>                          
+         <file href="pics/underway_lights_hover.jpg" />
+      </resource>
+
+      <resource identifier="R_A4" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/underway_lights_boat.xml</adlcp:location>
+         </metadata>
+         <file href="pics/underway_lights_boat.jpg" />
+      </resource>
+
+      <resource identifier="R_A5" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/underway_lights_GL.xml</adlcp:location>
+         </metadata>
+         <file href="pics/underway_lights_GL.jpg" />
+      </resource>
+
+      <resource identifier="R_A6" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/tow_astern.xml</adlcp:location>
+         </metadata>
+         <file href="pics/tow_astern.jpg" />
+      </resource>
+
+      <resource identifier="R_A7" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/pushing_composite.xml</adlcp:location>
+         </metadata>
+         <file href="pics/pushing_composite.jpg" />
+      </resource>
+
+      <resource identifier="R_A8" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/tow_alongside.xml</adlcp:location>
+         </metadata>
+         <file href="pics/tow_alongside.jpg" />
+      </resource>
+
+      <resource identifier="R_A9" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/tow_astern_small.xml</adlcp:location>
+         </metadata>
+         <file href="pics/tow_astern_small.jpg" />
+      </resource>
+
+      <resource identifier="R_A10" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/tow_astern.xml</adlcp:location>
+         </metadata>
+         <file href="pics/tow_astern.jpg" />
+      </resource>
+
+      <resource identifier="R_A11" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/being_towed_alongside.xml</adlcp:location>
+         </metadata>
+         <file href="pics/being_towed_alongside.jpg" />
+      </resource>
+
+      <resource identifier="R_A12" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/pushing_west.xml</adlcp:location>
+         </metadata>
+         <file href="pics/pushing_west.jpg" />
+      </resource>
+
+      <resource identifier="R_A13" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/sailing_underway.xml</adlcp:location>
+         </metadata>
+         <file href="pics/sailing_underway.jpg" />
+      </resource>
+
+      <resource identifier="R_A14" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/row_underway.xml</adlcp:location>
+         </metadata>
+         <file href="pics/row_underway.jpg" />
+      </resource>
+
+      <resource identifier="R_A15" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/sail_prop.xml</adlcp:location>
+         </metadata>
+         <file href="pics/sail_prop.jpg" />
+      </resource>
+
+      <resource identifier="R_A16" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/trawling.xml</adlcp:location>
+         </metadata>
+         <file href="pics/trawling.jpg" />
+      </resource>
+
+      <resource identifier="R_A17" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/trawling_underway.xml</adlcp:location>
+         </metadata>
+         <file href="pics/trawling_underway.jpg" />
+      </resource>
+
+      <resource identifier="R_A18" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/fishing.xml</adlcp:location>
+         </metadata>
+         <file href="pics/fishing.jpg" />
+      </resource>
+
+      <resource identifier="R_A19" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/not_under_command_making_way.xml</adlcp:location>
+         </metadata>
+         <file href="pics/not_under_command_making_way.jpg" />
+      </resource>
+
+      <resource identifier="R_A20" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/restricted_maneuvering_small.xml</adlcp:location>
+         </metadata>
+         <file href="pics/restricted_maneuvering_small.jpg" />
+      </resource>
+
+      <resource identifier="R_A21" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/restricted_maneuvering_tow.xml</adlcp:location>
+         </metadata>
+         <file href="pics/restricted_maneuvering_tow.jpg" />
+      </resource>
+
+      <resource identifier="R_A22" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/dredging.xml</adlcp:location>
+         </metadata>
+         <file href="pics/dredging.jpg" />
+      </resource>
+
+      <resource identifier="R_A23" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/diving_small.xml</adlcp:location>
+         </metadata>
+         <file href="pics/diving_small.jpg" />
+      </resource>
+
+      <resource identifier="R_A24" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/mine_clearing.xml</adlcp:location>
+         </metadata>
+         <file href="pics/mine_clearing.jpg" />
+      </resource>
+
+      <resource identifier="R_A25" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/duty_pilot.xml</adlcp:location>
+         </metadata>
+         <file href="pics/duty_pilot.jpg" />
+      </resource>
+
+      <resource identifier="R_A26" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/anchored.xml</adlcp:location>
+         </metadata>
+         <file href="pics/anchored.jpg" />
+      </resource>
+
+      <resource identifier="R_A27" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/aground.xml</adlcp:location>
+         </metadata>
+         <file href="pics/aground.jpg" />
+      </resource>
+
+      <resource identifier="R_A28" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/distress_sigs.xml</adlcp:location>
+         </metadata>
+         <file href="pics/distress_sigs.jpg" />
+      </resource>
+
+      <resource identifier="R_A29" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/distress_sigs_add.xml</adlcp:location>
+         </metadata>
+         <file href="pics/distress_sigs_add.jpg" />
+      </resource>
+
+      <resource identifier="R_A30" type="webcontent"
+                adlcp:scormtype="asset" xml:base="Course01/Lesson01/">
+         <metadata>
+            <schema>ADL SCORM</schema>
+            <schemaversion>1.2</schemaversion>
+            <adlcp:location>Course01/Lesson01/pics/nav_aids.xml</adlcp:location>
+         </metadata>
+         <file href="pics/nav_aids.jpg" />
+      </resource>
+
+   </resources>
+</manifest>

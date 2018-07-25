@@ -1,0 +1,279 @@
+<html>
+<!--
+/*******************************************************************************
+**
+** Concurrent Technologies Corporation (CTC) grants you ("Licensee") a non-
+** exclusive, royalty free, license to use, modify and redistribute this
+** software in source and binary code form, provided that i) this copyright
+** notice and license appear on all copies of the software; and ii) Licensee
+** does not utilize the software in a manner which is disparaging to CTC.
+**
+** This software is provided "AS IS," without a warranty of any kind.  ALL
+** EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+** IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-
+** INFRINGEMENT, ARE HEREBY EXCLUDED.  CTC AND ITS LICENSORS SHALL NOT BE LIABLE
+** FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
+** DISTRIBUTING THE SOFTWARE OR ITS DERIVATIVES.  IN NO EVENT WILL CTC OR ITS
+** LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT,
+** INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER
+** CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF
+** OR INABILITY TO USE SOFTWARE, EVEN IF CTC  HAS BEEN ADVISED OF THE
+** POSSIBILITY OF SUCH DAMAGES.
+**
+*******************************************************************************/
+-->
+<head>
+<meta http-equiv="expires" content="Tue, 05 DEC 2000 07:00:00 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<script language=javascript src="../APIWrapper.js"></script>
+<script language=javascript src="../SCOFunctions.js"></script>
+
+<script language=javascript>
+   var question1;
+   var question2;
+   var question3;
+   var question4;
+   var question5;
+   var key1 = 4;
+   var key2 = 2;
+   var key3 = 3;
+   var key4 = 2;
+   var key5 = 1;
+   var numQuestions = 5;
+   var rawScore = 0;
+   var actualScore = 0;
+
+   //gets the students answer to each of the questions
+   function getAnswer()
+   {
+      doLMSSetValue("cmi.interactions.0.id","Q1");
+      doLMSSetValue("cmi.interactions.0.type","choice");
+      doLMSSetValue("cmi.interactions.0.correct_responses.0.pattern","4");
+      for (var i=0; i <= 3; i++)
+      {
+         if (document.examForm.Q1[i].checked)
+         {
+            question1 = document.examForm.Q1[i].value;
+            doLMSSetValue("cmi.interactions.0.student_response",question1);
+            break;
+         }
+      }
+   
+      doLMSSetValue("cmi.interactions.1.id","Q2");
+      doLMSSetValue("cmi.interactions.1.type","choice");
+      doLMSSetValue("cmi.interactions.1.correct_responses.0.pattern","2");
+      for (var i=0; i <= 3; i++)
+      {
+         if (document.examForm.Q2[i].checked)
+         {
+            question2 = document.examForm.Q2[i].value;
+            doLMSSetValue("cmi.interactions.1.student_response",question2);
+            break;
+         }
+      }
+   
+      doLMSSetValue("cmi.interactions.2.id","Q3");
+      doLMSSetValue("cmi.interactions.2.type","choice");
+      doLMSSetValue("cmi.interactions.2.correct_responses.0.pattern","3");
+      for (var i=0; i <= 3; i++)
+      {
+         if (document.examForm.Q3[i].checked)
+         {
+            question3 = document.examForm.Q3[i].value;
+            doLMSSetValue("cmi.interactions.2.student_response",question3);
+            break;
+         }
+      }
+   
+      doLMSSetValue("cmi.interactions.3.id","Q4");
+      doLMSSetValue("cmi.interactions.3.type","choice");
+      doLMSSetValue("cmi.interactions.3.correct_responses.0.pattern","2");
+      for (var i=0; i <= 3; i++)
+      {
+         if (document.examForm.Q4[i].checked)
+         {
+            question4 = document.examForm.Q4[i].value;
+            doLMSSetValue("cmi.interactions.3.student_response",question4);
+            break;
+         }
+      }
+   
+      doLMSSetValue("cmi.interactions.4.id","Q5");
+      doLMSSetValue("cmi.interactions.4.type","choice");
+      doLMSSetValue("cmi.interactions.4.correct_responses.0.pattern","1");
+      for (var i=0; i <= 3; i++)
+      {
+         if (document.examForm.Q5[i].checked)
+         {
+            question5 = document.examForm.Q5[i].value;
+            doLMSSetValue("cmi.interactions.4.student_response",question5);
+            break;
+         }
+      }
+   }
+
+   //checks if the students answers are correct and increments the rawScore value
+   function calcRawScore()
+   {
+      if (question1 == key1)
+      {
+         doLMSSetValue("cmi.interactions.0.result","correct");
+         rawScore++;
+      }
+      else
+      {
+         doLMSSetValue("cmi.interactions.0.result","wrong");
+      }
+      if (question2 == key2)
+      {
+         doLMSSetValue("cmi.interactions.1.result","correct");
+         rawScore++;
+      }
+      else
+      {
+         doLMSSetValue("cmi.interactions.1.result","wrong");
+      }
+      if (question3 == key3)
+      {
+         doLMSSetValue("cmi.interactions.2.result","correct");
+         rawScore++;
+      }
+      else
+      {
+         doLMSSetValue("cmi.interactions.2.result","wrong");
+      }
+      if (question4 == key4)
+      {
+         doLMSSetValue("cmi.interactions.3.result","correct");
+         rawScore++;
+      }
+      else
+      {
+         doLMSSetValue("cmi.interactions.3.result","wrong");
+      }
+      if (question5 == key5)
+      {
+         doLMSSetValue("cmi.interactions.4.result","correct");
+         rawScore++;
+      }
+      else
+      {
+         doLMSSetValue("cmi.interactions.4.result","wrong");
+      }
+   }
+
+   function calcScore()
+   {
+      exitPageStatus = true;
+      computeTime();  // the student has stopped here.
+
+      getAnswer();
+
+      calcRawScore();
+      actualScore = ( rawScore / numQuestions ) * 100;
+      
+      doLMSSetValue( "cmi.core.score.raw", rawScore );
+      
+      var mode = doLMSGetValue( "cmi.core.lesson_mode" );
+
+	  if ( mode != "review"  &&  mode != "browse" )
+      {
+        if ( actualScore <= 70 )
+        {
+          doLMSSetValue( "cmi.core.lesson_status", "failed" );
+        }
+        else 
+        {
+          doLMSSetValue( "cmi.core.lesson_status", "passed" );
+        }
+      
+        doLMSSetValue( "cmi.core.exit", "" );
+	  } 
+
+      exitPageStatus = true;
+
+
+	  doLMSCommit();
+
+     doLMSFinish();
+     
+   }
+</script>
+
+<title>Inland Rules of the Road - Exam</title>
+</head>
+<body onLoad="loadPage()" onunload="return unloadPage('incomplete')">
+<p align=right><font color=lightslategray><b><i><label>SCO 07</label></i></b></font></p>
+   
+      <p><b><i>The purpose of this course is to demonstrate the functionality and capability of the
+      ADL SAMPLE Run-time Environment.  CTC does not recommend, propose or otherwise promote the style, fashion, or
+      type of content presented in this course.
+      </i></b></p>
+   
+      <h1>Inland Rules of the Road - Exam</h1>
+      <hr>
+      <h3><b>CONVENTION: </b>For the purpose of this test, the answer to the question will be displayed next to the
+      question in braces.</h3>
+      <br>
+   
+      <form name="examForm">
+         <dl>
+            <dt>1) A power-driven vessel underway shall keep out of: {4}
+            <ol>
+               <li><input type="Radio" name="Q1" value="1">A vessel not under command
+               <li><input type="Radio" name="Q1" value="2">A vessel restricted in her ability to maneuver
+               <li><input type="Radio" name="Q1" value="3">A vessel engaged in fishing
+               <li><input type="Radio" name="Q1" value="4">All of the above
+            </ol>
+            <br>
+
+            <dt>2) On which side shall a green running light be displayed? {2}
+            <ol>
+               <li><input type="Radio" name="Q2" value="1">Port
+               <li><input type="Radio" name="Q2" value="2">Starboard
+               <li><input type="Radio" name="Q2" value="3">None of these
+               <li><input type="Radio" name="Q2" value="4">Both of these   
+            </ol>
+            <br>
+         
+            <dt>3) An all around flashing yellow light indicates: {3}
+            <ol>
+               <li><input type="Radio" name="Q3" value="1">Sailing vessel
+               <li><input type="Radio" name="Q3" value="2">Composite unit underway
+               <li><input type="Radio" name="Q3" value="3">Air-cushion vessel in non-displacement mode
+               <li><input type="Radio" name="Q3" value="4">Vessel restricted in her ability to maneuver
+            </ol>
+            <br>
+         
+            <dt>4) A vessel proceeding downstream in a narrow  channel on the Western Rivers sights another vessel
+            moving upstream. Which vessel has the right of way? {2}
+            <ol>
+               <li><input type="Radio" name="Q4" value="1">The vessel moving upstream against the current
+               <li><input type="Radio" name="Q4" value="2">The vessel moving downstream with a following current
+               <li><input type="Radio" name="Q4" value="3">The vessel located more towards the channel centerline
+               <li><input type="Radio" name="Q4" value="4">The vessel sounding the first whistle signal
+            </ol>
+            <br>
+               
+            <dt>5) A vessel aground shall exhibit which of the following lights: {1}
+            <ol>
+               <li><input type="Radio" name="Q5" value="1">two all-round red lights in a vertical line 
+               <li><input type="Radio" name="Q5" value="2">two all-round lights in a vertical line, the
+                                                upper being white and the lower red
+               <li><input type="Radio" name="Q5" value="3">three all-round green lights 
+               <li><input type="Radio" name="Q5" value="4">Three all-round lights in a vertical line where
+               the highest and lowest of these lights shall be red and the middle light shall be white 
+
+            </ol>
+            <br>
+            
+         </dl>
+         
+         <input type="BUTTON" value=" SUBMIT ANSWERS " onClick="calcScore()">
+      </form>
+
+
+<hr>
+</body>
+
+</html>

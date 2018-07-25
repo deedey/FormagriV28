@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tincan xmlns="http://projecttincan.com/tincan.xsd">
+	<activities>
+		<activity id="http://formagri.com/" type="http://adlnet.gov/expapi/activities/course">
+			<name></name>
+			<description lang="fr-FR"></description>
+			<launch lang="fr-FR">index.html</launch>
+		</activity>
+	</activities>
+</tincan>

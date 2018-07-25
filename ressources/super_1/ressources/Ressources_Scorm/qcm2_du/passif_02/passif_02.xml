@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evaluation id="2" label="Passif 2" masteryScore="75" positiveFeedback="Bonne réponse" negativeFeedback="Mauvaise réponse">
+	<interaction id="1" label="Considering the number of major prescriptions, only products currently under review for switching to OTC status ... by the OTC sector." type="choice" weighting="1">
+		<choice label="will be representing"/>
+		<choice label="will represent"/>
+		<choice label="will be represented" correct="true"/>
+		<choice label="will have represented"/>
+	</interaction>
+	<interaction id="2" label="The experiment was ... so that they could locate which parts of the brain are involved during abstract thinking." type="choice" weighting="1">
+		<choice label="realizing"/>
+		<choice label="realized"/>
+		<choice label="performing"/>
+		<choice label="performed" correct="true"/>
+	</interaction>
+	<interaction id="3" label="Long term delivery of hormones and vaccines can ... easily with a single dose." type="choice" weighting="1">
+		<choice label="have been accomplishing"/>
+		<choice label="have been accomplished"/>
+		<choice label="be accomplishing"/>
+		<choice label="be accomplished" correct="true"/>
+	</interaction>
+	<interaction id="4" label="The AIDS virus ... transmitted by means of hypodermic syringes." type="choice" weighting="1">
+		<choice label="can"/>
+		<choice label="can be" correct="true"/>
+		<choice label="can been"/>
+		<choice label="is able to"/>
+	</interaction>
+	<interaction id="5" label="Electro-transdermal delivery of drugs, which is the use of electrical fields to enhance drug delivery across the skin, is an area which ... successfully." type="choice" weighting="1">
+		<choice label="has been testing"/>
+		<choice label="has been tested" correct="true"/>
+		<choice label="has tested"/>
+		<choice label="was being tested"/>
+	</interaction>
+	<interaction id="6" label="In a fast changing world, a conscious effort ... to maintain and extend the coverage and quality of basic patient care." type="choice" weighting="1">
+		<choice label="must"/>
+		<choice label="needs"/>
+		<choice label="is needing"/>
+		<choice label="is needed" correct="true"/>
+	</interaction>
+	<interaction id="7" label="Doctors are not ... to practise until they have worked for at least one year in a hospital." type="choice" weighting="1">
+		<choice label="forbidding"/>
+		<choice label="forbidden"/>
+		<choice label="allowing"/>
+		<choice label="allowed" correct="true"/>
+	</interaction>
+	<interaction id="8" label="Muscle tissue, which forms about 40 to 50% of the total bulk of the body, ... of specialised cells." type="choice" weighting="1">
+		<choice label="formed"/>
+		<choice label="are formed"/>
+		<choice label="is formed" correct="true"/>
+		<choice label="are forming"/>
+	</interaction>
+	<interaction id="9" label="The anti-rabies vaccine ... by Pasteur and Roux between 1881 and 1885." type="choice" weighting="1">
+		<choice label="discovered"/>
+		<choice label="has discovered"/>
+		<choice label="has been discovered"/>
+		<choice label="was discovered" correct="true"/>
+	</interaction>
+	<interaction id="10" label="Middle-aged men who were given 200ml of the yoghurt a day for six weeks ... to have lowered their cholesterol by ten per cent." type="choice" weighting="1">
+		<choice label="have said"/>
+		<choice label="are saying"/>
+		<choice label="were said" correct="true"/>
+		<choice label="were told"/>
+	</interaction>
+	<interaction id="11" label="Air pollution ... to play a part in the world-wide rise in asthma and other allergies." type="choice" weighting="1">
+		<choice label="is thought" correct="true"/>
+		<choice label="thinks"/>
+		<choice label="thought"/>
+		<choice label="has thought"/>
+	</interaction>
+	<interaction id="12" label="Before an operation, patients ... a general anaesthetic." type="choice" weighting="1">
+		<choice label="are giving"/>
+		<choice label="gave"/>
+		<choice label="are given" correct="true"/>
+		<choice label="have given"/>
+	</interaction>
+	<interaction id="13" label="Oxygen is the single most important substance on which our lives depend. It is brought into the body when we inhale and its by-product, carbon dioxide, ... where we exhale. This vital exchange of gases is known as respiration." type="choice" weighting="1">
+		<choice label="is given off" correct="true"/>
+		<choice label="gives off"/>
+		<choice label="gave off"/>
+		<choice label="has given off"/>
+	</interaction>
+	<interaction id="14" label="Hair dye shows its true colors. Research suggests dyes that are applied daily until the desired color ... - Grecian Formula, for example - may leave dangerous residues of lead on hands and bathroom surfaces." type="choice" weighting="1">
+		<choice label="will achieve"/>
+		<choice label="is achieved" correct="true"/>
+		<choice label="achieves"/>
+		<choice label="will be achieved"/>
+	</interaction>
+	<interaction id="15" label="The causative organisms of human malaria ... by the bite of about 60 species of mosquitoes in the genus Anopheles." type="choice" weighting="1">
+		<choice label="are transmitted" correct="true"/>
+		<choice label="is transmitted"/>
+		<choice label="are transmitting"/>
+		<choice label="transmit"/>
+	</interaction>
+</evaluation>

@@ -1,0 +1,1994 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=iso-8859-1">
+<META name="Author" content="Conçu par B. RUPIC avec Galli's QuizFaber">
+<META name="generator" content="Galli's QuizFaber 2.9.1">
+<META name="keywords" content="quiz">
+<META name="description" content="Fonctionnalités Formagri">
+<TITLE>Fonctionnalités Formagri</TITLE>
+<SCRIPT LANGUAGE='JavaScript'>
+<!--
+var qmakeVers = '2.9.1';
+var qmakeProgName = "Galli's QuizFaber";
+var id_act=LireCookie('id_act');
+var monpath = LireCookie('monpath');
+function getCookieVal(offset)
+{
+   var endstr=document.cookie.indexOf (';', offset);
+   if (endstr==-1)
+   endstr=document.cookie.length;
+   return unescape(document.cookie.substring(offset, endstr));
+}
+function LireCookie(nom)
+{
+   var arg=nom+'=';
+   var alen=arg.length;
+   var clen=document.cookie.length;
+   var i=0;
+   while (i<clen)
+   {
+         var j=i+alen;
+         if (document.cookie.substring(i, j)==arg)
+            return getCookieVal(j);
+         i=document.cookie.indexOf(' ',i)+1;
+         if (i==0)
+            break;
+   }
+   return null;
+}
+var qmakeURL = 'www.lucagalli.net/';
+var dhtmlEnabled = 1;
+var frameEnabled = 1;
+var bodyTagFrame1="<BODY BACKGROUND='"+monpath+"/images/media/' BGCOLOR='#FFFFFF' TEXT='#000000'>";
+var bodyTagFrame2="<BODY BACKGROUND='"+monpath+"/images/media/' BGCOLOR='#FFFFFF' TEXT='#000000'>";
+var noBorderBodyTagFrame2="<BODY BACKGROUND='"+monpath+"/images/media/' BGCOLOR='#FFFFFF' TEXT='#000000' TOPMARGIN='0' LEFTMARGIN='0' marginheight='0' marginwidth='0'>";
+var soundEnable = 0;
+var okSound='';
+var errSound='';
+var warnSound='';
+var valid = new init_array(4);
+var nScore = new init_array(4);
+var maxScore = new init_array(4);
+var questions=4;
+var qstHead = new init_array(4);
+var pageWidth = 80;
+var groups = new init_array(0,0,0,0);
+var quizTitle="Fonctionnalités Formagri";
+var maxtime=1800;
+var keycode = new init_array(6);
+var keyword = 'syskey';
+MakeKeyCode();
+var los = 0;
+var maxvoto = 10;
+var minvoto = 0;
+var roundvoto = 1;
+var voto = 0;
+var silent = 1;
+var quizRetire = 0;
+var showReport = 1;
+var ncols_report = 1;
+var valutaQuiz = 1;
+var falseQuests = 0;
+var invisibleQuests = 0;
+var auto_repeat = 0;
+var man_repeat = 0;
+var n_repeat = 0;
+var reviewQuiz = 0;
+var finalMess = '';
+var printCpRg=1;
+var filename = 'Quiz_Formagri';
+
+var topChartFile='';
+var pesi = new init_array(4);
+var allAnsReport = new init_array(4);
+var author  = 'B. RUPIC';
+var mediaDir  = monpath+'/images/media';
+var questSlide  = 0;
+var lockRightAns = 0;
+var resultBoxKind  = 0;
+var reportNotation  = 1;
+var remRepAlways  = 0;
+var confirmEachQst = 0;
+var typeOfSub = 0;
+var isResultsPageDark = 0
+var ordineDomande = new init_array(0,1,2,3);
+var typeOfQuest = new init_array(1,1,1,2);
+var omitPoint = new init_array(0,0,0,0);
+var nc=0,    
+ns=0,    
+nr;      
+var end_test=0;  
+var userName=""; 
+var identityName=""; 
+var computeMarkErr = 0;  
+var okIcon = "smiling.gif";
+var koIcon = "no.gif";
+var warnIcon = "warn.gif";
+var checkIcon = "check.gif";
+function setCookie(cookie_name,cookie_value,minuti)
+{
+var expdate= new Date();  
+cookie_value+="#"; 
+expdate.setTime(expdate.getTime()+(60000*minuti));
+document.cookie = cookie_name+"="+escape(cookie_value)+"; expires="+expdate.toGMTString();
+}
+function getCookie(cookie_name)
+{
+var arg;
+var alen;
+var clen = document.cookie.length;
+var i=0,j,k;
+var valore;
+arg = cookie_name + "=";
+alen=arg.length
+while (i<clen) {
+j = i+alen;
+if (document.cookie.substring(i,j)==arg)  {
+k = document.cookie.indexOf(escape("#"),j+1);
+valore = unescape(document.cookie.substring(j,k));
+return valore;
+}
+i = document.cookie.indexOf(" ",i)+1;
+if (i==0) break;
+}
+return "";  
+}
+function getHTMLTagSound(soundFile)
+{
+var tagSound = "";
+if (pluginInstalled("Crescendo"))
+{
+if (getBrowser()=="NS") {
+if (getBrowserVers()==2) {
+tagSound = '<EMBED SRC="'+soundFile+'" ';
+tagSound += 'HEIGHT=2 WIDTH=0 ';
+tagSound += 'loop="true" autostart="TRUE">';
+}
+else {
+tagSound = '<EMBED TYPE="music/crescendo" ';
+tagSound += 'SONG="'+soundFile+'" ';
+tagSound += 'PLUGINSPAGE="www.liveupdate.com/dl.html" ';
+tagSound += 'loop="true" autostart="TRUE" ';
+tagSound += 'HEIGHT=2 WIDTH=0></EMBED>';
+}
+}
+if (getBrowser()=="IE") {
+tagSound = '<OBJECT ID=Crescendo ';
+tagSound += 'CLASSID="clsid:0FC6BF2B-E16A-11CF-AB2E-0080AD08A326" ';
+tagSound += 'HEIGHT=2 WIDTH=0> ';
+tagSound += '<PARAM NAME="Song" VALUE="'+soundFile+'"></OBJECT>';
+}
+}
+else { 
+if (getBrowser()=="NS") {
+tagSound = '<EMBED SRC="'+soundFile+'" ';
+tagSound += 'HEIGHT=15 loop=yes autostart=true>';
+}
+else if (getBrowser()=="IE") {
+tagSound = '<BGSOUND src="'+soundFile+'" loop=infinite>';
+}
+}
+return tagSound;
+}
+function PlaySound(suonoObj)  {
+if (soundEnable==0)
+return;
+if (navigator.appName == 'Netscape') {
+if (parseInt(navigator.appVersion) >= 3) {
+suonoObj.play(false); 
+if (navigator.javaEnabled()) {
+if (navigator.mimeTypes['audio/midi'] != null) {
+if (navigator.mimeTypes['audio/midi'].enabledPlugin != null) {
+suonoObj.play(false); 
+}
+else
+alert('Your browser does not have a plug-in to play audio/midi mime types!');
+}
+else
+alert('Your browser does not support the audio/midi mime type!');
+}
+else
+alert('Requires Java enabled to be enabled');
+}
+else
+alert('Only works in Netscape Navigator 3 or greater');
+}
+else {
+suonoObj.play();
+}
+}
+var dlgList = new init_array(10);
+var nDlgs = 0;
+function MyDialog(dlgId,filename,x,y) {
+this.dlgId = dlgId;
+this.filename = filename;
+this.x = x;
+this.y = y;
+this.opened = 0;
+this.handle = 0;
+}
+function CreateDialog(dlgId,filename,x,y) {
+var my_dialog;
+var i,found=0;
+for (i=0; i<nDlgs; i++) {
+if (dlgList[i].dlgId==dlgId) { found=1; break; }
+}
+if (found==0) {
+my_dialog = new MyDialog(dlgId,filename,x,y);
+dlgList[nDlgs] = my_dialog;
+nDlgs++;
+}
+else {
+my_dialog = dlgList[i];
+}
+return my_dialog;
+}
+function ManageDialog(myDialog) {
+var handle;
+var mode = '';
+dlgId = 'my'+myDialog.filename;
+if (myDialog.opened==0) {
+mode = 'menubar=no,status=no,location=no';
+mode += ',width='+myDialog.x;
+mode += ',height='+myDialog.y;
+handle = window.open(myDialog.filename,myDialog.dlgId,mode);
+myDialog.handle = handle;
+myDialog.opened = 1;
+}
+else {
+handle = myDialog.handle;
+}
+return handle;
+}
+function UnmanageDialog(dlgId) {
+var i;
+for (i=0; i<nDlgs; i++) {
+if (dlgList[i].dlgId==dlgId) {
+if (dlgList[i].opened==1) {
+dlgList[i].handle.close();
+dlgList[i].opened = 0;
+break;
+}
+}
+}
+}
+function UnmanageAllDialogs() {
+var i;
+for (i=0; i<nDlgs; i++) {
+UnmanageDialog(dlgList[i].dlgId);
+}
+}
+function init_array()
+{
+this.length = init_array.arguments.length;
+for (var i=0;i<this.length;i++)
+this[i]=init_array.arguments[i];
+}
+function init_IntArray(n) {
+var i;
+this.length=n;
+for (i=0; i<n; i++)
+this[i]=-1;
+}
+function initOneElementVector() {
+this.length=1;
+}
+function dec_to_hex(str_dec)
+{
+var H=0,L=0;
+var S="";
+var dec=0;
+dec = eval(str_dec);
+H=Math.floor(dec/16);
+L=dec%16;
+S+=valore_hex(H);
+S+=valore_hex(L);
+return S;
+}
+function hex_to_dec(hex)
+{
+var d=0,H=0,L=0;
+H=valore_dec(hex.charAt(0));
+L=valore_dec(hex.charAt(1));
+d=H*16+L;
+return d;
+}
+function valore_dec(c)
+{
+var n=0;
+if (c<='9') n=eval(c);
+if ((c=='A')||(c=='a')) n=10;
+if ((c=='B')||(c=='b')) n=11;
+if ((c=='C')||(c=='c')) n=12;
+if ((c=='D')||(c=='d')) n=13;
+if ((c=='E')||(c=='e')) n=14;
+if ((c=='F')||(c=='f')) n=15;
+return n;
+}
+function valore_hex(n)
+{
+if (n<=9) return n;
+if (n==10) return 'A';
+if (n==11) return 'B';
+if (n==12) return 'C';
+if (n==13) return 'D';
+if (n==14) return 'E';
+if (n==15) return 'F';
+}
+function Lettera(cc)
+{
+var c,chr=65;
+var a=0,b=0;
+if (cc<=25) {
+chr+=cc;
+c = unescape("%"+dec_to_hex(chr));
+}
+else {
+a = Math.floor(cc / 26);
+b = cc % 26;
+chr+=b;
+c = unescape("%"+dec_to_hex(chr));
+c = "" + a + c;
+}
+return c;
+}
+function trim(str) {
+var i,iStart,iStop;
+for (i=0; i<str.length; i++) {
+if (str.charAt(i)!=' ')
+break;
+}
+iStart = i;
+for (i=str.length-1; i>=0; i--) {
+if (str.charAt(i)!=' ')
+break;
+}
+iStop = i;
+if ((iStart!=0)||(iStop!=str.length-1))
+return str.substring(iStart,iStop+1);
+return str;
+}
+function rand(n) {
+return Math.floor(Math.random()*n);
+}
+function DataToStringa()
+{
+var obj = new Date();
+var mese,giorno;
+var nome="";
+var stringa="";
+var strData;
+giorno = obj.getDay();
+switch(giorno) {
+case 0: nome = "Dimanche"; break;
+case 1: nome = "Lundi"; break;
+case 2: nome = "Mardi"; break;
+case 3: nome = "Mercredi"; break;
+case 4: nome = "Jeudi  "; break;
+case 5: nome = "Vendredi"; break;
+case 6: nome = "Samedi"; break;
+}
+strData = nome+", "+obj.getDate();
+mese = obj.getMonth();
+switch(mese) {
+case 0: nome = "Janvier";  break;
+case 1: nome = "Février"; break;
+case 2: nome = "Mars"; break;
+case 3: nome = "Avril "; break;
+case 4: nome = "Mai"; break;
+case 5: nome = "Juin"; break;
+case 6: nome = "Juillet"; break;
+case 7: nome = "Août"; break;
+case 8: nome = "Septembre"; break;
+case 9: nome = "Octobre"; break;
+case 10: nome = "Novembre"; break;
+case 11: nome = "Décembre";
+}
+strData += " "+nome+" "+obj.getYear();
+strData += " - ";
+if (obj.getHours()<10)
+strData += "0" + obj.getHours();
+else
+strData += obj.getHours();
+strData += ":";
+if (obj.getMinutes()<10)
+strData += "0" + obj.getMinutes();
+else
+strData += obj.getMinutes();
+strData += ":";
+if (obj.getSeconds()<10)
+strData += "0" + obj.getSeconds();
+else
+strData += obj.getSeconds();
+return strData;
+}
+function getBrowserVers()
+{
+return parseInt (navigator.appVersion.charAt(0));
+}
+function getBrowser()
+{
+if (navigator.appName=="Netscape")
+return "NS";
+if (navigator.appName=="Microsoft Internet Explorer")
+return "IE";
+return "";
+}
+function pluginInstalled(str)
+{
+var i;
+for (i=0; i<navigator.plugins.length; i++) {
+if (navigator.plugins[i].name.indexOf(str) != -1)
+return true;
+}
+return false;
+}
+function ASCIItoInt(c)
+{
+var i,car;
+for (i=32;i<256;i++) {
+car = '%'+dec_to_hex(i);
+if (c==unescape(car))
+return i;
+}
+return 0;
+}
+function InttoASCII(n)
+{
+var car;
+if ((n<0)||(n>255))
+return "NULL";
+car = '%'+dec_to_hex(n);
+return unescape(car);
+}
+function DecodeString(msg)
+{
+var i,j,n;
+var decode_msg="";  
+var num;            
+var car;            
+n = keyword.length;
+j=0;
+for(i=0;i<msg.length;i+=3) {
+num = eval(msg.substring(i,i+3))-keycode[j%n];
+if ((num<32)||(num>127)) {
+PrintWrongKeyword();
+return "";
+} 
+car = '%'+dec_to_hex(num);
+decode_msg+=unescape(car);
+j++;
+}
+return decode_msg;
+}
+function DecodeNumber(i,n,minNum,maxNum)
+{
+var num,lung;
+lung = keyword.length;
+num=i-keycode[n%lung];
+if ((num<minNum)||(num>maxNum))  
+PrintWrongKeyword();
+return num;
+}
+function CodeString(msg)
+{
+var i,n;
+var code_msg="";  
+var c=0;
+n = keyword.length;
+for (i=0;i<msg.length;i++) {
+if (ASCIItoInt(msg.charAt(i))<32) 
+c = 32 + keycode[i%n];
+else if (ASCIItoInt(msg[i])>127) 
+c = 127 + keycode[i%n];
+else
+c = ASCIItoInt(msg.charAt(i)) + keycode[i%n];
+if (c<10) 
+code_msg += "  "+c;
+else if (c<100)
+code_msg += " "+c;
+else
+code_msg += ""+c;
+}
+return code_msg;
+}
+function MakeKeyCode()
+{
+var i,num;
+var car;
+for (i=0;i<keyword.length;i++) {
+car = keyword.charAt(i);
+num = ASCIItoInt(car);
+if ((car>='a')&&(car<='z')) {
+keycode[i]=num-97;
+continue;
+}
+if ((car>='A')&&(car<='Z')) {
+keycode[i]=num-65;
+continue;
+}
+keycode[i]=0;
+}
+}
+function AnsReport(choice,value,rem,data,answer)
+{
+this.choice = choice;
+this.valuation = value;
+this.remark = rem;
+this.data = data;
+this.answer = answer;
+}
+function doValuate(n) {
+if (typeOfQuest[n]==1)          
+doValuateMultiAns(n);
+else if (typeOfQuest[n]==101)   
+doValuateWithPoints(n);
+else if (typeOfQuest[n]==2)    
+doValuateBoolAns(n);
+else if (typeOfQuest[n]==3)     
+doValuateOpenAns(n);
+else if (typeOfQuest[n]==4)     
+doValuateFillGap(n);
+else if (typeOfQuest[n]==5)     
+doValuateMatching(n);
+}
+function doValuateMultiAns(n)
+{
+nScore[n] = getGuessAns(n);
+maxScore[n] = getNumAns(n);
+if (nScore[n]==maxScore[n])
+valid[n]=1; else valid[n]=-1;
+}
+function doValuateWithPoints(n)
+{
+nScore[n] = getScore(n);
+maxScore[n] = ConvertPointToMark(n,nScore[n]);
+valid[n]=5;
+}
+function doValuateBoolAns(n)
+{
+nScore[n] = getGuessAns(n);
+maxScore[n] = getNumAns(n);
+if (nScore[n]==maxScore[n])
+valid[n]=1;
+else if (nScore[n]==0)
+valid[n]=-1;
+else
+valid[n]=3;
+}
+function doValuateFillGap(n)
+{
+nScore[n] = getGuessFillGap(n);
+maxScore[n] = getNumAns(n);
+if (nScore[n]==maxScore[n])
+valid[n]=1;
+else if (nScore[n]==0)
+valid[n]=-1;
+else
+valid[n]=3;
+}
+function doValuateMatching(n)
+{
+nScore[n] = getGuessMatch(n);
+maxScore[n] = getNumAns(n);
+if (nScore[n]==maxScore[n])
+valid[n]=1;
+else if (nScore[n]==0)
+valid[n]=-1;
+else
+valid[n]=3;
+}
+function doValuateOpenAns(n)
+{
+nScore[n]   = 0;
+maxScore[n] = 0;
+valid[n]    = 2;
+}
+function getGuessAns(n)
+{
+var j,guess=0;
+for (j=0;j<allAnsReport[n].length;j++) {
+if (getGuessAnsN(n,j)) guess++;
+}
+return guess;
+}
+function getGuessAnsN(n,m)
+{
+var value,choice,data;
+value  = allAnsReport[n][m].valuation;
+choice = allAnsReport[n][m].choice;
+data   = allAnsReport[n][m].data;
+value += data;
+if (((value>0)&&(choice==1)) || ((value<0)&&(choice==0)))
+return 1;
+return 0;
+}
+function getGuessMatch(n)
+{
+var j,guess=0;
+for (j=0;j<allAnsReport[n].length;j++) {
+if (getGuessMatchN(n,j)==1) guess++;
+}
+return guess;
+}
+function getGuessMatchN(n,m)
+{
+var i,j,value,choice;
+var str1,str2,str3;
+value  = allAnsReport[n][m].valuation;
+choice = allAnsReport[n][m].choice;
+str1 = choice[0] + choice[1];
+for (i=0; i<value.length; i++) {
+str2 = choice[0] + value[i];
+if (str1.toLowerCase()==str2.toLowerCase()) {
+for (j=0; j<allAnsReport[n].length; j++) {
+str3 = allAnsReport[n][j].choice[0] + allAnsReport[n][j].choice[1];
+if (str1.toLowerCase()==str3.toLowerCase()) {
+if (j==m)
+return 1; 
+else
+return -1; 
+}
+}
+}
+}
+return 0;
+}
+function getGuessFillGap(n)
+{
+var j,guess=0;
+for (j=0;j<allAnsReport[n].length;j++) {
+if (getGuessFillGapN(n,j)==1) guess++;
+}
+return guess;
+}
+function getGuessFillGapN(n,m)
+{
+var i,j,value,choice;
+var str1,str2;
+choice = allAnsReport[n][m].choice;
+value  = allAnsReport[n][m].valuation;
+str1 = trim(choice.toLowerCase());
+for (i=0; i<value.length; i++) {
+str2 = trim(value[i].toLowerCase());
+if (str1==str2)
+return 1;
+}
+return 0;
+}
+function getNumAns(n)
+{
+return allAnsReport[n].length;
+}
+function getScore(n)
+{
+var j,choice,value,data,
+score=0,nchoice=0;
+for (j=0;j<allAnsReport[n].length;j++) {
+choice = allAnsReport[n][j].choice;
+value = allAnsReport[n][j].valuation;
+data = allAnsReport[n][j].data;
+if (choice==1) {
+score += value;
+nchoice++;
+}
+else
+score += data;
+}
+if (nchoice==0)
+return omitPoint[n];
+return score;
+}
+function getListOfRightAns(n)
+{
+var j,value,msg='';
+for (j=0;j<allAnsReport[n].length;j++) {
+value = allAnsReport[n][j].valuation;
+if (value>0)
+msg += Lettera(j)+' ';
+}
+return msg;
+}
+function getNumOfRightAns(n)
+{
+var j,value,num=0;
+for (j=0;j<allAnsReport[n].length;j++) {
+value = allAnsReport[n][j].valuation;
+if (value>0)
+num++;
+}
+return num;
+}
+function getListOfSelAns(n)
+{
+var j,value,msg='';
+if (typeOfQuest[n]==3) {    
+return allAnsReport[n][0].choice;
+}
+for (j=0;j<allAnsReport[n].length;j++) {
+choice = allAnsReport[n][j].choice;
+if ((typeOfQuest[n]==1)||          
+(typeOfQuest[n]==101)) {       
+if (choice==1)
+msg += Lettera(j)+' ';
+}
+else if (typeOfQuest[n]==2) {    
+if (choice==1)
+msg += 'V ';
+else if (choice==0)
+msg += 'F ';
+}
+else if (typeOfQuest[n]==4) {    
+msg += choice+",";
+}
+else if (typeOfQuest[n]==5) {    
+msg += choice[0] + "-" + choice[1] + ", ";
+}
+}
+return msg;
+}
+function initListOfRemark(n)
+{
+var j,i,rem,value;
+i=0;
+this.length=0;
+for (j=0;j<allAnsReport[n].length;j++) {
+choice = allAnsReport[n][j].choice;
+rem = allAnsReport[n][j].remark;
+if (choice==1) {
+this[i] = rem;
+i++;
+}
+}
+this.length = i;
+}
+function getListOfMistake(n)
+{
+var j,msg='',separator;
+var isFirst=1;
+for (j=0;j<allAnsReport[n].length;j++) {
+if ((typeOfQuest[n]!=4)&&(typeOfQuest[n]!=5)) {
+if (!getGuessAnsN(n,j)) {
+if (isFirst==0) {
+msg += ' ';
+}
+else {
+isFirst=0;
+}
+msg += Lettera(j);
+}
+}
+else if (typeOfQuest[n]==4) {
+if (!getGuessFillGapN(n,j)) {
+if (isFirst==0) {
+separator = ', ';
+}
+else {
+separator = '';
+isFirst=0;
+}
+if (allAnsReport[n][j].choice!="") {
+msg += separator + allAnsReport[n][j].choice;
+}
+}
+}
+else if (typeOfQuest[n]==5) {
+if (!getGuessMatchN(n,j)) {
+if (isFirst==0) {
+msg += ', ';
+}
+else {
+isFirst=0;
+}
+msg += allAnsReport[n][j].choice[0] + ' - ' + allAnsReport[n][j].choice[1];
+}
+}
+}
+return msg;
+}
+function ComputeMarks()
+{
+var voto = 0;
+var sommaPesi = 0;
+var sommatoria = 0;
+var votoReal = 0.0;
+var puntiGruppo = 0;
+var votoGruppo;
+var iCapoGruppo;  
+for (var i=0;i<questions;i++) {
+if ((valid[i]!=2)&&
+(valid[i]!=4)&&
+((groups[i]==0) || (groups[i]==2)))
+sommaPesi += pesi[i];
+if (valid[i]==1)
+sommatoria += pesi[i];
+else if (valid[i]==3)
+sommatoria += (pesi[i] * nScore[i]) / maxScore[i];
+else if (valid[i]==5) {
+if (groups[i]==0)
+sommatoria += pesi[i] * (maxScore[i]-minvoto)/(maxvoto-minvoto);
+else if (groups[i]==2) {
+puntiGruppo = nScore[i];
+iCapoGruppo = i;
+i++;
+while (groups[i]==1) {
+puntiGruppo += nScore[i];
+i++;
+}
+votoGruppo = ConvertPointToMark(iCapoGruppo,puntiGruppo);
+maxScore[iCapoGruppo] = votoGruppo;
+sommatoria += pesi[iCapoGruppo] * (votoGruppo-minvoto)/(maxvoto-minvoto);
+}
+}
+}
+if (sommaPesi!=0) {
+if (roundvoto==1)
+voto = minvoto + Math.round(sommatoria*(maxvoto-minvoto)/sommaPesi);
+else if (roundvoto==0) {
+voto = minvoto + sommatoria*(maxvoto-minvoto)/sommaPesi;
+}
+else {
+votoReal = sommatoria*(maxvoto-minvoto)/sommaPesi;
+voto = minvoto + Math.round(votoReal / roundvoto) * roundvoto;
+}
+}
+else {
+window.alert("Attention : impossible de calculer la note finale");
+computeMarkErr = 1;
+voto = 0;
+}
+return voto;
+}
+function CountAnswers() {
+var ratio;
+var nexcl=0;
+nc = 0;
+ns = 0;
+nr = questions;
+for (var i=0;i<questions;i++) {
+if (valid[i]==1) nc++;
+else if (valid[i]==-1) ns++;
+else if (valid[i]==3) {
+ratio = 100 * nScore[i] / maxScore[i];
+if (ratio>=60) nc++;
+else ns++;
+}
+else if (valid[i]==5) {
+ratio = 100 * maxScore[i] / maxvoto;
+if (ratio>=60) nc++;
+else ns++;
+}
+if (valid[i]!=0) nr--;
+if ((valid[i]==2)||(valid[i]==4)) nexcl++;
+}
+if ((questSlide==1)&&(lockRightAns==1)) {
+if (nc + nexcl == questions) return 1;
+}
+else {
+if (nr==0) return 1;
+}
+return 0;
+}
+var ctmnow=0,cnewdt;
+var time,oldtime;
+function StartTime()
+{
+var data,sec;
+data = new Date();
+sec = Math.floor(data.getTime()/1000);
+return sec;
+}
+function getTimeString(deltatime)
+{
+var resto,h,m,s;
+var str;
+h = Math.floor(deltatime/3600);
+resto = deltatime%3600;
+m = Math.floor(resto/60);
+s = resto%60;
+if (h<10) h='0'+h;
+if (m<10) m='0'+m;
+if (s<10) s='0'+s;
+str = h+":"+m+":"+s;
+return str;
+}
+function determinaOrdineIniziale(nvett) {
+var i,count,n;
+var nuovoPezzo;
+this.length=nvett;
+for (i=0; i<nvett; i++)
+this[i]=-1;
+count=0;
+while (count<nvett) {
+n = rand(nvett);
+nuovoPezzo = 1;
+for (i=0; i<count; i++) {
+if (this[i]==n)
+nuovoPezzo = 0;
+}
+if (nuovoPezzo==1) {
+this[count]=n;
+count++;
+}
+}
+}
+function creaMatching(doc,lista1,lista2,ordine1, ordine2 , nomeSelect)
+{
+var i,n;
+var lettera;
+for (n=0; n<lista1.length; n++) {
+lettera = Lettera(n);
+doc.writeln("<TD WIDTH="+pageWidth+"% NOWRAP>");
+doc.writeln("<SELECT NAME='"+nomeSelect+"'>");
+for (i=0; i<lista1.length; i++) {
+if (n==i)
+doc.writeln("<OPTION SELECTED>"+lista1[ordine1[i]]);
+else
+doc.writeln("<OPTION>"+lista1[ordine1[i]]);
+}
+doc.writeln("</SELECT>");
+doc.writeln("<SELECT NAME='"+nomeSelect+"'>");
+for (i=0; i<lista2.length; i++) {
+if (n==i)
+doc.writeln("<OPTION SELECTED>"+lista2[ordine2[i]]);
+else
+doc.writeln("<OPTION>"+lista2[ordine2[i]]);
+}
+doc.writeln("</SELECT>");
+doc.writeln("</TD>");
+doc.writeln("<TR>");
+}
+}
+function getSelezione(obj) {
+var i;
+for (i=0; i<obj.options.length; i++) {
+if (obj.options[i].selected)
+return i;
+}
+return -1;
+}
+function getTextSelected(selObj)
+{
+var i,found;
+found =0;
+for (i=0; i<selObj.length;i++) {
+if (selObj.options[i].selected) {
+found = 1;
+break;
+}
+}
+if (found==1) {
+return selObj.options[i].value;
+}
+return "";
+}
+function AskMeName()
+{
+userName = window.prompt("Veuillez indiquez votre nom :","");
+if (userName=="") {
+userName = "inconnu";
+}
+identityName = userName;
+userName = "Nom du candidat="+userName;
+}
+function AskMeKeyword(word)
+{
+if (word=='') {
+keyword = window.prompt("Insérez le mot clé:","");
+if (keyword==null) {
+PrintWrongKeyword();
+return false;
+}
+}
+else {
+keyword = word;
+}
+MakeKeyCode();
+return true;
+}
+function DoneBefore()
+{
+window.alert("Vous avez déjà répondu à cette question !");
+}
+function IncompletedQuest()
+{
+window.alert("Réponse incomplète. Veuillez choisir tous les items");
+}
+function Retire()
+{
+if (window.confirm("Etes-vous sûr ?")) {
+end_test=1;
+EndQuiz();
+}
+}
+function PrintStatusBar()
+{
+var i;
+var msg;
+if (nr==questions)
+return;
+if (silent==1) {
+window.status="répondre: "+nr+" questions.";
+return;
+}
+msg="sur "+(questions-nr)+" questions, ";
+if (nc>1) msg+=nc+" correct et ";
+if (nc==1) msg+=" un seul exact et ";
+if (nc==0) msg+=" rien exact et ";
+if (ns>1) msg+=ns+" faux.";
+if (ns==1) msg+=" un seul faux.";
+if (ns==0) msg+=" rien faux.";
+msg+=" Vous devez répondre à ";
+if (nr>1) msg+=nr+" questions.";
+else msg+=" un question.";
+window.status=msg;
+}
+function checkRisposta(checkBox,risp,n)
+{
+if ( ((checkBox.checked==true) && (isRightAns(n,risp)==1)) ||
+((checkBox.checked==false) && (isRightAns(n,risp)==0)) )
+return 1;
+return 0;
+}
+function checkRispostaBooleana(radioBox,risp,n)
+{
+if ( ((radioBox[0].checked==true) && (risp[n]==1)) ||
+((radioBox[1].checked==true) && (risp[n]==0)) )
+return 1;
+return 0;
+}
+function checkTrueOrFalse(radioBox)
+{
+if ( (radioBox[0].checked==false) &&
+(radioBox[1].checked==false))
+return 0;
+return 1;
+}
+function isRightAns(nAns,risp)
+{
+var i;
+for (i=0; i<risp.length; i++)
+if (risp[i]==nAns)
+return 1;
+return 0;
+}
+function VerifyReload(time,titolo)
+{
+var valore = getCookie("Qmake"+qmakeVers);
+if (valore==titolo) {
+PrintNoReload();
+return 0;
+}
+setCookie("Qmake"+qmakeVers,titolo,time);
+return 1;
+}
+function verifyAnswer (risp,nrisp,ri)
+{
+var i;
+for (i=0;i<nrisp;i++) {
+if (risp[i]==ri)
+return 1;
+}
+return 0;
+}
+function PrintResultTopBar(doc)
+{
+if ((showReport==1)&&(dhtmlEnabled==1)) {
+doc.writeln("<center><TABLE WIDTH='"+pageWidth+"%' BORDER=0 BGCOLOR='#D0D0D0'>\n");
+doc.writeln("<TD ALIGN='LEFT'><B>Résultat du test</B></TD>\n");
+doc.writeln("<TD ALIGN='RIGHT'>\n");
+doc.writeln("<a href='javascript:printWindow()'>IMPRIMER</A> | \n");
+if (man_repeat)
+doc.writeln("<a href='javascript:RepeatQuiz()'>RECOMMENCER</A> | \n");
+if (topChartFile!='')
+doc.writeln("<a href='"+topChartFile+"' TARGET='topchartwin'>Top Chart</A> | \n");
+doc.writeln("<a href='javascript:top.close()'>ABANDON</A>\n");
+doc.writeln("</TD></TABLE></center><BR>\n");
+}
+}
+function PrintLinkBack(documento) {
+documento.writeln("<center><TABLE WIDTH='"+pageWidth+"%' BORDER=0 BGCOLOR='#D0D0D0'>\n");
+documento.writeln("<TD ALIGN='LEFT'>");
+PrintATagLinkBack(documento);
+documento.writeln("</TD>");
+documento.writeln("<TD ALIGN='RIGHT'>\n");
+documento.writeln("<a href='javascript:printWindow()'>IMPRIMER</A> | \n");
+if (man_repeat)
+documento.writeln("<a href='javascript:RepeatQuiz()'>RECOMMENCER</A> | \n");
+if (topChartFile!='')
+documento.writeln("<a href='"+topChartFile+"' TARGET='topchartwin'>Top Chart</A> | \n");
+documento.writeln("<a href='javascript:top.close()'>ABANDON</A>\n");
+documento.writeln("</TD></TABLE></center><BR>\n");
+}
+function PrintFrame(documento,titolo,msg)
+{
+documento.clear();
+documento.open();
+PrintOpenHTML(documento,titolo,1);
+documento.writeln (bodyTagFrame1);
+documento.writeln (msg);
+documento.writeln ("</body></html>");
+documento.close();
+}
+function PrintJSResult(doc)
+{
+doc.writeln("<script language='javascript'>\n");
+doc.writeln("function printWindow(){\n");
+doc.writeln("   var vers = parseInt(navigator.appVersion)\n");
+doc.writeln("   if (vers >= 4) window.print()\n");
+doc.writeln("   else window.alert('Please use FILE menu, then PRINT...');\n");
+doc.writeln("}\n");
+doc.writeln("function RepeatQuiz(){\n");
+if (frameEnabled==1) {
+doc.writeln("parent.frames.quiz_status.location.href = '" + filename + "3.htm';");
+if (!questSlide) {
+doc.writeln("parent.frames.quiz_main.location.href = '" + filename + "1.htm';");
+}
+else {
+doc.writeln("parent.frames.quiz_main.location.href = '" + filename + "Q1.htm';");
+}
+}
+else {
+doc.writeln(" location.href = '"+filename+".htm';");
+}
+doc.writeln("}\n");
+doc.writeln("</script>\n");
+}
+function getRispostaSelezionata(n,m)
+{
+return getHTMLResultBox(checkIcon,"Réponse choisie","#000080","",m);
+}
+function getHTMLResultBox(nomeIco,title,titleColor,bodyMsg,n)
+{
+if (resultBoxKind==0)
+return getHTMLResultEmbed(nomeIco,title,titleColor,bodyMsg,n);
+else
+return getHTMLResultWin(nomeIco,title,titleColor,bodyMsg);
+}
+function getHTMLResultEmbed(nomeIco,title,titleColor,bodyMsg,n)
+{
+var msg;
+msg = "<TABLE WIDTH=100%><TD ALIGN='LEFT'><IMG SRC='"+mediaDir+"/"+nomeIco+"' ALIGN='MIDDLE'>";
+msg += "<TD ALIGN='CENTER'><FONT style='font-family: verdana,helvetica,arial,san-serif;";
+msg += " font-size: 14pt; font-style:normal; color:"+titleColor+"'>";
+msg += title + "</FONT></TABLE><HR>";
+if (bodyMsg!="")
+msg += "<FONT style='font-family: arial,san-serif; font-size: 10pt;'>" + bodyMsg + "</FONT><HR>";
+msg += "<INPUT TYPE='BUTTON' VALUE='OK' ";
+msg += "style='font-family: verdana,helvetica,arial,san-serif; font-size: 8pt; width:50px' ";
+msg += "onClick='parent.hideWindow("+n+")'>";
+return msg;
+}
+function getHTMLResultWin(nomeIco,title,titleColor,bodyMsg)
+{
+var msg;
+msg = "<TABLE WIDTH=100%><TD ALIGN='LEFT'><IMG SRC='"+mediaDir+"/"+nomeIco+"' ALIGN='MIDDLE'>";
+msg += "<TD ALIGN='CENTER'><FONT style='font-family: verdana,helvetica,arial,san-serif;";
+msg += " font-size: 14pt; font-style:normal; color:"+titleColor+"'>";
+msg += title + "</FONT></TABLE><HR>";
+if (bodyMsg!="")
+msg += "<FONT style='font-family: arial,san-serif; font-size: 10pt;'>" + bodyMsg + "</FONT><HR>";
+msg += "<CENTER><INPUT TYPE='BUTTON' VALUE='OK' ";
+msg += "style='font-family: verdana,helvetica,arial,san-serif; font-size: 8pt; width:50px' ";
+msg += "onClick='self.close()'></CENTER>";
+return msg;
+}
+function getBooleanAnswer(n,m)
+{
+var nomeIcona,title,msg="";
+if (nScore[n]==getNumAns(n))
+nomeIcona = okIcon;
+else if (nScore[n]==0)
+nomeIcona = koIcon;
+else
+nomeIcona = warnIcon;
+title = "Bonnes réponses " + nScore[n] + " / " + getNumAns(n);
+if (nScore[n]<getNumAns(n))
+msg = "Mauvaises réponses  : " + getListOfMistake(n);
+return getHTMLResultBox(nomeIcona,title,"#696969",msg,m);
+}
+function getRightAnswer(n,m,explan)
+{
+var i,msg="";
+for (i=0;i<explan.length; i++) {
+if (explan[i]!="") {
+msg+=explan[i] + "<BR>";
+}
+}
+return getHTMLResultBox(okIcon,"Bien ! Bonne réponse","#000080",msg,m);
+}
+function getWrongAnswer(n,m,explan)
+{
+var i,title,msg="";
+title = "Faux                           !<BR>La réponse correcte est " + getListOfRightAns(n);
+for (i=0;i<explan.length; i++) {
+if (explan[i]!="") {
+msg+=explan[i]+"<BR>";
+}
+}
+return getHTMLResultBox(koIcon,title,"#A52A2A",msg,m);
+}
+function getQuestionScore(n,m)
+{
+var i,title,msg="";
+var nomeIcona;
+if (maxScore[n]==maxvoto)
+nomeIcona = okIcon;
+else if (maxScore[n]==minvoto)
+nomeIcona = koIcon;
+else
+nomeIcona = warnIcon;
+title = "Score " + nScore[n];
+if (groups[n]==0)
+title += " / MARQUE " + maxScore[n];
+if (getGuessAns(n)<getNumAns(n))
+msg = "La réponse correcte est " + getListOfRightAns(n);
+return getHTMLResultBox(nomeIcona,title,"#696969",msg,m);
+}
+function PrintAnswer(n,m)
+{
+var i,count;
+var explan = new initListOfRemark(n);
+var layer;
+var table;
+if ((questions-invisibleQuests>1)&&(questSlide==0)) {
+layer = frames.quiz_main.document.all.hideTxt[m];
+table = frames.quiz_main.document.all.hideAns[m];
+}
+else {
+layer = frames.quiz_main.document.all.hideTxt;
+table = frames.quiz_main.document.all.hideAns;
+}
+if (silent==1) {
+if (questSlide==0) {
+ShowResultBox(getRispostaSelezionata(n,m),layer,table);
+}
+}
+else {
+if (valid[n]==1) {
+ShowResultBox(getRightAnswer(n,m,explan),layer,table);
+PlaySoundFile(okSound);
+}
+else {
+ShowResultBox(getWrongAnswer(n,m,explan),layer,table);
+PlaySoundFile(errSound);
+}
+}
+end_test = CountAnswers();
+PrintStatusBar();
+PrintBottomFrame();
+if (end_test==1) {
+window.status = "";
+window.alert("Vous avez répondu à toutes les questions");
+EndQuiz();
+}
+return end_test;
+}
+function PrintOpenAnswer(n) {
+end_test = CountAnswers();
+PrintStatusBar();
+PrintBottomFrame();
+if (end_test==1) {
+window.status = "";
+window.alert("Vous avez répondu à toutes les questions");
+EndQuiz();
+}
+return end_test;
+}
+function PrintBooleanAnswer(n,m)
+{
+var i,count;
+var layer;
+var table;
+if ((questions-invisibleQuests>1)&&(questSlide==0)) {
+layer = frames.quiz_main.document.all.hideTxt[m];
+table = frames.quiz_main.document.all.hideAns[m];
+}
+else {
+layer = frames.quiz_main.document.all.hideTxt;
+table = frames.quiz_main.document.all.hideAns;
+}
+if (silent==0) {
+ShowResultBox(getBooleanAnswer(n,m),layer,table);
+PlaySoundBooleanAns(n);
+}
+else {
+if (questSlide==0) {
+ShowResultBox(getRispostaSelezionata(n,m),layer,table);
+}
+}
+end_test = CountAnswers();
+PrintStatusBar();
+PrintBottomFrame();
+if (end_test==1) {
+window.status = "";
+window.alert("Vous avez répondu à toutes les questions");
+EndQuiz();
+}
+return end_test;
+}
+function PrintQuestionScore(n,m)
+{
+var i,count;
+var layer;
+var table;
+if ((questions-invisibleQuests>1)&&(questSlide==0)) {
+layer = frames.quiz_main.document.all.hideTxt[m];
+table = frames.quiz_main.document.all.hideAns[m];
+}
+else {
+layer = frames.quiz_main.document.all.hideTxt;
+table = frames.quiz_main.document.all.hideAns;
+}
+if (silent==0) {
+ShowResultBox(getQuestionScore(n,m),layer,table);
+PlaySoundWithScore(maxScore[n]);
+}
+else {
+if (questSlide==0) {
+ShowResultBox(getRispostaSelezionata(n,m),layer,table);
+}
+}
+end_test = CountAnswers();
+PrintStatusBar();
+PrintBottomFrame();
+if (end_test==1) {
+window.status = "";
+window.alert("Vous avez répondu à toutes les questions");
+EndQuiz();
+}
+return end_test;
+}
+function ShowResultBox (htmlTag,layer,table)
+{
+if (resultBoxKind==0) {
+layer.innerHTML = htmlTag;
+table.className = 'cardShow';
+}
+else {
+if (silent==0) {
+resultWin = window.open('mio.htm','resWin','scrollbars=yes,menubar=no,status=no,location=no,toolbar=no,width=432,height=150');
+resultWin.document.all.hideTxt.innerHTML = htmlTag;
+}
+}
+}
+function hideWindow(n) {
+if ((questions-invisibleQuests>1)&&(questSlide==0)) {
+frames.quiz_main.document.all.check[n].className='checkShow';
+frames.quiz_main.document.all.hideAns[n].className='cardHide';
+}
+else {
+frames.quiz_main.document.all.check.className='checkShow';
+frames.quiz_main.document.all.hideAns.className='cardHide';
+}
+}
+function PrintBottomFrame()
+{
+if (silent==0) {
+frames.quiz_status.document.all.nRight.innerText = nc;
+frames.quiz_status.document.all.nWrong.innerText = ns;
+}
+frames.quiz_status.document.all.nToDo.innerText = nr;
+}
+function PrintWrongKeyword()
+{
+frames.quiz_main.document.clear();
+frames.quiz_main.document.open();
+PrintOpenHTML(frames.quiz_main.document,"",1);
+frames.quiz_main.document.writeln (bodyTagFrame1);
+frames.quiz_main.document.writeln("<CENTER><FONT SIZE=6 FACE='Arial' COLOR='#FF0000'>Attention !</FONT><BR>");
+frames.quiz_main.document.writeln ("<FONT SIZE=+2>Le mot clé est erroné</FONT><BR>");
+frames.quiz_main.document.writeln ("Impossible de continuer le test<BR>");
+frames.quiz_main.document.writeln ("Pour plus d'informations contacter l'auteur du test<BR>");
+frames.quiz_main.document.writeln("<P><INPUT TYPE='BUTTON' VALUE='ABANDON' OnClick='top.close()'>");
+frames.quiz_main.document.writeln("</CENTER>");
+frames.quiz_main.document.writeln ("</body></html>");
+frames.quiz_main.document.close();
+PrintCopyright();
+}
+function PrintNoReload()
+{
+frames.quiz_main.document.clear();
+frames.quiz_main.document.open();
+PrintOpenHTML(frames.quiz_main.document,"",1);
+frames.quiz_main.document.writeln (bodyTagFrame1);
+frames.quiz_main.document.writeln("<CENTER><BR><BR><FONT SIZE=6 FACE='Arial' COLOR='#FF0000'>Attention !</FONT><BR>");
+frames.quiz_main.document.writeln ("<FONT SIZE=+2>Le rechargement du test n'est pas autorisé</FONT><BR>");
+frames.quiz_main.document.writeln ("Impossible de démarrer le test<BR>");
+frames.quiz_main.document.writeln ("Pour plus d'informations contacter l'auteur du test<BR>");
+frames.quiz_main.document.writeln("<P><INPUT TYPE='BUTTON' VALUE='ABANDON' OnClick='top.close()'>");
+frames.quiz_main.document.writeln("</CENTER>");
+frames.quiz_main.document.writeln ("</body></html>");
+frames.quiz_main.document.close();
+PrintCopyright(0);
+}
+function PrintCopyright()
+{
+frames.quiz_status.document.clear();
+frames.quiz_status.document.open();
+PrintOpenHTML(frames.quiz_status.document,"Info",0);
+frames.quiz_status.document.writeln("<STYLE>");
+frames.quiz_status.document.writeln("<!--");
+frames.quiz_status.document.writeln("BODY { margin-top:5px; margin-left:5px }");
+frames.quiz_status.document.writeln("-->");
+frames.quiz_status.document.writeln("</STYLE>");
+frames.quiz_status.document.writeln ("</head>");
+frames.quiz_status.document.writeln ("<body bgcolor ='#C0C0C0'>");
+if (printCpRg==1) {
+frames.quiz_status.document.writeln("<CENTER>");
+frames.quiz_status.document.writeln("<FONT SIZE=1 FACE='Arial, Helvetica' COLOR='#666666'>");
+frames.quiz_status.document.writeln("Ce test a été créé ");
+if (author!='')
+frames.quiz_status.document.writeln("par <B>"+author+"</B> ");
+frames.quiz_status.document.writeln("avec  <A HREF='http://"+qmakeURL+"'><B>"+qmakeProgName+" "+qmakeVers+"</B></A>");
+frames.quiz_status.document.writeln ("</CENTER></FONT>");
+}
+frames.quiz_status.document.writeln ("</body></html>");
+frames.quiz_status.document.close();
+}
+function AskPrintQuiz() {
+var i;
+if (window.confirm("Imprimer le QCM ?")) {
+if (questSlide==0) {
+if (confirmEachQst==0) {
+frames.quiz_main.document.all.verifyButtonId.className="okButtonHidden";
+}
+else if (questions-invisibleQuests>1) {
+for (i=0; i<questions-invisibleQuests; i++) {
+frames.quiz_main.document.all.okButtonId[i].className="okButtonHidden";
+if (silent==1) {
+frames.quiz_main.document.all.hideAns[i].className="cardHide";
+frames.quiz_main.document.all.check[i].className="checkHide";
+}
+}
+}
+else {
+frames.quiz_main.document.all.okButtonId.className="okButtonHidden";
+if (silent==1) {
+frames.quiz_main.document.all.hideAns.className="cardHide";
+frames.quiz_main.document.all.check.className="checkHide";
+}
+}
+}
+window.print();
+}
+}
+function PrintResults()
+{
+if (typeOfSub==4) {
+document.location = GetLinkFromMark(voto);
+window.status = "";
+PrintCopyright(1);
+return;
+}
+frames.quiz_main.document.close();
+frames.quiz_main.document.clear();
+frames.quiz_main.document.open();
+PrintOpenHTML(frames.quiz_main.document,"Résultat du test",0);
+frames.quiz_main.document.writeln("<style>\n");
+frames.quiz_main.document.writeln("TD,B,BODY {font-family:Arial; font-size:10pt  }\n");
+frames.quiz_main.document.writeln(".table1 {font-family:Arial; font-size:10pt; font-weight:bold  } \n");
+frames.quiz_main.document.writeln(".qstId {font-family:courier; font-size:16pt; background:#404040; color:#FFFFFF }\n");
+frames.quiz_main.document.writeln("</style>\n");
+PrintJSResult(frames.quiz_main.document);
+frames.quiz_main.document.writeln("</head>");
+frames.quiz_main.document.writeln(bodyTagFrame1);
+if (valutaQuiz==1) {
+if (typeOfSub<=2) {
+PrintResultTopBar(frames.quiz_main.document);
+PrintResultsTable(frames.quiz_main.document);
+if (showReport==1)
+PrintReport(frames.quiz_main.document);
+
+frames.quiz_main.document.tracking.aza.value=HIE;
+frames.quiz_main.document.tracking.submit();
+}
+else if (typeOfSub==3) {
+frames.quiz_main.document.writeln("<center><TABLE WIDTH='"+pageWidth+"%' BORDER=0><TD ALIGN='LEFT'>");
+frames.quiz_main.document.writeln (GetRemFromMark(voto));
+frames.quiz_main.document.writeln("</TD></TABLE></center>");
+}
+else {
+}
+}
+else {
+frames.quiz_main.document.writeln("<center><TABLE WIDTH='"+pageWidth+"%' BORDER=0><TD ALIGN='LEFT'>");
+frames.quiz_main.document.writeln(finalMess);
+frames.quiz_main.document.writeln("</TD></TABLE></center>");
+}
+PrintLinkBack(frames.quiz_main.document);
+frames.quiz_main.document.writeln ("</body></html>");
+frames.quiz_main.document.close();
+window.status = "";
+PrintCopyright(1);
+}
+function Timer()
+{
+var delta;
+if (ctmnow) {
+clearTimeout(ctmnow);
+ctmnow=0;
+}
+cnewdt = new Date();
+time   = Math.floor(cnewdt.getTime()/1000);
+delta  = maxtime-(time-oldtime);
+if ((end_test==0)&&(oldtime!=time))
+SetClock(getTimeString(delta));
+if ((delta<=0)&&(end_test==0)) {
+window.alert("Temps expiré");
+end_test=1;
+EndQuiz();
+}
+else {
+ctmnow=setTimeout("Timer()",1000);
+}
+}
+function SetClock(timeStr)
+{
+frames.quiz_status.document.all.clock.innerText = timeStr;
+}
+function PlaySoundFile(soundFile) {
+frames.quiz_hidden.document.clear();
+PrintOpenHTML(frames.quiz_hidden.document,"",1);
+frames.quiz_hidden.document.writeln ("<body>");
+frames.quiz_hidden.document.writeln ("<EMBED SRC='"+soundFile+"' AUTOSTART=TRUE HIDDEN=TRUE>");
+frames.quiz_hidden.document.writeln ("</body></html>");
+frames.quiz_hidden.document.close();
+}
+function PlaySoundBooleanAns(n)
+{
+if (nScore[n]==maxScore[n])
+PlaySoundFile(okSound);
+else if (nScore[n]==0)
+PlaySoundFile(errSound);
+else
+PlaySoundFile(warnSound);
+}
+function PlaySoundWithScore(voto)
+{
+if (voto==maxvoto)
+PlaySoundFile(okSound);
+else if (voto==minvoto)
+PlaySoundFile(errSound);
+else
+PlaySoundFile(warnSound);
+}
+var lastLayer = null;
+function showTooltip (thisLayer) {
+frames.quiz_main.document.all(thisLayer).className = "tooltipShow";
+}
+function clearTooltip (thisLayer) {
+if (lastLayer!=null)
+deleteTooltip ();
+lastLayer = thisLayer;
+setTimeout(deleteTooltip,2000);
+}
+function deleteTooltip () {
+if (lastLayer != null)
+frames.quiz_main.document.all(lastLayer).className  = "tooltipHide";
+lastLayer = null;
+}
+function VerifyBrowser() {
+var msg;
+var status;
+if (! ((getBrowser()=='IE')&&(getBrowserVers()>=4))) {
+msg = "Le navigateur "+navigator.appName+" "+navigator.appVersion;
+msg+= "n'a pas pu visualiser exactement ce questionnaire. Continuez?";
+if (!window.confirm(msg))
+top.close();
+}
+}
+function completeInitValuate() {
+ if (valid[0]==0) {
+   allAnsReport[0] = new frames.quiz_main.initValuate1();
+   doValuate(0,frames.quiz_main.document.domanda.score1,frames.quiz_main.document.domanda.risposta1);
+ }
+ if (valid[1]==0) {
+   allAnsReport[1] = new frames.quiz_main.initValuate2();
+   doValuate(1,frames.quiz_main.document.domanda.score2,frames.quiz_main.document.domanda.risposta2);
+ }
+ if (valid[2]==0) {
+   allAnsReport[2] = new frames.quiz_main.initValuate3();
+   doValuate(2,frames.quiz_main.document.domanda.score3,frames.quiz_main.document.domanda.risposta3);
+ }
+ if (valid[3]==0) {
+   allAnsReport[3] = new frames.quiz_main.initValuate4();
+   doValuate(3,frames.quiz_main.document.domanda.score4,frames.quiz_main.document.domanda.risposta4);
+ }
+ CountAnswers();
+}
+
+function ConvertPointToMark(n,points) {
+return 0;
+}
+
+
+
+function EndQuiz() {
+ completeInitValuate();
+ FinalActions();
+}
+
+function FinalActions() {
+ voto = ComputeMarks();
+ PrintResults();
+}
+function PrintATagLinkBack(documento) {
+ return;
+}
+
+function init_valid()
+{
+ for (var i=0;i<questions;i++) {
+   valid[i]=0;
+   pesi[i]=0;
+   nScore[i]=0;
+   maxScore[i]=0;
+ }
+ nc = 0;
+ ns = 0;
+ nr = questions-0;
+ voto = 0;
+ computeMarkErr = 0;
+ window.status='';
+}
+function initShortQuestion() {
+ qstHead[0]="Sous quel profil dans Formagri puis-je inscrire des apprenants à une formation ?";
+ qstHead[1]="A partir de quel onglet de la barre de menu puis-je inscrire des apprenants à un...";
+ qstHead[2]="A partir de quel onglet du menu puis-je créer une nouvelle formation ?";
+ qstHead[3]="Répondez 'vrai' ou 'faux' aux questions suivantes";
+}
+
+
+function PrintOpenHTML(documento,title,closeHead) {
+  documento.writeln ('<HTML>');
+  documento.writeln ('<HEAD>');
+  documento.writeln ("<TITLE>"+title+"</TITLE>");
+  documento.writeln ("<META name='generator' content='QuizFaber 2.9.1'>");
+  if (closeHead==1)
+    documento.writeln ('</HEAD>');
+}
+//-->
+var HIE;
+
+function PrintReport(documento){
+
+    mediaDir="/images/media";
+    showReport=1;
+    
+    var i,j,n=1,k,l,m,isGuess;
+    var choice,value,data;
+    var half_index,index13,index23,index14,index34,col_width;
+    var okImage,boxImage;
+    var tagOkImage,tagBoxImage;
+    if (isResultsPageDark==0) {
+        okImage  = mediaDir+"/ok.gif";
+        boxImage = mediaDir+"/square.gif";
+    }
+    else {
+        okImage  = mediaDir+"/ok2.gif";
+        boxImage = mediaDir+"/square2.gif";
+    }
+    tagOkImage = "<IMG SRC="+okImage+" ALIGN='CENTER' ALT='Selected answer'>";
+    tagBoxImage = "<IMG SRC="+boxImage+" ALIGN='CENTER'>";
+    half_index = Math.ceil(questions/2);
+    index13  = Math.ceil(questions/3);
+    index23  = Math.ceil(2*questions/3);
+    index14  = Math.ceil(questions/4);
+    index34  = Math.ceil(3*questions/4);
+    col_width  = Math.floor(100 / ncols_report);
+    documento.writeln("<P><center><TABLE WIDTH='"+pageWidth+"%' BORDER=0>");
+    HIE+="<P><center><TABLE WIDTH='"+pageWidth+"%' BORDER=0>";
+    for (k=0;k<questions;k++) {
+        if ((k==0)&&(ncols_report==1)) {
+            documento.writeln("<TD>");
+            HIE+="<TD>";
+        }
+        if ((k==0)&&(ncols_report>=2)) {
+            documento.writeln("<TD WIDTH='"+col_width+"%' VALIGN='top'>");
+            HIE+="<TD WIDTH='"+col_width+"%' VALIGN='top'>";
+        }
+        if ((k==half_index)&&((ncols_report==2)||(ncols_report==4))) {
+            documento.writeln("</TD><TD WIDTH='"+col_width+"%' VALIGN='top'>");
+            HIE+="</TD><TD WIDTH='"+col_width+"%' VALIGN='top'>";
+        }
+        if (ncols_report==3) {
+            if ((k==index13)||(k==index23)) {
+                documento.writeln("</TD><TD WIDTH='33%' VALIGN='top'>");
+                HIE+="</TD><TD WIDTH='33%' VALIGN='top'>";
+            }
+        }
+        if (ncols_report==4) {
+            if ((k==index14)||(k==index34)) {
+                documento.writeln("</TD><TD WIDTH='25%' VALIGN='top'>");
+                HIE+="</TD><TD WIDTH='25%' VALIGN='top'>";
+            }
+        }
+        i = ordineDomande[k];
+        if (valid[i]==4)
+            continue;
+        documento.writeln("<B><FONT SIZE=+1 class='qstId'>"+n+"</FONT></B><B> "+qstHead[i]+"</B><BR>");
+        HIE+="<B><FONT SIZE=+1 class='qstId'>"+n+"</FONT></B><B> "+qstHead[i]+"</B><BR>";
+        n++;
+        documento.writeln("<I>");
+        HIE+="<I>";
+        if (valid[i]==1){
+            documento.writeln("Correct answer<BR>");
+            HIE+="Correct answer<BR>";
+        }
+        else if (valid[i]==-1){
+            documento.writeln("Wrong answer<BR>");
+            HIE+="Wrong answer<BR>";
+        }
+        else if (valid[i]==2){
+            documento.writeln("Question not valuated<BR>");
+            HIE+="Question not valuated<BR>";
+        }
+        else if (valid[i]==3) {
+            if (typeOfQuest[i]==2){
+                documento.writeln("Right sentences "+nScore[i]+" on "+maxScore[i]+"<BR>");
+                HIE+="Right sentences "+nScore[i]+" on "+maxScore[i]+"<BR>";
+            }
+            else if (typeOfQuest[i]==4){
+                documento.writeln("Guess words "+nScore[i]+" on "+maxScore[i]+"<BR>");
+                HIE+="Guess words "+nScore[i]+" on "+maxScore[i]+"<BR>";
+            }
+            else if (typeOfQuest[i]==5){
+                documento.writeln("Matching "+nScore[i]+" on "+maxScore[i]+"<BR>");
+                HIE+="Matching "+nScore[i]+" on "+maxScore[i]+"<BR>";
+            }
+        }
+        else if (valid[i]==5) {
+            documento.write("scores "+nScore[i]);
+            HIE+="scores "+nScore[i];
+            if (groups[i]==0){
+                documento.writeln(" (MARK "+maxScore[i]+")<BR>");
+                HIE+=" (MARK "+maxScore[i]+")<BR>";
+            }
+            else if (groups[i]==1){
+                documento.writeln("<BR>Scores added with the previous question  <BR>");
+                HIE+="<BR>Scores added with the previous question  <BR>";
+            }
+            else if (groups[i]==2){
+                documento.writeln("<BR>MARK (computes from the sum of scores of next questions): "+maxScore[i]+"<BR>");
+                HIE+="<BR>MARK (computes from the sum of scores of next questions): "+maxScore[i]+"<BR>";
+            }
+        }       
+        documento.writeln("</I>");
+        HIE+="</I>";
+        if (valid[i]==2) {
+            documento.write("<P>"+allAnsReport[i][0].choice+"</P>");
+            HIE+="<P>"+allAnsReport[i][0].choice+"</P>";
+            continue;
+        }
+        documento.writeln("<BR>");
+        HIE+="<BR>";
+        documento.writeln("<TABLE BORDER=0 WIDTH='"+pageWidth+"%'>");
+        HIE+="<TABLE BORDER=0 WIDTH='"+pageWidth+"%'>";
+        for (j=0;j<allAnsReport[i].length;j++) {
+            if (typeOfQuest[i]==4)
+                isGuess = getGuessFillGapN(i,j);
+            else if (typeOfQuest[i]==5)
+                isGuess = (getGuessMatchN(i,j)==1);
+            else {
+                if (reportNotation==1) 
+                    isGuess = getGuessAnsN(i,j);
+                else 
+                    isGuess = (allAnsReport[i][j].valuation + allAnsReport[i][j].data)>0;
+            }
+            if (isGuess){
+                documento.write(" <TR><TD WIDTH=30><IMG SRC="+mediaDir+"/smile.gif ALIGN='CENTER' ALT='Correct answer'></TD>");
+                HIE+=" <TR><TD WIDTH=30><IMG SRC="+mediaDir+"/smile.gif ALIGN='CENTER' ALT='Correct answer'></TD>";
+            }
+            else{
+                documento.write(" <TR><TD WIDTH=30><IMG SRC='"+mediaDir+"/ko.gif' ALIGN='CENTER' ALT='Wrong answer'></TD>");
+                HIE+=" <TR><TD WIDTH=30><IMG SRC="+mediaDir+"/ko.gif ALIGN='CENTER' ALT='Wrong answer'></TD>";
+            }
+            documento.write("<TD WIDTH=30> <FONT FACE='Arial'>");
+            HIE+="<TD WIDTH=30> <FONT FACE='Arial'>";
+            documento.write(Lettera(j));
+            HIE+=Lettera(j);
+            documento.write("</FONT> </TD>");
+            HIE+="</FONT> </TD>";
+            choice = allAnsReport[i][j].choice;
+            if (typeOfQuest[i]==2) {
+                documento.write("<TD WIDTH=50> ");
+                HIE+="<TD WIDTH=50> ";
+                PrintTrueOrFalse(documento,1);
+                documento.write(" ");
+                HIE+=" ";
+                if (choice==1){
+                    documento.write(tagOkImage+"</TD>");
+                    HIE+=tagOkImage+"</TD>";
+                }
+                else{
+                    documento.write(tagBoxImage+"</TD>");
+                    HIE+=tagBoxImage+"</TD>";
+                }
+                documento.write("<TD WIDTH=50> ");
+                HIE+="<TD WIDTH=50> ";
+                PrintTrueOrFalse(documento,0);
+                documento.write(" ");
+                HIE+=" ";
+                if (choice==0){
+                    documento.write(tagOkImage+"</TD>");
+                    HIE+=tagOkImage+"</TD>";
+                }
+                else{
+                    documento.write(tagBoxImage+"</TD>");
+                    HIE+=tagBoxImage+"</TD>";
+                }
+            }
+            else if (typeOfQuest[i]==4) {
+                if (getGuessFillGapN(i,j)){
+                    documento.write("<TD>"+choice+"</TD>");
+                    HIE+="<TD>"+choice+"</TD>";
+                }
+                else {
+                    documento.write("<TD><S>"+choice+"</S> <IMG SRC='"+mediaDir+"/arrow.gif' ALIGN='CENTER'> ");
+                    HIE+="<TD><S>"+choice+"</S> <IMG SRC="+mediaDir+"/arrow.gif ALIGN='CENTER'> ";
+                    for (l=0; l<allAnsReport[i][j].valuation.length-1; l++){
+                        documento.write(allAnsReport[i][j].valuation[l]+ " , ");
+                        HIE+=allAnsReport[i][j].valuation[l]+ " , ";
+                    }
+                    documento.write(allAnsReport[i][j].valuation[l]);
+                    HIE+=allAnsReport[i][j].valuation[l];
+                    documento.write("</TD>");
+                    HIE+="</TD>";
+                }
+            }
+            else if (typeOfQuest[i]==5) {
+                m = getGuessMatchN(i,j);
+                if (m==1) {
+                    documento.write("<TD>"+choice[0]+" - "+choice[1]+"</TD>");
+                    HIE+="<TD>"+choice[0]+" - "+choice[1]+"</TD>";
+                }
+                else if (m==0) {
+                    documento.write("<TD>"+choice[0]+" - ");
+                    HIE+="<TD>"+choice[0]+" - ";
+                    documento.write("<S>"+choice[1]+"</S>");
+                    HIE+="<S>"+choice[1]+"</S>";
+                    documento.write("<IMG SRC='"+mediaDir+"/arrow.gif' ALIGN='CENTER'> ");
+                    HIE+="<IMG SRC="+mediaDir+"/arrow.gif ALIGN='CENTER'> ";
+                    for (l=0; l<allAnsReport[i][j].valuation.length-1; l++){
+                        documento.write(allAnsReport[i][j].valuation[l]+ " , ");
+                        HIE+=allAnsReport[i][j].valuation[l]+ " , ";
+                    }
+                    documento.write(allAnsReport[i][j].valuation[l]);
+                    HIE+=allAnsReport[i][j].valuation[l];
+                    documento.write("</TD>");
+                    HIE+="</TD>";
+                }
+                else {
+                    documento.write("<TD><S>"+choice[0]+" - "+choice[1]+"</S>");
+                    HIE+="<TD><S>"+choice[0]+" - "+choice[1]+"</S>";
+                }
+            }
+            else {
+                if (choice==1){
+                    documento.write("<TD WIDTH=30>"+tagOkImage+"</TD>");
+                    HIE+="<TD WIDTH=30>"+tagOkImage+"</TD>";
+                }
+                else{
+                    documento.write("<TD WIDTH=30>"+tagBoxImage+"</TD>");
+                    HIE+="<TD WIDTH=30>"+tagBoxImage+"</TD>";
+                }
+            }
+            documento.writeln("<TD>");
+            if (valid[i]==5) {
+                value = allAnsReport[i][j].valuation;
+                data = allAnsReport[i][j].data;
+                documento.write(" ("+value+") ");
+                HIE+=" ("+value+") ";
+                if (data!=0){
+                    documento.write(" ("+data+") ");
+                    HIE+=" ("+data+") ";
+                }
+            }
+            if ((typeOfQuest[i]==1)||(typeOfQuest[i]==101)) {
+                if (allAnsReport[i][j].answer!=""){
+                    documento.write(allAnsReport[i][j].answer+"<BR>");
+                    HIE+=allAnsReport[i][j].answer+"<BR>";
+                }
+                if ((choice==1)||(remRepAlways==1)){
+                    documento.write("<I>"+allAnsReport[i][j].remark+"</I>");
+                    HIE+="<I>"+allAnsReport[i][j].remark+"</I>";
+                }
+            }
+            documento.writeln("</TD></TR>");
+            HIE+="</TD></TR>";
+        }
+        documento.writeln("</TABLE><BR>");
+        HIE+="</TABLE><BR>";
+    }
+    documento.writeln("</TD></TABLE></center>");
+    HIE+="</TD></TABLE></center>";
+}
+
+    
+function PrintResultsTable(doc) {
+  var deltatime = time - oldtime;
+  var percentage;
+  doc.writeln("<center><TABLE border=0 WIDTH='80%'><TD ALIGN='LEFT'><TABLE border=0 cellpadding=1>");
+  HIE+="<center><TABLE border=0 WIDTH='80%'><TD ALIGN='LEFT'><TABLE border=0 cellpadding=1>";
+  doc.writeln("<TR><TD bgcolor='#000000'>");
+  HIE+="<TR><TD bgcolor=#000000>";
+  doc.writeln("<TABLE cellpadding=3 border=0 cellspacing=1><TR><TD bgcolor='#FFFFFF' colspan=2>");
+  HIE+="<TABLE cellpadding=3 border=0 cellspacing=1><TR><TD bgcolor=#FFFFFF colspan=2>";
+  doc.writeln("<TABLE cellpadding=5 border=0 width=100%><TR><TD>");
+  HIE+="<TABLE cellpadding=5 border=0 width=100%><TR><TD>";
+  doc.writeln("<B><FONT  COLOR='#000000' FACE='Arial' SIZE='3'>"+quizTitle+"</FONT></B>");
+  HIE+="<B><FONT  COLOR=#000000 FACE='Arial' SIZE='3'>"+quizTitle+"</FONT></B>";
+  doc.writeln("</TD></TR></TABLE></TD></TR>");
+  HIE+="</TD></TR></TABLE></TD></TR>";
+  doc.writeln("<TR><TD bgcolor='#FFFFFF' nowrap><B><FONT  COLOR='#CC0000' FACE='Arial' SIZE='2'>&#160;&#160;Number of questions</FONT></B></TD>");
+  HIE+="<TR><TD bgcolor=#FFFFFF nowrap><B><FONT  COLOR=#CC0000 FACE='Arial' SIZE='2'>&#160;&#160;Number of questions</FONT></B></TD>";
+  doc.writeln("    <TD bgcolor='#FFFFFF' nowrap><B><FONT  COLOR='#CC0000' FACE='Arial' SIZE='2'>&#160;&#160;"+(questions-invisibleQuests)+"</FONT></B></TD></TR>");
+  HIE+="    <TD bgcolor=#FFFFFF nowrap><B><FONT  COLOR=#CC0000 FACE='Arial' SIZE='2'>&#160;&#160;"+(questions-invisibleQuests)+"</FONT></B></TD></TR>";
+  if (identityName!="") {
+  doc.writeln("<TR><TD bgcolor='#FFFFDD' nowrap><B><FONT  COLOR='#000000' FACE='Arial' SIZE='2'>&#160;&#160;Candidate name</FONT></B></TD>");
+  HIE+="<TR><TD bgcolor=#FFFFDD nowrap><B><FONT  COLOR=#000000 FACE='Arial' SIZE='2'>&#160;&#160;Candidate name</FONT></B></TD>";
+  doc.writeln("    <TD bgcolor='#FFFFDD' ><B><FONT  COLOR='#000000' FACE='Arial' SIZE='2'>&#160;&#160;"+identityName+"</FONT></B></TD></TR>");
+  HIE+="    <TD bgcolor=#FFFFDD ><B><FONT  COLOR=#000000 FACE='Arial' SIZE='2'>&#160;&#160;"+identityName+"</FONT></B></TD></TR>";
+  }
+  doc.writeln("<TR><TD bgcolor='#FFFFDD' nowrap><B><FONT  COLOR='#000000' FACE='Arial' SIZE='2'>&#160;&#160;Right Answers</FONT></B></TD>");
+  HIE+="<TR><TD bgcolor=#FFFFDD nowrap><B><FONT  COLOR=#000000 FACE='Arial' SIZE='2'>&#160;&#160;Right Answers</FONT></B></TD>";
+  doc.writeln("    <TD bgcolor='#FFFFDD' nowrap><B><FONT  COLOR='#000000' FACE='Arial' SIZE='2'>&#160;&#160;"+nc+"</FONT></B></TD></TR>");
+  HIE+="    <TD bgcolor=#FFFFDD nowrap><B><FONT  COLOR=#000000 FACE='Arial' SIZE='2'>&#160;&#160;"+nc+"</FONT></B></TD></TR>";
+  doc.writeln("<TR><TD bgcolor='#FFFFDD' nowrap><B><FONT  COLOR='#000000' FACE='Arial' SIZE='2'>&#160;&#160;Wrong Answers</FONT></B></TD>");
+  HIE+="<TR><TD bgcolor=#FFFFDD nowrap><B><FONT  COLOR=#000000 FACE='Arial' SIZE='2'>&#160;&#160;Wrong Answers</FONT></B></TD>";
+  doc.writeln("    <TD bgcolor='#FFFFDD' nowrap><B><FONT  COLOR='#000000' FACE='Arial' SIZE='2'>&#160;&#160;"+ns+"</FONT></B></TD></TR>");
+  HIE+="    <TD bgcolor=#FFFFDD nowrap><B><FONT  COLOR=#000000 FACE='Arial' SIZE='2'>&#160;&#160;"+ns+"</FONT></B></TD></TR>";
+  doc.writeln("<TR><TD bgcolor='#FFFFDD' nowrap><B><FONT  COLOR='#000000' FACE='Arial' SIZE='2'>&#160;&#160;Unmarked questions</FONT></B></TD>");
+  HIE+="<TR><TD bgcolor=#FFFFDD nowrap><B><FONT  COLOR=#000000 FACE='Arial' SIZE='2'>&#160;&#160;Unmarked questions</FONT></B></TD>";
+  doc.writeln("    <TD bgcolor='#FFFFDD' nowrap><B><FONT  COLOR='#000000' FACE='Arial' SIZE='2'>&#160;&#160;"+falseQuests+"</FONT></B></TD></TR>");
+  HIE+="    <TD bgcolor=#FFFFDD nowrap><B><FONT  COLOR=#000000 FACE='Arial' SIZE='2'>&#160;&#160;"+falseQuests+"</FONT></B></TD></TR>";  
+  if (maxtime>0) {
+  doc.writeln("<TR><TD bgcolor='#FFFFDD' nowrap><B><FONT  COLOR='#000000' FACE='Arial' SIZE='2'>&#160;&#160;Time elapsed</FONT></B></TD>");
+  HIE+="<TR><TD bgcolor=#FFFFDD nowrap><B><FONT  COLOR=#000000 FACE='Arial' SIZE='2'>&#160;&#160;Time elapsed</FONT></B></TD>";
+  doc.writeln("    <TD bgcolor='#FFFFDD' nowrap><B><FONT  COLOR='#000000' FACE='Arial' SIZE='2'>&#160;&#160;"+getTimeString(deltatime)+"</FONT></B></TD></TR>");
+  HIE+="    <TD bgcolor=#FFFFDD nowrap><B><FONT  COLOR=#000000 FACE='Arial' SIZE='2'>&#160;&#160;"+getTimeString(deltatime)+"</FONT></B></TD></TR>";
+  }
+  doc.writeln("<TR><TD bgcolor='#FFFFDD' nowrap><B><FONT  COLOR='#000000' FACE='Arial' SIZE='2'>&#160;&#160;Date</FONT></B></TD>");
+  HIE+="<TR><TD bgcolor=#FFFFDD nowrap><B><FONT  COLOR=#000000 FACE='Arial' SIZE='2'>&#160;&#160;Date</FONT></B></TD>";
+  doc.writeln("    <TD bgcolor='#FFFFDD' nowrap><B><FONT  COLOR='#000000' FACE='Arial' SIZE='2'>&#160;&#160;"+DataToStringa()+"</FONT></B></TD></TR>");
+  HIE+="    <TD bgcolor=#FFFFDD nowrap><B><FONT  COLOR=#000000 FACE='Arial' SIZE='2'>&#160;&#160;"+DataToStringa()+"</FONT></B></TD></TR>";
+  if (computeMarkErr==0) {
+  doc.writeln("<TR><TD bgcolor='#FFFFFF' nowrap><B><FONT  COLOR='#CC0000' FACE='Arial' SIZE='2'>&#160;&#160;MARK</FONT></B></TD>");
+  HIE+="<TR><TD bgcolor=#FFFFFF nowrap><B><FONT  COLOR=#CC0000 FACE='Arial' SIZE='2'>&#160;&#160;MARK</FONT></B></TD>";
+  doc.writeln("    <TD bgcolor='#FFFFFF' nowrap><B><FONT  COLOR='#CC0000' FACE='Arial' SIZE='2'>&#160;&#160;"+voto+"/"+maxvoto+"</FONT></B></TD></TR>");
+  HIE+="    <TD bgcolor=#FFFFFF nowrap><B><FONT  COLOR=#CC0000 FACE='Arial' SIZE='2'>&#160;&#160;"+voto+"/"+maxvoto+"</FONT></B></TD></TR>";
+  } else {
+  doc.writeln("<TR><TD bgcolor='#FFFFFF' nowrap><B><FONT  COLOR='#CC0000' FACE='Arial' SIZE='2'>&#160;&#160;MARK</FONT></B></TD>");
+  HIE+="<TR><TD bgcolor=#FFFFFF nowrap><B><FONT  COLOR=#CC0000 FACE='Arial' SIZE='2'>&#160;&#160;MARK</FONT></B></TD>";
+  doc.writeln("    <TD bgcolor='#FFFFFF' nowrap><B><FONT  COLOR='#CC0000' FACE='Arial' SIZE='2'>&#160;&#160;No mark</FONT></B></TD></TR>");
+  HIE+="    <TD bgcolor=#FFFFFF nowrap><B><FONT  COLOR=#CC0000 FACE='Arial' SIZE='2'>&#160;&#160;No mark</FONT></B></TD></TR>";
+  }
+  doc.writeln("</TABLE></TD></TR></TABLE></TD></TABLE></center>");
+  HIE+="</TABLE></TD></TR></TABLE></TD></TABLE></center>";
+
+  doc.writeln("<table><tr><td></center><form name='tracking' action='"+monpath+"/act_qf.php' target='doc' method='post'><input type='hidden' name='aza' ><input type='hidden' name='id_act' value='"+id_act+"'><input type='hidden' name='note' value='"+voto+"/"+maxvoto+"'><input type='hidden' name='temps' value='"+getTimeString(deltatime)+"'><input type='hidden' name='tip' value='qf'></form></td></tr></table>");
+}
+
+
+
+function PrintTrueOrFalse(documento,flag) {
+  if (flag==1) {
+    documento.write("T");
+    HIE+="T";
+  }
+  else if(flag==0){
+    documento.write("F");
+    HIE+="F"; 
+}
+}
+
+</SCRIPT>
+</HEAD>
+<FRAMESET ROWS='*,30,0'>
+<FRAME SRC='Quiz_Formagri1.htm' NAME='quiz_main'>
+<FRAME SRC='Quiz_Formagri3.htm' NAME='quiz_status' FRAMEBORDER='NO' SCROLLING='NO'>
+<FRAME NAME='quiz_hidden' FRAMEBORDER='NO' SCROLLING='NO'>
+<NOFRAMES>Browser with no frames-enabled option</NOFRAMES>
+</FRAMESET>
+</HTML>

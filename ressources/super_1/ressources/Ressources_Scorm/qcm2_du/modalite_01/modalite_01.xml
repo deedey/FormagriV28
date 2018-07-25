@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evaluation id="6" label="Modalité 1" masteryScore="75" positiveFeedback="Bonne réponse" negativeFeedback="Mauvaise réponse">
+	<interaction id="1" label="Night fell and the search ..." type="choice" weighting="1">
+		<choice label="should stop"/>
+		<choice label="had to be stopped" correct="true"/>
+		<choice label="ought to be stopped"/>
+		<choice label="should be stopped"/>
+	</interaction>
+	<interaction id="2" label="&quot;I'm surprised this accident happened.&quot; &quot;Yes. He ... the obstacle.&quot;" type="choice" weighting="1">
+		<choice label="should have seen" correct="true"/>
+		<choice label="should see"/>
+		<choice label="would have seen"/>
+		<choice label="had to see"/>
+	</interaction>
+	<interaction id="3" label="Her pain was not as bad as it ... been." type="choice" weighting="1">
+		<choice label="might have" correct="true"/>
+		<choice label="need have"/>
+		<choice label="must have"/>
+		<choice label="can have"/>
+	</interaction>
+	<interaction id="4" label="If you don't want to be late again, you ... by 10.30." type="choice" weighting="1">
+		<choice label="had better going"/>
+		<choice label="have better go"/>
+		<choice label="had better to go"/>
+		<choice label="had better go" correct="true"/>
+	</interaction>
+	<interaction id="5" label="The train from London ... at 9.30." type="choice" weighting="1">
+		<choice label="is to arrive" correct="true"/>
+		<choice label="has to arrive"/>
+		<choice label="has been arrived"/>
+		<choice label="must be arrive"/>
+	</interaction>
+	<interaction id="6" label="Anyone could have broken into the flat that night; the dog ..." type="choice" weighting="1">
+		<choice label="could wake up"/>
+		<choice label="would not wake up"/>
+		<choice label="wouldn't have woken up" correct="true"/>
+		<choice label="would have waken up"/>
+	</interaction>
+	<interaction id="7" label="... he call, tell him I am not at home." type="choice" weighting="1">
+		<choice label="Shall"/>
+		<choice label="Would"/>
+		<choice label="Will"/>
+		<choice label="Should" correct="true"/>
+	</interaction>
+	<interaction id="8" label="Nobody warned me. I ... about it." type="choice" weighting="1">
+		<choice label="had to be told"/>
+		<choice label="must have been told"/>
+		<choice label="should have been told" correct="true"/>
+		<choice label="ought to be told"/>
+	</interaction>
+	<interaction id="9" label="He ... here yesterday. I was waiting for him but he didn't turn up." type="choice" weighting="1">
+		<choice label="must not come"/>
+		<choice label="must not have come"/>
+		<choice label="was to come" correct="true"/>
+		<choice label="was to have come"/>
+	</interaction>
+	<interaction id="10" label="The maid came in. &quot;... tea?&quot; She asked." type="choice" weighting="1">
+		<choice label="I serve"/>
+		<choice label="Would I serve"/>
+		<choice label="Am I serving"/>
+		<choice label="Shall I serve" correct="true"/>
+	</interaction>
+	<interaction id="11" label="Even one day's exposure to UV light ... cause serious damage." type="choice" weighting="1">
+		<choice label="is able to"/>
+		<choice label="can" correct="true"/>
+		<choice label="doesn't have to"/>
+		<choice label="mustn't"/>
+	</interaction>
+	<interaction id="12" label="Now that he is wearing a hearing aid, I know that he ... be able to hear me." type="choice" weighting="1">
+		<choice label="can"/>
+		<choice label="wants to"/>
+		<choice label="will" correct="true"/>
+		<choice label="shall"/>
+	</interaction>
+	<interaction id="13" label="People who sometimes burn and never tan ... use sunscreens in the 6 to 8 range." type="choice" weighting="1">
+		<choice label="should" correct="true"/>
+		<choice label="need"/>
+		<choice label="would"/>
+		<choice label="needn't"/>
+	</interaction>
+	<interaction id="14" label="Doctors hope that the new, nearly invisible device ... help people with severe hearing defects." type="choice" weighting="1">
+		<choice label="will" correct="true"/>
+		<choice label="would"/>
+		<choice label="should"/>
+		<choice label="could"/>
+	</interaction>
+	<interaction id="15" label="To stay in the grey zone, Angela and her classmates will ... increase their injections of insulin from 2 a day to 3." type="choice" weighting="1">
+		<choice label="be unable to"/>
+		<choice label="have to" correct="true"/>
+		<choice label="can"/>
+		<choice label="must"/>
+	</interaction>
+	<interaction id="16" label="He said that if I had called on him the following day he ... me at his surgery." type="choice" weighting="1">
+		<choice label="could see"/>
+		<choice label="could have"/>
+		<choice label="could seeing"/>
+		<choice label="could have seen" correct="true"/>
+	</interaction>
+	<interaction id="17" label="If the patient had consulted his family doctor earlier, we ... such drastic steps." type="choice" weighting="1">
+		<choice label="can have avoided"/>
+		<choice label="will have avoided"/>
+		<choice label="should have avoided"/>
+		<choice label="might have avoided" correct="true"/>
+	</interaction>
+	<interaction id="18" label="If he were to stop taking exercise, he ... fat." type="choice" weighting="1">
+		<choice label="may get"/>
+		<choice label="might get" correct="true"/>
+		<choice label="may have got"/>
+		<choice label="might have got"/>
+	</interaction>
+	<interaction id="19" label=" She is ... arrive on June 21st." type="choice" weighting="1">
+		<choice label="scheduled"/>
+		<choice label="due to" correct="true"/>
+		<choice label="likely"/>
+		<choice label="-"/>
+	</interaction>
+	<interaction id="20" label="She coughs a lot. It ... be bronchitis." type="choice" weighting="1">
+		<choice label="must" correct="true"/>
+		<choice label="ought"/>
+		<choice label="has"/>
+		<choice label="-"/>
+	</interaction>
+	<interaction id="21" label="Students in the self-care program ... learn how to adjust their insulin dosage based on their last blood-glucose reading." type="choice" weighting="1">
+		<choice label="mustn't"/>
+		<choice label="must" correct="true"/>
+		<choice label="won't have to"/>
+		<choice label="needn't"/>
+	</interaction>
+	<interaction id="22" label="The gynaecologist ... do his rounds at 10 o'clock as usual." type="choice" weighting="1">
+		<choice label="has"/>
+		<choice label="is going"/>
+		<choice label="will have"/>
+		<choice label="is to" correct="true"/>
+	</interaction>
+	<interaction id="23" label="More and more people ... refrain from smoking at work since the new law." type="choice" weighting="1">
+		<choice label="must"/>
+		<choice label="mustn't"/>
+		<choice label="will be allowed to"/>
+		<choice label="have had to" correct="true"/>
+	</interaction>
+	<interaction id="24" label="In the future, a sunscreen pill being developed in Pathak's lab ... make the lotions obsolete." type="choice" weighting="1">
+		<choice label="must"/>
+		<choice label="mustn't"/>
+		<choice label="will have to"/>
+		<choice label="may" correct="true"/>
+	</interaction>
+</evaluation>

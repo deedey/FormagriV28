@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+Genere par Formagri Ceres V 2.6.0 [Support SCORM v1.2 (c)]
+Le lundi  4 avril 2011 sur la plate-forme http://ef-dev2.educagri.fr
+par Dey Bendifallah : ADMINISTRATEUR
+-->
+<manifest identifier="Manifest-Module-Formagri-Ceres" version="1.1"
+xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+               xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_v1p2"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
+               http://www.imsglobal.org/xsd/imsmd_v1p2 imsmd_v1p2p2.xsd">
+  <metadata>
+    <schema>IMSContent</schema>
+    <schemaversion>1.2.2</schemaversion>
+    <imsmd:lom>
+      <imsmd:general>
+        <imsmd:title>
+          <imsmd:langstring xml:lang="fr">NewQcm</imsmd:langstring>
+        </imsmd:title>
+        <imsmd:language>fr</imsmd:language>
+        <imsmd:description>
+          <imsmd:langstring xml:lang="fr">Ensemble de QCM</imsmd:langstring>
+        </imsmd:description>
+        <imsmd:keyword>
+          <imsmd:langstring xml:lang="fr">ici,çà,là</imsmd:langstring>
+        </imsmd:keyword>
+      </imsmd:general>
+      <imsmd:lifecycle>
+        <imsmd:status>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="fr">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="x-none">Final</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:status>
+        <imsmd:contribute>
+          <imsmd:role>
+            <imsmd:source>
+              <imsmd:langstring xml:lang="fr">LOMv1.0</imsmd:langstring>
+            </imsmd:source>
+            <imsmd:value>
+              <imsmd:langstring xml:lang="x-none">Encadrement pedagogique</imsmd:langstring>
+            </imsmd:value>
+          </imsmd:role>
+          <imsmd:centity>
+            <imsmd:vcard>d.bendifallah@gmail.com</imsmd:vcard>
+          </imsmd:centity>
+        </imsmd:contribute>
+      </imsmd:lifecycle>
+      <imsmd:technical>
+        <imsmd:format>application/x-shockwave-flash</imsmd:format>
+        <imsmd:requirement>
+          <imsmd:type>
+            <imsmd:source>
+              <imsmd:langstring xml:lang="fr">LOMv1.0</imsmd:langstring>
+            </imsmd:source>
+            <imsmd:value>
+              <imsmd:langstring xml:lang="x-none">Navigateur</imsmd:langstring>
+            </imsmd:value>
+          </imsmd:type>
+        </imsmd:requirement>
+      </imsmd:technical>
+      <imsmd:educational>
+        <imsmd:interactivitytype>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="fr">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="x-none">Active</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:interactivitytype>
+        <imsmd:learningresourcetype>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="fr">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="x-none">Exercise</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:learningresourcetype>
+        <imsmd:interactivitylevel>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="fr">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="x-none"></imsmd:langstring>
+          </imsmd:value>
+        </imsmd:interactivitylevel>
+        <imsmd:context>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="fr">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="x-none">Enseignement</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:context>
+        <imsmd:language>fr</imsmd:language>
+      </imsmd:educational>
+    </imsmd:lom>
+  </metadata>
+<organizations default="M0">
+    <organization identifier="M0" structure="hierarchical">
+        <title>Mon_premier_Qcm1</title>
+           <item identifier="M0_01" identifierref="RES-01" isvisible="true">
+                         <title>mon_questionnaire</title>
+         </item>
+           <item identifier="M0_02" identifierref="RES-02" isvisible="true">
+                         <title>mes_questions</title>
+         </item>
+           <item identifier="M0_03" identifierref="RES-03" isvisible="true">
+                         <title>passe_present_01</title>
+         </item>
+           <item identifier="M0_04" identifierref="RES-04" isvisible="true">
+                         <title>passe_present_02</title>
+         </item>
+     </organization>
+ </organizations>
+<resources>
+      <resource identifier="RES-01" type="webcontent" href="mon_questionnaire.html">
+                        <file href="mon_questionnaire.html" />
+                        <file href="cmi.js" />
+                        <file href="qcm.swf" />
+                        <file href="mon_questionnaire.xml" />
+         </resource>
+      <resource identifier="RES-02" type="webcontent" href="mes_questions.html">
+                        <file href="mes_questions.html" />
+                        <file href="cmi.js" />
+                        <file href="qcm.swf" />
+                        <file href="mes_questions.xml" />
+         </resource>
+      <resource identifier="RES-03" type="webcontent" href="passe_present_01.html">
+                        <file href="passe_present_01.html" />
+                        <file href="cmi.js" />
+                        <file href="qcm.swf" />
+                        <file href="passe_present_01.xml" />
+         </resource>
+      <resource identifier="RES-04" type="webcontent" href="passe_present_02.html">
+                        <file href="passe_present_02.html" />
+                        <file href="cmi.js" />
+                        <file href="qcm.swf" />
+                        <file href="passe_present_02.xml" />
+         </resource>
+</resources>
+</manifest>

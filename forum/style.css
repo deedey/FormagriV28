@@ -1,0 +1,49 @@
+<HTML>
+<HEAD>
+<STYLE>
+BODY { font-family: Verdana; font-size: 10px; color: #000066 }
+TD   { font-family: Verdana; font-size: 10px; color: #000066 }
+TH   { font-family: Arial; font-size: 10px; color: #000066 }
+A         {font-family:Verdana;font-size:10px;color:#003FFF;text-decoration:none}
+A:link    {font-family:Verdana;font-size:10px;color:#003FFF;font-weight:bold}
+A:visited {font-family:Verdana;font-size:10px;color:#003FFF;font-weight:bold}
+A:hover   {font-family:Verdana;font-size:10px;color=white;background color:blue;font-weight:bold}
+A.off     {font-family:Verdana;font-size:10px;color:#C0D780;font-weight:bold}
+.clq {LEFT: 0px; VISIBILITY: hidden; POSITION: absolute; TOP: 0px}
+.mar { font-family: Verdana;font-size:9px;color='#800000' }
+.small {font-family:arial;color:navy;font-size:11px;}
+.admin {font-family:arial;color:#9999FF;font-size:13px}
+.texte {font-family:arial;color:navy;font-size:13px}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+function popup(f,nom, w, h) {
+   window.open(f, nom, 'resizable,screenX=0,screenY=0,scrollbars=yes,menubar=yes,width=' + w + ',height=' + h);
+}
+
+function tinypopup(f,nom, w, h) {
+   window.open(f, nom, 'resizable,screenX=0,screenY=0,scrollbars=no,menubar=no,width=' + w + ',height=' + h);
+}
+</script>
+<SCRIPT LANGUAGE="JavaScript">
+function appel_w(sel_val) {
+var fset=sel_val.substring(0,2);
+var f2=sel_val;
+var url1 = ""+f2+"";
+if ( fset == "tr" ) parent.main.location=url1
+}
+</script>
+<script src="functions.js" type="text/javascript" language="javascript"></script>
+</HEAD>
+<?php $image = GetDataField($connect,"select param_etat_lb from param_foad where param_cdn=1","param_etat_lb");?>
+<BODY  background="<?php echo "$image";?>" marginwidth="0" marginheight="0" leftmargin="0" topmargin="0">
+<div id="overDiv" style="position:absolute; visibility:hide;z-index:1;"></div>
+<SCRIPT LANGUAGE="JavaScript" SRC="overlib.js"></SCRIPT>
+
+<?php if ( $autre_connecte != ""){
+  if ($nbr_connectes == 1)
+    $nombre_connect = "1 autre utilisateur est connecté à Form@grI";
+  else
+    $nombre_connect = "$nbr_connectes autres utilisateurs sont connectés à Form@grI";
+  echo "<DIV align=right><A href=\"connecte.php?autre_connecte=$autre_connecte&nbr_connectes=$nbr_connectes\"><IMG SRC=\"images/messagerie.gif\" alt=\"$nombre_connect. Cliquez ici pour pouvoir dialoguer\" border='0'></A></DIV>";
+}
+?>

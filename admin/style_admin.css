@@ -1,0 +1,444 @@
+.bodi{
+       width: 350px;
+       height:auto;
+       margin-right : 20px;
+       float: right;
+       /*top : 40px;*/
+       bottom : 50px;
+       left : 600px;
+       position:absolute;
+}
+.bodi_over{
+       color: #003333;
+       background-color: #F6E7D4;
+       cursor: pointer;
+       border:1px solid #24677A;
+       font-family: arial, tahoma, serif;
+       font-size: 12px;
+       margin-right : 20px;
+       padding: 6px;
+       width: 350px;
+       height:auto;
+       float: right;
+       /*top : 40px;*/
+       bottom : 50px;
+       left : 600px;
+       position:absolute;
+}
+.close{
+       width: 0px;
+       height:0px;
+       top : 0px;
+       left : 0px; 
+       display: none;
+}
+.EnteteMsg{
+       font-family: arial, tahoma,  serif;
+       font-size: 12px;
+       color: #FFFFFF;
+       height:20px;
+       padding-top: 0px;
+       padding-right: 4px;
+       padding-left: 4px;
+       border:1px solid #24677A;
+       background-image:url(../images/ecran-annonce/ongl01.gif)
+}
+.cttMsg{
+       float: top;
+       margin-top: 6px;
+       font-family: arial, tahoma,  serif;
+       font-size: 12px;
+       color: #24677A;
+       height:auto;
+       padding: 4px;
+       border:1px solid #24677A;
+       background-color: #F7F876;
+}
+.msgInst{
+       float: top;
+       color: #003333;
+       background-color: #F7F876;/*#F6E7D4;*/
+       cursor: text;
+       border:2px solid #FF81E3;
+       font-family: arial, tahoma,  serif;
+       font-size: 10px;
+       padding-left: 4px;
+       padding-right: 4px;
+       padding-top: 1px;
+       padding-bottom:8px;
+       width: 350px;
+       height:auto;
+       top : 0px;
+       left : 0px;
+       position:absolute;
+}
+#bout_msg {
+       float: top;
+       cursor: pointer;
+       text-align:center;
+       font-family:arial;
+       margin-top: 6px;
+       padding:2px;
+       font-size:13px;
+       font-weight:bold;
+       width:70px;
+       height:auto;
+       color:#FFFFFF;
+       border:1px solid #24677A;
+       background-image:url(../images/ecran-annonce/ongl01.gif)
+}
+#bout_msg:hover {
+       color:#D45211;
+       background-image:url(../images/ecran-annonce/ongl02.gif)
+}
+.Status{
+        background-color: #8c3137;
+        font-family: arial, tahoma,  serif;
+        color: #FFFFFF;
+        font-size: 12px;
+        position:absolute;
+        display : block;
+        top:0px;
+        right:4px;
+}
+.cms{
+        background-color: #fad163;    /* #fbf346; #fbda46; #fff7a4; */
+        font-family: arial, tahoma,  serif;
+        font-weight:bold;
+        text-align: left;
+        color: #003333;
+        font-size: 12px;
+        top:4px;
+        left: 4px;
+        cursor: pointer;
+        position:absolute;
+        display : block;
+
+    /*border:1pxsolidd #D45211*/
+}
+.mon_contenu{
+        background-color:#fad163;   /*#fbf346;  #fcfcb5;*/
+        font-family: arial, tahoma, serif;
+        font-weight:bold;
+        text-align: center;
+        color: #003333;
+        font-size: 12px;
+        top:4px;
+        left: 4px;
+        cursor: pointer;
+        position:absolute;
+        display : block;
+}
+
+.tuteurs{
+        /*background-color: #fcfcb5;*/
+        font-family: arial, tahoma, serif;
+        font-weight:bold;
+        text-align: center;
+        color: #003333;
+        font-size: 12px;
+        position:absolute;
+        height : auto;
+        overflow :auto;
+        display : block;
+}
+.appel_form{
+    /*width:430px;*/
+    cursor:pointer;
+    font-size:12px;
+    padding:5px;
+    font-family: arial, tahoma, verdana;
+    font-weight:bold;
+    color: #24677A;
+    /*border:1px solid #D45211;*/
+    /*background-color: #F4F4F4;*/
+}
+.adminformid{
+    font-family: arial, tahoma,  serif;
+    font-size: 12px;
+    /*background-color: #CEE6EC;  #F4F4F4;*/
+    /*border:2px dotted #D45211;*/
+    /*width: 100px;*/
+    visibility: hidden;
+}
+.hidden{
+        width:100px;
+        border:1px solid #D45211;
+        background-color: #F4F4F4;
+        position:absolute;
+        display : block;
+}
+.visible{
+         position:absolute;
+         display : none;
+}
+
+.Oui{
+        cursor:pointer;
+        visibility: visible;
+        font-family: arial, tahoma,  serif;
+        /*background-color: #F4F4F4;*/   /*#CEE6EC;*/
+        text-align: left;
+        font-size: 11px;
+        font-weight: bold;
+        color: #24677A; /*#D45211;*/
+        /*width: 300px;*/
+}
+.Non{
+        cursor:pointer;
+        visibility: visible;
+        font-family: arial, tahoma,  serif;
+        /*background-color: #F4F4F4;*/   /*#CEE6EC;*/
+        padding:1px;
+        text-align: center;
+        font-size: 11px;
+        font-weight: bold;
+        color: #D45211;
+        width: 40px;
+        padding-top: 1px;
+        padding-left: 1px;
+        padding-right: 1px;
+        padding-top : 1px;
+}
+.OuiNon{
+        cursor:pointer;
+        visibility: visible;
+        font-family: arial, tahoma,  serif;
+        /*background-color: #F4F4F4;*/   /*#CEE6EC;*/
+        padding:1px;
+        text-align: center;
+        font-size: 11px;
+        font-weight: bold;
+        color: #24677A;;
+        width: 40px;
+        padding-top: 1px;
+        padding-left: 1px;
+        padding-right: 1px;
+        margin-top : 1px;
+}
+.le_formulaire{
+    width:430px;
+    cursor:pointer;
+    font-size:11px;
+    padding:5px;
+    font-family: arial, tahoma, verdana;
+    font-weight:bold;
+    color: #24677A;
+    border:1px solid #D45211;
+    background-color: #F4F4F4;
+}
+.formid{
+    font-family: arial, tahoma,  serif;
+    font-size: 11px;
+    background-color: #CEE6EC;  /*#F4F4F4; */
+    border:2px dotted #D45211;
+    width: 900px;
+    visibility:hidden;
+}
+
+.star {
+    float:left;
+    padding-right:4px;
+    cursor:pointer;
+    width:18px;
+}
+
+.le_formulaire_qcm {
+    width:430px;
+    font-size:12px;
+    padding:5px;
+    font-family: arial, tahoma, verdana;
+    font-weight:bold;
+    color: #24677A;
+    border:1px solid #002D45;
+    background-color: #cee6ec;
+}
+.hover_fm {
+    width:80px;
+    font-size:12px;
+    padding:5px;
+    font-family: arial, tahoma, verdana;
+    font-weight:bold;
+    color: #24677A;
+    border:1px solid #002D45;
+    background-color: #cee6ec;
+}
+.out_fm {
+    width:80px;
+    font-size:12px;
+    padding:5px;
+    font-family: arial, tahoma, verdana;
+    font-weight:bold;
+    color: #24677A;
+    border:1px solid #002D45;
+    background-color: #cee6ec;
+}
+.tableau_qcm{
+    font-size:12px;
+    padding:5px;
+    font-family: arial, tahoma, verdana;
+    font-weight:bold;
+    color: #24677A;
+    border:1px solid #D45211;
+    background-color: #F4F4F4;
+}
+/*--------------------------------------------------------- Nouveaux Menus--------------*/
+
+
+a.bouton_new:link{
+        font-family: arial;
+        font-weight: bold;
+        float: left;
+        color: #FFFFFF;
+        padding-top: 3px;
+        padding-bottom: 2px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border: 0px solid #24677A;
+        background-image:url(../images/ecran-annonce/ongl01.gif);
+}
+a.bouton_new:visited{
+        font-family: arial;
+        font-weight: bold;
+        float: left;
+        color: #FFFFFF;
+        padding-top: 3px;
+        padding-bottom: 2px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border: 0px solid #24677A;
+        background-image:url(../images/ecran-annonce/ongl01.gif);
+}
+a.bouton_new:hover{
+        font-family: arial;
+        font-weight: bold;
+        color: #D45211;
+        float: left;
+        text-align: right;
+        padding-top: 2px;
+        padding-bottom: 1px;
+        padding-left: 4px;
+        padding-right: 4px;
+        border: 1px solid #24677A;
+        background-image:url(../images/ecran-annonce/ongl02.gif);
+}
+a.bouton_new:active{
+        font-family: arial;
+        font-weight: bold;
+        color: #D45211;
+        float: left;
+        padding-top: 2px;
+        text-align: right;
+        padding-bottom: 1px;
+        padding-left: 4px;
+        padding-right: 4px;
+        border: 1px solid #D45211;
+        background-image:url(../images/ecran-annonce/ongl02.gif);
+}
+a.bouton_new:focus{
+        font-family: arial;
+        font-weight: bold;
+        color: #D45211;
+        float: left;
+        padding-top: 2px;
+        text-align: right;
+        padding-bottom: 1px;
+        padding-left: 4px;
+        padding-right: 4px;
+        border: 1px solid #D45211;
+        background-image:url(../images/ecran-annonce/ongl02.gif);
+}
+
+a.boutacc:link{
+        font-family: arial;
+        font-weight: bold;
+        color: #D45211;
+        float: left;
+        text-align: right;
+        padding-top: 2px;
+        padding-bottom: 1px;
+        padding-left: 4px;
+        padding-right: 4px;
+        border: 1px solid #D45211;
+        background-image:url(../images/ecran-annonce/ongl02.gif);
+}
+a.boutacc:hover{
+        font-family: arial;
+        font-weight: bold;
+        color: #D45211;
+        float: left;
+        text-align: right;
+        padding-top: 2px;
+        padding-bottom: 1px;
+        padding-left: 4px;
+        padding-right: 4px;
+        border: 1px solid #D45211;
+        background-image:url(../images/ecran-annonce/ongl02.gif);
+}
+a.boutacc:visited{
+        font-family: arial;
+        font-weight: bold;
+        color: #D45211;
+        float: left;
+        text-align: right;
+        padding-top: 2px;
+        padding-bottom: 1px;
+        padding-left: 4px;
+        padding-right: 4px;
+        border: 1px solid #D45211;
+        background-image:url(../images/ecran-annonce/ongl02.gif);
+}
+a.boutacc:active{
+        font-family: arial;
+        font-weight: bold;
+        color: #D45211;
+        float: left;
+        text-align: right;
+        padding-top: 2px;
+        padding-bottom: 1px;
+        padding-left: 4px;
+        padding-right: 4px;
+        border: 1px solid #D45211;
+        background-image:url(../images/ecran-annonce/ongl02.gif);
+}
+/*----------------------------------------------------------Fin de Nouveaux Menus--------------------*/
+/*----------------------------------------------------------Début de AlertBox------------------------*/
+/* CSS to style the JavaScript customizable alert box  Author: Tom Coote Date: 15 Feb 2007 Web site: tomcoote.co.uk*/
+
+#alertBox {
+        background: #FFFFFF;/*#EEF0EB*/
+        font: Arial,Verdana,Tahoma,sans-serif;
+        border: 1px solid #24677A; /*#000000;*/
+}
+
+#alertBox #TitleBar {
+
+        background-image:url(../images/fond_titre_table.jpg);
+        font-weight:bold;
+        padding: 2px 2px 2px 10px;
+        height:35px;
+        margin-bottom: 20px;
+}
+
+#alertBox #Message {
+        font-size: 12px;
+        text-align: left;
+        padding-right: 20px;
+}
+
+#alertBox #MessageIcon {
+        padding-left: 20px;
+}
+
+#alertBox #MessageIcon img {
+        padding-right: 20px;
+}
+
+#alertBox input {
+        margin: 2px;
+}
+
+#alertBox a, #alertBox img{
+        border: none;
+}
+/*----------------------------------------------------------Fin de Alert Box--------------------*/

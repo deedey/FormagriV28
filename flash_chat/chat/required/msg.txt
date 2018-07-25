@@ -1,0 +1,7 @@
+(10:11:33) Apprenant : nous rejoint
+18 Jun-(10:11:42) Apprenant : ici et là
+(10:12:19) Administrateur : nous rejoint
+18 Jun-(10:12:37) Administrateur : il y a quelqu'un?
+(10:12:45) Apprenant : oui je suis là
+(10:12:55) Administrateur : nous quitte
+(10:13:01) Apprenant : nous quitte

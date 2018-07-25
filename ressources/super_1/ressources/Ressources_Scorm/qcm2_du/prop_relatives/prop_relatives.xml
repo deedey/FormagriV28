@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evaluation id="2" label="Propositions relatives" masteryScore="75" positiveFeedback="Bonne réponse" negativeFeedback="Mauvaise réponse">
+	<interaction id="1" label="He heard ... was a train." type="choice" weighting="1">
+		<choice label="what he thought"/>
+		<choice label="as he though"/>
+		<choice label="the thought it"/>
+		<choice label="which he thought" correct="true"/>
+	</interaction>
+	<interaction id="2" label="Drunkenness is even more of a headache in the rural areas ... it is in the cities." type="choice" weighting="1">
+		<choice label="that"/>
+		<choice label="what"/>
+		<choice label="than" correct="true"/>
+		<choice label="then"/>
+	</interaction>
+	<interaction id="3" label="The last part of the statement was omitted, ... some Americans interpret as an attempt at changing its meaning." type="choice" weighting="1">
+		<choice label="which" correct="true"/>
+		<choice label="what"/>
+		<choice label="that"/>
+		<choice label="and"/>
+	</interaction>
+	<interaction id="4" label="She had many differences with the leaders, ... was her brother." type="choice" weighting="1">
+		<choice label="whose one"/>
+		<choice label="one of whom" correct="true"/>
+		<choice label="whom one"/>
+		<choice label="out of whose"/>
+	</interaction>
+	<interaction id="5" label="A sudden accident occurred, ... his career was brought to an end." type="choice" weighting="1">
+		<choice label="of which"/>
+		<choice label="that"/>
+		<choice label="by which" correct="true"/>
+		<choice label="by what"/>
+	</interaction>
+	<interaction id="6" label="The train ran into a busload of children, several of ... were wounded." type="choice" weighting="1">
+		<choice label="whom" correct="true"/>
+		<choice label="that"/>
+		<choice label="whose"/>
+		<choice label="which"/>
+	</interaction>
+	<interaction id="7" label="Not lunch-time yet? I really have ...." type="choice" weighting="1">
+		<choice label="an appetite" correct="true"/>
+		<choice label="the appetite"/>
+		<choice label="appetite"/>
+		<choice label="good appetite"/>
+	</interaction>
+	<interaction id="8" label="Blood comes in a variety of types, ... is why transfusions must be watched so carefully." type="choice" weighting="1">
+		<choice label="who"/>
+		<choice label="which" correct="true"/>
+		<choice label="what"/>
+		<choice label="that"/>
+	</interaction>
+	<interaction id="9" label="Veronesi, ... heads Milan's National Cancer Institute, bases his conclusions on the treatment of 700 patients." type="choice" weighting="1">
+		<choice label="which"/>
+		<choice label="who" correct="true"/>
+		<choice label="-"/>
+		<choice label="that"/>
+	</interaction>
+	<interaction id="10" label="Fortunately the wrist ... isn't fractured, it's only sprained." type="choice" weighting="1">
+		<choice label="that hurts" correct="true"/>
+		<choice label="it hurts"/>
+		<choice label="hurts"/>
+		<choice label="who is painful"/>
+	</interaction>
+	<interaction id="11" label="The men in the study, ... was conducted across the U.S., were between the ages of 35 and 59." type="choice" weighting="1">
+		<choice label="which" correct="true"/>
+		<choice label="who"/>
+		<choice label="whom"/>
+		<choice label="whose"/>
+	</interaction>
+	<interaction id="12" label="He got caught because he was travelling without ...." type="choice" weighting="1">
+		<choice label="a ticket" correct="true"/>
+		<choice label="ticket"/>
+		<choice label="one's ticket"/>
+		<choice label="no ticket"/>
+	</interaction>
+	<interaction id="13" label="At first, doctors suspected ... rheumatoid arthritis." type="choice" weighting="1">
+		<choice label="the"/>
+		<choice label="some"/>
+		<choice label="-" correct="true"/>
+		<choice label="a"/>
+	</interaction>
+	<interaction id="14" label="The patient ... he went to visit in the hospital had been discharged earlier that morning." type="choice" weighting="1">
+		<choice label="which"/>
+		<choice label="what"/>
+		<choice label="whose"/>
+		<choice label="-" correct="true"/>
+	</interaction>
+	<interaction id="15" label="Eating dairy products, ... tend to be high in animal fats, did not appear to increase the disease risk." type="choice" weighting="1">
+		<choice label="who"/>
+		<choice label="-"/>
+		<choice label="which" correct="true"/>
+		<choice label="what"/>
+	</interaction>
+	<interaction id="16" label="... were taken to hospital by ambulance." type="choice" weighting="1">
+		<choice label="The injured man"/>
+		<choice label="The injured" correct="true"/>
+		<choice label="The injureds"/>
+		<choice label="The injury"/>
+	</interaction>
+	<interaction id="17" label="The research team ... he's working with at the moment are on the point of discovering a new vaccine." type="choice" weighting="1">
+		<choice label="with which"/>
+		<choice label="whose"/>
+		<choice label="what"/>
+		<choice label="-" correct="true"/>
+	</interaction>
+	<interaction id="18" label="... dermatology is the study of skin diseases." type="choice" weighting="1">
+		<choice label="The"/>
+		<choice label="-" correct="true"/>
+		<choice label="This"/>
+		<choice label="His"/>
+	</interaction>
+	<interaction id="19" label="Doctor Mac Carthy has two stethoscopes ... he hardly ever uses." type="choice" weighting="1">
+		<choice label="none of which"/>
+		<choice label="neither of which" correct="true"/>
+		<choice label="both of which"/>
+		<choice label="all of which"/>
+	</interaction>
+	<interaction id="20" label="&quot;What happened to the prescription ... was on the table. Did you take it?&quot;" type="choice" weighting="1">
+		<choice label="which" correct="true"/>
+		<choice label="-"/>
+		<choice label="who"/>
+		<choice label="what"/>
+	</interaction>
+	<interaction id="21" label="The normal range was determined in 116 hospital employees, in 51 ... duplicate measurements were obtained by the same observer a week later." type="choice" weighting="1">
+		<choice label="of whom" correct="true"/>
+		<choice label="whose"/>
+		<choice label="who"/>
+		<choice label="which"/>
+	</interaction>
+	<interaction id="22" label="He wondered whether alternative medicine practitioners ... are approved by the Ministry of Health would attract fewer patients as a result." type="choice" weighting="1">
+		<choice label="who" correct="true"/>
+		<choice label="-"/>
+		<choice label="which"/>
+		<choice label="whom"/>
+	</interaction>
+	<interaction id="23" label="&quot;Nicotine dependence and nicotine withdrawal are diseases&quot;, said Doctor Mac Carthy, ... was addressing the conference." type="choice" weighting="1">
+		<choice label="-"/>
+		<choice label="that"/>
+		<choice label="who" correct="true"/>
+		<choice label="which"/>
+	</interaction>
+	<interaction id="24" label="... Kate worried about all the time was her health." type="choice" weighting="1">
+		<choice label="that"/>
+		<choice label="which"/>
+		<choice label="who"/>
+		<choice label="what" correct="true"/>
+	</interaction>
+	<interaction id="25" label="When the medicine has taken effect, we will redo a blood test, ... will probably confirm the improvement." type="choice" weighting="1">
+		<choice label="-"/>
+		<choice label="that"/>
+		<choice label="which" correct="true"/>
+		<choice label="who"/>
+	</interaction>
+	<interaction id="26" label="In the case of a snake bite, you can give ... aspirin to relieve ... pain." type="choice" weighting="1">
+		<choice label="the / a"/>
+		<choice label="- / -"/>
+		<choice label="- / a" correct="true"/>
+		<choice label="a / -"/>
+	</interaction>
+	<interaction id="27" label="... skin cancer is often caused by the sun." type="choice" weighting="1">
+		<choice label="A"/>
+		<choice label="The"/>
+		<choice label="-" correct="true"/>
+		<choice label="An"/>
+	</interaction>
+	<interaction id="28" label="Dermatology is the medical speciality ... deals with the diagnosis and treatment of skin disorders." type="choice" weighting="1">
+		<choice label="who"/>
+		<choice label="whom"/>
+		<choice label="-"/>
+		<choice label="that" correct="true"/>
+	</interaction>
+	<interaction id="29" label="A control group is a standard group ... experimental observations may be evaluated." type="choice" weighting="1">
+		<choice label="against who"/>
+		<choice label="against"/>
+		<choice label="against that"/>
+		<choice label="against which" correct="true"/>
+	</interaction>
+	<interaction id="30" label="He eats too much ... is bad for his health." type="choice" weighting="1">
+		<choice label="which" correct="true"/>
+		<choice label="what"/>
+		<choice label="that"/>
+		<choice label="what"/>
+	</interaction>
+	<interaction id="31" label="The prescription ... I gave you can be filled out by any chemist." type="choice" weighting="1">
+		<choice label="who"/>
+		<choice label="whose"/>
+		<choice label="whom"/>
+		<choice label="which" correct="true"/>
+	</interaction>
+	<interaction id="32" label="The skin disorders ... we have just mentioned are directly linked to overexposure to the U.V. rays of sunlight." type="choice" weighting="1">
+		<choice label="who"/>
+		<choice label="what"/>
+		<choice label="whose"/>
+		<choice label="-" correct="true"/>
+	</interaction>
+	<interaction id="33" label="Nurses, ... contact with patients gives them a privileged relationship, can help medication advice." type="choice" weighting="1">
+		<choice label="who"/>
+		<choice label="whom"/>
+		<choice label="that"/>
+		<choice label="whose" correct="true"/>
+	</interaction>
+	<interaction id="34" label="A ten-year-old study finds that women ... drink as many as six cups of coffee a day bear no increased risk of heart disease." type="choice" weighting="1">
+		<choice label="whose"/>
+		<choice label="which"/>
+		<choice label="-"/>
+		<choice label="who" correct="true"/>
+	</interaction>
+	<interaction id="35" label="Type I diabetes is particularly prevalent in Northerm countries ... it develops at an early age and necessitates strict medical control." type="choice" weighting="1">
+		<choice label="which"/>
+		<choice label="where" correct="true"/>
+		<choice label="that"/>
+		<choice label="what"/>
+	</interaction>
+	<interaction id="36" label="Cartilage is formed of round shaped cells called chondrocytes ... allow its development by multiplying by mitoses." type="choice" weighting="1">
+		<choice label="who"/>
+		<choice label="which" correct="true"/>
+		<choice label="whom"/>
+		<choice label="what"/>
+	</interaction>
+	<interaction id="37" label="Intestinal bleeding, ... can be a symptom of colon cancer, should be investigated in all cases." type="choice" weighting="1">
+		<choice label="who"/>
+		<choice label="-"/>
+		<choice label="which" correct="true"/>
+		<choice label="that"/>
+	</interaction>
+	<interaction id="38" label="Since 1638 malaria ... with an extract from the bark of the cinchona tree, known as quinine. Quinine, ... is somewhat toxic, suppresses the growth of protozoans within the bloodstream." type="choice" weighting="1">
+		<choice label="was treated / which"/>
+		<choice label="was being treated / that"/>
+		<choice label="has been treated / which" correct="true"/>
+		<choice label="has been treated / that"/>
+	</interaction>
+	<interaction id="39" label="It takes several weeks for the effects of Prozac to become apparent, and the mechanism ... it works is still not understood." type="choice" weighting="1">
+		<choice label="with which" correct="true"/>
+		<choice label="by whom"/>
+		<choice label="by whose"/>
+		<choice label="which"/>
+	</interaction>
+	<interaction id="40" label="Two U.S. government studies show that Persian Gulf veterans are far more likely to suffer serious health problems - chronic diarrhea, memory loss, depression - than troops ... did not serve in the region." type="choice" weighting="1">
+		<choice label="which"/>
+		<choice label="whose"/>
+		<choice label="whom"/>
+		<choice label="who" correct="true"/>
+	</interaction>
+	<interaction id="41" label="Patients ... more than one blood clot can dramatically reduce their chances of getting another by using the anticoagulant Coumadin - as long as they stay on it permanently." type="choice" weighting="1">
+		<choice label="which had"/>
+		<choice label="who have had" correct="true"/>
+		<choice label="who had"/>
+		<choice label="who have"/>
+	</interaction>
+</evaluation>

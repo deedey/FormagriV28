@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evaluation id="3" label="Comparaison" masteryScore="75" positiveFeedback="Bonne réponse" negativeFeedback="Mauvaise réponse">
+	<interaction id="1" label="He was shot through ..." type="choice" weighting="1">
+		<choice label="the very heart"/>
+		<choice label="the heart" correct="true"/>
+		<choice label="heart"/>
+		<choice label="his own heart"/>
+	</interaction>
+	<interaction id="2" label="... electoral campaign promises are forgotten, ..." type="choice" weighting="1">
+		<choice label="The quicker / the better" correct="true"/>
+		<choice label="Quicker / the better"/>
+		<choice label="The quickest"/>
+		<choice label="Quickest / the best"/>
+	</interaction>
+	<interaction id="3" label="... students in the U.S. take Spanish as a foreign language." type="choice" weighting="1">
+		<choice label="Most of"/>
+		<choice label="The most"/>
+		<choice label="The most of the"/>
+		<choice label="Most of the" correct="true"/>
+	</interaction>
+	<interaction id="4" label="The two systems are equally reliable. But VHS is certainly ... of the two." type="choice" weighting="1">
+		<choice label="cheaper"/>
+		<choice label="the cheaper" correct="true"/>
+		<choice label="the cheapest"/>
+		<choice label="far cheaper"/>
+	</interaction>
+	<interaction id="5" label="In Japan ... people die of cancer than of heart disease." type="choice" weighting="1">
+		<choice label="as many as twice"/>
+		<choice label="more than twice as much"/>
+		<choice label="as many more"/>
+		<choice label="more than twice as many" correct="true"/>
+	</interaction>
+	<interaction id="6" label="America has a ... rate of cancer ... Japan." type="choice" weighting="1">
+		<choice label="higher / than" correct="true"/>
+		<choice label="higher / as"/>
+		<choice label="as high / as"/>
+		<choice label="highest / in"/>
+	</interaction>
+	<interaction id="7" label="Not lunch-time yet? I really have ..." type="choice" weighting="1">
+		<choice label="an appetite" correct="true"/>
+		<choice label="the appetite"/>
+		<choice label="appetite"/>
+		<choice label="good appetite"/>
+	</interaction>
+	<interaction id="8" label="Everybody will take off ... hats." type="choice" weighting="1">
+		<choice label="the"/>
+		<choice label="theirs"/>
+		<choice label="their" correct="true"/>
+		<choice label="them"/>
+	</interaction>
+	<interaction id="9" label="Researchers found that the bigger the drop in cholesterol, ... the incidence of both fatal and nonfatal heart-attacks." type="choice" weighting="1">
+		<choice label="the higher"/>
+		<choice label="the lowest"/>
+		<choice label="the lower" correct="true"/>
+		<choice label="the more"/>
+	</interaction>
+	<interaction id="10" label="The AIDS epidemic is getting ..." type="choice" weighting="1">
+		<choice label="bad and worse"/>
+		<choice label="bad and worst"/>
+		<choice label="worst and worst"/>
+		<choice label="worse and worse" correct="true"/>
+	</interaction>
+	<interaction id="11" label="This research focuses on the purification of live insulin-producing beta cells from pancreatic tissue, ... has been found to control diabetes in laboratory animals." type="choice" weighting="1">
+		<choice label="what"/>
+		<choice label="which" correct="true"/>
+		<choice label="that"/>
+		<choice label="of which"/>
+	</interaction>
+	<interaction id="12" label="The tear ducts of women are approximately four times more important ... men's, because of a hormone prolactine." type="choice" weighting="1">
+		<choice label="as"/>
+		<choice label="like"/>
+		<choice label="than" correct="true"/>
+		<choice label="to"/>
+	</interaction>
+	<interaction id="13" label="&quot; Do you think I should undergo the operation soon, Doctor? &quot; &quot; ... &quot;" type="choice" weighting="1">
+		<choice label="the sooner, the better" correct="true"/>
+		<choice label="sooner, better"/>
+		<choice label="the soonest, the best"/>
+		<choice label="soonest, best"/>
+	</interaction>
+	<interaction id="14" label="The stress league is rated from ten to zero: ... the rate, ... the pressure." type="choice" weighting="1">
+		<choice label="the higher / the greater" correct="true"/>
+		<choice label="the highest / the greatest"/>
+		<choice label="higher / greater"/>
+		<choice label="highest / greatest"/>
+	</interaction>
+</evaluation>

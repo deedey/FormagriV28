@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evaluation id="2" label="Passé présent 3" masteryScore="75" positiveFeedback="Bonne réponse" negativeFeedback="Mauvaise réponse">
+	<interaction id="1" label="The student would have been more successful if she ... the training the others received." type="choice" weighting="1">
+		<choice label="has had"/>
+		<choice label="had had" correct="true"/>
+		<choice label="should have"/>
+		<choice label="would have had"/>
+	</interaction>
+	<interaction id="2" label="A recent study of 44,000 males ... that dietary fibre fights heart disease." type="choice" weighting="1">
+		<choice label="is confirmed"/>
+		<choice label="has confirmed" correct="true"/>
+		<choice label="is confirming"/>
+		<choice label="had confirmed"/>
+	</interaction>
+	<interaction id="3" label="In France, depression ... less an illness to be cured than a life-style to be celebrated." type="choice" weighting="1">
+		<choice label="was once considered" correct="true"/>
+		<choice label="has once been considered"/>
+		<choice label="has been once considering"/>
+		<choice label="is considered once"/>
+	</interaction>
+	<interaction id="4" label="When the brain ... functioning the electroencephalogram is flat." type="choice" weighting="1">
+		<choice label="is stopping"/>
+		<choice label="has to stop"/>
+		<choice label="has stopped" correct="true"/>
+		<choice label="has been stopping"/>
+	</interaction>
+	<interaction id="5" label="The annual general meeting of the American Academy of Orthopaedic surgeons ... in Orlando in October 1995." type="choice" weighting="1">
+		<choice label="take place"/>
+		<choice label="took place" correct="true"/>
+		<choice label="has taken place"/>
+		<choice label="is taken place"/>
+	</interaction>
+	<interaction id="6" label="Studies have shown that the only nutrient commonly deficient in the diet of Europeans in recent times has been iodine, but this ... by the addition of iodine to salt." type="choice" weighting="1">
+		<choice label="be remedied"/>
+		<choice label="had remedied"/>
+		<choice label="have been remedied"/>
+		<choice label="has been remedied" correct="true"/>
+	</interaction>
+	<interaction id="7" label="Vitamin C is non-toxic in large quantities: HIV patients at the National Institute for Health in the US ... 60g a day." type="choice" weighting="1">
+		<choice label="are being given" correct="true"/>
+		<choice label="are been given"/>
+		<choice label="have being given"/>
+		<choice label="have given"/>
+	</interaction>
+	<interaction id="8" label=" Ear problems can ... by means of an otoscope, radiotomography or audiometric tests." type="choice" weighting="1">
+		<choice label="be diagnosing"/>
+		<choice label="have been diagnosed"/>
+		<choice label="have been diagnosing"/>
+		<choice label="be diagnosed" correct="true"/>
+	</interaction>
+	<interaction id="9" label="Since the 16th century, at least 31 influenza pandemics (very widespread epidemics) ..." type="choice" weighting="1">
+		<choice label="were described"/>
+		<choice label="were describing"/>
+		<choice label="have been describing"/>
+		<choice label="have been described" correct="true"/>
+	</interaction>
+	<interaction id="10" label="The problem ... by creating polyvalent vaccines: vaccine against type B is combined with vaccines against the subtypes of type A as they ...." type="choice" weighting="1">
+		<choice label="was meeting / evolved"/>
+		<choice label="met / evolve"/>
+		<choice label="has been met / evolved"/>
+		<choice label="has been met / evolve" correct="true"/>
+	</interaction>
+	<interaction id="11" label="The three types of causative virus, known as A, B and C, ... in 1993, 1940 and 1950, respectively." type="choice" weighting="1">
+		<choice label="has been isolated"/>
+		<choice label="have been isolating"/>
+		<choice label="were isolated" correct="true"/>
+		<choice label="was being isolated"/>
+	</interaction>
+	<interaction id="12" label="Currently, work ... on the development of a malaria vaccine." type="choice" weighting="1">
+		<choice label="progress"/>
+		<choice label="progresses"/>
+		<choice label="is progressing" correct="true"/>
+		<choice label="has progressed"/>
+	</interaction>
+	<interaction id="13" label="Since 1638 malaria ... with an extract from the bark of the cinchona tree, known as quinine. Quinine, ... is somewhat toxic, suppresses the growth of protozoans within the bloodstream." type="choice" weighting="1">
+		<choice label="was treated / which"/>
+		<choice label="was being treated / that"/>
+		<choice label="has been treated / which" correct="true"/>
+		<choice label="has been treated / that"/>
+	</interaction>
+	<interaction id="14" label="The drug amantadine hydrochloride, which is taken orally, is effective in preventing influenza caused by influenza A virus, and also moderately effective in treating influenza A after symptoms ...." type="choice" weighting="1">
+		<choice label="have appeared" correct="true"/>
+		<choice label="were appearing"/>
+		<choice label="appear"/>
+		<choice label="has appeared"/>
+	</interaction>
+	<interaction id="15" label="Since 1950, malaria ... from almost all of Europe and from large areas in Central and South America. It ... a major problem in parts of Africa and in South East Asia. About 100 million cases of human malaria ... each year; about 1 per cent are fatal." type="choice" weighting="1">
+		<choice label="has been eliminating / remains / develop"/>
+		<choice label="has been eliminated / remain / develop"/>
+		<choice label="has been eliminated / remains / develop" correct="true"/>
+		<choice label="have been eliminated / remained / developed"/>
+	</interaction>
+	<interaction id="16" label="The blood vessels in your skin have a specialized function. When you are taking exercise, the blood flow to your skin is increased so that the extra heat your body is generating can be radiated into the atmosphere - which is why your face ... redder when you ... yourself." type="choice" weighting="1">
+		<choice label="became / were exerting"/>
+		<choice label="becomes / will exert"/>
+		<choice label="became / exerted"/>
+		<choice label="becomes / are exerting" correct="true"/>
+	</interaction>
+	<interaction id="17" label="The ability of doctors to diagnose Alzheimer's disease ... in recent years, but this ... a process of elimination and final diagnosis can be confirmed only by post-mortem." type="choice" weighting="1">
+		<choice label="have improved / remained"/>
+		<choice label="improves / remains"/>
+		<choice label="was improved / remains"/>
+		<choice label="has improved / remains" correct="true"/>
+	</interaction>
+	<interaction id="18" label="Since 1880, immunity against bacterial diseases .... In that year, Pasteur ... by accident that Bacillus anthracis, cultivated at a temperature of 42° to 43° C (108° to 110° F), ... its virulence after a few generations." type="choice" weighting="1">
+		<choice label="have been systematically studied / discovered / loses"/>
+		<choice label="has systematically studied / discovers / loses"/>
+		<choice label="has been systematically studied / discovers / lost"/>
+		<choice label="has been systematically studied / discovered / lost" correct="true"/>
+	</interaction>
+</evaluation>

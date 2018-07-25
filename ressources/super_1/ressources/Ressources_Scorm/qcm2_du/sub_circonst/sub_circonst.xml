@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evaluation id="2" label="Subordonnées circonstancielles" masteryScore="75" positiveFeedback="Bonne réponse" negativeFeedback="Mauvaise réponse">
+	<interaction id="1" label="My father will not let me ride a motorbike ... I should break my neck." type="choice" weighting="1">
+		<choice label="though"/>
+		<choice label="least"/>
+		<choice label="unless"/>
+		<choice label="lest" correct="true"/>
+	</interaction>
+	<interaction id="2" label="She was all the more worried ... he hadn't phoned." type="choice" weighting="1">
+		<choice label="as" correct="true"/>
+		<choice label="why"/>
+		<choice label="than"/>
+		<choice label="so"/>
+	</interaction>
+	<interaction id="3" label="... refinements over the year, the traditional methods of surgery have failed to make cancer a curable affliction." type="choice" weighting="1">
+		<choice label="Thanks to"/>
+		<choice label="Despite of"/>
+		<choice label="Despite" correct="true"/>
+		<choice label="Although"/>
+	</interaction>
+	<interaction id="4" label="Hearing aids help correct such problems by magnifying the sound waves ... they enter the ear." type="choice" weighting="1">
+		<choice label="whereas"/>
+		<choice label="as" correct="true"/>
+		<choice label="because"/>
+		<choice label="although"/>
+	</interaction>
+	<interaction id="5" label="It's now possible to override menopause, ... extending the childbearing years of women who marry late in life." type="choice" weighting="1">
+		<choice label="as a result"/>
+		<choice label="then"/>
+		<choice label="since"/>
+		<choice label="thus" correct="true"/>
+	</interaction>
+	<interaction id="6" label="... to popular notions, arthritis is not a single disease, but a collection of ailments characterized by a common irritation of the joints." type="choice" weighting="1">
+		<choice label="Contrary" correct="true"/>
+		<choice label="Thanks"/>
+		<choice label="Despite"/>
+		<choice label="However"/>
+	</interaction>
+	<interaction id="7" label="... somatic cells contain two sets of chromosomes, they are referred to as diploid cells." type="choice" weighting="1">
+		<choice label="Whereas"/>
+		<choice label="Since" correct="true"/>
+		<choice label="Though"/>
+		<choice label="Altough"/>
+	</interaction>
+	<interaction id="8" label="... the patient sometimes needs a respirator, he has not been hospitalized since 1983." type="choice" weighting="1">
+		<choice label="Since"/>
+		<choice label="Altough" correct="true"/>
+		<choice label="Provided that"/>
+		<choice label="So"/>
+	</interaction>
+	<interaction id="9" label="There have been many calls for restrictions on drinks promotion ... to minimise the alleged adverse effects." type="choice" weighting="1">
+		<choice label="for"/>
+		<choice label="in order" correct="true"/>
+		<choice label="in order that"/>
+		<choice label="so that"/>
+	</interaction>
+	<interaction id="10" label="We need ... honest man to do the job." type="choice" weighting="1">
+		<choice label="a"/>
+		<choice label="an" correct="true"/>
+		<choice label="house"/>
+		<choice label="-"/>
+	</interaction>
+	<interaction id="11" label="... like to act." type="choice" weighting="1">
+		<choice label="The young" correct="true"/>
+		<choice label="Young"/>
+		<choice label="Those young"/>
+		<choice label="These young"/>
+	</interaction>
+	<interaction id="12" label="You must prevent the patient from moving the affected parts ... reduce the spread of the poison." type="choice" weighting="1">
+		<choice label="so as to" correct="true"/>
+		<choice label="so that"/>
+		<choice label="since"/>
+		<choice label="whereas"/>
+	</interaction>
+	<interaction id="13" label="When blood glucose is low, the brain and other organs work properly ... the body pumps adrenalin into the circulation to cope with the emergency." type="choice" weighting="1">
+		<choice label="though"/>
+		<choice label="as" correct="true"/>
+		<choice label="so"/>
+		<choice label="to"/>
+	</interaction>
+	<interaction id="14" label="Vaccination programmes are used ... prevent disease spreading." type="choice" weighting="1">
+		<choice label="despite"/>
+		<choice label="although"/>
+		<choice label="provided"/>
+		<choice label="in order to" correct="true"/>
+	</interaction>
+	<interaction id="15" label="Researchers have made little progress in their understanding of animal intelligence ... the non-verbal behaviour of chimpanzees." type="choice" weighting="1">
+		<choice label="with studying"/>
+		<choice label="with study"/>
+		<choice label="by studying" correct="true"/>
+		<choice label="by study"/>
+	</interaction>
+	<interaction id="16" label="The organism must receive a sufficient amount of vitamins, especially vitamin D, ... transfer calcium from the digestive tube to the blood." type="choice" weighting="1">
+		<choice label="although"/>
+		<choice label="so as to" correct="true"/>
+		<choice label="for"/>
+		<choice label="since"/>
+	</interaction>
+	<interaction id="17" label="The experiment is not dangerous ... the instructions are carefully followed." type="choice" weighting="1">
+		<choice label="provided" correct="true"/>
+		<choice label="in spite of"/>
+		<choice label="thanks to"/>
+		<choice label="despite"/>
+	</interaction>
+	<interaction id="18" label="... the fact that fluoride has been added to drinking water, there has been an improvement in dental health." type="choice" weighting="1">
+		<choice label="Thanks"/>
+		<choice label="Owing"/>
+		<choice label="Owing to" correct="true"/>
+		<choice label="Because "/>
+	</interaction>
+	<interaction id="19" label="In women, the loss of calcium generally begins at age 40 ... it rarely starts before 60 in men." type="choice" weighting="1">
+		<choice label="instead of"/>
+		<choice label="because"/>
+		<choice label="whereas" correct="true"/>
+		<choice label="since"/>
+	</interaction>
+	<interaction id="20" label="Muscular tissue needs calcium ... contract." type="choice" weighting="1">
+		<choice label="for to"/>
+		<choice label="-"/>
+		<choice label="as"/>
+		<choice label="in order to" correct="true"/>
+	</interaction>
+	<interaction id="21" label="The liquid must be heated slowly ... avoid sharp variations in temperature." type="choice" weighting="1">
+		<choice label="so as to" correct="true"/>
+		<choice label="so as"/>
+		<choice label="so"/>
+		<choice label="as"/>
+	</interaction>
+	<interaction id="22" label="... the tests show that the drug is safe, clinical trials can begin next month." type="choice" weighting="1">
+		<choice label="In spite of"/>
+		<choice label="Thanks to"/>
+		<choice label="Despite to"/>
+		<choice label="Provided" correct="true"/>
+	</interaction>
+	<interaction id="23" label="The pro-life lobby contests the use of aborted fetuses ... they believe abortion is never justified." type="choice" weighting="1">
+		<choice label="whereas"/>
+		<choice label="because of"/>
+		<choice label="so as to"/>
+		<choice label="since" correct="true"/>
+	</interaction>
+	<interaction id="24" label="Sex hormones are less effective when taken orally ... some are absorbed by the liver; injected hormones bypass the liver so remain potent." type="choice" weighting="1">
+		<choice label="so"/>
+		<choice label="because" correct="true"/>
+		<choice label="whereas"/>
+		<choice label="though"/>
+	</interaction>
+	<interaction id="25" label="The company wants to separate larger quantities of the fluid ... they can conduct a research and clinical testing programme aimed at gaining FDA approval." type="choice" weighting="1">
+		<choice label="because"/>
+		<choice label="so that" correct="true"/>
+		<choice label="since"/>
+		<choice label="although"/>
+	</interaction>
+	<interaction id="26" label="... most men have found the short-term side-effects tolerable - slight weight gain, greasier skin and mood changes - the long-term side-effects of male hormonal contraceptives will not be known for some years." type="choice" weighting="1">
+		<choice label="Although" correct="true"/>
+		<choice label="Through"/>
+		<choice label="Across"/>
+		<choice label="Lest"/>
+	</interaction>
+	<interaction id="27" label="... skin cancer is often caused by the sun." type="choice" weighting="1">
+		<choice label="A"/>
+		<choice label="The"/>
+		<choice label="-" correct="true"/>
+		<choice label="An"/>
+	</interaction>
+	<interaction id="28" label="One of the body's fat depots is around the eyes. The fat will be used by the body during illness or starvation, ... unhealthy or excessively thin people have a gaunt expression." type="choice" weighting="1">
+		<choice label="that is why"/>
+		<choice label="why"/>
+		<choice label="because"/>
+		<choice label="which is why" correct="true"/>
+	</interaction>
+	<interaction id="29" label="Don't chew the fat. The mere taste of fatty food - ... it isn't swallowed - promotes an increase in the concentration of fat in the blood." type="choice" weighting="1">
+		<choice label="even"/>
+		<choice label="if"/>
+		<choice label="whether"/>
+		<choice label="even if" correct="true"/>
+	</interaction>
+	<interaction id="30" label="Arkansas is America's least healthy state with Louisiana a close second, ... a survey that weighed factors like infant mortality, childhood immunizations and smoking." type="choice" weighting="1">
+		<choice label="although"/>
+		<choice label="unless"/>
+		<choice label="according to" correct="true"/>
+		<choice label="according"/>
+	</interaction>
+	<interaction id="31" label="... belching is socially unacceptable in many cultures, it plays a useful role in the digestive process." type="choice" weighting="1">
+		<choice label="When"/>
+		<choice label="Because"/>
+		<choice label="However"/>
+		<choice label="Although" correct="true"/>
+	</interaction>
+</evaluation>

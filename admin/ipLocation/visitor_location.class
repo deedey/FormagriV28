@@ -1,0 +1,45 @@
+<?php
+
+/* 
+this example is used to trace address location from IP visitor
+author: usman didi khamdani
+author's email: usmankhamdani@gmail.com
+author's phone: +6287883919293
+*/  
+
+include_once('ip_location.class.php');
+
+$ip = $_SERVER['REMOTE_ADDR'];
+$IPAddress = new IPLocation;
+$IPAddress->AddressErrorMessage = '<h3>Your IP is '.$ip.'</h3><p>Sorry, for some reasons the details of your IP address location can\'t be displayed</p>';
+$IPAddress->AddressLocalErrorMessage = '<h3>Your IP is '.$ip.'</h3><p>Sorry, the details of your IP address location can\'t be displayed<br />Make sure that your internet connection is not turn off or contact your server administrator for this error</p>';
+$IPAddress->Address($ip);
+
+if($IPAddress->Error==1) {
+	echo $IPAddress->ErrorMessage;
+} else {
+
+	if($IPAddress->is_LocalIP($ip)==1) {
+		echo '<h3>Your local IP is '.$_SERVER['REMOTE_ADDR'].'<br />
+		Your public IP is '.$IPAddress->Ip.'</h3>
+		<p>There are details of your IP public server address location:</p>';
+	} else {
+		echo '<h3>Your IP is '.$IPAddress->Ip.'</h3>
+		<p>There are details of your IP server address location:</p>';
+	}
+	
+	echo '<p>Country Code = '.$IPAddress->CountryCode.'<br />
+	Country Name = '.$IPAddress->CountryName.'<br />
+	Region Code = '.$IPAddress->RegionCode.'<br />
+	Region Name = '.$IPAddress->RegionName.'<br />
+	City = '.$IPAddress->City.'<br />
+	Zip Postal Code = '.$IPAddress->ZipPostalCode.'<br />
+	Latitude = '.$IPAddress->Latitude.'<br />
+	Longitude = '.$IPAddress->Longitude.'<br />
+	Timezone = '.$IPAddress->Timezone.'<br />
+	GMT Offset = '.$IPAddress->Gmtoffset.'<br />
+	DST Offset = '.$IPAddress->Dstoffset.'</p>';
+
+}
+
+?>

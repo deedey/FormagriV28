@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This is a Reload version 2.0.2 Content Package document-->
+<!--Spawned from the Reload Content Package Generator - http://www.reload.ac.uk-->
+<manifest xmlns="http://www.imsglobal.org/xsd/imscp_v1p1" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_v1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" identifier="MANIFEST-C6DCF802-DA4F-6E70-AABD-2CDCE1893CC7" xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd http://www.imsglobal.org/xsd/imsmd_v1p2 imsmd_v1p2p2.xsd">
+  <metadata>
+    <schema>IMSContent</schema>
+    <schemaversion>1.2.2</schemaversion>
+    <imsmd:lom>
+      <imsmd:general>
+        <imsmd:title>
+          <imsmd:langstring xml:lang="en">QCM2 - d'Anglais médical</imsmd:langstring>
+        </imsmd:title>
+        <imsmd:language>fr</imsmd:language>
+        <imsmd:description>
+          <imsmd:langstring xml:lang="en">Ensemble de QCM sur l'apprentissage de l'anglais médical</imsmd:langstring>
+        </imsmd:description>
+        <imsmd:keyword>
+          <imsmd:langstring xml:lang="en">qcm, comparaison, déterminants, infinitif, modalité, passé, présent, passif, quantificateurs, subordonnées circonstancielles, vocabulaire</imsmd:langstring>
+        </imsmd:keyword>
+      </imsmd:general>
+      <imsmd:lifecycle>
+        <imsmd:status>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="x-none">Final</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:status>
+        <imsmd:contribute>
+          <imsmd:role>
+            <imsmd:source>
+              <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+            </imsmd:source>
+            <imsmd:value>
+              <imsmd:langstring xml:lang="x-none">Technical Implementer</imsmd:langstring>
+            </imsmd:value>
+          </imsmd:role>
+          <imsmd:centity>
+            <imsmd:vcard>Dey Cnerta</imsmd:vcard>
+          </imsmd:centity>
+        </imsmd:contribute>
+      </imsmd:lifecycle>
+      <imsmd:technical>
+        <imsmd:format>application/x-shockwave-flash</imsmd:format>
+        <imsmd:requirement>
+          <imsmd:type>
+            <imsmd:source>
+              <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+            </imsmd:source>
+            <imsmd:value>
+              <imsmd:langstring xml:lang="x-none">Browser</imsmd:langstring>
+            </imsmd:value>
+          </imsmd:type>
+        </imsmd:requirement>
+      </imsmd:technical>
+      <imsmd:educational>
+        <imsmd:interactivitytype>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="x-none">Active</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:interactivitytype>
+        <imsmd:learningresourcetype>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="x-none">Exercise</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:learningresourcetype>
+        <imsmd:interactivitylevel>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="x-none">high</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:interactivitylevel>
+        <imsmd:context>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="x-none">Higher Education</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:context>
+        <imsmd:language>fr</imsmd:language>
+      </imsmd:educational>
+    </imsmd:lom>
+  </metadata>
+  <organizations default="ORG-C4E0FBEB-9B57-C0F7-E638-F97306D9EFDA">
+    <organization identifier="ORG-C4E0FBEB-9B57-C0F7-E638-F97306D9EFDA" structure="hierarchical">
+      <title>QCM - Le mien</title>
+      <item identifier="ITEM-4F73DA28-0FBA-6479-0891-A9343A3906A0" isvisible="true" identifierref="RES-00B05D51-9F60-0A2E-33D3-EDAF576DAEB3">
+        <title>Mon Qcm</title>
+      </item>
+
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="RES-00B05D51-9F60-0A2E-33D3-EDAF576DAEB3" type="webcontent" href="qcm_mien/qcm_mien.html">
+      <file href="qcm_mien/qcm_mien.html" />
+      <file href="assets/cmi.js" />
+      <file href="assets/qcm.swf" />
+      <file href="qcm_mien/qcm_mien.html.xml" />
+    </resource>
+  </resources>
+</manifest>

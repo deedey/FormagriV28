@@ -1,0 +1,241 @@
+body {
+        color: #003366;
+}
+
+#ldap2Mysql div.row,#ldap2Mysql #configImport_table,#ldap2Mysql hr.ligneHorizontale,#ldap2Mysql #legende
+        {
+        width: 100%;
+        clear: left;
+        margin-left: 1px;
+
+
+}
+
+#ldap2Mysql #boutonsControls {
+        width: 100%;
+        clear: left;
+        margin-left: 1px;
+        padding-top: 10px;;
+        padding-bottom: 10px;;
+        margin-bottom: 10px;
+}
+
+#ldap2Mysql #legende {
+        margin-bottom: 6px;
+        margin-left: 0px;
+        border: 1px solid #D4D4D4;
+        padding: 2px;
+        clear: left;
+}
+
+#ldap2Mysql .divLeft {
+        text-align: right;
+        padding-right: 2px;
+        float: left;
+        width: 220px;
+        margin-top: 3px;
+}
+
+#ldap2Mysql .divRight {
+        padding-left: 2px;
+        float: left;
+        width: 400px;
+        text-align: left;
+}
+
+#ldap2Mysql ul.ldapMenu {
+        text-align: center;
+        margin-top: 0px;
+        padding: 0px;
+        list-style-type: none;
+}
+
+#ldap2Mysql ul.ldapMenu li {
+        float: left;
+        margin-right: 3px;
+        margin-bottom: 8px;
+        color: #24677A;
+}
+
+#ldap2Mysql ul.ldapMenu li a {
+        font-family: arial;
+        font-weight: bold;
+        float: left;
+        color: #FFFFFF;
+        padding-top: 3px;
+        padding-bottom: 2px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border: 0px solid #24677A;
+        background-image:url(../../images/ecran-annonce/ongl01.gif);
+}
+
+#ldap2Mysql ul.ldapMenu li.selected {
+        font-family: arial;
+        font-weight: bold;
+        color: #D45211;
+        float: left;
+        padding-top: 2px;;
+        text-align: center;
+        padding-bottom: 1px;
+        padding-left: 4px;
+        padding-right: 4px;
+        border: 1px solid #D45211;
+        background-image:url(../../images/ecran-annonce/ongl02.gif);
+}
+
+#ldap2Mysql ul.ldapMenu li a:hover {
+        font-family: arial;
+        font-weight: bold;
+        color: #D45211;
+        float: left;
+        text-align: center;
+        padding-top: 2px;
+        padding-bottom: 1px;
+        padding-left: 4px;
+        padding-right: 4px;
+        border: 1px solid #24677A;
+        background-image:url(../../images/ecran-annonce/ongl02.gif);
+}
+
+#ldap2Mysql a {
+        text-decoration: none;
+        color: #24677A;
+}
+
+#ldap2Mysql h3 {
+        font-size: 11px;
+}
+
+#ldap2Mysql table,#ldap2Mysql td,#ldap2Mysql th {
+        border: 1px solid #D4D4D4;
+        border-collapse: collapse;
+        padding-left: 4px;
+        padding-right: 2px;
+        text-align: left;
+}
+
+#ldap2Mysql td.content {
+        padding-left: 2px;
+        padding-right: 2px;
+        font-family: arial, tahoma,  serif;
+        font-size: 12px;
+}
+
+#ldap2Mysql img {
+        border: none;
+        margin: 2px;
+}
+
+#ldap2Mysql img.imageInfo {
+        margin: 0px;
+        padding: 0px;
+        cursor: pointer;
+}
+
+#ldap2Mysql div.tooltip {
+        visibility: visible;
+        display: block;
+        border: 1px solid red;
+}
+
+table#ldap_import_correspondance,table#ldap_import_correspondance td {
+        border-style: none;
+}
+
+#ldap2Mysql .colonneDroite {
+        width: 380px;
+        float: left;
+        margin-top: 4px;
+}
+
+#ldap2Mysql .colonneGauche {
+        width: 250px;
+        float: left;
+        margin-top: 4px;
+}
+
+#ldap2Mysql .etape {
+        font-weight: bold;
+        text-decoration: underline;
+}
+
+#ldap2Mysql .divRadio {
+        padding-left: 2px;
+        float: left;
+}
+
+#ldap2Mysql .divLibelleRadio {
+        padding-left: 2px;
+        float: left;
+        margin-top: 2px;
+        font-weight: bold;
+}
+
+#ldap2Mysql #ldap_import_correspondance table {
+        border: 1px solid red;
+}
+
+#ldap2Mysql span.bold {
+        font-weight: bold;
+}
+
+#ldap2Mysql,#ldap2Mysql select,#ldap2Mysql input {
+        font-family: arial, tahoma,  serif;
+        font-size: 12px;
+}
+
+#ldap2Mysql td.libelle {
+        text-align: right;
+}
+
+#ldap2Mysql input.inputText {
+        padding-left: 2px;
+        padding-right: 2px;
+}
+
+#ldap2Mysql input.inputSubmit {
+        border-left: 1px solid #ffffff;
+        border-top: 1px solid #ffffff;
+        border-right: 1px solid #404040;
+        border-bottom: 1px solid #404040;
+        cursor: pointer;
+}
+
+#ldap2Mysql input.submit_entete {
+        border-width: 0px;
+        cursor: pointer;
+        background-color: transparent;;
+        font-weight: bold;
+}
+
+#ldap2Mysql input.inputSubmitTranslucide {
+        border: 0px solid #ffffff;
+        background-color: #ffffff;
+        color: blue;;
+        cursor: pointer;
+}
+
+#ldap2Mysql input.inputSubmitDisabled {
+        border: 1px solid #ffffff;
+        background-color: #ffffff;
+}
+
+#ldap2Mysql  th {
+        background-color: #D0E3FA;
+}
+
+#ldap2Mysql .redBold {
+        color: red;
+        font-weight: bold;
+}
+
+#ldap2Mysql .errorMessage {
+        color: red;
+        font-family: Arial, Georgia, Tahoma, sans-serif;
+        font-style: italic;
+}
+
+#ldap2Mysql .White_TD {
+        background-color: #ffffff;
+}

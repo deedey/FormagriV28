@@ -1,0 +1,40 @@
+                       <TD nowrap>
+                            <SELECT NAME="day">
+                       <? for($d=1; $d<32; ++$d) {
+                             if ($d<10) $suite="0"; else $suite="";
+                             if ($d == $day)
+                               echo"<OPTION VALUE=\"$day\" selected>$day</OPTION>";
+                             else
+                               echo "<OPTION VALUE=\"$d\">$suite$d</OPTION>";
+                       }?>
+                            </SELECT>
+                           <SELECT NAME="month">
+                       <?
+                         $nom_mois = array (1=>$mois1,
+                                            2=>$mois2,
+                                            3=>$mois3,
+                                            4=>$mois4,
+                                            5=>$mois5,
+                                            6=>$mois6,
+                                            7=>$mois7,
+                                            8=>$mois8,
+                                            9=>$mois9,
+                                            10=>$mois10,
+                                            11=>$mois11,
+                                            12=>$mois12);
+                        for($m=1; $m<13; ++$m) {
+                             if ($m == $month)
+                               echo"<OPTION VALUE=\"$month\" selected>$nom_mois[$m]</OPTION>";
+                             else
+                               echo "<OPTION VALUE=\"$m\">$nom_mois[$m]</OPTION>";
+                       }?>
+                           </SELECT>
+                         <SELECT NAME="year">
+                       <? for($y=2002; $y<2013; ++$y) {
+                             if ($y == $year)
+                               echo"<OPTION VALUE=\"$y\" selected>$year</OPTION>";
+                             else
+                               echo "<OPTION VALUE=\"$y\">$y</OPTION>";
+                       }?>
+                         </SELECT>
+                         </TD>

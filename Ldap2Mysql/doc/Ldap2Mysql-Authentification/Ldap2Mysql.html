@@ -1,0 +1,2168 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Ldap2Mysql</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+						<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Ldap2Mysql</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Classe  Ldap2Mysql</p>
+	<ul class="tags">
+				<li><span class="field">dependance:</span> activation de l'extension php_ldap</li>
+				<li><span class="field">license:</span> GPL</li>
+				<li><span class="field">version:</span> 1.0</li>
+				<li><span class="field">dependance:</span> si CAS comme serveur d'authentification activation  de l'extension=php_curl.dll</li>
+				<li><span class="field">dependance:</span> module de gestion de langue : Lang</li>
+				<li><span class="field">module:</span> Ldap2Mysql</li>
+				<li><span class="field">description:</span> importation/mise à jour des utilisateurs ldap=&gt;mysql</li>
+				<li><span class="field">author:</span> Nordine Zetoutou  - &lt;<a href="mailto:nzetoutou@educagri.fr">nzetoutou@educagri.fr</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_Ldap2Mysql---Ldap2Mysql.php.html">/Ldap2Mysql/Ldap2Mysql.php</a> (line <span class="field"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a36">36</a></span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$aListeChampToUpdate" title="details" class="var-name">$aListeChampToUpdate</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$aMysqlTableUserGroups" title="details" class="var-name">$aMysqlTableUserGroups</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$bCheckbox_includeImportedUsers" title="details" class="var-name">$bCheckbox_includeImportedUsers</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$blisteDeroulanteVisible" title="details" class="var-name">$blisteDeroulanteVisible</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$champ_login" title="details" class="var-name">$champ_login</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$champ_motDePasse" title="details" class="var-name">$champ_motDePasse</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$dateCreation" title="details" class="var-name">$dateCreation</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$sFilter" title="details" class="var-name">$sFilter</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$sMysqlTableToUpdate" title="details" class="var-name">$sMysqlTableToUpdate</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
+				<div class="method-definition">
+											<span class="method-result">Ldap2Mysql</span>
+										<a href="#Ldap2Mysql" title="details" class="method-name">Ldap2Mysql</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$lang</span> = <span class="var-default">'fr_FR'</span>], <span class="var-type">string</span>&nbsp;<span class="var-name">$slang</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#authModeConfig_controller" title="details" class="method-name">authModeConfig_controller</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#authModeConfig_view" title="details" class="method-name">authModeConfig_view</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">object</span>
+										<a href="#authMode_getContentFile" title="details" class="method-name">authMode_getContentFile</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">object</span>
+										<a href="#baseConfig_controller" title="details" class="method-name">baseConfig_controller</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$sBaseType</span> = <span class="var-default">'ldap'</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#baseConfig_save_delete" title="details" class="method-name">baseConfig_save_delete</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$objetToSerialize</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$fFile</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$sDelete</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#baseConfig_view" title="details" class="method-name">baseConfig_view</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$oBase</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">object</span>
+										<a href="#baseInitializeObject" title="details" class="method-name">baseInitializeObject</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sBaseType</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#baseLoadList" title="details" class="method-name">baseLoadList</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">object</span>
+										<a href="#baseLoadParam" title="details" class="method-name">baseLoadParam</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$oBase_id</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">object</span>
+										<a href="#baseNomExist" title="details" class="method-name">baseNomExist</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$nom</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#buildSelectListeBase" title="details" class="method-name">buildSelectListeBase</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$aoListeBase</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$aOption</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$selected</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#consult_controller" title="details" class="method-name">consult_controller</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#consult_getAttributListToDisplay" title="details" class="method-name">consult_getAttributListToDisplay</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#consult_getUsersNotInLdap" title="details" class="method-name">consult_getUsersNotInLdap</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#consult_view" title="details" class="method-name">consult_view</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$aoUser</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#delete_var_session" title="details" class="method-name">delete_var_session</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#display" title="details" class="method-name">display</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$sControlPanel</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#display_warning" title="details" class="method-name">display_warning</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$messageWarning</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$NumeroLigne</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">object</span>
+										<a href="#formInitializeObject" title="details" class="method-name">formInitializeObject</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$sBaseType</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#formInputComponent" title="details" class="method-name">formInputComponent</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$type</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$elementName</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$value</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$aOptions</span> = <span class="var-default">array ()</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#formSelectComponent" title="details" class="method-name">formSelectComponent</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$selectName</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$adata</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$aOption</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$default</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getAllBases" title="details" class="method-name">getAllBases</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getParamLang" title="details" class="method-name">getParamLang</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$lang</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#get_temporary_unique_id" title="details" class="method-name">get_temporary_unique_id</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#importConfig_controller" title="details" class="method-name">importConfig_controller</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#importConfig_save_delete" title="details" class="method-name">importConfig_save_delete</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$objetToSerialize</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$sDelete</span> = <span class="var-default">null</span>], <span class="var-type">objet</span>&nbsp;<span class="var-name">$oParamImport</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#importConfig_view" title="details" class="method-name">importConfig_view</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#ldap_checkUserAttribut" title="details" class="method-name">ldap_checkUserAttribut</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$oUser</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#ldap_getAttributListToDisplay" title="details" class="method-name">ldap_getAttributListToDisplay</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#ldap_getFields" title="details" class="method-name">ldap_getFields</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#ldap_getLinks" title="details" class="method-name">ldap_getLinks</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#ldap_import_appliquerModifSelectUsers" title="details" class="method-name">ldap_import_appliquerModifSelectUsers</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#ldap_import_controller" title="details" class="method-name">ldap_import_controller</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#ldap_import_finalize" title="details" class="method-name">ldap_import_finalize</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#ldap_import_getData" title="details" class="method-name">ldap_import_getData</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$oLdap</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$arrayParam</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#ldap_import_getFilter" title="details" class="method-name">ldap_import_getFilter</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">un</span>
+										<a href="#ldap_import_getUsers" title="details" class="method-name">ldap_import_getUsers</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#ldap_import_loadConfig" title="details" class="method-name">ldap_import_loadConfig</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$configImport_id</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#ldap_import_loadListConfig" title="details" class="method-name">ldap_import_loadListConfig</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#ldap_import_setFilter" title="details" class="method-name">ldap_import_setFilter</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$sFilter</span> = <span class="var-default">''</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#ldap_import_view" title="details" class="method-name">ldap_import_view</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#manual_view" title="details" class="method-name">manual_view</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">ajoute</span>
+										<a href="#mysql_addUsersFromLdap" title="details" class="method-name">mysql_addUsersFromLdap</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$aQuery</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$aUpdateOrInsert</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#mysql_createFields" title="details" class="method-name">mysql_createFields</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$aFieldsToAdd</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#mysql_generate_login" title="details" class="method-name">mysql_generate_login</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#mysql_generate_passWord" title="details" class="method-name">mysql_generate_passWord</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$passLength</span> = <span class="var-default">4</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#mysql_getAllLogin" title="details" class="method-name">mysql_getAllLogin</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#mysql_getConnexion" title="details" class="method-name">mysql_getConnexion</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#mysql_getFields" title="details" class="method-name">mysql_getFields</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#mysql_getFieldsUserGroups" title="details" class="method-name">mysql_getFieldsUserGroups</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#mysql_getImportedUsers" title="details" class="method-name">mysql_getImportedUsers</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#mysql_getInsertedUsers" title="details" class="method-name">mysql_getInsertedUsers</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$sldap_config_import_id</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#mysql_import_display" title="details" class="method-name">mysql_import_display</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#mysql_initializeFieldsToImport" title="details" class="method-name">mysql_initializeFieldsToImport</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#mysql_isFieldsExists" title="details" class="method-name">mysql_isFieldsExists</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#pager" title="details" class="method-name">pager</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$totalData</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#run" title="details" class="method-name">run</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_variableSessionUser" title="details" class="method-name">set_variableSessionUser</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$unique_id</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$variable</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$aListeChampToUpdate" id="$aListeChampToUpdate"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$aListeChampToUpdate</span>
+			 = <span class="var-default">array (<br />		'_nom' =&gt; 'nom',<br />		'_email' =&gt; 'email'<br />	)</span>			(line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a50">50</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$aMysqlTableUserGroups" id="$aMysqlTableUserGroups"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$aMysqlTableUserGroups</span>
+			 = <span class="var-default">array (<br />		'table' =&gt; 'user_group',<br />		'field_id' =&gt; '_IDgrp',<br />		'field_groupeType' =&gt; '_ident'<br />	)</span>			(line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a42">42</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$bCheckbox_includeImportedUsers" id="$bCheckbox_includeImportedUsers"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$bCheckbox_includeImportedUsers</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a60">60</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$blisteDeroulanteVisible" id="$blisteDeroulanteVisible"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$blisteDeroulanteVisible</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a56">56</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$champ_login" id="$champ_login"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$champ_login</span>
+			 = <span class="var-default"> '_ident'</span>			(line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a49">49</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$champ_motDePasse" id="$champ_motDePasse"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$champ_motDePasse</span>
+			 = <span class="var-default"> '_passwd'</span>			(line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a48">48</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$dateCreation" id="$dateCreation"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$dateCreation</span>
+			 = <span class="var-default"> '_create'</span>			(line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a47">47</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$sFilter" id="$sFilter"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$sFilter</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a58">58</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+<a name="var$sMysqlTableToUpdate" id="$sMysqlTableToUpdate"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$sMysqlTableToUpdate</span>
+			 = <span class="var-default"> 'user_id'</span>			(line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a40">40</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodLdap2Mysql" id="Ldap2Mysql"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor Ldap2Mysql</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a72">72</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">constructeur</p>
+	<ul class="tags">
+				<li><span class="field">description:</span> initialise la classe avec</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Ldap2Mysql</span>
+		<span class="method-name">
+			Ldap2Mysql
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$lang</span> = <span class="var-default">'fr_FR'</span>], <span class="var-type">string</span>&nbsp;<span class="var-name">$slang</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$slang</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$lang</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodauthModeConfig_controller" id="authModeConfig_controller"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">authModeConfig_controller</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a119">119</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			authModeConfig_controller
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodauthModeConfig_view" id="authModeConfig_view"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">authModeConfig_view</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a208">208</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> affiche le mode d'authentification à choisir</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			authModeConfig_view
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodauthMode_getContentFile" id="authMode_getContentFile"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">authMode_getContentFile</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a185">185</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> ou  string null</li>
+				<li><span class="field">description:</span> récupère le contenu du fichier : soit une config d'une base soit une  chaine spécifiant que le mode d'authentification externe est désactivé</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">object</span>
+		<span class="method-name">
+			authMode_getContentFile
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodbaseConfig_controller" id="baseConfig_controller"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">baseConfig_controller</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a1965">1965</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> gestion de toutes les actions sur l'interface de configuration</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">object</span>
+		<span class="method-name">
+			baseConfig_controller
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$sBaseType</span> = <span class="var-default">'ldap'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$sBaseType</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodbaseConfig_save_delete" id="baseConfig_save_delete"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">baseConfig_save_delete</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a1900">1900</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			baseConfig_save_delete
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$objetToSerialize</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$fFile</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$sDelete</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$objetToSerialize</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$fFile</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$sDelete</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodbaseConfig_view" id="baseConfig_view"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">baseConfig_view</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a2177">2177</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			baseConfig_view
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$oBase</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$oBase</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodbaseInitializeObject" id="baseInitializeObject"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">baseInitializeObject</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a1930">1930</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> initialise un  objet base (MYSQL, ldap, CAS) avec les  paramètres par défaut</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">object</span>
+		<span class="method-name">
+			baseInitializeObject
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sBaseType</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sBaseType</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodbaseLoadList" id="baseLoadList"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">baseLoadList</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a2336">2336</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			baseLoadList
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodbaseLoadParam" id="baseLoadParam"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">baseLoadParam</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a2324">2324</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> charge la config d'une base</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">object</span>
+		<span class="method-name">
+			baseLoadParam
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$oBase_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$oBase_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodbaseNomExist" id="baseNomExist"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">baseNomExist</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a2288">2288</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> vérifie si le nom du base existe</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">object</span>
+		<span class="method-name">
+			baseNomExist
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$nom</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$nom</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodbuildSelectListeBase" id="buildSelectListeBase"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">buildSelectListeBase</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a2844">2844</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> construit un select selon le type de base</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			buildSelectListeBase
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$aoListeBase</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$aOption</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$selected</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$aoListeBase</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$aOption</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$selected</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodconsult_controller" id="consult_controller"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">consult_controller</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a1615">1615</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			consult_controller
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodconsult_getAttributListToDisplay" id="consult_getAttributListToDisplay"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">consult_getAttributListToDisplay</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a1558">1558</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			consult_getAttributListToDisplay
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodconsult_getUsersNotInLdap" id="consult_getUsersNotInLdap"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">consult_getUsersNotInLdap</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a1577">1577</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> d'objets $aoUser</li>
+				<li><span class="field">description:</span> récupère les utilisateurs non présents dans le ldap</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			consult_getUsersNotInLdap
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodconsult_view" id="consult_view"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">consult_view</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a1621">1621</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			consult_view
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$aoUser</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$aoUser</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddelete_var_session" id="delete_var_session"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">delete_var_session</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a3198">3198</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> supprime des variables de sessions dont on n'a plus besoin</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			delete_var_session
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoddisplay" id="display"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">display</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a3277">3277</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> remplit le div principal avec le contenu de chaque interface</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			display
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$sControlPanel</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$sControlPanel</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddisplay_warning" id="display_warning"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">display_warning</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a3221">3221</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			display_warning
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$messageWarning</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$NumeroLigne</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$messageWarning</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$NumeroLigne</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodformInitializeObject" id="formInitializeObject"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">formInitializeObject</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a3015">3015</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> initialise un  objet de champde formulaire</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">object</span>
+		<span class="method-name">
+			formInitializeObject
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$sBaseType</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$sBaseType</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodformInputComponent" id="formInputComponent"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">formInputComponent</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a2943">2943</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			formInputComponent
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$type</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$elementName</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$value</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$aOptions</span> = <span class="var-default">array ()</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$type</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$elementName</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$value</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$aOptions</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodformSelectComponent" id="formSelectComponent"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">formSelectComponent</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a3084">3084</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> fonction de construction d'un select</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			formSelectComponent
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$selectName</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$adata</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$aOption</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$default</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$selectName</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$adata</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$aOption</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$default</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetAllBases" id="getAllBases"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAllBases</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a3142">3142</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> récupère la liste des bases ldap et mysql</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getAllBases
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetParamLang" id="getParamLang"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getParamLang</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a2831">2831</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> récupère les libellés du module selon la langue choisie  par défaut langue fr_FR</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getParamLang
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$lang</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$lang</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodget_temporary_unique_id" id="get_temporary_unique_id"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_temporary_unique_id</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a3213">3213</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> fonction de création d'une chaine unique servant pour l'insertion dans la base pour éviter les doublons</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get_temporary_unique_id
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodimportConfig_controller" id="importConfig_controller"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">importConfig_controller</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a297">297</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> execute les actions relatives aux chargements des champs ldap et mysql   execute les actions relatives à l'ajout/suppression des champs de correspondance</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			importConfig_controller
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodimportConfig_save_delete" id="importConfig_save_delete"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">importConfig_save_delete</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a258">258</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> fonction de suppression d'un objet (représentant une configuration d'une importation) dans le fichier import</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			importConfig_save_delete
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$objetToSerialize</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$sDelete</span> = <span class="var-default">null</span>], <span class="var-type">objet</span>&nbsp;<span class="var-name">$oParamImport</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">objet</span>
+				<span class="var-name">$oParamImport</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$objetToSerialize</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$sDelete</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodimportConfig_view" id="importConfig_view"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">importConfig_view</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a403">403</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> affiche le l'interface de la config</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			importConfig_view
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodldap_checkUserAttribut" id="ldap_checkUserAttribut"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">ldap_checkUserAttribut</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a1844">1844</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			ldap_checkUserAttribut
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$oUser</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$oUser</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodldap_getAttributListToDisplay" id="ldap_getAttributListToDisplay"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">ldap_getAttributListToDisplay</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a1830">1830</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> liste des champs ldap à afficher</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			ldap_getAttributListToDisplay
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodldap_getFields" id="ldap_getFields"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">ldap_getFields</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a562">562</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> retourne un tableau de la liste de tous les  champs ldap</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			ldap_getFields
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodldap_getLinks" id="ldap_getLinks"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">ldap_getLinks</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a2894">2894</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> menu</li>
+				<li><span class="field">description:</span> construit le menu</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			ldap_getLinks
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodldap_import_appliquerModifSelectUsers" id="ldap_import_appliquerModifSelectUsers"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">ldap_import_appliquerModifSelectUsers</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a610">610</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> retourne un tableau de la liste de tous les  champs mysql</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			ldap_import_appliquerModifSelectUsers
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodldap_import_controller" id="ldap_import_controller"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">ldap_import_controller</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a1096">1096</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			ldap_import_controller
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodldap_import_finalize" id="ldap_import_finalize"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">ldap_import_finalize</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a755">755</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> execute l'importation</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			ldap_import_finalize
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodldap_import_getData" id="ldap_import_getData"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">ldap_import_getData</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a921">921</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			ldap_import_getData
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$oLdap</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$arrayParam</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$oLdap</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$arrayParam</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodldap_import_getFilter" id="ldap_import_getFilter"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">ldap_import_getFilter</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a1087">1087</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> permet de recharger le filtre saisi</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			ldap_import_getFilter
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodldap_import_getUsers" id="ldap_import_getUsers"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">ldap_import_getUsers</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a852">852</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> tableau d'objets des utilisateurs</li>
+				<li><span class="field">description:</span> execute le chargement des utilisateurs du ldap (si click su bouton 'charger liste')   et charge un tableau de session qui est réutilisé  sinon renvoi le tableau de session chargé la première fois</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">un</span>
+		<span class="method-name">
+			ldap_import_getUsers
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodldap_import_loadConfig" id="ldap_import_loadConfig"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">ldap_import_loadConfig</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a692">692</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> charge une config en fonction de son id</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			ldap_import_loadConfig
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$configImport_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$configImport_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodldap_import_loadListConfig" id="ldap_import_loadListConfig"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">ldap_import_loadListConfig</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a645">645</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> fonction de chargement de la liste des config d'importations</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			ldap_import_loadListConfig
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodldap_import_setFilter" id="ldap_import_setFilter"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">ldap_import_setFilter</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a1075">1075</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> enregistre le filtre saisie pour le recharger</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			ldap_import_setFilter
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$sFilter</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$sFilter</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodldap_import_view" id="ldap_import_view"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">ldap_import_view</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a1114">1114</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> affiche la vue de l'interface d'importation</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			ldap_import_view
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodmanual_view" id="manual_view"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">manual_view</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a112">112</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">todo:</span> à complèter ou à améliorer</li>
+				<li><span class="field">description:</span> manuel d'utilisation simplifié</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			manual_view
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodmysql_addUsersFromLdap" id="mysql_addUsersFromLdap"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">mysql_addUsersFromLdap</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a2702">2702</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> des valeurs booléennes de succès (insertion ou mise  à jour ou non succès dans chaque  objet ($aoUser)</li>
+				<li><span class="field">description:</span> ajoute les utilisateurs dans la base mysql</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">ajoute</span>
+		<span class="method-name">
+			mysql_addUsersFromLdap
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$aQuery</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$aUpdateOrInsert</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$aQuery</span><span class="var-description">: les requêtes d'insertion</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$aUpdateOrInsert</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmysql_createFields" id="mysql_createFields"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">mysql_createFields</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a2405">2405</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> crée les champs gérant l'importation ldap</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			mysql_createFields
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$aFieldsToAdd</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$aFieldsToAdd</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmysql_generate_login" id="mysql_generate_login"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">mysql_generate_login</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a2729">2729</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> login</li>
+				<li><span class="field">description:</span> crée un login temporaire pour promethée</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			mysql_generate_login
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodmysql_generate_passWord" id="mysql_generate_passWord"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">mysql_generate_passWord</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a2817">2817</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> de 4 caract maj et min</li>
+				<li><span class="field">description:</span> crée un mot de passe temporaire pour promethée</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			mysql_generate_passWord
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$passLength</span> = <span class="var-default">4</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$passLength</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmysql_getAllLogin" id="mysql_getAllLogin"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">mysql_getAllLogin</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a2584">2584</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> associatif liste  des logins</li>
+				<li><span class="field">description:</span> fonction récupérant les logins de la base mysql</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			mysql_getAllLogin
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodmysql_getConnexion" id="mysql_getConnexion"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">mysql_getConnexion</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a2550">2550</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> si pas de connexion</li>
+				<li><span class="field">description:</span> crée une ressource mysql</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			mysql_getConnexion
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodmysql_getFields" id="mysql_getFields"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">mysql_getFields</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a2484">2484</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			mysql_getFields
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodmysql_getFieldsUserGroups" id="mysql_getFieldsUserGroups"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">mysql_getFieldsUserGroups</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a2370">2370</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			mysql_getFieldsUserGroups
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodmysql_getImportedUsers" id="mysql_getImportedUsers"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">mysql_getImportedUsers</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a2459">2459</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			mysql_getImportedUsers
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodmysql_getInsertedUsers" id="mysql_getInsertedUsers"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">mysql_getInsertedUsers</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a2604">2604</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> associatif liste objet des personnes importées</li>
+				<li><span class="field">description:</span> fonction récupérant les personnes déjà importées</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			mysql_getInsertedUsers
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$sldap_config_import_id</span>)
+			</div>
+	
+		
+			
+	</div>
+<a name="methodmysql_import_display" id="mysql_import_display"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">mysql_import_display</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a2357">2357</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			mysql_import_display
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodmysql_initializeFieldsToImport" id="mysql_initializeFieldsToImport"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">mysql_initializeFieldsToImport</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a2633">2633</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> fonction qui va initialiser un tableay dont les clés sont les champs mysql et les valeurs  sont la valeur default du champ si elle existe, si le champ est obligatoire   on lui asscie un valeur temporaire sinon une valeur null  ou</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			mysql_initializeFieldsToImport
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodmysql_isFieldsExists" id="mysql_isFieldsExists"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">mysql_isFieldsExists</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a2425">2425</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> bool si true ou array $aFieldsToAdd nom des champs à créer</li>
+				<li><span class="field">description:</span> vérifie si les champs gérant l'importation ldap existent</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			mysql_isFieldsExists
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodpager" id="pager"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">pager</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a1499">1499</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> gère la pagination des résultats</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			pager
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$totalData</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$totalData</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodrun" id="run"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">run</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a3233">3233</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			run
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodset_variableSessionUser" id="set_variableSessionUser"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_variableSessionUser</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__Ldap2MysqlLdap2Mysql.php.html#a3190">3190</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> fonction ajoutant une propriété  ou modifiant une valeur d'une propriété dans la session au tableau des users  $_SESSION['Ldap2Mysql']['aoUser'][$unique_id]['variable']</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_variableSessionUser
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$unique_id</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$variable</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$unique_id</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$variable</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$value</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Wed, 22 Nov 2006 11:41:10 +0100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.0RC6</a>
+	</p>
+	</div></body>
+</html>

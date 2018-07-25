@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
+
+   <general>
+      <title>
+         <langstring>Inland Rules of the Road</langstring>
+      </title>
+      <catalogentry>
+         <catalog>ADL Course Catalogue ID</catalog>
+         <entry>
+            <langstring>1000</langstring>
+         </entry>
+      </catalogentry>
+      <catalogentry>
+         <catalog>U.S. Coast Guard, Commandant Instruction</catalog>
+         <entry>
+            <langstring>M6672.2C</langstring>
+         </entry>
+      </catalogentry>
+      <language>en-US</language>
+      <description>
+         <langstring>Basic instruction on U.S. Coast Guard and U.S. Regulation of Inland Vessel Rules of Navigation</langstring>
+      </description>
+      <keyword>
+         <langstring>Vessel</langstring>
+      </keyword>
+      <keyword>
+         <langstring>Inland Navigation</langstring>
+      </keyword>
+      <keyword>
+         <langstring>Coast Guard</langstring>
+      </keyword>
+      <aggregationlevel>
+         <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+         </source>
+         <value>
+            <langstring xml:lang="x-none">3</langstring>
+         </value>
+      </aggregationlevel>
+   </general>
+
+   <lifecycle>
+      <version>
+         <langstring>1.1</langstring>
+      </version>
+      <status>
+         <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+         </source>
+         <value>
+            <langstring xml:lang="x-none">Final</langstring>
+         </value>
+      </status>
+      <contribute>
+         <role>
+            <source>
+               <langstring xml:lang="x-none">LOMv1.0</langstring>
+            </source>
+            <value>
+               <langstring xml:lang="x-none">Author</langstring>
+            </value>
+         </role>
+         <centity>
+            <vcard>BEGIN:vCard ORG:ADL Co-Lab END:vCard</vcard>
+         </centity>
+         <date>
+            <datetime>2000-01-28</datetime>
+         </date>
+      </contribute>
+   </lifecycle>
+
+   <metametadata>
+      <catalogentry>
+         <catalog>test</catalog>
+         <entry>
+            <langstring>test 1000</langstring>
+         </entry>
+      </catalogentry>
+      <metadatascheme>ADL SCORM 1.2</metadatascheme>
+      <language>en-US</language>
+   </metametadata>
+   <technical>
+      <format>text/html</format>
+      <location type="URI">Course01/Course01.xml</location>
+      <requirement>
+         <type>
+            <source>
+               <langstring xml:lang="x-none">LOMv1.0</langstring>
+            </source>
+            <value>
+               <langstring xml:lang="x-none">Browser</langstring>
+            </value>
+         </type>
+         <name>
+            <source>
+               <langstring xml:lang="x-none">LOMv1.0</langstring>
+            </source>
+            <value>
+               <langstring xml:lang="x-none">Microsoft Internet Explorer</langstring>
+            </value>
+         </name>
+         <minimumversion>5.0</minimumversion>
+      </requirement>
+   </technical>
+
+   <educational>
+      <learningresourcetype>
+         <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+         </source>
+         <value>
+            <langstring xml:lang="x-none">Narrative Text</langstring>
+         </value>
+      </learningresourcetype>
+      <learningresourcetype>
+         <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+         </source>
+         <value>
+            <langstring xml:lang="x-none">Figure</langstring>
+         </value>
+      </learningresourcetype>
+      <learningresourcetype>
+         <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+         </source>
+         <value>
+            <langstring xml:lang="x-none">Questionnaire</langstring>
+         </value>
+      </learningresourcetype>
+   </educational>
+
+   <rights>
+      <cost>
+         <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+         </source>
+         <value>
+            <langstring xml:lang="x-none">no</langstring>
+         </value>
+      </cost>
+      <copyrightandotherrestrictions>
+         <source>
+            <langstring xml:lang="x-none">LOMv1.0</langstring>
+         </source>
+         <value>
+            <langstring xml:lang="x-none">no</langstring>
+         </value>
+      </copyrightandotherrestrictions>
+      <description>
+         <langstring>Provided as-is; only to be used as an example.</langstring>
+      </description>
+   </rights>
+   
+   <classification>
+     <purpose>
+        <source>
+           <langstring xml:lang="x-none">LOMv1.0</langstring>
+        </source>
+        <value>
+           <langstring xml:lang="x-none">Discipline</langstring>
+        </value>
+     </purpose>
+     <taxonpath>
+        <source>
+           <langstring>DDC</langstring>
+        </source>
+        <taxon>
+           <id>623.89</id>
+           <entry>
+              <langstring>Navigation</langstring>
+           </entry>
+        </taxon>
+     </taxonpath>
+     <description>
+         <langstring>This course will give the student a basic understanding of the Inland Rules of Navigation.</langstring>
+      </description>
+     <keyword>
+        <langstring>Maritime</langstring>
+     </keyword>
+     <keyword>
+        <langstring>Navigation</langstring>
+     </keyword>
+   </classification>
+   <classification>
+      <purpose>
+        <source>
+           <langstring xml:lang="x-none">LOMv1.0</langstring>
+        </source>
+        <value>
+           <langstring xml:lang="x-none">Educational Objective</langstring>
+        </value>
+      </purpose>
+      <description>
+         <langstring>This course will give the student a basic understanding of the Inland Rules of Navigation.</langstring>
+      </description>
+      <keyword>
+         <langstring>Inland Navigation</langstring>
+      </keyword>
+   </classification>
+   <classification>
+      <purpose>
+        <source>
+           <langstring xml:lang="x-none">LOMv1.0</langstring>
+        </source>
+        <value>
+           <langstring xml:lang="x-none">Educational Level</langstring>
+        </value>
+      </purpose>
+      <description>
+         <langstring>This course was designed for the high school or above level.</langstring>
+      </description>
+      <keyword>
+         <langstring>High School</langstring>
+      </keyword>
+   </classification>
+</lom>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!--
+e-teach
+IMS-QTI 1.2 produced for q-player 1.0
+http://www.e-teach.ch
+Crissier - Switzerland
+//-->
+<!--
+Qplayer configuration ::
+language option : fr, de, en
+navigationMode : free, exam
+helpMode : full, bubble, text, none
+shuffleQuestion : true, false
+closeButton : true, false
+skin : url="path to skin" default : " " built in skin 
+manifest : url="path to manifest" default : "/Qmanifest.xml"
+-->
+<QplayerConfig>
+	<language>fr</language>
+	<navigationMode>free</navigationMode>
+	<helpMode>full</helpMode>
+	<shuffleQuestion>false</shuffleQuestion>
+	<hasfeedback>true</hasfeedback>
+	<closeButton>true</closeButton>
+	<skin url=""></skin>
+	<manifest url="Qmanifest.xml"></manifest>
+</QplayerConfig>

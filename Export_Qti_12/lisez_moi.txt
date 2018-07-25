@@ -1,0 +1,34 @@
+******** e-teach Q-player 1.0 ********
+www.e-teach.ch
+info@e-teach.ch
+**************************************
+
+Contenu du zip :
+
+
+** quiz.htm
+page HTML de lancement du Q-player
+contient un script de détection du plugin flash 6
+
+** Qplayer_800_600.swf
+fichier swf moteur du Q-player
+Peut être ouvert par tous navigateurs contenant le plugin flash 6
+
+** Qmanifest.xml
+fichier de description des ressources nécessaires au quiz
+INDISPENSABLE AU LANCEMENT DU Q-PLAYER
+
+** Qplayer_config.xml
+fichier de configuration du Q-player
+
+** répertoire XML
+Contient les fichiers question pour le quiz
+Attention, il doit contenir un fichier par question
+
+** répertoire IMG
+Contient les fichiers médias (swf,jpg) nécessaires aux questions du quiz
+
+
+******** lancement du Q-player ********
+
+Afin de lancer le Q-player, double-cliquez sur quiz.htm

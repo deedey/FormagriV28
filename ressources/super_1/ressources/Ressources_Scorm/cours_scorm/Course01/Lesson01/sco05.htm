@@ -1,0 +1,460 @@
+<html>
+
+<!--
+/*******************************************************************************
+**
+** Concurrent Technologies Corporation (CTC) grants you ("Licensee") a non-
+** exclusive, royalty free, license to use, modify and redistribute this
+** software in source and binary code form, provided that i) this copyright
+** notice and license appear on all copies of the software; and ii) Licensee
+** does not utilize the software in a manner which is disparaging to CTC.
+**
+** This software is provided "AS IS," without a warranty of any kind.  ALL
+** EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+** IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-
+** INFRINGEMENT, ARE HEREBY EXCLUDED.  CTC AND ITS LICENSORS SHALL NOT BE LIABLE
+** FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
+** DISTRIBUTING THE SOFTWARE OR ITS DERIVATIVES.  IN NO EVENT WILL CTC OR ITS
+** LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT,
+** INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER
+** CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF
+** OR INABILITY TO USE SOFTWARE, EVEN IF CTC  HAS BEEN ADVISED OF THE
+** POSSIBILITY OF SUCH DAMAGES.
+**
+*******************************************************************************/
+-->
+<head>
+<meta http-equiv="expires" content="Tue, 05 DEC 2000 05:00:00 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<script language=javascript src="../APIWrapper.js"></script>
+<script language=javascript src="../SCOFunctions.js"></script>
+<title>Inland Rules of the Road - Lights and Shapes</title>
+</head>
+<body onLoad="loadPage()" onunload="return unloadPage('incomplete')">
+<p align=right><font color=lightslategray><b><i><label>SCO 05</label></i></b></font></p>
+   
+      <p><b><i>The purpose of this course is to demonstrate the functionality and capability of the
+      ADL SAMPLE Run-time Environment.  CTC does not recommend, propose or otherwise promote the style, fashion, or
+      type of content presented in this course.
+      </i></b></p>
+   
+      <h1>Lights and Shapes</h1>
+      <hr>
+      <br>
+   
+      <p><b>Application</b></p>
+         <dl>
+            <dt>a) Rules in this Part shall be complied with in all weathers
+            <dt>b) The Rules concerning lights shall be complied with from sunset to sunrise, and during such times no other lights
+            shall be exhibited, except such lights as cannot be mistaken for the lights specified in these Rules or do not impair their
+            visibility or distinctive character, or interfere with the keeping of a proper look-out
+            <dt>c) The lights prescribed by these Rules shall also be exhibited from sunrise to sunset in restricted
+            visibility and may be exhibited in all other circumstances when it is deemed necessary
+            <dt>d) The Rules concerning shapes shall be complied with by day
+         </dl>
+      
+      <p><b>Definitions</b></p>
+         <dl>
+            <dt><b><i>masthead light</i></b><dd>A white light placed over the fore and aft centerline of the vessel showing an
+            unbroken light over an arc of the horizon of 225 degrees and so fixed as to show the light from right ahead to 22.5 degrees
+            abaft the beam on either side of the vessel, except that on a vessel of less than 12 meters in length the masthead light shall
+            be placed as nearly as practicable to the fore and aft centerline of the vessel
+            <dt><b><i>Sidelights</i></b><dd>A green light on the starboard side and a red light on the port side each showing an unbroken
+            light over an arc of the horizon of 112.5 degrees and so fixed as to show the light from right ahead to 22.5 degrees abaft the
+            beam on its respective side. On a vessel of less than 20 meters in length the sidelights may be combined in one lantern carried
+            on the fore and aft centerline of the vessel, except that on a vessel of less than 12 meters in length the side-lights when
+            combined in one lantern shall be placed as nearly as practicable to the fore and aft centerline of the vessel.
+            <dt><b><i>Sternlight</i></b><dd>A white light placed as nearly as practicable at the stern showing an unbroken light over an arc
+            of the horizon of 135 degrees and so fixed as to show the light 67.5 degrees from right aft on each side of the vessel.
+            <dt><b><i>towing light</i></b><dd>A yellow light having the same characteristics as the "sternlight"
+            <dt><b><i>all-round light</i></b><dd>A light showing an unbroken light over an arc of the horizon of 360 degrees
+            <dt><b><i>flashing light</i></b><dd>A light flashing at regular intervals at a frequency of 120 flashes or more per minute
+            <dt><b><i>special flashing light</i></b><dd>A yellow light flashing at regular intervals at a frequency of 50 to 70 flashes per
+            minute, placed as far forward and as nearly as practicable on the fore and aft centerline of the tow and showing an unbroken
+            light over an arc of the horizon of not less than 180 degrees nor more than 225 degrees and so fixed as to show the light from
+            right ahead to abeam and no more than 22.5 degrees abaft the beam on either side of the vessel
+         </dl>
+         
+      <p><b>Visibility of Lights</b></p>
+      <p>The lights prescribed in these Rules shall be visible at the following minimum ranges:</p>
+         <dl>
+            <dt>a) In a vessel of 50 meters or more in length:
+               <ul>
+                  <li type="DISC">A masthead light, 6 miles
+                  <li>A sidelight, 3 miles
+                  <li>A sternlight, 3 miles
+                  <li>A towing light, 3 miles
+                  <li>A white, red, green or yellow all-round light, 3 miles
+                  <li>A special flashing light, 2 miles.
+               </ul>
+            <dt>b) In a vessel of 12 meters or more in length but less than 50 meters in length:
+               <ul>
+                  <li type="DISC">A masthead light, 5 miles; except that where the length of the vessel is less than 20 meters, 3 miles
+                  <li>A sidelight, 2 miles
+                  <li>A sternlight, 2 miles
+                  <li>A towing light, 2 miles
+                  <li>A white, red, green or yellow all-round light, 2 miles
+                  <li>A special flashing light, 2 miles
+               </ul>
+            <dt>c) In a vessel of less than 12 meters in length:
+               <ul>
+                  <li type="DISC">A masthead light, 2 miles
+                  <li>A sidelight, 1 mile
+                  <li>A sternlight, 2 miles
+                  <li>A towing light, 2 miles
+                  <li>A white, red, green or yellow all-round light, 2 miles
+                  <li>A special flashing light, 2 miles
+               </ul>
+            <dt>d) In an inconspicuous, partly submerged vessel or object being towed:
+               <ul>
+                  <li type="DISC">A white all-round light, 3 miles
+               </ul>
+         </dl>
+
+         <p><b>Power-driven Vessels Underway</b></p>
+            <dl>
+               <dt>a) A power-driven vessel underway shall exhibit:
+                  <dl>
+                     <dt>1) A masthead light forward; except that a vessel of less than 20 meters in length need not exhibit this light
+                     forward of amidships but shall exhibit it as far forward as is practicable
+                     <dt>2) a second masthead light abaft of and higher than the forward one; except that a vessel of less than 50 meters
+                     in length shall not be obliged to exhibit such light but may do so
+                     <dt>3) Sidelights
+                     <dt>4) A stern light.
+                     <dt><img src="pics/underway_lights_big.jpg" width=550 height=420 border=0 id="underway_lights" alt="">
+                     <br><br>
+                     <dt>Power-driven vessel underway
+                     <br><br>
+                     <dt><img src="pics/underway_lights_small.jpg" width=550 height=373 border=0 title="Less than 50 meters in length" id="underway_lights" alt="">
+                     <br><br>
+                     <dt>Power-driven vessel underway—less than 50 meters in length
+                     <br><br>
+                  </dl>
+               <dt>b) An air-cushion vessel when operating in the non-displacement mode shall, In addition to the lights prescribed in
+               paragraph (a) of this Rule, exhibit an all-round flashing yellow light where it can best be seen
+                  <dl>
+                     <dt><img src="pics/underway_lights_hover.jpg" width=352 height=268 border=0 alt="">
+                     <br><br>
+                     <dt>Air-cushion vessel when operating in the non-displacement mode—vessel less than 50 meters in length
+                     <br><br>
+                  </dl>
+               <dt>c) A power-driven vessel of less than 12 meters in length may, in lieu of the lights prescribed in paragraph (a) of
+               this Rule, exhibit an all-round white light and sidelights
+                  <dl>
+                     <dt><img src="pics/underway_lights_boat.jpg" width=430 height=268 border=0 alt="">
+                     <br><br>
+                     <dt>Power-driven vessel of less than 12 meters in length
+                     <br><br>
+                  </dl>
+               <dt>d) A power-driven vessel when operating on the Great Lakes may carry an all-round white light in lieu of the second
+               masthead light and sternlight prescribed in paragraph (a) of this Rule. The light shall be carried in the position of
+               the second masthead light and be visible at the same minimum range
+                  <dl>
+                     <dt><img src="pics/underway_lights_GL.jpg" width=550 height=400 border=0 alt="">
+                     <br><br>
+                     <dt>Power-driven vessel on Great Lakes
+                     <br><br>
+                  </dl>
+            </dl>
+            
+         <p><b>Towing and Pushing</b></p>
+            <dl>
+               <dt>a) A power-driven vessel when towing shall exhibit:
+                  <dl>
+                     <dt>1) Instead of the light prescribed in Rule (a)(1) or (a)(2), two masthead lights in a vertical line. When the length of
+                     the tow, measuring from the stern of the towing vessel to the after end of the tow exceeds 200 meters, three such lights
+                     in a vertical line
+                     <dt>2) Sidelights
+                     <dt>3) A sternlight
+                     <dt>4) A towing light in a vertical line above the sternlight
+                     <dt>5) When the length of the tow exceeds 200 meters, a diamond shape where it can best be seen
+                     <dt><img src="pics/tow_astern.jpg" width=500 height=363 border=0 alt="">
+                     <br><br>
+                     <dt>Power-driven vessel towing astern—towing vessel less than 50 meters in length; length of tow exceeds 200 meters
+                     <br><br>
+                  </dl>
+               <dt>b) When a pushing vessel and a vessel being pushed ahead are rigidly connected in a composite unit they shall be regarded as a
+               power-driven vessel and exhibit the lights prescribed above
+                  <dl>
+                     <dt><img src="pics/pushing_composite.jpg" width=500 height=320 border=0 alt="">
+                     <br><br>
+                     <dt>Composite unit underway—less than 50 meters in length
+                     <br><br>
+                  </dl>
+               <dt>c) A power-driven vessel when pushing ahead or towing alongside, except as required in (b)(1) of this Rule, shall exhibit:
+                  <dl>
+                     <dt>1) Instead of the light prescribed either in Rule (a)(1) or (a)(2) above, two masthead lights in a vertical line
+                     <dt>2) Sidelights
+                     <dt>3) Two towing lights in a vertical line
+                     <dt><img src="pics/tow_alongside.jpg" width=400 height=320 border=0 alt="">
+                     <br><br>
+                     <dt>Power-driven vessel pushing ahead or towing alongside towing vessel less than 50 meters in length
+                     <br><br>
+                  </dl>
+               <dt>d) A power-driven vessel to which paragraphs (a) or (c) of this Rule apply and shall also comply with Rule (a)(1) and
+               (a)(2) of the previous rule
+               <dt><img src="pics/tow_astern_small.jpg" width=350 height=250 border=0 alt="">
+               <br><br>
+               <dt>Power-driven vessel towing astern—length of tow 200 meters or less. When masthead lights for towing or pushing are
+               exhibited aft, a forward masthead light is required.
+               <br><br>
+               <dt>e) A vessel or object being towed, other than those mentioned in paragraph (g) of this Rule, shall exhibit:
+                  <dl>
+                     <dt>1) sidelights
+                     <dt>2) a sternlight
+                     <dt>3) when the length of the tow exceeds 200 meters, a diamond shape where it can best be seen
+                  </dl>
+               <dt>f) Provided that any number of vessels being towed alongside or pushed in a group shall be lighted as one vessel:
+                  <dl>
+                     <dt>1) a vessel being pushed ahead, not being part of a composite unit, shall exhibit at the forward end sidelights,
+                     and a special flashing light; and
+                     <dt>2) a vessel being towed alongside shall exhibit a sternlight and at the forward end sidelights
+                     <dt><img src="pics/bieng_pushed.jpg" width=430 height=260 border=0 alt="">
+                     <br><br>
+                     <dt>Vessel being pushed ahead, not being part of a composite unit
+                     <br><br>
+                     <dt><img src="pics/being_towed_alongside.jpg" width=350 height=235 border=0 alt="">
+                     <br><br>
+                     <dt>Vessel being towed alongside
+                     <br><br>
+                  </dl>
+               <dt>g) An inconspicuous, partly submerged vessel or object being towed shall exhibit:
+                  <dl>
+                     <dt>1) if it is less than 25 meters in breadth, one all-round white light at or near each end
+                     <dt>2) if it is 25 meters or more in breadth, four all-round white lights to mark its length and breadth
+                     <dt>3) if it exceeds 100 meters in length, additional all-round   white lights between the lights prescribed in
+                     subparagraphs (1) and (2) so that the distance between the lights shall not exceed 100 meters: Provided, That
+                     any vessels or objects being towed alongside each other shall be lighted as one vessel or object
+                     <dt>4) a diamond shape at or near the aftermost extremity of the last vessel or object being towed
+                     <dt>5) the towing vessel may direct a searchlight in the direction of the tow to indicate its presence to an
+                     approaching vessel.
+                  </dl>
+               <dt>h) Where from any sufficient cause it is impracticable for a vessel or object being towed to exhibit the lights prescribed
+               in paragraph (e) or (g) of this Rule, all possible measures shall be taken to light the vessel or object towed or at least to
+               indicate the presence of the unlighted vessel or object
+               <dt>i) Notwithstanding paragraph (c), on the Western Rivers (except below the Huey P. Long Bridge on the Mississippi River) and
+               on waters specified by the Secretary, a power-driven vessel when pushing ahead or towing alongside, except as paragraph (b) applies,
+               shall exhibit:
+                  <dl>
+                     <dt>1) sidelights; and
+                     <dt>2) two towing lights in a vertical line
+                     <dt><img src="pics/pushing_west.jpg" width=430 height=360 border=0 alt="">
+                     <br><br>
+                     <dt>Power-driven-vessel pushing ahead on Western Rivers. (above the Huey P. Long Bridge on the Mississippi River)
+                     <br><br>
+                  </dl>
+               <dt>j) Where from any sufficient cause it is impracticable for a vessel not normally engaged in towing operations to display the
+               lights prescribed by paragraph (a), (c) or(i) of this Rule, such vessel shall not be required to exhibit those lights when engaged in
+               towing another vessel in distress or otherwise in need of assistance. All possible measures shall be taken to indicate the nature of
+               the relationship between the towing vessel and the vessel being assisted. The authorized searchlight may be used to illuminate the tow.
+            </dl>
+
+      <p><b>Sailing Vessels Underway and Vessels Under Oars</b></p>
+         <dl>
+            <dt>a) A sailing vessel underway shall exhibit:
+               <dl>
+                  <dt>1) sidelights
+                  <dt>2)a stern light
+               </dl>
+            <dt>b) In a sailing vessel of less than 20 meters in length the lights prescribed in paragraph (a) of this Rule may be
+            combined in one lantern carried at or near the top of the mast where it can best be seen
+            <dt><img src="pics/sailing_underway.jpg" width=200 height=330 border=0 alt="">
+            <br><br>
+            <dt>Sailing vessel underway—less than 20 meters in length
+            <br><br>
+            <dt>c) A sailing vessel underway may, in addition to the lights prescribed in paragraph (a) of this Rule, exhibit at or
+            near the top of the mast, where they can best be seen, two all-round lights in a vertical line, the upper being red and
+            the lower green, but these lights shall not be exhibited in conjunction with the combined lantern permitted by paragraph
+            (b) of this Rule.
+            <dt>d)
+               <dl>
+                  <dt>1) A sailing vessel of less than 7 meters in length shall, if practicable, exhibit the lights prescribed in
+                  paragraph (a) or (b) of this Rule, but if she does not, she shall have ready at hand an electric torch or lighted
+                  lantern showing a white light which shall be exhibited in sufficient time to prevent collision.
+                  <dt>2) A vessel under oars may exhibit the lights prescribed in this Rule for sailing vessels, but if she does not,
+                  she shall have ready at hand an electric torch or lighted lantern showing a white light which shall be exhibited in
+                  sufficient time to prevent collision
+                  <dt><img src="pics/row_underway.jpg" width=330 height=330 border=0 alt="">
+                  <br><br>
+                  <dt>Vessel under oars
+                  <br><br>
+               </dl>
+            <dt>e) A vessel proceeding under sail when also being propelled by machinery shall exhibit forward where it can best be seen
+            a conical shape, apex downward. A vessel of less than 12 meters in length is not required to exhibit this shape, but may do so.
+            <br><br>
+            <dt><img src="pics/sail_prop.jpg" width=340 height=380 border=0 alt="">
+            <br><br>
+            <dt>Vessel proceeding under sail when also being propelled by machinery. A vessel of less than 12 meters in length is not
+            required to exhibit the day shape.
+            <br><br>
+         </dl>
+      <p><b>Fishing Vessels</b></p>
+         <dl>
+            <dt>a) A vessel engaged in fishing, whether underway or at anchor, shall exhibit only the lights and shapes prescribed in this Rule.
+            <dt>b) A vessel when engaged in trawling, by which is meant the dragging through the water of a dredge net or other apparatus used
+            as a fishing appliance, shall exhibit:
+               <dl>
+                  <dt>1) two all-round lights in a vertical line, the upper being green and the lower white, or a shape consisting of two cones
+                  with their apexes together in a vertical line one above the other;
+                  <dt>2) a masthead light abaft of and higher than the all-round green light; a vessel of less than 50 meters in length shall not
+                  be obliged to exhibit such a light but may do so;
+                  <dt>3) when making way through the water, in addition to the lights prescribed in this paragraph, sidelights and a sternlight
+                  <dt><img src="pics/trawling.jpg" width=510 height=320 border=0 alt="">
+                  <br><br>
+                  <dt>Vessel engaged in trawling—not making way; vessel less than 50 meters in length
+                  <br><br>
+                  <dt><img src="pics/trawling_underway.jpg" width=430 height=320 border=0 alt="">
+                  <br><br>
+                  <dt>Vessel engaged in trawling—making way
+                  <br><br>
+               </dl>
+            <dt>c) A vessel engaged in fishing, other than trawling, shall exhibit:
+               <dl>
+                  <dt>1) two all-round lights in a vertical line, the upper being red and the lower white, or a shape consisting of two cones with
+                  apexes together in a vertical line one above the other; a vessel of less than 20 meters in length may instead of this shape exhibit
+                  a basket;
+                  <dt>2) when there is outlying gear extending more than 150 meters horizontally from the vessel, an all-round white light or a cone
+                  apex upward in the direction of the gear; and
+                  <dt>3) when making way through the water, in addition to the lights prescribed in this paragraph, sidelights and a sternlight
+                  <dt><img src="pics/fishing.jpg" width=520 height=400 border=0 alt="">
+                  <br><br>
+                  <dt>Vessel engaged in fishing other than trawling—not making way
+                  <br><br>
+               </dl>
+            <dt>d) A vessel engaged in fishing in close proximity to other vessels engaged in fishing may exhibit the additional signals described in Annex II
+            of the referenced instruction.
+            <dt>e) A vessel when not engaged in fishing shall not exhibit the lights or shapes prescribed in this Rule, but only those prescribed for a vessel
+            of her length.
+         </dl>
+         
+      <p><b>Vessels Not Under Command or Restricted in Their Ability to Maneuver</b></p>
+         <dl>
+            <dt>a) A vessel not under command shall exhibit:
+               <dl>
+                  <dt>1) two all-round red lights in a vertical line where they can best be seen
+                  <dt>2) two balls or similar shapes in a vertical line where they can best be seen
+                  <dt>3) when making way through the water, in addition to the lights prescribed in this paragraph, sidelights and a sternlight
+                  <dt><img src="pics/not_under_command_making_way.jpg" width=420 height=360 border=0 alt="">
+                  <br><br>
+                  <dt>Vessel not under command—making way
+                  <br><br>
+               </dl>
+            <dt>b) A vessel restricted in her ability to maneuver, except a vessel engaged in mine clearing operations, shall exhibit:
+               <dl>
+                  <dt>1) three all-round lights in a vertical line where they can best be seen. The highest and lowest of these lights shall be red and
+                  the middle light shall be white;
+                  <dt>2) three shapes in a vertical line where they can best be seen. The highest and lowest of these shapes shall be balls and the middle one
+                  a diamond
+                  <dt>3) when making way through the water, masthead lights, sidelights and a sternlight, in addition to the lights prescribed in paragraph (b)(1)
+                  <dt>4) when at anchor, in addition to the lights or shapes prescribed in subparagraphs (b)(1) and (2), the light, lights or shapes prescribed in
+                  "Anchored Vessels and Vessels Aground" (below)
+                  <dt><img src="pics/restricted_maneuvering_small.jpg" width=450 height=330 border=0 alt="">
+                  <br><br>
+                  <dt>Vessel restricted in her ability to maneuver—at anchor; vessel less than 50 meters in length
+                  <br><br>
+               </dl>
+            <dt>c) A vessel engaged in a towing operation which severely restricts the towing vessel and her tow in their ability to deviate from their course shall,
+            in addition to the lights or shapes prescribed in paragraphs (b)(1) and (2) of this Rule, exhibit the lights or shape prescribed in "Towing and Pushing"
+               <dl>
+                  <dt><img src="pics/restricted_maneuvering_tow.jpg" width=420 height=250 border=0 alt="">
+                  <br><br>
+                  <dt>Vessel engaged in towing operation which severely restricts towing vessel and her tow in their ability to deviate from their course—length of tow does
+                  not exceed 200 meters; towing vessel less than 50 meters in length
+                  <br><br>
+               </dl>
+            <dt>d) A vessel engaged in dredging or underwater operations, when restricted in her ability to maneuver, shall exhibit the lights and shapes prescribed in
+            paragraphs (b)(1), (2), and (3) of this Rule and shall in addition, when an obstruction exists, exhibit:
+               <dl>
+                  <dt>1) two all-round red lights or two balls in a vertical line to indicate the side on which the obstruction exists;
+                  <dt>2) two all-round green lights or two diamonds in a vertical line to indicate the side on which another vessel may pass; and
+                  <dt>3) when at anchor, the lights or shape prescribed by this paragraph, instead of the lights or shapes prescribed in "Anchored Vessels and Vessels Aground"
+                  <dt><img src="pics/dredging.jpg" width=450 height=290 border=0 alt="">
+                  <br><br>
+                  <dt>Vessel engaged in dredging or underwater operations when restricted in ability to maneuver—not making way with an obstruction on the starboard side
+               </dl>
+            <dt>e) Whenever the size of a vessel engaged in diving operations makes it impracticable to exhibit all lights and shapes prescribed in paragraph (d) of this Rule,
+            the following shall be exhibited, instead:
+               <dl>
+                  <dt>1) Three all-round lights in a vertical line where they can best be seen. The highest and lowest of these lights shall be red and the middle light shall
+                  be white
+                  <dt>2) A rigid replica of the international Code flag "A" (alpha) not less than 1 meter in height. Measures shall be taken to insure its all-round visibility
+                  <dt><img src="pics/diving_small.jpg" width=400 height=320 border=0 alt="">
+                  <br><br>
+                  <dt>Small vessel engaged in diving operations
+                  <br><br>
+               </dl>
+            <dt>f) A vessel engaged in mine clearing operations shall in addition to the lights prescribed for a power-driven vessel in "Power-driven Vessels Underway" or to the
+            lights or shape prescribed for a vessel at anchor in "Anchored Vessels and Vessels Aground" (below) as appropriate, exhibit three all-round green lights or three balls.
+            One of these lights or shapes shall be exhibited near the foremast head and one at each end of the fore yard. These lights or shapes indicate that it is dangerous for
+            another vessel to approach within 1000 meters of the mine clearing vessel.
+               <dl>
+                  <dt><img src="pics/mine_clearing.jpg" width=430 height=350 border=0 alt="">
+                  <br><br>
+                  <dt>Vessel engaged in mine clearing operations
+                  <br><br>
+               </dl>
+            <dt>g) A vessel of less than 12 meters in length, except when engaged in diving operations, is not required to exhibit the lights or shapes prescribed in this Rule.
+            <dt>h) The signals prescribed in this Rule are not signals of vessels in distress and requiring assistance. Such signals are contained in Annex IV of the instruction
+         </dl>
+         
+      <p><b>Pilot Vessels</b></p>
+         <dl>
+            <dt>a) A vessel engaged on postage duty shall exhibit:
+               <dl>
+                  <dt>1) at or near the masthead, two all-round lights in a vertical line, the upper being white and the lower red;
+                  <dt>2) when underway, in addition, sidelights and a sternlight;
+                  <dt>3) when at anchor, in addition to the lights prescribed in paragraph (1), the light, lights or shape prescribed in "Anchored Vessels and Vessels Aground" (below)
+               </dl>
+            <dt>b) A pilot vessel when not engaged on pilotage duty shall exhibit the lights or shapes prescribed for a similar vessel of her length.
+            <dt><img src="pics/duty_pilot.jpg" width=360 height=270 border=0 alt="">
+            <br><br>
+            <dt>Vessel engaged on pilotage duty—underway
+            <br><br>
+         </dl>
+      <p><b>Anchored Vessels and Vessels Aground</b></p>
+         <dl>
+            <dt>a) A vessel at anchor shall exhibit where it can best be seen:
+               <dl>
+                  <dt>1) in the fore part, an all-round white light or one ball; and
+                  <dt>) at or near the stern and at a lower level than the light prescribed in subparagraph (i), an all-round white light
+               </dl>
+            <dt>b) A vessel of less than 50 meters in length may exhibit an all round white light where it can best be seen instead of the lights prescribed in paragraph (a) of this Rule.
+            <dt>c) A vessel at anchor may, and a vessel of 100 meters or more in length shall, also use the available working or equivalent lights to illuminate her decks
+               <dl>
+                  <dt><img src="pics/anchored.jpg" width=430 height=360 border=0 alt="">
+                  <br><br>
+                  <dt>Vessel at anchor with deck illumination
+                  <br><br>
+               </dl>
+            <dt>d) A vessel aground shall exhibit the lights prescribed in paragraph (a) or (b) of this Rule and in addition, where they can best be seen:
+               <dl>
+                  <dt>1) two all-round red lights in a vertical line
+                  <dt>2) three balls in a vertical line
+                  <dt><img src="pics/aground.jpg" width=380 height=260 border=0 alt="">
+                  <br><br>
+                  <dt>Vessel aground less than 50 meters in length
+                  <br><br>
+               </dl>
+            <dt>e) A vessel of less than 7 meters in length, when at anchor, not in or near a narrow channel, fairway, anchorage, or where other vessels normally navigate, shall not be
+            required to exhibit the lights or shape prescribed in paragraphs (a) and (b) of this Rule.
+            <dt>f) A vessel of less than 12 meters in length when aground shall not be required to exhibit the lights or shapes prescribed in paragraphs (d)(1) and (2) of this Rule.
+            <dt>g) A vessel of less than 20 meters in length, when at anchor in a special anchorage area designated by the Secretary, shall not be required to exhibit the anchor lights
+            and shapes required by this Rule.
+         </dl>
+         
+      <p><b>Sea planes</b><br><br>
+      Where it is impossible for a seaplane to exhibit lights and shapes of the characteristics or in the positions prescribed in the Rules of this Part she shall exhibit lights and shapes
+      as closely similar in characteristics and position as is possible.</p>
+
+
+<hr>
+<form>
+<table cols=3 width=100% align=center>
+<tr>
+<td align=center><input type = "BUTTON" value = "  Done  " onClick = "doQuit('completed')" id=button2 name=button2></td>
+</tr>
+</table>
+</form>
+</body>
+
+</html>

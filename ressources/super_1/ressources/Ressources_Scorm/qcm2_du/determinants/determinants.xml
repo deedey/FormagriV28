@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evaluation id="4" label="Déterminants" masteryScore="75" positiveFeedback="Bonne réponse" negativeFeedback="Mauvaise réponse">
+	<interaction id="1" label="He was shot through ..." type="choice" weighting="1">
+		<choice label="the very heart"/>
+		<choice label="the heart" correct="true"/>
+		<choice label="heart"/>
+		<choice label="his own heart"/>
+	</interaction>
+	<interaction id="2" label="This country is no longer ... we knew and loved !" type="choice" weighting="1">
+		<choice label="France"/>
+		<choice label="the France" correct="true"/>
+		<choice label="France as"/>
+		<choice label="such a France"/>
+	</interaction>
+	<interaction id="3" label="The death of ... left his party without ..." type="choice" weighting="1">
+		<choice label="Prime Minister / leader"/>
+		<choice label="the Prime Minister / a leader" correct="true"/>
+		<choice label="the Prime Minister / the leader"/>
+		<choice label="Prime Minister / a leader"/>
+	</interaction>
+	<interaction id="4" label="This is a new medical treatment for ..." type="choice" weighting="1">
+		<choice label="the blinds"/>
+		<choice label="the blind" correct="true"/>
+		<choice label="blind"/>
+		<choice label="blinds"/>
+	</interaction>
+	<interaction id="5" label="... fear ..." type="choice" weighting="1">
+		<choice label="The men / the death"/>
+		<choice label="Many a man / death"/>
+		<choice label="Men / death" correct="true"/>
+		<choice label="Men / the death"/>
+	</interaction>
+	<interaction id="6" label="Speaking to grown-up people with ... hands in ... pockets is bad manners." type="choice" weighting="1">
+		<choice label="his / his"/>
+		<choice label="one's / one's" correct="true"/>
+		<choice label="its / its"/>
+		<choice label="ones / ones"/>
+	</interaction>
+	<interaction id="7" label="Not lunch-time yet? I really have ..." type="choice" weighting="1">
+		<choice label="an appetite" correct="true"/>
+		<choice label="the appetite"/>
+		<choice label="appetite"/>
+		<choice label="good appetite"/>
+	</interaction>
+	<interaction id="8" label="Everybody will take off ... hats." type="choice" weighting="1">
+		<choice label="the"/>
+		<choice label="theirs"/>
+		<choice label="their" correct="true"/>
+		<choice label="them"/>
+	</interaction>
+	<interaction id="9" label="... is in danger of becoming extinct." type="choice" weighting="1">
+		<choice label="The whale" correct="true"/>
+		<choice label="Whale"/>
+		<choice label="A whale"/>
+		<choice label="Any whale"/>
+	</interaction>
+	<interaction id="10" label="We need ... honest man to do the job." type="choice" weighting="1">
+		<choice label="a"/>
+		<choice label="an" correct="true"/>
+		<choice label="house"/>
+		<choice label="-"/>
+	</interaction>
+	<interaction id="11" label="... like to act." type="choice" weighting="1">
+		<choice label="The young" correct="true"/>
+		<choice label="Young"/>
+		<choice label="Those young"/>
+		<choice label="These young"/>
+	</interaction>
+	<interaction id="12" label="He got caught because he was travelling without ..." type="choice" weighting="1">
+		<choice label="a ticket" correct="true"/>
+		<choice label="ticket"/>
+		<choice label="one's ticket"/>
+		<choice label="no ticket"/>
+	</interaction>
+	<interaction id="13" label="At first, doctors suspected ... rheumatoid arthritis." type="choice" weighting="1">
+		<choice label="the"/>
+		<choice label="some"/>
+		<choice label="-" correct="true"/>
+		<choice label="a"/>
+	</interaction>
+	<interaction id="14" label="All of ... women in the study had a very early stage of breast cancer." type="choice" weighting="1">
+		<choice label="the" correct="true"/>
+		<choice label="-"/>
+		<choice label="them"/>
+		<choice label="some"/>
+	</interaction>
+	<interaction id="15" label="... treatment will depend on the patient's general health." type="choice" weighting="1">
+		<choice label="The" correct="true"/>
+		<choice label="A"/>
+		<choice label="Some"/>
+		<choice label="Any"/>
+	</interaction>
+	<interaction id="16" label="... were taken to hospital by ambulance." type="choice" weighting="1">
+		<choice label="The injured man"/>
+		<choice label="The injured" correct="true"/>
+		<choice label="The injureds"/>
+		<choice label="The injury"/>
+	</interaction>
+	<interaction id="17" label="The doctor asked him to lie on ... back." type="choice" weighting="1">
+		<choice label="the"/>
+		<choice label="her"/>
+		<choice label="-"/>
+		<choice label="his" correct="true"/>
+	</interaction>
+	<interaction id="18" label="... dermatology is the study of skin diseases." type="choice" weighting="1">
+		<choice label="The"/>
+		<choice label="-" correct="true"/>
+		<choice label="This"/>
+		<choice label="His"/>
+	</interaction>
+	<interaction id="19" label="Doctor Mac Millan is ... neurosurgeon." type="choice" weighting="1">
+		<choice label="a" correct="true"/>
+		<choice label="-"/>
+		<choice label="the"/>
+		<choice label="an"/>
+	</interaction>
+	<interaction id="20" label="He was rushed to the emergency unit because he was injured in ... leg." type="choice" weighting="1">
+		<choice label="his"/>
+		<choice label="her"/>
+		<choice label="the" correct="true"/>
+		<choice label="-"/>
+	</interaction>
+	<interaction id="21" label="He couldn't put ... foot on the ground because of the pain." type="choice" weighting="1">
+		<choice label="the"/>
+		<choice label="a"/>
+		<choice label="his" correct="true"/>
+		<choice label="-"/>
+	</interaction>
+	<interaction id="22" label="He has suffered from ... constant backache." type="choice" weighting="1">
+		<choice label="a"/>
+		<choice label="some"/>
+		<choice label="the"/>
+		<choice label="-" correct="true"/>
+	</interaction>
+	<interaction id="23" label="... fibroids are growths in ... womb." type="choice" weighting="1">
+		<choice label="- / the" correct="true"/>
+		<choice label="- / -"/>
+		<choice label="The / -"/>
+		<choice label="The / a"/>
+	</interaction>
+	<interaction id="24" label="Preliminary research suggests that a new procedure may be effective in treating ... carpal tunnel syndrome." type="choice" weighting="1">
+		<choice label="some"/>
+		<choice label="the"/>
+		<choice label="an"/>
+		<choice label="-" correct="true"/>
+	</interaction>
+	<interaction id="25" label="... measles is a disease that gives ... high temperature." type="choice" weighting="1">
+		<choice label="The / a"/>
+		<choice label="A / the"/>
+		<choice label="A / a"/>
+		<choice label="- / a" correct="true"/>
+	</interaction>
+	<interaction id="26" label="In the case of a snake bite, you can give ... aspirin to relieve ... pain." type="choice" weighting="1">
+		<choice label="the / a"/>
+		<choice label="- / -"/>
+		<choice label="- / a" correct="true"/>
+		<choice label="a / -"/>
+	</interaction>
+	<interaction id="27" label="... skin cancer is often caused by the sun." type="choice" weighting="1">
+		<choice label="A"/>
+		<choice label="The"/>
+		<choice label="-" correct="true"/>
+		<choice label="An"/>
+	</interaction>
+	<interaction id="28" label="Epidemics in the third world are mainly due to ... malnutrition." type="choice" weighting="1">
+		<choice label="-" correct="true"/>
+		<choice label="this"/>
+		<choice label="the"/>
+		<choice label="a"/>
+	</interaction>
+	<interaction id="29" label="... nose is bleeding because he has been hit right in ... face." type="choice" weighting="1">
+		<choice label="The / his"/>
+		<choice label="His / the" correct="true"/>
+		<choice label="The / the"/>
+		<choice label="His / his"/>
+	</interaction>
+	<interaction id="30" label="... mycology is the scientific study or description of the muscles and accessory structures." type="choice" weighting="1">
+		<choice label="the"/>
+		<choice label="a"/>
+		<choice label="some"/>
+		<choice label="-" correct="true"/>
+	</interaction>
+	<interaction id="31" label="... hypodermis forms an insulating layer which prevents body heat loss." type="choice" weighting="1">
+		<choice label="The" correct="true"/>
+		<choice label="-"/>
+		<choice label="A"/>
+		<choice label="An"/>
+	</interaction>
+	<interaction id="32" label="The human organism is formed of many tissues for which ... calcium is essential." type="choice" weighting="1">
+		<choice label="the"/>
+		<choice label="any"/>
+		<choice label="-" correct="true"/>
+		<choice label="a"/>
+	</interaction>
+	<interaction id="33" label="The increase in levels of ambient radioactivity is causing more cases of ... skin cancer." type="choice" weighting="1">
+		<choice label="that"/>
+		<choice label="a"/>
+		<choice label="come"/>
+		<choice label="-" correct="true"/>
+	</interaction>
+	<interaction id="34" label="... diabetes affects 2% of the world's population according to WHO sources." type="choice" weighting="1">
+		<choice label="Some"/>
+		<choice label="The"/>
+		<choice label="An"/>
+		<choice label="-" correct="true"/>
+	</interaction>
+	<interaction id="35" label="Balance is controlled by ... area of the inner ear and by vision." type="choice" weighting="1">
+		<choice label="a"/>
+		<choice label="an" correct="true"/>
+		<choice label="the"/>
+		<choice label="some"/>
+	</interaction>
+	<interaction id="36" label="Several regions in the left hemisphere of ... brain are involved in the function of language." type="choice" weighting="1">
+		<choice label="the" correct="true"/>
+		<choice label="any"/>
+		<choice label="-"/>
+		<choice label="a"/>
+	</interaction>
+	<interaction id="37" label="... causes of backache are very often associated with ... stress of modern life." type="choice" weighting="1">
+		<choice label="- / -"/>
+		<choice label="- / the"/>
+		<choice label="The / -"/>
+		<choice label="The / the" correct="true"/>
+	</interaction>
+	<interaction id="38" label="Many diseases today are associated with ... stress." type="choice" weighting="1">
+		<choice label="the"/>
+		<choice label="a"/>
+		<choice label="-" correct="true"/>
+		<choice label="any"/>
+	</interaction>
+	<interaction id="39" label="... ageing of ... skin occurs because of two factors: lubricating glands produce less moisture and the supporting fibres lose natural elasticity." type="choice" weighting="1">
+		<choice label="An / the"/>
+		<choice label="The / -"/>
+		<choice label="- / -" correct="true"/>
+		<choice label="- / the"/>
+	</interaction>
+</evaluation>

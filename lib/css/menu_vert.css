@@ -1,0 +1,73 @@
+#ul25 {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        min-height:32px;
+        max-height:127px;
+        overflow-y:auto;
+        overflow-x:hidden;
+        width: auto;
+        max-width: 450px;
+        border:1px solid #677D92;
+}
+
+#menu_vert {
+        position:absolute;
+        z-index:2;
+        left:290px; top:5px;
+        color:#000;
+        font-size:12px;
+        font-family:arial,verdana,tahoma;
+        width: auto;
+        max-width: 450px;
+        width:300px;
+        border-style: solid;
+        border-color: #677D92;
+        border-size: 1px;
+        border-width: 1px;
+        padding: 5px;
+        nowrap: nowrap;
+        background-color:#eee;
+}
+
+#menu_vert ul {
+        list-style: none;
+        margin: 4px 0 0 0;
+        padding: 0;
+        width: auto;
+        min-width:300px;
+        max-width: 450px;
+}
+
+
+#menu_vert li{
+        height: 24px;
+        width:300px;
+        max-width: 450px;
+        text-decoration: none;
+        text-align:left;
+        font-size:11px;
+        color: #fff;
+        display: block;
+        background: url(../../images/menubleu.gif);
+        padding: 8px 0 0 4px;
+}
+
+#menu_vert li a {
+        font-weight: bold;
+        height: 24px;
+        text-decoration: none;
+}
+
+
+#menu_vert li:hover{
+        color: #283A50;
+        background: url(../../images/menubleu.gif) 0 -32px;
+        padding: 8px 0 0 4px;
+}
+
+#menu_vert li:active {
+        color: #283A50;
+        background: url(../../images/menubleu.gif) 0 -32px;
+        padding: 8px 0 0 4px;
+}

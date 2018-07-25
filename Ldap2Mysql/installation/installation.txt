@@ -1,0 +1,562 @@
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+MODULE : Ldap2Mysql 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+1.	mettre le répertoire Ldap2Mysql à la racine de promethee
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2.	dans index.php, ajouter les lignes suivante
+
+<table  summary="" border="0" width="100%" cellspacing="0" cellpadding="5" style="background-color:#FFFFFF;">
+  <tr>
+    <!-- partie gauche -->
+    <td style="width:15%;"  valign="top" align="left">
+      <?php require "page_gauche.htm"; ?>
+    </td>
+
+    <!-- partie centrale : page uc.htm -->
+    <td  style="width:70%;background-image: url(' <?php echo $_SESSION["CfgFond"] ; ?>');background-repeat: repeat-x repeat-y;"  valign="top" align="left">
+
+		<table  summary="" border="0" width="100%" cellspacing="0" cellpadding="0">
+		  <tr>
+		    <td style="width:100%;"  align="center">
+		   <?php 
+		   //<cnerta>
+		   //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-//
+		                        require_once 'Ldap2Mysql/Ldap2Mysql.php';
+					$oLdap2Mysql = new Ldap2Mysql();
+					$oLdap2Mysql->run();
+		   //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-//
+			//</cnerta>
+		   ?>
+								
+		    </td>
+		  </tr>
+		</table>
+    </td>
+
+    <!-- partie droite -->
+    <td style="width:15%;"  valign="top" align="left">
+      <?php require "page_droit.htm"; ?>
+    </td>
+  </tr>
+</table>
+ <script type="text/javascript" src="ldap2Mysql/js/ldap2Mysql.js"></script>
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+MODULE : Ldap2Mysql 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+3.supprimer   align="center" de la cellule qui contient le contenu de la classe (la manip est déjà faite sur le code ci-dessus)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4. ajouter le fichier de la feuille de style dans page_banner
+<link href="Ldap2Mysql/css/ldap2Mysql.css" rel="stylesheet" type="text/css" media="screen" />
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+6.
+pour CAS :
+A- modifier dans la la fonction CASClient du fichier client.php  la ligne comme suit :
+
+avant:
+if ($start_session)
+{
+		if (!isset($_SESSION)) session_start();
+}
+
+Après:
+if ($start_session)
+{
+	if (!isset ($_SESSION))
+	{
+	if (!isset($_SESSION)) session_start();
+	}
+}
+
+B-prévoir sur le lien de déconnexion  la déconnexion du cas
+
+//
+dans page_top.htm
+ajoueter cette ligne sous la portion de code
+if ( $item < 0 ) {
+//
+	//déconnexion cas :
+	$_SESSION['logout']=true;
+//
+dans user_login.htm ajoutez après la ligne ci-dessous
+phpCAS :: client(CAS_VERSION_2_0, $oBase->host, 443, 'cas');
+//le code à ajouter
+/*------------*/
+            //si déconnexion
+             if (isset($_SESSION['logout'])) 
+            {   
+              unset($_SESSION['logout']);
+              phpCAS::logout();
+    
+            }//fin if
+/*------------*/          
+
+7.le fichier user_login a subit des modification indiquées entre les lignes en astérisques
+<?php
+/*-----------------------------------------------------------------------*
+   Copyright (c) 2002-2006 by Dominique Laporte(C-E-D@wanadoo.fr)
+   Copyright (c) 2006 by Nordine Zetoutou (nordine.zetoutou@educagri.fr)
+
+   This program is free software. You can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License.
+ *-----------------------------------------------------------------------*/
+
+/*
+ *		module   : user_login.htm
+ *		projet   : la page de login
+ *
+ *		version  : 1.2
+ *		auteur   : laporte
+ *		creation : 20/10/02
+ *		modif    : 20/03/03 - par D. Laporte
+ *                     champ de saisie en hidden (sécurité)
+ *		           26/11/05 - par D. Laporte
+ *                     mode maintenance
+ *		           17/07/06 - Nordine Zetoutou
+ * 	                 migration des balises HTML en XHTML 1.0 strict
+ */
+
+
+// remarque : login automatique si les variables ID utilisateur $id et mot de passe $pwd sont renseignées
+$id  = ( @$_GET["id"] )		// ID utilisateur
+	? $_GET["id"]
+	: @$_POST["id"] ;
+$pwd = ( @$_GET["pwd"] )	// mot de passe
+	? $_GET["pwd"]
+	: @$_POST["pwd"] ;
+
+$id  = addslashes($id);
+$pwd = addslashes($pwd);
+
+//<code>
+/*********************************************************************************************************/
+
+require_once 'Authentification/Authentification.php';
+//
+$oAuthentification = new Authentification();
+//on vérifie quel  mode d'authentification est mis en place
+$oBase = $oAuthentification->getAuthMode();
+//l'objet $oBase nous indique lequel ( si ldap ou cas )
+//
+		
+if (is_object($oBase))
+{
+	$bAuthentifie = false;
+	$bAuthMode = true;
+	//	
+	switch ($oBase->type)
+	{
+		//
+		default :		
+		
+			
+			if(!empty($id) AND !empty($pwd))
+			{
+				switch($oBase->type )
+				{
+					case 'openldap' :
+					//on redéfinit le dn spécifique à openldap
+					$oBase->dn = $oBase->login_field . '='.$id.',' . $oBase->dn;
+				
+					break;
+					//
+					case 'activedirectory' :
+					break;
+					//
+					
+				}
+				//on récupère soit un objet soit une chaine erreur 
+				$authentificationResult = $oAuthentification->ldap_authenticate($oBase, $id, $pwd);
+				
+	
+				//si c'est un objet
+				if (is_object($authentificationResult))
+				{
+					$bAuthentifie = true;
+					//
+					//on construit un objet de paramètres de mysql
+					$oMysql = new stdClass();
+					$SERVER = 'localhost';
+					$oMysql->host = $SERVER;
+					$oMysql->db = $DATABASE;
+					$oMysql->root = $USER;
+					$oMysql->port = '';
+					//
+					//on interroge la base mysql avec l'id ldap inséré lors de son importation
+					//on récupère un nouvel objet $oUser de mysql
+					$oMysqlUser = $oAuthentification->mysql_authenticate($oMysql, $authentificationResult->ldap_user_id);
+					//si n'existe pas dans la base mysql
+					if (!is_object($oMysqlUser))
+					{
+						$bMysqlUserExists = false;
+					} 
+					//
+				}
+				else
+				{
+					
+					
+					$bAuthentifie = false;
+				}
+			}
+			break;
+			//
+		case 'cas' :
+		 
+			require_once 'Authentification/CAS/CAS/CAS.php';
+			// initialize phpCAS
+			phpCAS :: setDebug();
+			// initialize phpCAS
+           
+		
+			phpCAS :: client(CAS_VERSION_2_0, $oBase->host, $oBase->port, 'cas');
+            //si déconnexion
+            if (isset($_SESSION['logout'])) 
+            {   
+              unset($_SESSION['logout']);
+              phpCAS::logout();    
+            }//fin if
+			// force CAS authentication
+			phpCAS :: forceAuthentication();
+			//
+			
+			$userLogin=phpCAS::getUser();
+			//
+			if(isset($userLogin))
+			{
+				$bAuthentifie=true;				
+				//on simule les submit de la page login
+				$_POST["submitAuth"]="Valider";
+				$id=$userLogin;
+				$pwd='-';				
+				
+			}
+			
+				
+			break;
+			//
+	} //fin switch
+	//
+	
+}
+
+/*********************************************************************************************************/
+//</code>
+?>
+
+
+<form id="formulaire" action="index.php" method="post">
+
+<table  summary="" border="0" width="100%" cellspacing="0" cellpadding="5" style="background-color:#FFFFFF;">
+  <tr>
+    <!-- partie gauche -->
+    <td style="width:15%;" valign="top" align="left">&nbsp;</td>
+
+    <!-- partie centrale : user_login.htm -->
+    <td style="width:70%;" valign="top" align="left">
+      <p style="margin-top: 10px; margin-bottom: 0px">&nbsp;</p>
+
+      <table  summary="" width="100%" class="maintitle" style="background-image: url(' <?php echo $_SESSION["CfgHeader"] ; ?>');background-repeat: repeat-x repeat-y;"  cellspacing="0" cellpadding="5">
+        <tr>
+          <td style="width:100%;"  align="center">
+		<span   style="color:#000000;" class="small"><b>Accéder à l'Intranet</b></span>
+          </td>
+        </tr>
+      </table>
+
+      <table  summary="" width="100%" class="maincontent" cellpadding="0">
+        <tr>
+          <td>
+		<?php
+		require_once "spip_visu.php";
+
+		// maintenance de l'intranet
+		if ( $MAINTENANCE )
+			print("
+		            <table  summary=\"\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"5\">
+		              <tr style=\"background-color:#eeeeee;\">
+		                <td align=\"center\">
+					<img  src=\"images/warning.png\" title=\"attention\" alt=\"attention\"  />
+		                </td>
+		                <td>
+					<span class=\"small\">
+					Le site est provisoirement inaccessible pour cause de maintenance.<br/> 
+					Merci de bien vouloir revenir plus tard.
+					</span>
+		                </td>
+		              </tr>
+		            </table>
+				");
+
+		// paramétrage de l'intranet
+
+		if ( $_SESSION["CfgIdent"] == "default" )
+			print("
+		            <table  summary=\"\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"2\">
+		              <tr style=\"background-color:#eeeeee;\">
+		                <td>
+					<span class=\"small\">
+					L'installation n'a pas encore été effectuée.<br/> 
+					Si vous êtes bien le webmaster de ce site, 
+					<a href=\"config_init.php\">cliquez ici</a> pour paramétrer l'intranet.
+					</span>
+		                </td>
+		              </tr>
+		            </table>
+				");
+
+		// création de compte
+		$create = ($AUTHUSER )
+			? "Pas encore de compte ? Vous pouvez en <a href=\"index.php?item=1000\">créer un</a>."
+			: "" ;
+		?>
+
+		<img src="images/hand.gif" title="" alt="" />
+		<span style="color:#000000;" class="small"  ><?php print( stripslashes(find_typo($_SESSION["CfgLogin"], $note)) ); ?></span>
+
+            <?php		
+            if ( @$_POST["submitAuth"] == "Valider" OR	// l'utilisateur a validé
+            	(strlen($id) AND strlen($pwd)) ) {		// ou on procède à une identification automatique
+
+			// synchronisation à un serveur LDAP
+			if ( $LDAPSERVER ) {
+				$err = "";
+				$ds  = ldap_connect($LDAPSERVER);	// Adresse du serveur LDAP
+       
+				if ( $ds ) {  
+ 					// Initie une nouvelle session sur le serveur LDAP
+					if ( ldap_bind($ds) ) {		// Connexion anonyme 
+						// Pointeur vers un objet de l'annuaire repéré par son distinguished name
+						$dn    = ereg_replace("%1", $id, $LDAPSTRING);	// la syntaxe doit être exacte
+
+						// Lors d'un  encodage MD5 sur OpenLDAP une réencryptage est fait par défaut
+						// Le mode de cryptage est conservé et concaténé dans votre mot de passe
+						$value = "{MD5}".base64_encode( pack( 'H*' , md5($pwd) ) );
+
+						// userpassword est le nom du champs utilisé pour conserver votre mot de passe sur OpenLDAP
+						// Celui ci est différent en fonction de l'annuaire (norme X500 utilisée)
+						$attr  = "userpassword"; 
+
+						// comparaison des valeurs
+						// l'affichage de userpassword est impossible car protégé dans slapd.conf
+					      // on est donc obligé de faire une comparaison directement dans le code pour que cela fonctionne
+						switch ( ldap_compare($ds, $dn, $attr, $value) ) {
+							case TRUE :
+								break;
+							case FALSE :
+								die("Mot de passe incorrect : $value");
+								break;
+							default :
+								die("Erreur : ".ldap_error($ds)."");
+								break;
+							}
+						}
+					else
+						$err = "Impossible de s'identifier auprès du serveur LDAP.";
+
+					ldap_close($ds);
+					}           
+				else
+					$err = "Impossible de se connecter au serveur LDAP.";
+
+				// message d'avertissement si erreur
+				if ( $err ) {
+					print("<span style=\"color:#ff0000;\" class=\"small\"><b>$err</b></span>");
+					$id = $pwd = "";
+					}
+				}
+
+			// pour éviter les injections SQL
+            	$pwd = ereg_replace(" ", "-", trim($pwd));
+
+            	// vérification de l'identité
+			$query  = "select _ID, _date, _cnx, _persistent, _sexe, _adm, _IDcentre, _nom, _IDgrp, _passwd, _signature ";
+			$query .= "from user_id ";
+			//<code>
+			//si un mode d'authentification externe est trouvé
+			//et l'utilisateur authentifié
+//<code>
+/*********************************************************************************************************/
+		
+		    if (isset ($bAuthMode))
+			{
+				if ($bAuthentifie==false)
+			   {
+			   	//on supprime $id ainsi on lui recharge le formulaire de login
+			   	 $query .= "where _ident = ''";
+			   }
+			   else
+			   {
+			   	 //le mot de passe n'est plus indispensable	
+	             $query .= "where _ident = '".$id."'";
+			   }
+			
+			
+			}
+			else
+			{			
+				$query .= "where _ident = '$id' AND _passwd = '$pwd' ";
+			}
+		//<code>
+/*********************************************************************************************************/
+		
+			$query .= "limit 1";
+
+			if ( $DEBUG )
+				print($query);
+
+			$result = mysql_query($query, $mysql_link);
+
+			// a-t-on trouvé une valeur ?
+			if ( mysql_affected_rows($mysql_link) == 1 ) {
+				$row    = remove_magic_quotes(mysql_fetch_row($result));
+
+				// on récupère les informations sur l'utilisateur...
+				$_SESSION["CnxID"]     = $row[0];
+				$_SESSION["CnxPers"]   = $row[3];		// connexion persistante pour l'utilisateur
+				$_SESSION["CnxSex"]    = $row[4];		// Sexe de l'utilisateur (A pour une connexion Anonyme)
+				$_SESSION["CnxAdm"]    = $row[5];		// Droits de connexion de l'utilisateur
+				$_SESSION["CnxCentre"] = $row[6];		// centre de formation
+				$_SESSION["CnxName"]   = $row[7];		// Nom de connexion de l'utilisateur
+				$_SESSION["CnxGrp"]    = $row[8];		// Groupe de connexion de l'utilisateur
+				$_SESSION["CnxPasswd"] = $row[9];		// mot de passe (vérification si vide)
+				$_SESSION["CnxSign"]   = $row[10];
+
+				// ... ainsi que la classe pour les élèves
+				$query   = "select _IDclass from user_student ";
+				$query  .= "where _ID = '".$_SESSION["CnxID"]."' ";
+				$query  .= "limit 1";
+
+				$result  = mysql_query($query, $mysql_link);
+				$_classe = ( $result ) ? mysql_fetch_row($result) : 0 ;
+				$_SESSION["CnxClass"]  = $_classe[0];	// classe de l'élève
+
+				// ... et la configuration du centre
+				$query   = "select _student from config_centre ";
+				$query  .= "where _IDcentre = '".$_SESSION["CnxCentre"]."' ";
+				$query  .= "limit 1";
+
+				$result  = mysql_query($query, $mysql_link);
+				$_centre = ( $result ) ? mysql_fetch_row($result) : 0 ;
+				$_SESSION["CfgStudent"] = $_centre[0];
+
+				// ... puis on met à jour la date de dernière connexion
+				$date    = date("Y-m-d H:i:s", time());
+
+				$query   = "update user_id ";
+				$query  .= "set _lastcnx = ";
+				$query  .= ( $row[2] ) ? "'$row[1]', " : "'$date', " ;
+				$query  .= "_date = '$date', ";
+				$query  .= "_cnx = _cnx + 1 ";
+				$query  .= "where _ID = '".$_SESSION["CnxID"]."' ";
+				$query  .= "limit 1";
+
+				if ( !mysql_query($query, $mysql_link) )
+					sql_error($mysql_link);
+				else {
+					// vérification du mode maintenance
+					if ( $MAINTENANCE AND $row[5] != 255 )
+						print("<br/><span style=\"color:#FF0000\" class=\"small\"><b>Connexion non autorisée :</b> le site est actuellement en maintenance.</span>");	          
+					else {
+						// enregistrement de l'adresse IP de connexion
+						$_SESSION["CnxIP"]  = SessionIP();
+
+						if ( !mysql_query("update user_id set _IP = '".$_SESSION["CnxIP"]."' where _ID = '".$_SESSION["CnxID"]."'", $mysql_link) )
+							sql_error($mysql_link);
+
+						// enregistrement de la session de l'utilisateur 
+						$_SESSION["sessID"] = updateSessionID(@$_SESSION["sessID"]);
+
+						// enregistrement des logs
+						if ( $TIMELOG ) {
+							// on efface les logs trops anciens
+							$Query  = "DELETE FROM stat_log ";
+							$Query .= "WHERE _date < '". date("Y-m-d H:i:s", (time() - $TIMELOG)) ."' ";
+							
+							if ( !mysql_query($Query, $mysql_link) )
+								sql_error($mysql_link);
+							}
+
+						// date du log
+						$lastaction = date("Y-m-d H:i:s", time());
+
+						if ( !mysql_query("insert into stat_log values('$lastaction', '".$_SESSION["CnxID"]."', '".@$_SERVER["REMOTE_ADDR"]."', 'C')", $mysql_link) )
+							sql_error($mysql_link);
+
+						// accés au menu de l'intranet
+						print("<script type=\"text/javascript\"> window.location.replace('index.php', '_self'); </script>");
+						}
+					}
+		            }    
+			// sinon on affiche l'erreur        
+			else
+			
+				print("<br/><span style=\"color:#FF0000;\" class=\"small\"><b>Erreur :</b> l'ID utilisateur ou le mot de passe est incorrect. Veuillez recommencer.</span>");	          
+	        	}
+	        	
+	      
+            ?>
+
+		<table  summary="" border="0" width="100%" cellspacing="0" cellpadding="0">
+		  <tr>
+			<td style="height:10px;">&nbsp;</td>
+		  </tr>
+		  <tr>
+			<td style="width:100%;"  align="center">
+
+			<table  summary="" width="80%" style="background-image: url(' <?php echo $_SESSION["CfgFond"] ; ?>');background-repeat: repeat-x repeat-y;border-color=#C0C0C0;" border="1" cellspacing="0" cellpadding="0">
+		          <tr>
+				<td>
+					<table  summary="" border="0" width="100%" cellspacing="0" cellpadding="5">
+					  <tr>
+						<td style="width:50%;" align="right"><span style="color:#000000;" class="small"><b>ID Utilisateur :</b></span></td>
+						<td align="left"><input type="text" name="id" size="20" /></td>
+					  </tr>
+					  <tr>
+						<td style="width:50%;" align="right"><span style="color:#000000;" class="small"><b>Mot de passe :</b></span></td>
+						<td align="left"><input type="password" name="pwd" size="20" /><input type="hidden" name="submitAuth" value="Valider" /></td>
+					  </tr>
+					</table>
+				</td>
+			  </tr>
+			</table>
+
+			</td>
+		  </tr>
+		  <tr>
+			<td align="center"><?php print("<span class=\"small\">$create &nbsp;</span>"); ?></td>
+		  </tr>
+		</table>
+
+		<hr style="text-align:center; width:80%;" />
+
+		<table  summary="" border="0" width="100%" cellspacing="0" cellpadding="2">
+		  <tr>
+			<td style="width:85%;" valign="middle" align="right">
+				<span style="color:#000000;" class="small">puis cliquez ici </span>
+			</td>
+			<td style="width:15%;" valign="middle" align="right">
+				<input type="image" src="images/valider.gif" style="border-width:0px;" />
+			</td>
+		  </tr>
+		</table>
+
+          </td>
+        </tr>
+      </table>
+
+    </td>
+
+    <!-- partie droite -->
+    <td style="width:15%;" valign="top" align="left">&nbsp;</td>
+  </tr>
+</table>
+
+</form>
+<br/>
+

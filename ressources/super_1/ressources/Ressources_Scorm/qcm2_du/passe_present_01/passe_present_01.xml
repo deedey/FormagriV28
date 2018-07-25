@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evaluation id="2" label="Passé présent 1" masteryScore="75" positiveFeedback="Bonne réponse" negativeFeedback="Mauvaise réponse">
+	<interaction id="1" label="Your hair looks as if ... for years." type="choice" weighting="1">
+		<choice label="it hasn't been cut" correct="true"/>
+		<choice label="they hadn't been cut"/>
+		<choice label="not to have been cut"/>
+		<choice label="it was not cut"/>
+	</interaction>
+	<interaction id="2" label="He ... he was repeating what be had been …...." type="choice" weighting="1">
+		<choice label="said / told" correct="true"/>
+		<choice label="told / said"/>
+		<choice label="said / said"/>
+		<choice label="was said / told"/>
+	</interaction>
+	<interaction id="3" label="He was said ... a cruel man." type="choice" weighting="1">
+		<choice label="he was"/>
+		<choice label="to be" correct="true"/>
+		<choice label="as being"/>
+		<choice label="being"/>
+	</interaction>
+	<interaction id="4" label="Mrs Pricklet ... for over 5 months now." type="choice" weighting="1">
+		<choice label="is dead"/>
+		<choice label="died"/>
+		<choice label="has been dead" correct="true"/>
+		<choice label="was dead"/>
+	</interaction>
+	<interaction id="5" label="We wish ... this book in vain." type="choice" weighting="1">
+		<choice label="we shall not write"/>
+		<choice label="we should not write"/>
+		<choice label="we had not written" correct="true"/>
+		<choice label="we have not written"/>
+	</interaction>
+	<interaction id="6" label="They ... each other from 1756 to 1763." type="choice" weighting="1">
+		<choice label="have been fighting"/>
+		<choice label="fought" correct="true"/>
+		<choice label="were fighting"/>
+		<choice label="have fought"/>
+	</interaction>
+	<interaction id="7" label="They had formed a little school of critics who ... meet at his home." type="choice" weighting="1">
+		<choice label="were used to"/>
+		<choice label="used to" correct="true"/>
+		<choice label="would use to"/>
+		<choice label="used"/>
+	</interaction>
+	<interaction id="8" label="One of his suggestions was that women ... offered the same opportunities as men." type="choice" weighting="1">
+		<choice label="be" correct="true"/>
+		<choice label="have been"/>
+		<choice label="being"/>
+		<choice label="had been"/>
+	</interaction>
+	<interaction id="9" label="Five days after fertilization, the embryo ... and implanted in the infertile woman's uterus." type="choice" weighting="1">
+		<choice label="recovers"/>
+		<choice label="recovered itself"/>
+		<choice label="had recovered"/>
+		<choice label="was recovered" correct="true"/>
+	</interaction>
+	<interaction id="10" label="She still doesn't know that, in one sense, she ... a mother." type="choice" weighting="1">
+		<choice label="becomes"/>
+		<choice label="had become"/>
+		<choice label="has become" correct="true"/>
+		<choice label="is become"/>
+	</interaction>
+	<interaction id="11" label="The proteins, they believe, can ... to replace bone tissue." type="choice" weighting="1">
+		<choice label="have to be utilized"/>
+		<choice label="utilize"/>
+		<choice label="be utilized" correct="true"/>
+		<choice label="be using"/>
+	</interaction>
+	<interaction id="12" label="Parkinson's disease usually ... in people over 50." type="choice" weighting="1">
+		<choice label="is occurring"/>
+		<choice label="has occurred"/>
+		<choice label="used to occur"/>
+		<choice label="occurs" correct="true"/>
+	</interaction>
+	<interaction id="13" label="He ... his oculist since last year." type="choice" weighting="1">
+		<choice label="didn't go to see"/>
+		<choice label="hasn't been to see" correct="true"/>
+		<choice label="hadn't gone to see"/>
+		<choice label="hadn't seen"/>
+	</interaction>
+	<interaction id="14" label="Last week, he ... wearing a hearing aid in public for the first time." type="choice" weighting="1">
+		<choice label="begins"/>
+		<choice label="has begun"/>
+		<choice label="began" correct="true"/>
+		<choice label="was beginning"/>
+	</interaction>
+	<interaction id="15" label="A survey conducted in 1980 ... that 80% of these patients recovered very quickly." type="choice" weighting="1">
+		<choice label="found" correct="true"/>
+		<choice label="founded"/>
+		<choice label="has found"/>
+		<choice label="finds"/>
+	</interaction>
+	<interaction id="16" label="A woman came into the emergency unit with a baby who ... a safety-pin." type="choice" weighting="1">
+		<choice label="has just swallowed"/>
+		<choice label="had just swallowed" correct="true"/>
+		<choice label="had just been swallowing"/>
+		<choice label="was just swallowing"/>
+	</interaction>
+	<interaction id="17" label="Since 1970, deaths from coronary heart disease ... sharply in the U.S." type="choice" weighting="1">
+		<choice label="drop"/>
+		<choice label="dropped"/>
+		<choice label="has dropped"/>
+		<choice label="have dropped" correct="true"/>
+	</interaction>
+	<interaction id="18" label="If I were you, I ... see another G.P." type="choice" weighting="1">
+		<choice label="will"/>
+		<choice label="would" correct="true"/>
+		<choice label="can"/>
+		<choice label="must"/>
+	</interaction>
+	<interaction id="19" label="Sulphonyluria treatment is advisable in non-obese patients only if they ... at least 30 days on restricted diet without satisfactory results." type="choice" weighting="1">
+		<choice label="are"/>
+		<choice label="have been" correct="true"/>
+		<choice label="had been"/>
+		<choice label="were"/>
+	</interaction>
+	<interaction id="20" label="The new therapy ... as a major step in the treatment of nervous disorders." type="choice" weighting="1">
+		<choice label="has seen"/>
+		<choice label="is seen" correct="true"/>
+		<choice label="is seeing"/>
+		<choice label="sees"/>
+	</interaction>
+	<interaction id="21" label="Patients with menstrual migraine ... from this treatment." type="choice" weighting="1">
+		<choice label="rarely benefit" correct="true"/>
+		<choice label="are rarely benefited"/>
+		<choice label="rarely benefits"/>
+		<choice label="don't rarely benefit"/>
+	</interaction>
+	<interaction id="22" label="You ... come back if the symptoms disappear." type="choice" weighting="1">
+		<choice label="need"/>
+		<choice label="must"/>
+		<choice label="needn't" correct="true"/>
+		<choice label="have"/>
+	</interaction>
+	<interaction id="23" label="... have rheumatic or scarlet fever as a child?" type="choice" weighting="1">
+		<choice label="Had you ever"/>
+		<choice label="Have you ever"/>
+		<choice label="Do you ever"/>
+		<choice label="Did you ever" correct="true"/>
+	</interaction>
+	<interaction id="24" label="The consultant decided to operate after the patient ... of severe pains in his stomach." type="choice" weighting="1">
+		<choice label="had complained" correct="true"/>
+		<choice label="has complained"/>
+		<choice label="complained"/>
+		<choice label="was complaining"/>
+	</interaction>
+	<interaction id="25" label="What was wrong with him? Why ... be hospitalised?" type="choice" weighting="1">
+		<choice label="did he have to" correct="true"/>
+		<choice label="had he"/>
+		<choice label="must"/>
+		<choice label="must he have"/>
+	</interaction>
+</evaluation>

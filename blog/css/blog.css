@@ -1,0 +1,81 @@
+div[data-zcontenteditable] [data-action]{float:right; background-repeat: no-repeat !important ;
+                                         background-position:center center;padding:10px;cursor:pointer;}
+div[data-zcontenteditable] [data-action="edit"]{background:url("../../images/modif15.gif")}
+div[data-zcontenteditable] [data-action="save"]{background:url("../../images/save.png")}
+div[data-zcontenteditable] [data-action="cancel"]{background:url("../../images/retour15.gif")}
+.Bg{float:left;border:1px dotted #bbb;max-width:400px;cursor:pointer;background-color:#F1F5F5;
+    margin:4px 10px 0 2px;padding:4px;font-family:arial,verdana,tahoma;font-size:12px;width:300px;}
+.BgNo{float:left;border:1px dotted #bbb;max-width:470px;background-color:#F1F5F5;
+      margin:4px 10px 0 2px;padding:4px;font-family:arial,verdana,tahoma;font-size:12px;}
+.createtheme{clear:both;float:left;background-color: #eee;border:1px solid #ccc;
+             margin:5px 2px 0 2px;padding:4px;max-height:500px;overflow-y:auto;width:550px;}
+.themeCont{clear:both;float:left;color:#D45211;}
+.completBody{clear:both;margin:10px 10px 10px 20px;border:1px dotted #000;background-color:#eee;width:750px;}
+.commentBlg{float:right;text-align:center;padding-top:8px;width:40px;height:30px;
+            background:url(../images/bulle1.png);cursor:pointer;}
+.commentBlg span{font-weight:bold;font-size:14px;}
+.affComment {clear:both;margin:10px 10px 10px 20px;padding:5px;border:1px solid #444;background-color:#fff;
+             width:650px;min-height:50px;max-height:500px;overflow-y:auto;overflow-x:hidden;display:none;}
+.AjtComment{clear:both;margin:25px 0 5px 0;font-size:13px;background-color:#000;color:#fff;font-weight:bold;
+           font-family:tahoma,verdana,arial;cursor:pointer;width:170px;border:1px dotted #000;}
+.BlkComment{clear:both;margin:0 4px 5px 10px;font-size:13px;display:none;width:auto;max-width:740px;
+           font-family:tahoma,verdana,arial;cursor:pointer;border:1px dotted #000;}
+.BlkBody{clear:both;display:block;width:auto;width:750px;
+         padding:6px;margin:0 0 40px 0;border:1px dotted #000;background-color:#eee;}
+.enteteComment {clear:both;float:right;font-size:10px;margin-right:20px;font-weight:bold;}
+.suppComment {float:right;margin-right:12px;margin-top:8px;cursor:pointer;}
+.corpsComment {clear:both;float:left;margin-left:8px;font-size:12px;width:600px;
+               min-height:50px;max-height:300px;overflow-y:auto;}
+.leComment {clear:both;float:left;margin:5px;background-color:#F4F4F4;border:1px dotted #ddd;
+            height:auto;max-height:70px;overflow-y:auto;overflow-x:hidden;}
+.planTitre{clear:both;margin:0 4px 5px 10px;font-size:12px;font-weight:bold;
+           font-family:tahoma,verdana,arial;cursor:pointer;width:auto;}
+.BodyActuel{clear:both;display:block;padding:6px;}
+.imgShow{clear:both;float:left;width:auto;border:1px solid #24677A;margin:0 4px 5px 20px;padding:10px;}
+.titBShow{clear:both;float:left;background-color:#ffe;border:1px dotted #000;
+          margin:2px 2px 10px 4px;padding:4px;font-size:12px;}
+.BodyShow{clear:both;font-size:12px;}
+.BodyModif{clear:both;cursor:pointer;width:20px;}
+.modifTitDoc{float:left;margin:45px 0 0 15px;cursor:pointer;}
+.leBody{clear:both;display:none;padding:8px 4px 30px 4px;background-color:#eee;}
+.leBodyAjt{clear:both;display:none;margin:4px 4px 20px 0;padding:4px 4px 30px 4px;
+           border:1px dotted #000;background-color:#eee;width:750px;}
+.BgBTitre{clear:both;margin:2px 0 4px 2px;}
+.newBody{clear:both;}
+.Bodycone{clear:both;margin:10px 2px 4px 4px;}
+.BodyLink{clear:both;float:left;cursor:pointer;}
+.noImgMod{float:left;margin-left:10px;padding-top:5px;cursor:pointer;}
+.newBTitreN{font-size:13px;}
+.BgBody{clear:both;}
+#blogInfoDoc{clear:both;float:left;width:320px;margin:0 25px 10px 20px;padding:4px;
+             font-size:11px;border:1px solid #000;background-color:#eee;display:block;}
+#blogInfoDocLong{clear:both;float:left;width:650px;margin:0 25px 10px 20px;padding:4px;
+             font-size:11px;border:1px solid #000;background-color:#eee;display:none;}
+#blogTitDoc{float:left;text-align:center;max-width:800px;margin-top:40px;}
+.BlkTitDoc{float:left;text-align:center;max-width:800px;display:block;margin-top:10px;}
+#NewTitDoc{display:none;padding-top:20px;}
+#enteteBg{clear:both;}
+.historyBg{float:right;font-size:10px;text-align:center;}
+.historyLi{text-align:center !important;font-weight:bold;font-size:13px;color:#D45211 !important;
+           height:18px;border:1px solid #24677A;background-color:#eee;width:150px;}
+.NoteLiNum{text-align:left;font-weight:bold;font-size:13px;color:#24677A;padding-bottom:3px;
+           height:18px;margin:5px 5px 0 0;border:1px solid #24677A;background-color:#eee;width:145px;}
+.NoteLiAlpha{text-align:left;font-weight:bold;font-size:13px;color:#24677A;padding-bottom:3px;
+           height:18px;margin:5px 5px 0 20px;border:1px solid #24677A;background-color:#eee;width:90px;}
+.NoteLiAnA{text-align:left;font-weight:bold;font-size:13px;color:#24677A;padding-bottom:3px;
+           height:18px;margin:5px 5px 0 20px;border:1px solid #24677A;background-color:#eee;width:130px;}
+.oblg{font-size:10px !important;color:red;}
+.BgBTitreR{float:right;margin:2px 0 4px 2px;text-align:left;}
+.ajtBg{clear:both;}
+.ajtPrgBg{clear:both;float:left;margin:10px 5px 5px 20px;}
+.ajtImgBg{float:left;margin:10px 5px 5px 20px;display:block;}
+.loadTitImg{{clear:both;float:left;font-size:12px !important;padding:0 4px 0 0;}
+.lgdImg{font-size:12px !important;clear:both;padding:0 4px 0 4px;}
+.InpImg{float:left;padding:0 4px 0 4px;}
+.chxImg{font-size:12px;float:right;}
+.chrgImg{font-size:12px;float:left;padding-top:3px;}
+.legende{clear:both;margin-left:20px;font-size:12px;font-weight:bold;}
+.showImg{clear:both;border:1px solid #24677A;margin:5px;padding:4px;}
+.planBg{font-size:12px !important;}
+.TitDocPlan{clear:both;text-align:left;color:red;max-width:800px;margin:20px 0 10px 10px;font-size:13px;font-weight:bold;}
+#lePlan{clear:both;text-align:left;max-width:800px;margin:20px 0 10px 10px;font-size:13px;font-weight:bold;cursor:pointer;}

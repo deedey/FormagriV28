@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evaluation id="1" label="Vocabulaire 1" masteryScore="75" positiveFeedback="Bonne réponse" negativeFeedback="Mauvaise réponse">
+	<interaction id="1" label="The gall bladder is located directly under the ...." type="choice" weighting="1">
+		<choice label="tonsils"/>
+		<choice label="liver" correct="true"/>
+		<choice label="patella"/>
+		<choice label="thymus gland"/>
+	</interaction>
+	<interaction id="2" label="The spleen is ...." type="choice" weighting="1">
+		<choice label="a limb"/>
+		<choice label="an organ" correct="true"/>
+		<choice label="a bone"/>
+		<choice label="a nerve"/>
+	</interaction>
+	<interaction id="3" label="The fibula is situated in ...." type="choice" weighting="1">
+		<choice label="the leg" correct="true"/>
+		<choice label="the arm"/>
+		<choice label="the head"/>
+		<choice label="the trunk"/>
+	</interaction>
+	<interaction id="4" label="The vertebrae form ...." type="choice" weighting="1">
+		<choice label="the shoulder bladder"/>
+		<choice label="the spleen"/>
+		<choice label="the skull"/>
+		<choice label="the spine" correct="true"/>
+	</interaction>
+	<interaction id="5" label="The body has a total of ... lungs." type="choice" weighting="1">
+		<choice label="two" correct="true"/>
+		<choice label="four"/>
+		<choice label="ten"/>
+		<choice label="thirty-two"/>
+	</interaction>
+	<interaction id="6" label="The right atrium is to be found in: ...." type="choice" weighting="1">
+		<choice label="the brain"/>
+		<choice label="the small intestine"/>
+		<choice label="the heart" correct="true"/>
+		<choice label="the liver"/>
+	</interaction>
+	<interaction id="7" label="The scapula is also called: ...." type="choice" weighting="1">
+		<choice label="the shoulder-blade" correct="true"/>
+		<choice label="the clavicle"/>
+		<choice label="the maxilla"/>
+		<choice label="the ischium"/>
+	</interaction>
+	<interaction id="8" label="The oesophagus is also called: ...." type="choice" weighting="1">
+		<choice label="the larynx"/>
+		<choice label="the gullet" correct="true"/>
+		<choice label="the trachea"/>
+		<choice label="the diaphragm"/>
+	</interaction>
+	<interaction id="9" label="The fibula is: ...." type="choice" weighting="1">
+		<choice label="a bone" correct="true"/>
+		<choice label="an internal organ"/>
+		<choice label="a valve of the heart"/>
+		<choice label="a blood vessel"/>
+	</interaction>
+	<interaction id="10" label="K.L.S. stands for: ...." type="choice" weighting="1">
+		<choice label="kidney, lung, spleen"/>
+		<choice label="kidney left system"/>
+		<choice label="kidney, liver, spleen" correct="true"/>
+		<choice label="knee, lung, spine"/>
+	</interaction>
+	<interaction id="11" label="The ... in the lower back separate waste liquid from the blood." type="choice" weighting="1">
+		<choice label="lungs"/>
+		<choice label="kidneys" correct="true"/>
+		<choice label="ribs"/>
+		<choice label="veins"/>
+	</interaction>
+	<interaction id="12" label="If you lift a heavy load without bending your knees, you may damage a disc in your ...." type="choice" weighting="1">
+		<choice label="heart"/>
+		<choice label="joint"/>
+		<choice label="bone"/>
+		<choice label="spine" correct="true"/>
+	</interaction>
+	<interaction id="13" label="The organ which produces bile is the ...." type="choice" weighting="1">
+		<choice label="liver"/>
+		<choice label="spleen"/>
+		<choice label="kidney"/>
+		<choice label="gall-bladder" correct="true"/>
+	</interaction>
+	<interaction id="14" label="The ribs are located in the ...." type="choice" weighting="1">
+		<choice label="pelvis"/>
+		<choice label="foot"/>
+		<choice label="trunk" correct="true"/>
+		<choice label="lower jaw"/>
+	</interaction>
+	<interaction id="15" label="The technical word for what English people commonly call the knee-cap is the ...." type="choice" weighting="1">
+		<choice label="fibula"/>
+		<choice label="patella" correct="true"/>
+		<choice label="scapula"/>
+		<choice label="nutella"/>
+	</interaction>
+	<interaction id="16" label="The disease is ... and affecting more and more of the population." type="choice" weighting="1">
+		<choice label="gathering"/>
+		<choice label="supplying"/>
+		<choice label="reclaiming"/>
+		<choice label="spreading" correct="true"/>
+	</interaction>
+	<interaction id="17" label="The ... is the part inside a woman's body where the fetus develops." type="choice" weighting="1">
+		<choice label="spleen"/>
+		<choice label="liver"/>
+		<choice label="womb" correct="true"/>
+		<choice label="lung"/>
+	</interaction>
+	<interaction id="18" label="The ... is the natural covering of the body." type="choice" weighting="1">
+		<choice label="skin" correct="true"/>
+		<choice label="ulna"/>
+		<choice label="patella"/>
+		<choice label="heart"/>
+	</interaction>
+	<interaction id="19" label="... are small light brown spots in the skin." type="choice" weighting="1">
+		<choice label="Hairs"/>
+		<choice label="Freckles" correct="true"/>
+		<choice label="Bones"/>
+		<choice label="Lungs"/>
+	</interaction>
+	<interaction id="20" label="The correct term for the backbone is ...." type="choice" weighting="1">
+		<choice label="the spine" correct="true"/>
+		<choice label="the jaw"/>
+		<choice label="the collarbone"/>
+		<choice label="the ulna"/>
+	</interaction>
+	<interaction id="21" label="To ... means to have the same qualities." type="choice" weighting="1">
+		<choice label="abort"/>
+		<choice label="match" correct="true"/>
+		<choice label="fail"/>
+		<choice label="cure"/>
+	</interaction>
+	<interaction id="22" label="... is an synonym of a transplant." type="choice" weighting="1">
+		<choice label="Graft" correct="true"/>
+		<choice label="Recipient"/>
+		<choice label="Brand"/>
+		<choice label="Rise"/>
+	</interaction>
+	<interaction id="23" label="Your ... fill with air when you breathe." type="choice" weighting="1">
+		<choice label="kidneys"/>
+		<choice label="atria"/>
+		<choice label="lungs" correct="true"/>
+		<choice label="ears"/>
+	</interaction>
+	<interaction id="24" label="The ... is located in the head." type="choice" weighting="1">
+		<choice label="heart"/>
+		<choice label="rib"/>
+		<choice label="ovum"/>
+		<choice label="brain" correct="true"/>
+	</interaction>
+	<interaction id="25" label="The ... is the soft fatty substance which fills the cavities of bones." type="choice" weighting="1">
+		<choice label="blood"/>
+		<choice label="patella"/>
+		<choice label="brain"/>
+		<choice label="marrow" correct="true"/>
+	</interaction>
+</evaluation>

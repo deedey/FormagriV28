@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Authentification</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+						<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Authentification</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">license:</span> GPL</li>
+				<li><span class="field">version:</span> 1.0</li>
+				<li><span class="field">dependance:</span> activation de l'extension php_ldap</li>
+				<li><span class="field">dependance:</span> si CAS comme serveur d'authentification activation  de l'extension=php_curl.dll</li>
+				<li><span class="field">module:</span> Authentification</li>
+				<li><span class="field">description:</span> gestion des bases d'authentification mysql, ldap et cas</li>
+				<li><span class="field">author:</span> Nordine Zetoutou  - &lt;<a href="mailto:nzetoutou@educagri.fr">nzetoutou@educagri.fr</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_Authentification---Authentification.php.html">/Authentification/Authentification.php</a> (line <span class="field"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__AuthentificationAuthentification.php.html#a30">30</a></span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$sTableLogin" title="details" class="var-name">$sTableLogin</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																														
+				<div class="method-definition">
+											<span class="method-result">Authentification</span>
+										<a href="#Authentification" title="details" class="method-name">Authentification</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#getAuthMode" title="details" class="method-name">getAuthMode</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">object</span>
+										<a href="#ldap_authenticate" title="details" class="method-name">ldap_authenticate</a>
+											(<span class="var-type">object</span>&nbsp;<span class="var-name">$oBase</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$login</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$pass</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$pass
+</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#mysql_authenticate" title="details" class="method-name">mysql_authenticate</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$oMysql</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$ldap_user_id</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$oUser</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$sTableLogin" id="$sTableLogin"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$sTableLogin</span>
+			 = <span class="var-default"> 'user_id'</span>			(line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__AuthentificationAuthentification.php.html#a32">32</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodAuthentification" id="Authentification"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor Authentification</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__AuthentificationAuthentification.php.html#a34">34</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">Authentification</span>
+		<span class="method-name">
+			Authentification
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetAuthMode" id="getAuthMode"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAuthMode</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__AuthentificationAuthentification.php.html#a43">43</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> object|bool $oBase ou false</li>
+				<li><span class="field">description:</span> charge le mode d'authentification extrene</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			getAuthMode
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodldap_authenticate" id="ldap_authenticate"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">ldap_authenticate</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__AuthentificationAuthentification.php.html#a74">74</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> authentifie un utilisateur dans l'annuaire ldap</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">object</span>
+		<span class="method-name">
+			ldap_authenticate
+		</span>
+					(<span class="var-type">object</span>&nbsp;<span class="var-name">$oBase</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$login</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$pass</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$pass
+</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$oBase</span><span class="var-description">: : config du serveur d'authentification</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$login</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pass
+</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$pass</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmysql_authenticate" id="mysql_authenticate"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">mysql_authenticate</span> (line <span class="line-number"><a href="../__filesource/fsource_Ldap2Mysql-Authentification__AuthentificationAuthentification.php.html#a136">136</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">description:</span> récupère un utilisateur de la base mysql</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			mysql_authenticate
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$oMysql</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$ldap_user_id</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$oUser</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$oUser</span><span class="var-description">: <p>: possédant entre autres son id ldap</p><p>return object $oUser</p></span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$oMysql</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$ldap_user_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Wed, 22 Nov 2006 11:41:03 +0100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.0RC6</a>
+	</p>
+	</div></body>
+</html>

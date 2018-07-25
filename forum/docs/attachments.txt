@@ -1,0 +1,70 @@
+Readme attachments
+==================
+
+Original Author:
+Arjan Haverkamp
+May 18, 2000
+arjan@avoid.org
+http://www.avoid.org
+
+Updated by:
+Jason Birch
+June 27, 2000
+jason@phorum.org
+
+==================
+
+Please note that the attachment support provided in this version of Phorum
+has very limited security features.  Do not enable this option unless you
+know what you're doing.
+
+This file is based on the file attachment support documentation provided
+by Arjan Haverkamp.  As a note, the official Phorum file upload capability
+differs from the original code in the way that files are stored and retreived,
+and in the way that the directory is specified.
+
+  * NOTE: the words 'upload' and 'attachment' are used interchangebly
+          in this document.
+
+Here's what you need to do in order to get the attachment-feature
+to work.
+
+- Install Phorum, using the files in this distribution, as usual (see
+  readme.txt for details).
+- Create a directory somewhere (preferrably in the document-root
+  directory of the webserver Phorum is running on) where the attachments
+  will be stored. Then make sure this directory is readable, writable
+  and executable for the user your webserver is running as (nobody in most
+  cases).
+  e.g.: mkdir /project/phorum/htdocs/uploaded
+        chmod 707 /project/phorum/htdocs/uploaded
+- Go to the phorum admin pages.
+- Click "Phorum Setup".
+- Click "Files/Paths".
+- Enter the Attachment Directory:
+  The attachment-directory should be an absolute (filesystem) directory
+  where the attachments will be stored.
+  I use a directory called 'uploaded' in the document-root directory of the
+  server that Phorum is running on.
+  f.e: Attachment-dir: /project/phorum/htdocs/uploaded
+  (You need to start the directory with a slash '/', and not end it in one.)
+
+   * NOTE: if you don't allow attachments to be uploaded in any forum,
+     leave the attachment-dir empty!
+
+- Now create a new forum as usual. You can decide on a per-forum-basis
+  whether or not to allow uploads. Just check the correct radio-button
+  at 'Allow uploads?'.
+- If you checked 'yes' at 'Allow uploads?', a new directory is created inside
+  the general attachment-directory. All attachments uploaded in this forum will
+  be stored in this subdirectory.
+- Now test your newly created forum. If you allowed uploads, you should see
+  a file-upload input-field in the post-form. Upload any file here, and
+  check if this file appears again when you read your posted message.
+  If it does not show up, check the permissions of the general attachment-
+  directory. Remember: this directory has to be readable, writable and
+  executable for the user the webserver is running as (usually 'nobody').
+
+That's all! Note that you can delete attachments using the admin-interface.
+When editing a message, you can delete an attachment you don't like
+with or without deleting the message itself.

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evaluation id="2" label="Quantificateurs 1" masteryScore="75" positiveFeedback="Bonne réponse" negativeFeedback="Mauvaise réponse">
+	<interaction id="1" label="The Smiths are ... people that their heads almost touch the ceiling." type="choice" weighting="1">
+		<choice label="so tall a"/>
+		<choice label="so tall"/>
+		<choice label="such a tall"/>
+		<choice label="such tall" correct="true"/>
+	</interaction>
+	<interaction id="2" label="Can you explain his visit ... late an hour?" type="choice" weighting="1">
+		<choice label="in such"/>
+		<choice label="at such"/>
+		<choice label="in so"/>
+		<choice label="at so" correct="true"/>
+	</interaction>
+	<interaction id="3" label="He goes to the United States ...." type="choice" weighting="1">
+		<choice label="two per year"/>
+		<choice label="two times in the year"/>
+		<choice label="twice a year" correct="true"/>
+		<choice label="twice per years"/>
+	</interaction>
+	<interaction id="4" label="He hasn't got ... luggage." type="choice" weighting="1">
+		<choice label="many"/>
+		<choice label="much" correct="true"/>
+		<choice label="few"/>
+		<choice label="plenty"/>
+	</interaction>
+	<interaction id="5" label="They have ... surprising methods!" type="choice" weighting="1">
+		<choice label="so"/>
+		<choice label="such" correct="true"/>
+		<choice label="how"/>
+		<choice label="so much"/>
+	</interaction>
+	<interaction id="6" label="... people live in the USA." type="choice" weighting="1">
+		<choice label="205 million" correct="true"/>
+		<choice label="205 millions"/>
+		<choice label="205 million of"/>
+		<choice label="205 millions of"/>
+	</interaction>
+	<interaction id="7" label="I'd rather you were here than ... miles away" type="choice" weighting="1">
+		<choice label="thousand"/>
+		<choice label="thousands of" correct="true"/>
+		<choice label="thousands"/>
+		<choice label="thousand of"/>
+	</interaction>
+	<interaction id="8" label="She wanted ... stamps but there were not ... in the machine." type="choice" weighting="1">
+		<choice label="some / any" correct="true"/>
+		<choice label="no / none"/>
+		<choice label="any / none"/>
+		<choice label="some / some"/>
+	</interaction>
+	<interaction id="9" label="They are ... family that you immediately feel at home with them." type="choice" weighting="1">
+		<choice label="such cordial"/>
+		<choice label="so cordial"/>
+		<choice label="such a cordial" correct="true"/>
+		<choice label="a cordial"/>
+	</interaction>
+	<interaction id="10" label="The project runs into ... dollars." type="choice" weighting="1">
+		<choice label="million"/>
+		<choice label="millions"/>
+		<choice label="millions of" correct="true"/>
+		<choice label="million of"/>
+	</interaction>
+	<interaction id="11" label="It is estimated that 2 ... jobs in Britain are bound up with the EEC." type="choice" weighting="1">
+		<choice label="millions of"/>
+		<choice label="millions"/>
+		<choice label="million of"/>
+		<choice label="million" correct="true"/>
+	</interaction>
+	<interaction id="12" label="She is ... crippled by severe pains in the back that she cannot walk without crutches." type="choice" weighting="1">
+		<choice label="as"/>
+		<choice label="such"/>
+		<choice label="so" correct="true"/>
+		<choice label="not so"/>
+	</interaction>
+	<interaction id="13" label="The new nurse wondered why hardly ... spoke to her." type="choice" weighting="1">
+		<choice label="as"/>
+		<choice label="such"/>
+		<choice label="so"/>
+		<choice label="not so" correct="true"/>
+	</interaction>
+	<interaction id="14" label="According to medical experts, people in the West consume not only ... fat, sugar and alcohol, but also too much salt." type="choice" weighting="1">
+		<choice label="too much" correct="true"/>
+		<choice label="too many"/>
+		<choice label="so many"/>
+		<choice label="too many"/>
+	</interaction>
+	<interaction id="15" label="&quot;Were there any incidents while you were on duty?&quot; &quot;No, there were ....&quot;" type="choice" weighting="1">
+		<choice label="no"/>
+		<choice label="any"/>
+		<choice label="some"/>
+		<choice label="none" correct="true"/>
+	</interaction>
+	<interaction id="16" label="The gynaecologist interviewed ... Mr and Mrs Smith." type="choice" weighting="1">
+		<choice label="each"/>
+		<choice label="every"/>
+		<choice label="both" correct="true"/>
+		<choice label="the both"/>
+	</interaction>
+	<interaction id="17" label="... cholesterol can cause heart disease." type="choice" weighting="1">
+		<choice label="Too"/>
+		<choice label="Many"/>
+		<choice label="Too many"/>
+		<choice label="Too much" correct="true"/>
+	</interaction>
+	<interaction id="18" label="We can't find Doctor Brown in the emergency unit. However, he must be ... in the hospital." type="choice" weighting="1">
+		<choice label="nowhere"/>
+		<choice label="somewhere" correct="true"/>
+		<choice label="anywhere"/>
+		<choice label="everywhere"/>
+	</interaction>
+	<interaction id="19" label="If you are first on the scene of an accident you should control ... serious bleeding and make sure victims can breathe." type="choice" weighting="1">
+		<choice label="some"/>
+		<choice label="any" correct="true"/>
+		<choice label="the"/>
+		<choice label="a"/>
+	</interaction>
+	<interaction id="20" label="This little boy has a lot of red spots on the skin, but his sister has ...." type="choice" weighting="1">
+		<choice label="not"/>
+		<choice label="no"/>
+		<choice label="none" correct="true"/>
+		<choice label="no one"/>
+	</interaction>
+	<interaction id="21" label="A gesture is ... action that sends a visual signal to an onlooker." type="choice" weighting="1">
+		<choice label="few"/>
+		<choice label="some"/>
+		<choice label="several"/>
+		<choice label="any" correct="true"/>
+	</interaction>
+	<interaction id="22" label="He has taken pills since his childhood, and he still takes ...." type="choice" weighting="1">
+		<choice label="a lot" correct="true"/>
+		<choice label="a lot of"/>
+		<choice label="much"/>
+		<choice label="lots of"/>
+	</interaction>
+	<interaction id="23" label="The valve is designed to let air escape if the pressure gets ... high." type="choice" weighting="1">
+		<choice label="too much"/>
+		<choice label="too many"/>
+		<choice label="too" correct="true"/>
+		<choice label="so much"/>
+	</interaction>
+	<interaction id="24" label="He has seen a lot of people but ... has been able to cure him." type="choice" weighting="1">
+		<choice label="no one" correct="true"/>
+		<choice label="none"/>
+		<choice label="anyone"/>
+		<choice label="everyone"/>
+	</interaction>
+	<interaction id="25" label="Although some people with ... money or education may be lacking in some nutrients, studies have shown that these are the people least likely to take them." type="choice" weighting="1">
+		<choice label="a little"/>
+		<choice label="few"/>
+		<choice label="much"/>
+		<choice label="little" correct="true"/>
+	</interaction>
+</evaluation>

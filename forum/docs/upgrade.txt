@@ -1,0 +1,69 @@
+Upgrade instructions for Phorum 3.2.7
+
+This file contains instructions for upgrading from one of three points:
+ - Phorum 3.2.3+
+ - Phorum 3.1.x -> 3.2.2
+ - Phorum 3.0.x
+
+
+A) To upgrade from any version 3.2.3+, you do not need to make any database
+revisions.  Follow the instructions for B) below, but skip the step that says
+to run the upgrade script (#4).
+
+
+B) To upgrade from versions between 3.1.x and 3.2.2:
+
+0) Make a backup of your current working Phorum directory as well as your
+   tables.  This shouldn't be necessary, but it's good common sense.  We've
+   all misread an instruction that has left us cursing for hours or days.
+
+1) Install the new Phorum according to the readme.txt.  DO NOT however attempt
+   to create any forums at this time.
+
+2) Alter the new files to reflect the changes that you may have modified in
+   the old configuration, such as the header.php, footer.php and the
+   profanity/banned users files into the new installation.
+
+*** These changes should be made during an off time, as your phorum will be down momentarily.
+
+3) STOP Phorum from the old Admin interface
+
+4) MySQL Users - Run scripts/upgrade.php from a web browser.
+   PostgreSQL Users - Run scripts/upgrade_pg.php from a web browser.
+
+5) Rename the directory that stores the old Phorum to something else. (e.g. phorum_old)
+
+6) Rename the new install to the same name as the old install.
+
+7) Load up the new admin script, and choose "Rebuild INF File"
+
+8) In the admin, test that all of your existing forums are in place, and that any custom
+   settings have been properly migrated.
+
+9) Take a deep breath.
+
+10) START Phorum from the new admin interface.
+
+11) Test all of your forums to make sure that they are responding properly.
+
+
+C) To upgrade from version 3.0.x
+
+The upgrade30.php script is currently located in the scripts/ folder.
+It must be run from a subdirectory of the main Phorum installation,
+and you should remove it from your server after the upgrade is done.
+
+1. Install Phorum as per readme.txt.
+2. Copy forums.inf from your old location to another location
+3. Modify the variable $oldinfpath in upgrade30.php to point to
+   the location that you placed the copy of forums.inf
+4. Comment out all the $DB lines in the old forums.inf by
+   placing a // at the beginning of each line.  e.g.:
+//   $DB = new db();
+5. Comment out the $q lines.
+6. Comment out the include lines.
+7. Run upgrade30.php from a browser.
+8. Load the admin script for your new installation and select:
+   Rebuild INF File
+9. In the same area, select:
+   Reset Main Sequence

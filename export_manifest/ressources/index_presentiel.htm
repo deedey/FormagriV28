@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="fr" lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
+<META HTTP-EQUIV="Content-Language" CONTENT="fr">
+<META HTTP-EQUIV="Expires" CONTENT="Fri, Jan 01 1900 00:00:00 GMT">
+<META NAME="ROBOTS" CONTENT="No Follow">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<title>Presentiel</title>
+<script language=javascript src="../APIWrapper.js"></script>
+<script language=javascript src="../SCOFunctions.js"></script>
+</head>
+<body onunload="return unloadPage('incomplete')">
+<H4>Ceci est une activité en presentiel<BR>
+Renseignez-vous auprés de votre formateur ou tuteur</H4>
+        <script        language="javascript">
+        loadPage();
+        var   studentName = "!";
+        var   lmsStudentName = doLMSGetValue(  "cmi.core.student_name" );
+
+        if ( lmsStudentName  != "" )
+        {
+           studentName = " " + lmsStudentName +   "!";
+        }
+
+        document.write("Cliquer sur le bouton -Valider- pour enregistrer votre passage, " +studentName);
+        </script>
+
+
+        <hr>
+        <form>
+                <table cols="3" width="100%" align="center">
+                        <tr>
+                        <td align="middle"><input type = "button" value = "  Validez  " onClick = "doQuit('completed')" id=button2 name=button2></td>
+                        </tr>
+                </table>
+        </form>
+</body>
+</html>

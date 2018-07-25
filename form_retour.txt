@@ -1,0 +1,12 @@
+<?
+require "lang$lg.inc.php";
+?>
+<BR>
+<FORM NAME="formulaire">
+  <INPUT TYPE="button" VALUE="<? echo $mess_form_retour ;?>" onclick="retour()"></FORM>
+  <SCRIPT LANGUAGE="JavaScript1.1">
+    function retour()
+        {
+        history.back();
+        }
+   </SCRIPT>

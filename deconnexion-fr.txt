@@ -1,0 +1,5 @@
+  Vous venez d'être déconnecté(e) par le serveur.
+  Les raisons sont multiples et cela arrive le plus souvent quand :
+  - Vous n'avez pas lancé depuis un long moment une requête sur la plate-forme
+  - Vous avez ouvert un nouvel accés dans la même fenêtre de navigateur
+  - Vous vous êtes connecté avec plus d'un login

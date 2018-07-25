@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+Genere par Formagri Ceres V 2.6.0 [Support SCORM v1.2 (c)]
+Le mardi  5 avril 2011 sur la plate-forme http://deyb.free.fr/formagri_2605
+par Formagri Administrateur : ADMINISTRATEUR
+-->
+<manifest identifier="Manifest-Module-Formagri-Ceres" version="1.1"
+xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+               xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_v1p2"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
+               http://www.imsglobal.org/xsd/imsmd_v1p2 imsmd_v1p2p2.xsd">
+  <metadata>
+    <schema>IMSContent</schema>
+    <schemaversion>1.2.2</schemaversion>
+    <imsmd:lom>
+      <imsmd:general>
+        <imsmd:title>
+          <imsmd:langstring xml:lang="fr">Fertilisation</imsmd:langstring>
+        </imsmd:title>
+        <imsmd:language>fr</imsmd:language>
+        <imsmd:description>
+          <imsmd:langstring xml:lang="fr">Ensemble de QCM</imsmd:langstring>
+        </imsmd:description>
+        <imsmd:keyword>
+          <imsmd:langstring xml:lang="fr">test,çeci,celà</imsmd:langstring>
+        </imsmd:keyword>
+      </imsmd:general>
+      <imsmd:lifecycle>
+        <imsmd:status>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="fr">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="x-none">Final</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:status>
+        <imsmd:contribute>
+          <imsmd:role>
+            <imsmd:source>
+              <imsmd:langstring xml:lang="fr">LOMv1.0</imsmd:langstring>
+            </imsmd:source>
+            <imsmd:value>
+              <imsmd:langstring xml:lang="x-none">Encadrement pedagogique</imsmd:langstring>
+            </imsmd:value>
+          </imsmd:role>
+          <imsmd:centity>
+            <imsmd:vcard>d.bendifallah@gmail.com</imsmd:vcard>
+          </imsmd:centity>
+        </imsmd:contribute>
+      </imsmd:lifecycle>
+      <imsmd:technical>
+        <imsmd:format>application/x-shockwave-flash</imsmd:format>
+        <imsmd:requirement>
+          <imsmd:type>
+            <imsmd:source>
+              <imsmd:langstring xml:lang="fr">LOMv1.0</imsmd:langstring>
+            </imsmd:source>
+            <imsmd:value>
+              <imsmd:langstring xml:lang="x-none">Navigateur</imsmd:langstring>
+            </imsmd:value>
+          </imsmd:type>
+        </imsmd:requirement>
+      </imsmd:technical>
+      <imsmd:educational>
+        <imsmd:interactivitytype>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="fr">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="x-none">Active</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:interactivitytype>
+        <imsmd:learningresourcetype>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="fr">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="x-none">Exercise</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:learningresourcetype>
+        <imsmd:interactivitylevel>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="fr">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="x-none"></imsmd:langstring>
+          </imsmd:value>
+        </imsmd:interactivitylevel>
+        <imsmd:context>
+          <imsmd:source>
+            <imsmd:langstring xml:lang="fr">LOMv1.0</imsmd:langstring>
+          </imsmd:source>
+          <imsmd:value>
+            <imsmd:langstring xml:lang="x-none">Enseignement</imsmd:langstring>
+          </imsmd:value>
+        </imsmd:context>
+        <imsmd:language>fr</imsmd:language>
+      </imsmd:educational>
+    </imsmd:lom>
+  </metadata>
+<organizations default="M0">
+    <organization identifier="M0" structure="hierarchical">
+        <title>Fertilisation</title>
+           <item identifier="M0_01" identifierref="RES-01" isvisible="true">
+                         <title>mine_first</title>
+         </item>
+     </organization>
+ </organizations>
+<resources>
+      <resource identifier="RES-01" type="webcontent" href="mine_first.html">
+                        <file href="mine_first.html" />
+                        <file href="cmi.js" />
+                        <file href="qcm.swf" />
+                        <file href="mine_first.xml" />
+         </resource>
+</resources>
+</manifest>

@@ -1,0 +1,40 @@
+
+body, html{
+        background-color:#CCC;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:12px;
+}
+
+#xofpp, #closeBoxpp, #playpp, #stoppp, #imageTitlepp{
+        font-weight:bold;
+        cursor:pointer;
+        margin:0 10px;
+        color:white;
+        float:left;
+}
+#nextButtonBoxpp, #previousButtonBoxpp, #xofpp{
+        font-weight:bold;
+        cursor:pointer;
+        margin:0 10px;
+        color:white;
+        float:right;
+}
+#gallery, #gallery ul{
+
+    margin:0 auto;
+    margin-top:50px;
+    list-style:none;
+    padding:0;
+    width:620px;
+}
+#gallery li{
+    margin:5px 10px;
+    padding:5px;
+    float:left;
+    list-style:none;
+    cursor:pointer;
+    height:60px;
+}
+#gallery img{
+    border:2px white solid;
+}

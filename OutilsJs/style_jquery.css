@@ -1,0 +1,371 @@
+#window
+{
+        position: absolute;
+        left: 100px;
+        top: 145px;
+        width: 700px;
+        height: 300px;
+        overflow: hidden;
+        display: none;
+}
+#windowTop
+{
+        height: 30px;
+        overflow: auto;
+        background-image: url(../OutilsJs/images/window_top_end.png);
+        background-position: right top;
+        background-repeat: no-repeat;
+        position: relative;
+        overflow: hidden;
+        cursor: move;
+        filter:alpha(opacity=80);
+        -moz-opacity: 0.8;
+        opacity: 0.8;
+}
+#windowTopContent
+{
+        margin-right: 13px;
+        background-image:url(../OutilsJs/images/window_top_start.png);
+        background-position:left top;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        height: 30px;
+        line-height: 30px;
+        text-indent: 10px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        color: #FFFFFF;
+}
+#windowMin
+{
+        position: absolute;
+        right: 25px;
+        top: 10px;
+        cursor: pointer;
+}
+#windowMax
+{
+        position: absolute;
+        right: 25px;
+        top: 10px;
+        cursor: pointer;
+        display: none;
+}
+#windowClose
+{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+}
+#windowBottom
+{
+        position: relative;
+        height: 370px;
+        background-image: url(../OutilsJs/images/window_bottom_end.png);
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        filter:alpha(opacity=80);
+        -moz-opacity: 0.8;
+        opacity: 0.8;
+}
+#windowBottomContent
+{
+        position: relative;
+        height: 370px;
+        background-image: url(../OutilsJs/images/window_bottom_start.png);
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        margin-right: 13px;
+        background-repeat: no-repeat;
+        filter:alpha(opacity=80);
+        -moz-opacity: 0.8;
+        opacity: 0.8;
+}
+#windowResize
+{
+        position: absolute;
+        right: 3px;
+        bottom: 5px;
+        cursor: se-resize;
+}
+#windowContent
+{
+        position:absolute;
+        top: 30px;
+        left: 10px;
+        width: auto;
+        height: auto;
+        overflow: auto;
+        margin-right: 4px;
+        border: 1px solid #fff;
+        height: 255px;
+        width: 675px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        background-color: #FFFFFF;
+}
+#windowContent *
+{
+        /*margin: 4px;*/
+}
+.transferer2
+{
+        border: 1px solid #057EB1;  /*#6BAF04*/
+        background-color: #057EB1;
+        filter:alpha(opacity=30);
+        -moz-opacity: 0.3;
+        opacity: 0.3;
+}
+/* ---------------------------------Librairie auto complete-------------------------------------*/
+.ac_input {
+     width: 515px;
+     background-color:#FFFFEE;
+     font-size:10px;
+     font-family:arial;
+     border:1px solid #002D45;
+}
+
+.ac_results {
+        background: #FFFFEE;
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+        margin:0px;
+        padding:0px;
+        font-size: 70%;
+        font-family: arial,verdana,tahoma;
+        z-index: 101;
+}
+
+.ac_results ul {
+        width: 515px;
+        list-style-position: outside;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border: 1px solid #002D45;
+        background: #cee6ec;
+}
+
+.ac_results iframe {
+        display:none;/*sorry for IE5*/
+        display:block;/*sorry for IE5*/
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:-1;
+        filter:mask();
+        width:515px;
+        height:600px;
+}
+
+.ac_results li {
+        width: 505px;
+        padding: 2px 5px;
+}
+
+.ac_results a {
+        width: 100%;
+}
+
+.ac_loading {
+        border: 1px solid #002D45;
+        background : Window url('../images/indicator.gif') right center no-repeat;
+        background-color: #FFFFEE;
+}
+
+.ac_over {
+        background-color:#D45211;
+        color: #fff;
+}
+/* ------------------------------------------------autocompleting------------------*/
+.ac1_input {
+     width: 250px;
+     color:#333333;
+     background-color:#FFFFEE;
+     font-size:10px;
+     font-family:arial;
+     border:1px solid #002D45;
+}
+.ac1_results {
+
+        background: #cee6ec;
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+        margin:0px;
+        padding:0px;
+        font-size: 70%;
+        font-family: arial,verdana,tahoma;
+        z-index: 101;
+        border: 1px solid #002D45;
+}
+.ac1_results a {
+        width: 100%;
+}
+.ac1_results li {
+        width: 245px;
+        padding: 2px 5px;
+}
+.ac1_results ul {
+        width: 250px;
+        list-style-position: outside;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        /*border: 1px solid #D45211;*/
+}
+.ac1_results iframe {
+        display:none;/*sorry for IE5*/
+        display:block;/*sorry for IE5*/
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:-1;
+        filter:mask();
+        width:250px;
+        height:600px;
+}
+.ac1_over {
+        background-color:#D45211;
+        color: #fff;
+}
+.ac1_fond {
+        background: #cee6ec;
+        border: 1px solid #D45211;
+        font-family:arial;
+        font-size:12px;
+        font-weight:normal;
+}
+
+/* ------------------------------------------------autocompleting2------------------*/
+.ac2_input {
+     width: 250px;
+     color:#333333;
+     background-color:#FFFFEE;
+     font-size:10px;
+     font-family:arial;
+     border:1px solid #002D45;
+}
+.ac2_results {
+
+        background: #cee6ec;
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+        margin:0px;
+        padding:0px;
+        font-size: 70%;
+        font-family: arial,verdana,tahoma;
+        z-index: 101;
+        border: 1px solid #002D45;
+}
+.ac2_results a {
+        width: 100%;
+}
+.ac2_results li {
+        width: 130px;
+        padding: 2px 5px;
+}
+.ac2_results ul {
+        width: 150px;
+        list-style-position: outside;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        /*border: 1px solid #D45211;*/
+}
+.ac2_results iframe {
+        display:none;/*sorry for IE5*/
+        display:block;/*sorry for IE5*/
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:-1;
+        filter:mask();
+        width:150px;
+        height:600px;
+}
+.ac2_over {
+        background-color:#D45211;
+        color: #fff;
+}
+.ac2_fond {
+        background: #cee6ec;
+        border: 1px solid #D45211;
+        font-family:arial;
+        font-size:12px;
+        font-weight:normal;
+}
+/*--------------------------------------------jquery Impromptu-----------------------------------------*/
+ div.jqifade{
+      background-color: #ffffff;
+}
+div.jqi{
+      background-color: #c0cEa6;
+      padding: 10px;
+      width: 300px;
+}
+div.jqi .jqicontainer{
+      background-color: #e0eEc6;
+      padding: 5px;
+      color: #ffffff;
+      font-weight: bold;
+}
+div.jqi .jqimessage{
+      background-color: #c0cEa6;
+      padding: 10px;
+}
+div.jqi .jqibuttons{
+      text-align: center;
+      padding: 5px 0 0 0;
+}
+div.jqi button{
+      padding: 3px 10px 3px 10px;
+      margin: 0 10px;
+}
+/*--------------------------------------------fin de jquery Impromptu-----------------------------------------*/
+
+
+/*-------------------------------------------- LiveValidation -------------------------------------------------*/
+
+.LV_valid {
+/*    color:#002D45;*/
+
+        background : Window url('../images/media/completed_nu.gif') right center no-repeat;
+}
+
+.LV_invalid {
+/*        color:#CC0000;*/
+        background : Window url('../images/media/failed_nu.gif') right center no-repeat;
+}
+
+.LV_validation_message{
+    font-weight:old;
+    color : #FFFFFF;
+    background-color: #FFFFFF;
+    margin:0 0 0 5px;
+}
+
+.LV_valid_field,
+input.LV_valid_field:hover,
+input.LV_valid_field:active,
+textarea.LV_valid_field:hover,
+textarea.LV_valid_field:active,
+.fieldWithErrors input.LV_valid_field,
+.fieldWithErrors textarea.LV_valid_field {
+    border: 1px solid #002D45;
+}
+
+.LV_invalid_field,
+input.LV_invalid_field:hover,
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover,
+textarea.LV_invalid_field:active,
+.fieldWithErrors input.LV_invalid_field,
+.fieldWithErrors textarea.LV_invalid_field {
+    border: 1px solid #CC0000;
+}
+/*-------------------------------------------- Fin de LiveValidation -------------------------------------------------*/

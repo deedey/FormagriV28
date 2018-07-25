@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+Genere par Formagri Ceres V 2.6.0 [Support SCORM v1.2 (c)]
+Le  sur la plate-forme http://localhost/formagri
+par Administrateur  Formagri : ADMINISTRATEUR
+-->
+<manifest identifier="Manifest-Module-Formagri-Ceres" version="1.1"
+xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+               xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_v1p2"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
+               http://www.imsglobal.org/xsd/imsmd_v1p2 imsmd_v1p2p2.xsd">
+<organizations default="M0">
+<organization identifier="M0">
+<title>xApiTinCan</title>
+<item identifier="M0_011" identifierref="R_S011" isvisible="true">
+<title>Connaissance Maaf</title>
+<adlcp:maxtimeallowed>0000:15:00.0</adlcp:maxtimeallowed>
+</item>
+</organization>
+</organizations>
+<resources>
+<resource identifier="R_S011" type="webcontent"
+     adlcp:scormtype="asset" href="http://localhost/formagri/ressources/super_1/ressources/Ressources_TC/connaissanceMAAF/index.html">
+<metadata>
+<schema>ADL SCORM</schema>
+<schemaversion>1.2</schemaversion>
+<adlcp:location>ressources/R_S011.xml</adlcp:location>
+</metadata>
+<file href="http://localhost/formagri/ressources/super_1/ressources/Ressources_TC/connaissanceMAAF/index.html" />
+</resource>
+</resources>
+</manifest>

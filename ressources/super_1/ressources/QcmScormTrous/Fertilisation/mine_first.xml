@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Genere par Formagri V 2.6.2 [Support SCORM v1.2 (c)]
+Le mardi 26 avril 2011 sur la plate-forme http://ef-dev2.educagri.fr
+              par Dey Bendifallah : ADMINISTRATEUR-->
+<evaluation id = "1" label = "Fertilisation" masteryScore = "60" positiveFeedback = "Bonne réponse" negativeFeedback = "Mauvaise réponse" >
+<interaction id = "1" label = ".... dfsdfsd fsdf sdff" type = "choice" weighting = "2" >
+<choice label = "dfsdfs"   correct = "true" /> 
+ <choice label = "dfsdf"  /> 
+ <choice label = "dsfsdfsdfsd"  /> 
+ <choice label = "gdfgdf"  /> 
+  </interaction>
+ <interaction id = "2" label = "dsfsdfsd .... fsdfsdfsdfs ...." type = "choice" weighting = "2" >
+<choice label = "fsdfsd / dfsdfsd"   correct = "true" /> 
+ <choice label = "dfsdf / dfsdfsd"  /> 
+ <choice label = "azeazeaz / eaze"  /> 
+ <choice label = "yrtyrty / erterter"  /> 
+  </interaction>
+ <interaction id = "3" label = "ici et la .... ." type = "choice" weighting = "2" >
+<choice label = "fgdfg"   correct = "true" /> 
+ <choice label = "fgdfgdf"  /> 
+ <choice label = "fdgdfgd"  /> 
+ <choice label = "fsdfsdfsdfsdfsd"  /> 
+  </interaction>
+  </evaluation> 

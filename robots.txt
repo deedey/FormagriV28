@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /ressources/
+Disallow: /forum/

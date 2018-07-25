@@ -1,0 +1,12 @@
+CATEGORIE,RESSOURCE,AUTEUR,URL,ACTIVITE,SEQUENCE,MODULE,FORMATION
+
+"Autres Arts/Cultures","Quizz sur l'Italie","Administrateur  Formagri","qcm.php?code=1","Quizz sur l'Italie","Séquence non scormée","Scorm1.2","Formation test"
+"Autres Arts/Cultures","Quizz sur l'Italie","Administrateur  Formagri","qcm.php?code=1","Quizz sur l'Italie Dey","Séquence non scormée Dey",
+"Liaison directe activités","Thamourth","Administrateur  Formagri","http://localhost/formagri/ressources/super_1/ressources/ressources_vrac/thamourth.jpg","Thamourth","Séquence non scormée","Scorm1.2","Formation test"
+"Liaison directe activités","Thamourth","Administrateur  Formagri","http://localhost/formagri/ressources/super_1/ressources/ressources_vrac/thamourth.jpg","Thamourth Dey","Séquence non scormée Dey",
+"Liaison directe activités","Nounours","Administrateur  Formagri","http://localhost/formagri/ressources/super_1/ressources/ressources_vrac/nounours.jpg",
+"Liaison directe activités","Liste des périphériques","Administrateur  Formagri","http://www.annulab.com","Liste des peripheriques","Liste des périphériques d'un ordinateur","L'ordinateur","Formation test"
+"Liaison directe activités","Thamourth ntmourth","Administrateur  Formagri","http://localhost/formagri/ressources/super_1/ressources/ressources_vrac/groupe.php",
+"Liaison directe activités","Types de logiciels à télécharger","Administrateur  Formagri","http://localhost/formagri/ressources/super_1/ressources/ressources_vrac/coeur.php","Liste des peripheriques D","Liste des périphériques d'un ordinateur D","L'ordinateur D",
+"Liaison vers consignes-Média","Video","Administrateur  Formagri","ressources/super_1/ressources/Ressources_Media/video_28_06_2012.flv",
+"Liaison vers consignes-Média","Thamourth","Administrateur  Formagri","http://localhost/formagri/ressources/super_1/ressources/Ressources_Media/video_28_06_2012_1402919920.flv",

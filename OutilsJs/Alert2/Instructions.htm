@@ -1,0 +1,44 @@
+<html>
+
+<head>
+<title>Alert 2 Example</title>
+
+<link rel="stylesheet" type="text/css" href="alert2_style.css" />
+<script type="text/javascript" src="alert2.js"></script>
+
+</head>
+
+<body>
+
+<h1>JavaScript Customizable Alert Box</h2>
+
+<p>Author : Tom Coote @ Innoware <br />
+	Date : 15 Feb 2007<br />
+	Web site : <a href="http://www.tomcoote.co.uk/JavaScriptAlert.aspx">tomcoote.co.uk</a> (for most upto date info)</p>
+
+<p>This page shows an example of the alert2 message box. To use it include the css and js files on your page and call the ShowAlert2() function from an onClick event. You need to pass in the custom alert box variables;</p>
+<ol>
+<li>The onClick event eg this.event</li>
+<li>The title for the alert box</li>
+<li>The message for the alert box</li>
+<li>The file path to the message icon, blank for no icon</li>
+<li>An array of button values to place in the alert box eg ["OK", "Cancel"]</li>
+<li>An array of onClick events for each of the button values given above eg ['JavaScript:OKPress()','JavaScript:HideAlert2()'] </li>
+<li>The width of the alert box, message text will wrap around at this width.</li>
+<li>The file path to the top right exit icon for the alert box</li>
+</ol>
+
+<p><a href="#alertBox" onClick="JavaScript:ShowAlert2(event, 'Test Alert 2', 'Testing the custom JavaScript Alert Box', 'Exclamation_32x32.gif', ['OK', 'Cancel'], ['JavaScript:HideAlert2()','JavaScript:HideAlert2()'], 400, 'close.gif')" >Click here </a> to show an example alert box.</p>
+
+<p>Example code : <br />
+&lt;a href="#alertBox" onClick="JavaScript:ShowAlert2(event, 'Test Alert 2', 'Testing the custom JavaScript Alert Box', 'Exclamation_32x32.gif', ['OK', 'Cancel'], ['HideAlert2()','HideAlert2()'], 400, 'close.gif')" &gt;Click here&lt;/a&gt;
+</p>
+
+<p>Tested in IE7, FireFox 2.0.0.1 and Opera 9.02</p>
+
+<br />
+<p><i>Feel free to use, edit or share this code as long as you credit the author in the source.</i></p>
+
+</body>
+
+</html>

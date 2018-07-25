@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evaluation id="5" label="infinitif" masteryScore="75" positiveFeedback="Bonne réponse" negativeFeedback="Mauvaise réponse">
+	<interaction id="1" label="On his doctor's advice he stopped ... altogether." type="choice" weighting="1">
+		<choice label="from smoking"/>
+		<choice label="to smoke"/>
+		<choice label="smoking" correct="true"/>
+		<choice label="the smoking"/>
+	</interaction>
+	<interaction id="2" label="His latest novel in not even worth ..." type="choice" weighting="1">
+		<choice label="mention"/>
+		<choice label="to mention"/>
+		<choice label="mentioning"/>
+		<choice label="be mentioned" correct="true"/>
+	</interaction>
+	<interaction id="3" label="Why ... if you don't enjoy it ?" type="choice" weighting="1">
+		<choice label="to smoke"/>
+		<choice label="smoking"/>
+		<choice label="smoke" correct="true"/>
+		<choice label="a smoke"/>
+	</interaction>
+	<interaction id="4" label="The success of his first novel enabled ... his whole time to writing." type="choice" weighting="1">
+		<choice label="to devote"/>
+		<choice label="himself to devote"/>
+		<choice label="him to devote" correct="true"/>
+		<choice label="for him to devote"/>
+	</interaction>
+	<interaction id="5" label="He spends hours ... his tie every morning." type="choice" weighting="1">
+		<choice label="choosing" correct="true"/>
+		<choice label="to choose"/>
+		<choice label="having chosen"/>
+		<choice label="at choosing"/>
+	</interaction>
+	<interaction id="6" label="I am not ... called a liar." type="choice" weighting="1">
+		<choice label="used to be"/>
+		<choice label="in the habit to being"/>
+		<choice label="used to being" correct="true"/>
+		<choice label="wont to being"/>
+	</interaction>
+	<interaction id="7" label="Children ... for lack of elementary care." type="choice" weighting="1">
+		<choice label="were used to die"/>
+		<choice label="were used to dying"/>
+		<choice label="are used to die"/>
+		<choice label="used to die" correct="true"/>
+	</interaction>
+	<interaction id="8" label="She is not used ... spoken to like that." type="choice" weighting="1">
+		<choice label="to be"/>
+		<choice label="to being" correct="true"/>
+		<choice label="being"/>
+		<choice label="be"/>
+	</interaction>
+	<interaction id="9" label="Our experiments proved the theory ... correct." type="choice" weighting="1">
+		<choice label="were"/>
+		<choice label="being"/>
+		<choice label="to be" correct="true"/>
+		<choice label="be"/>
+	</interaction>
+	<interaction id="10" label="Do you remember ... the door before you left?" type="choice" weighting="1">
+		<choice label="closing" correct="true"/>
+		<choice label="to close"/>
+		<choice label="close"/>
+		<choice label="to have closed"/>
+	</interaction>
+	<interaction id="11" label="The doctor suggested ... smoking." type="choice" weighting="1">
+		<choice label="his stopping" correct="true"/>
+		<choice label="to stop"/>
+		<choice label="not to stop"/>
+		<choice label="he had stopped"/>
+	</interaction>
+	<interaction id="12" label="&quot; We could do a new series of tests &quot;, the doctor suggested. The doctor ... doing a new series of tests." type="choice" weighting="1">
+		<choice label="suggested" correct="true"/>
+		<choice label="suggested us"/>
+		<choice label="advised us"/>
+		<choice label="advised me"/>
+	</interaction>
+	<interaction id="13" label="The new trend is for ... health ingredients to foods." type="choice" weighting="1">
+		<choice label="addition"/>
+		<choice label="adding" correct="true"/>
+		<choice label="to add"/>
+		<choice label="add"/>
+	</interaction>
+	<interaction id="14" label="... a dependable &quot;cold chain&quot; can be a formidable problem in underdeveloped parts of the world." type="choice" weighting="1">
+		<choice label="to maintain"/>
+		<choice label="maintained"/>
+		<choice label="for to maintain"/>
+		<choice label="maintaining" correct="true"/>
+	</interaction>
+	<interaction id="15" label="The B vitamins are necessary because they enable energy ... from foods." type="choice" weighting="1">
+		<choice label="be released"/>
+		<choice label="being released"/>
+		<choice label="to be released" correct="true"/>
+		<choice label="to being released"/>
+	</interaction>
+	<interaction id="16" label="The consensus from nutritionists seems to be that if nutraceuticals or pharmafoods have a place, it is only when you have failed ... yourself with a fresh, balanced diet." type="choice" weighting="1">
+		<choice label="providing"/>
+		<choice label="provided"/>
+		<choice label="to provide" correct="true"/>
+		<choice label="to providing"/>
+	</interaction>
+	<interaction id="17" label="All the movements of our body from the twitch of an eyebrow to a high jump are made possible by muscles. We even depend on them for ... our food and ... our blood go round." type="choice" weighting="1">
+		<choice label="digesting / making" correct="true"/>
+		<choice label="we digest / we make"/>
+		<choice label="to digest / making"/>
+		<choice label="to digest / to make"/>
+	</interaction>
+	<interaction id="18" label="A new experimental drug beats aspirin ... heart attacks and stroke without harming the stomach." type="choice" weighting="1">
+		<choice label="to prevent"/>
+		<choice label="to preventing"/>
+		<choice label="preventing"/>
+		<choice label="at preventing" correct="true"/>
+	</interaction>
+	<interaction id="19" label="Studies on mice suggest that vitamin E, which is already thought to ward off cancer and heart disease, may also slow ... of the brain and the immune system." type="choice" weighting="1">
+		<choice label="aged"/>
+		<choice label="to age"/>
+		<choice label="aging"/>
+		<choice label="to ageing" correct="true"/>
+	</interaction>
+</evaluation>

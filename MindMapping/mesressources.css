@@ -1,0 +1,20 @@
+ul,li {list-style: none;text-decoration: none;font-family: verdana,tahoma,  arial;}
+li {color: #000;}
+a {color:#D45211;text-decoration:none;font-size:11px;padding: 1px 2px 1px 2px;font-family:verdana,arial;font-weight: bold;cursor: pointer;}
+a:link {color:#D45211;}
+a:visited {color:#D45211;}
+a:hover {color:red;background-color:#efefef;font-size:11px;padding: 0 1px 0 1px;border:1px solid #bbb;}
+.categorie{font-size: 14px;margin-top:5px;margin-left:-25px;padding:4px;border:1px solid #bbb;width:auto;}
+.ressource{font-size: 13px;}
+.activite{font-size: 12px;}
+.prescription{font-size:10px;font-weight:bold;border:1px solid #bbb;margin-left:2px;width:120px;padding:1px;}
+.sequence{font-size: 11px;}
+.module{margin-left:30px;font-size: 11px;}
+.formation{margin-left:30px;font-size: 11px;}
+.cat{font-size:14px;font-weight:bold;color: #333;margin-right:2px;color:16798c;}
+.catxt{margin-left:10px;font-size: 14px;font-weight:bold;color:#1789ad;}
+.ress{font-size: 13px;font-weight:bold;text-decoration:underline;color: #666;margin-right:2px;color:#3e95a6;}
+.act{font-size: 12px;font-weight:bold;color: #999;margin-right:2px;color:#4c9baa;}
+.seq{font-size: 11px;color: #ccc;margin-right:2px;color:#3f92a2;}
+.mod{margin-left:30px;font-size: 11px;font-weight:bold;color:#6babd8;}
+.form{margin-left:30px;font-size: 11px;color:#93c9d5;}

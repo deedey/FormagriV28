@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evaluation id="2" label="Vocabulaire 2" masteryScore="75" positiveFeedback="Bonne réponse" negativeFeedback="Mauvaise réponse">
+	<interaction id="1" label="... is matter discharged from the trachea, bronchi and lungs through the mouth." type="choice" weighting="1">
+		<choice label="Spit"/>
+		<choice label="Soap"/>
+		<choice label="Semen"/>
+		<choice label="Sputum" correct="true"/>
+	</interaction>
+	<interaction id="2" label="A cognitive deficit in the ... allows autism to develop." type="choice" weighting="1">
+		<choice label="gall-bladder"/>
+		<choice label="spleen"/>
+		<choice label="patella"/>
+		<choice label="brain" correct="true"/>
+	</interaction>
+	<interaction id="3" label="Sex education in the developing world aims at reducing the birth ...." type="choice" weighting="1">
+		<choice label="spleen"/>
+		<choice label="rate" correct="true"/>
+		<choice label="ratio"/>
+		<choice label="tax"/>
+	</interaction>
+	<interaction id="4" label="... is a line in the skin that forms as a person grows older." type="choice" weighting="1">
+		<choice label="Freckle"/>
+		<choice label="Wart"/>
+		<choice label="Area"/>
+		<choice label="Wrinkle" correct="true"/>
+	</interaction>
+	<interaction id="5" label="The ... is another word for the upper jaw." type="choice" weighting="1">
+		<choice label="eye socket"/>
+		<choice label="maxilla" correct="true"/>
+		<choice label="mandible"/>
+		<choice label="skull"/>
+	</interaction>
+	<interaction id="6" label="The aim of the control was to check the ... of microbial activity in the water supply." type="choice" weighting="1">
+		<choice label="navel"/>
+		<choice label="nickle"/>
+		<choice label="little"/>
+		<choice label="level" correct="true"/>
+	</interaction>
+	<interaction id="7" label="The ... is the organ which contains bile, next to the liver." type="choice" weighting="1">
+		<choice label="gall-bladder" correct="true"/>
+		<choice label="bladder"/>
+		<choice label="spleen"/>
+		<choice label="lung"/>
+	</interaction>
+	<interaction id="8" label="The ... is the joint between leg and foot." type="choice" weighting="1">
+		<choice label="hip"/>
+		<choice label="fibula"/>
+		<choice label="wrist"/>
+		<choice label="ankle" correct="true"/>
+	</interaction>
+	<interaction id="9" label="The ... is another word for the backbone." type="choice" weighting="1">
+		<choice label="skull"/>
+		<choice label="patella"/>
+		<choice label="spinal column" correct="true"/>
+		<choice label="fibula"/>
+	</interaction>
+	<interaction id="10" label="The ultimate ... is to improve the quality of drinking water." type="choice" weighting="1">
+		<choice label="aim" correct="true"/>
+		<choice label="arm"/>
+		<choice label="harm"/>
+		<choice label="but"/>
+	</interaction>
+	<interaction id="11" label="The ... is the organ where urine is held until it leaves the body." type="choice" weighting="1">
+		<choice label="bladder" correct="true"/>
+		<choice label="gall-bladder"/>
+		<choice label="spleen"/>
+		<choice label="kidney"/>
+	</interaction>
+	<interaction id="12" label="Ozone at ground level is unpleasant to breathe and small amounts irritate the throat and ...." type="choice" weighting="1">
+		<choice label="toes"/>
+		<choice label="fingers"/>
+		<choice label="kidneys"/>
+		<choice label="lungs" correct="true"/>
+	</interaction>
+	<interaction id="13" label="The ... is the joint between arm and forearm." type="choice" weighting="1">
+		<choice label="elbow" correct="true"/>
+		<choice label="wrist"/>
+		<choice label="knee"/>
+		<choice label="spleen"/>
+	</interaction>
+	<interaction id="14" label="The centre of the nervous system in the skull is ...." type="choice" weighting="1">
+		<choice label="the brain" correct="true"/>
+		<choice label="the thyroid gland"/>
+		<choice label="the spleen"/>
+		<choice label="the spine"/>
+	</interaction>
+	<interaction id="15" label="The child's nose ... profusely when he fell off his bicycle." type="choice" weighting="1">
+		<choice label="bled" correct="true"/>
+		<choice label="bleed"/>
+		<choice label="blood"/>
+		<choice label="bleeding"/>
+	</interaction>
+	<interaction id="16" label="Smoking can prevent growth of the ... As few as five cigarettes a day may inhibit their ability to grow to normal size, a study of teenagers suggests." type="choice" weighting="1">
+		<choice label="lungs" correct="true"/>
+		<choice label="foot"/>
+		<choice label="gallbladder"/>
+		<choice label="spleen"/>
+	</interaction>
+	<interaction id="17" label="People taking 200 mcg of selenium daily - twice the level in a typical American diet - suffered about half the rate of prostate, lung and colorectal cancers as people in a ... group." type="choice" weighting="1">
+		<choice label="intervention"/>
+		<choice label="witness"/>
+		<choice label="control" correct="true"/>
+		<choice label="controlled"/>
+	</interaction>
+	<interaction id="18" label="... feeding seems to be more effective for premature babies when they are held in an upright position and unclothed, allowing skin contact with mum." type="choice" weighting="1">
+		<choice label="Lung"/>
+		<choice label="Breast" correct="true"/>
+		<choice label="Liver"/>
+		<choice label="Heart"/>
+	</interaction>
+	<interaction id="19" label="The skin is a ... covering that protects the body." type="choice" weighting="1">
+		<choice label="lean"/>
+		<choice label="fat"/>
+		<choice label="thin" correct="true"/>
+		<choice label="hard"/>
+	</interaction>
+	<interaction id="20" label="The birth ... is the number of births compared to the size of the population." type="choice" weighting="1">
+		<choice label="level"/>
+		<choice label="certificate"/>
+		<choice label="rate" correct="true"/>
+		<choice label="ration"/>
+	</interaction>
+	<interaction id="21" label="The technical word for what English people call the ... is the clavicle." type="choice" weighting="1">
+		<choice label="neck"/>
+		<choice label="throat"/>
+		<choice label="collarbone" correct="true"/>
+		<choice label="shoulder"/>
+	</interaction>
+	<interaction id="22" label="Since he has had an eardrum transplant, he can't ... noise." type="choice" weighting="1">
+		<choice label="bare"/>
+		<choice label="bear" correct="true"/>
+		<choice label="beer"/>
+		<choice label="bean"/>
+	</interaction>
+	<interaction id="23" label="The ulna is part of the ...." type="choice" weighting="1">
+		<choice label="trunk"/>
+		<choice label="forearm" correct="true"/>
+		<choice label="lower limbs"/>
+		<choice label="skull"/>
+	</interaction>
+	<interaction id="24" label="The kidney's main function is to ...." type="choice" weighting="1">
+		<choice label="store food before digestion takes place"/>
+		<choice label="exchange oxygen for carbon dioxide"/>
+		<choice label="separate waste liquid from the blood" correct="true"/>
+		<choice label="secrete hormones influencing growth"/>
+	</interaction>
+	<interaction id="25" label="Parents must be ... about the dangers of accidents in the home." type="choice" weighting="1">
+		<choice label="warned" correct="true"/>
+		<choice label="prevented"/>
+		<choice label="allowed"/>
+		<choice label="permitted"/>
+	</interaction>
+	<interaction id="26" label="Chiropody is the speciality that ... diseases of the feet." type="choice" weighting="1">
+		<choice label="copes with"/>
+		<choice label="deals with" correct="true"/>
+		<choice label="occupies itself with"/>
+		<choice label="goes along with"/>
+	</interaction>
+	<interaction id="27" label="American researchers are interested in new ... carried out by the Institut Pasteur." type="choice" weighting="1">
+		<choice label="experiments" correct="true"/>
+		<choice label="experience"/>
+		<choice label="experiences"/>
+		<choice label="experiment"/>
+	</interaction>
+</evaluation>

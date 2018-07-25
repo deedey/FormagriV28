@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evaluation id="2" label="quantificateurs 2" masteryScore="75" positiveFeedback="Bonne réponse" negativeFeedback="Mauvaise réponse">
+	<interaction id="1" label="... vaccines must be kept under refrigeration from the time they are prepared until they are inoculated." type="choice" weighting="1">
+		<choice label="Any"/>
+		<choice label="None"/>
+		<choice label="Some" correct="true"/>
+		<choice label="Little"/>
+	</interaction>
+	<interaction id="2" label="You shouldn't smoke ... cigarettes." type="choice" weighting="1">
+		<choice label="as much"/>
+		<choice label="so many" correct="true"/>
+		<choice label="every"/>
+		<choice label="all"/>
+	</interaction>
+	<interaction id="3" label="There have been ... outbreaks of smallpox in the western world in the past ten years." type="choice" weighting="1">
+		<choice label="hardly any" correct="true"/>
+		<choice label="hardly no"/>
+		<choice label="hardly"/>
+		<choice label="almost none"/>
+	</interaction>
+	<interaction id="4" label="... facility where viruses are grown to make a vaccine is a reservoir from which an agent of disease can accidentally be disseminated." type="choice" weighting="1">
+		<choice label="Some"/>
+		<choice label="-"/>
+		<choice label="Any" correct="true"/>
+		<choice label="All"/>
+	</interaction>
+	<interaction id="5" label="The doctors tried both methods but ... worked." type="choice" weighting="1">
+		<choice label="the two"/>
+		<choice label="neither" correct="true"/>
+		<choice label="not either"/>
+		<choice label="no one"/>
+	</interaction>
+	<interaction id="6" label="... human malaria occurs in four forms, ... caused by ... different species of ... parasite." type="choice" weighting="1">
+		<choice label="- / each / the / -"/>
+		<choice label="The / every / a / a"/>
+		<choice label="- / each / a / -" correct="true"/>
+		<choice label="most / each / - / -"/>
+	</interaction>
+	<interaction id="7" label="Swallowed poison? A trip to the hospital may not help. Researchers find that ... hospitals in the Western U.S. - and maybe elsewhere - don't stock antidotes to common poisons. More than 70%, in fact, can't treat an overdose of methanol, contained in antifreeze, which is often used in suicide attempts." type="choice" weighting="1">
+		<choice label="few"/>
+		<choice label="much"/>
+		<choice label="a lot"/>
+		<choice label="many" correct="true"/>
+	</interaction>
+	<interaction id="8" label="There are various kinds of &quot;colour blindness&quot;, with very ... people unable to see colours at all and seeing everything in darker or lighter tones of grey. More usually people cannot see ... difference between red and green in dim light, and ... others cannot distinguish between red and green at all." type="choice" weighting="1">
+		<choice label="many / a lot / some"/>
+		<choice label="few / any / some" correct="true"/>
+		<choice label="a lot / some / -"/>
+		<choice label="some / little / much"/>
+	</interaction>
+	<interaction id="9" label="When grains and cereals are refined, the cellulose - or dietary fibre - is often removed. White rice and white flour, for example, contain ... nutritional value, as well as virtually no fibre." type="choice" weighting="1">
+		<choice label="little" correct="true"/>
+		<choice label="much"/>
+		<choice label="some"/>
+		<choice label="a little"/>
+	</interaction>
+	<interaction id="10" label="... normal people are able to produce ... protective antibodies, but in ... the capacity to differentiate potentially harmful substances from harmless ones is absent." type="choice" weighting="1">
+		<choice label="Every / any / some"/>
+		<choice label="Any / such / some"/>
+		<choice label="Whole / such / some"/>
+		<choice label="All / such / some" correct="true"/>
+	</interaction>
+	<interaction id="11" label="... cancers tend to shed cells into the bloodstream early in their course." type="choice" weighting="1">
+		<choice label="Much"/>
+		<choice label="Many" correct="true"/>
+		<choice label="No"/>
+		<choice label="Any"/>
+	</interaction>
+	<interaction id="12" label="The U.S. has the highest rate of curable sexually-transmitted diseases of ... developed country. More than 12 million people become infected annually." type="choice" weighting="1">
+		<choice label="much"/>
+		<choice label="any" correct="true"/>
+		<choice label="little"/>
+		<choice label="few"/>
+	</interaction>
+	<interaction id="13" label="For ... type of tumour, the stage (I, II, III, or IV) is defined in terms of findings with progressively more severe prognostic implications." type="choice" weighting="1">
+		<choice label="all"/>
+		<choice label="many"/>
+		<choice label="much"/>
+		<choice label="each" correct="true"/>
+	</interaction>
+	<interaction id="14" label="... different species of bacteria so closely resemble ... in appearance that they cannot be differentiated from ... under the microscope." type="choice" weighting="1">
+		<choice label="many / each another / one another"/>
+		<choice label="any / one another / -"/>
+		<choice label="many / each other / neither of them"/>
+		<choice label="many / one another / one another" correct="true"/>
+	</interaction>
+</evaluation>

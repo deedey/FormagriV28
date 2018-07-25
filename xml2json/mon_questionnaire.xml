@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Genere par Formagri V 2.6.2 [Support SCORM v1.2 (c)]
+Le lundi  4 avril 2011 sur la plate-forme http://ef-dev2.educagri.fr par Dey Bendifallah : ADMINISTRATEUR-->
+<evaluation id="1" label="La remise en question permanente !" masteryScore="70" positiveFeedback="Bonne réponse" negativeFeedback="Mauvaise réponse">
+    <interaction id="1" label="C'est ma premiere ... question pour voir ... et ..." type="choice" weighting="1">
+        <choice label="ta / teci /tela" />
+        <choice label="ra / reci /rela" />
+        <choice label="ça / ceci /cela"  correct="true" />
+        <choice label="sa / seci /sela" />
+    </interaction>
+    <interaction id="2" label="Mon autre question ... qui me rend ..." type="choice" weighting="1">
+        <choice label="idiote / furibond"  />
+        <choice label="bête / fou"  />
+        <choice label="sensée / intelligent"/>
+        <choice label="rare / dubitatif"  correct="true" />
+    </interaction>
+    <interaction id="3" label="je ne suis là pour ... et ce que vous me ... m'indiffère." type="choice" weighting="1">
+        <choice label="personne / courrez"  />
+        <choice label="personne / dites"  correct="true" />
+        <choice label="rien au monde / cravachez" />
+        <choice label="que dalla / taclez" />
+    </interaction>
+</evaluation>

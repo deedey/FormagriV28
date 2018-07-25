@@ -1,0 +1,356 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=iso-8859-1">
+<META name="Author" content="Conçu par B. RUPIC avec Galli's QuizFaber">
+<META name="generator" content="Galli's QuizFaber 2.9.1">
+<META name="keywords" content="quiz">
+<META name="description" content="Fonctionnalités Formagri">
+<TITLE>Quiz</TITLE>
+<STYLE>
+<!--
+.cardHide  { visibility:'hidden' ; position:absolute; }
+.cardShow  { visibility:'visible'; position:absolute;  color:#000000; background:#FFFFE0; }
+.checkShow { visibility:'visible' }
+.checkHide { visibility:'hidden';  position:absolute }
+.spaceShow { visibility:'visible'; position:relative }
+.spaceHide { visibility:'hidden';  position:absolute }
+A { text-decoration:none }
+.UStyle { text-decoration : 'none'}
+.tooltipHide,.tooltipShow { font-family:Arial; font-size:8pt; color:'black'; background:'yellow'; position:absolute; }
+.tooltipHide { visibility:'hidden'  }
+.tooltipShow { visibility:'visible' }
+.okButtonClass { visibility:'visible'  }
+.okButtonHidden { visibility:'hidden'  }
+-->
+</STYLE>
+
+<SCRIPT LANGUAGE='JavaScript'>
+<!--
+function startQuiz() {
+  var status;
+
+  window.focus();
+  parent.UnmanageAllDialogs();
+  parent.init_valid();
+  if (parent.n_repeat==0) parent.VerifyBrowser();
+  parent.oldtime=parent.StartTime();
+  parent.Timer();
+  if (parent.n_repeat==0) parent.initShortQuestion();
+  parent.end_test=0;
+}
+
+//-->
+</SCRIPT>
+</HEAD>
+<BODY  BGCOLOR='#FFFFFF'  TEXT='#000000' OnLoad='startQuiz()'>
+<SCRIPT LANGUAGE='JavaScript'>
+<!--
+if (parent.n_repeat==0) {
+  parent.keyword = "syskey";
+  parent.MakeKeyCode();
+}
+//-->
+</SCRIPT>
+<CENTER>
+<FONT style='font-family:Arial; font-size:12pt; '>ENESAD-EDUTER</FONT><BR>
+<FONT style='font-family:Westminster; font-size:18pt; font-weight:bold;'>Fonctionnalités Formagri</FONT><BR>
+<BR>
+<FONT style='font-family:Arial; font-size:12pt; '>B. RUPIC</FONT><BR>
+<FONT style='font-family:Arial; font-size:12pt; '>2007</FONT><BR>
+</CENTER>
+<HR WIDTH='80%'>
+<FORM NAME='domanda'><SPAN id='verifyButtonId' class='okButtonClass'><CENTER><TABLE WIDTH=80% BORDER=0 CELLSPACING=0 CELLPADDING=8>
+<TD BGCOLOR="#A0EFFF" VALIGN="center" ALIGN="center"><FONT style='font-family:Arial; font-size:8pt; background:#A0EFFF; '>Pour valider le quizz, cliquer sur le bouton valider en haut à droite </FONT></TD>
+<TD BGCOLOR="#A0EFFF" VALIGN="center" ALIGN="center">
+<INPUT TYPE='button' VALUE='Valider' onClick="parent.end_test=1;parent.EndQuiz()" style='font-family: verdana,helvetica,arial,san-serif; font-size: 8pt; width:80px'></TD></TABLE></CENTER></SPAN>
+<HR WIDTH='80%'>
+<SCRIPT LANGUAGE='JavaScript'>
+<!--
+function initValuate1()
+{
+ this.length = 3;
+ var choice,valuation,remark,data,answer;
+ choice = (document.domanda.radio10.checked==true);
+ answer = "";
+ remark = "";
+ valuation = parent.DecodeNumber(17,0,-100,100);
+ this[0] = new parent.AnsReport(choice,valuation,remark,0,answer);
+ choice = (document.domanda.radio11.checked==true);
+ answer = "";
+ remark = "";
+ valuation = parent.DecodeNumber(19,0,-100,100);
+ this[1] = new parent.AnsReport(choice,valuation,remark,0,answer);
+ choice = (document.domanda.radio12.checked==true);
+ answer = "";
+ remark = "";
+ valuation = parent.DecodeNumber(17,0,-100,100);
+ this[2] = new parent.AnsReport(choice,valuation,remark,0,answer);
+ parent.pesi[0]=parent.DecodeNumber(19,0,0,99);
+
+}
+
+//-->
+</SCRIPT>
+<CENTER><TABLE WIDTH=80%><TD>
+<FONT style='font-family:Westminster; font-size:14pt; color:#000000; '>Testez votre connaissance de Formagri avec ce mini-quizz</FONT><BR><BR>
+<IMG SRC='media/check.gif' CLASS='checkHide' ID='check'>
+<A NAME='qstAnchor0'>
+</A>
+<FONT style='font-family:Arial; font-size:14pt; '>question 1</FONT><TABLE WIDTH=400 BORDER=3 ID='hideAns' CLASS='cardHide'>
+<TD ID='hideTxt' ALIGN='CENTER'></TD>
+</TABLE>
+<P>
+<FONT style='font-family:Westminster; font-size:14pt; color:#000000; '>Sous quel profil dans Formagri puis-je inscrire des apprenants à une formation ?</FONT>
+<P>
+</TABLE></CENTER>
+<CENTER><TABLE WIDTH=80%>
+<TD ALIGN='CENTER' BGCOLOR='4682B4' WIDTH='10%'>
+<FONT style='font-family:Westminster; font-size:14pt; font-weight:bold;color:#FFFFFF; background:#4682B4; '> A </FONT><INPUT TYPE='radio' NAME='radio10'  OnClick=" document.domanda.radio11.checked=0; document.domanda.radio12.checked=0;" ></TD>
+<TD ALIGN='LEFT' BGCOLOR='F0F8FF' WIDTH=90%>
+<FONT style='font-family:Westminster; font-size:14pt; color:#000000; background:#F0F8FF; '>Administrateur</FONT></TD>
+<TR>
+<TD ALIGN='CENTER' BGCOLOR='4682B4' WIDTH='10%'>
+<FONT style='font-family:Westminster; font-size:14pt; font-weight:bold;color:#FFFFFF; background:#4682B4; '> B </FONT><INPUT TYPE='radio' NAME='radio11'  OnClick=" document.domanda.radio10.checked=0; document.domanda.radio12.checked=0;" ></TD>
+<TD ALIGN='LEFT' BGCOLOR='F0F8FF' WIDTH=90%>
+<FONT style='font-family:Westminster; font-size:14pt; color:#000000; background:#F0F8FF; '>Responsable de formation</FONT></TD>
+<TR>
+<TD ALIGN='CENTER' BGCOLOR='4682B4' WIDTH='10%'>
+<FONT style='font-family:Westminster; font-size:14pt; font-weight:bold;color:#FFFFFF; background:#4682B4; '> C </FONT><INPUT TYPE='radio' NAME='radio12'  OnClick=" document.domanda.radio10.checked=0; document.domanda.radio11.checked=0;" ></TD>
+<TD ALIGN='LEFT' BGCOLOR='F0F8FF' WIDTH=90%>
+<FONT style='font-family:Westminster; font-size:14pt; color:#000000; background:#F0F8FF; '>Formateur</FONT></TD>
+<TR>
+</TABLE></CENTER>
+<HR WIDTH='80%'>
+<SCRIPT LANGUAGE='JavaScript'>
+<!--
+function initValuate2()
+{
+ this.length = 3;
+ var choice,valuation,remark,data,answer;
+ choice = (document.domanda.radio20.checked==true);
+ answer = "";
+ remark = "";
+ valuation = parent.DecodeNumber(25,1,-100,100);
+ this[0] = new parent.AnsReport(choice,valuation,remark,0,answer);
+ choice = (document.domanda.radio21.checked==true);
+ answer = "";
+ remark = "";
+ valuation = parent.DecodeNumber(23,1,-100,100);
+ this[1] = new parent.AnsReport(choice,valuation,remark,0,answer);
+ choice = (document.domanda.radio22.checked==true);
+ answer = "";
+ remark = "";
+ valuation = parent.DecodeNumber(23,1,-100,100);
+ this[2] = new parent.AnsReport(choice,valuation,remark,0,answer);
+ parent.pesi[1]=parent.DecodeNumber(25,1,0,99);
+
+}
+
+//-->
+</SCRIPT>
+<CENTER><TABLE WIDTH=80%><TD>
+<IMG SRC='media/check.gif' CLASS='checkHide' ID='check'>
+<A NAME='qstAnchor1'>
+</A>
+<FONT style='font-family:Arial; font-size:14pt; '>question 2</FONT><TABLE WIDTH=400 BORDER=3 ID='hideAns' CLASS='cardHide'>
+<TD ID='hideTxt' ALIGN='CENTER'></TD>
+</TABLE>
+<P>
+<FONT style='font-family:Westminster; font-size:14pt; color:#000000; '>A partir de quel onglet de la barre de menu puis-je inscrire des apprenants à une "formation" sur Formagri ?</FONT>
+<P>
+</TABLE></CENTER>
+<CENTER><TABLE WIDTH=80%>
+<TD ALIGN='CENTER' BGCOLOR='4682B4' WIDTH='10%'>
+<FONT style='font-family:Westminster; font-size:14pt; font-weight:bold;color:#FFFFFF; background:#4682B4; '> A </FONT><INPUT TYPE='radio' NAME='radio20'  OnClick=" document.domanda.radio21.checked=0; document.domanda.radio22.checked=0;" ></TD>
+<TD ALIGN='LEFT' BGCOLOR='F0F8FF' WIDTH=90%>
+<FONT style='font-family:Westminster; font-size:14pt; color:#000000; background:#F0F8FF; '>Gestion des utilisateurs</FONT></TD>
+<TR>
+<TD ALIGN='CENTER' BGCOLOR='4682B4' WIDTH='10%'>
+<FONT style='font-family:Westminster; font-size:14pt; font-weight:bold;color:#FFFFFF; background:#4682B4; '> B </FONT><INPUT TYPE='radio' NAME='radio21'  OnClick=" document.domanda.radio20.checked=0; document.domanda.radio22.checked=0;" ></TD>
+<TD ALIGN='LEFT' BGCOLOR='F0F8FF' WIDTH=90%>
+<FONT style='font-family:Westminster; font-size:14pt; color:#000000; background:#F0F8FF; '>Gestion des formations</FONT></TD>
+<TR>
+<TD ALIGN='CENTER' BGCOLOR='4682B4' WIDTH='10%'>
+<FONT style='font-family:Westminster; font-size:14pt; font-weight:bold;color:#FFFFFF; background:#4682B4; '> C </FONT><INPUT TYPE='radio' NAME='radio22'  OnClick=" document.domanda.radio20.checked=0; document.domanda.radio21.checked=0;" ></TD>
+<TD ALIGN='LEFT' BGCOLOR='F0F8FF' WIDTH=90%>
+<FONT style='font-family:Westminster; font-size:14pt; color:#000000; background:#F0F8FF; '>Accueil</FONT></TD>
+<TR>
+</TABLE></CENTER>
+<HR WIDTH='80%'>
+<SCRIPT LANGUAGE='JavaScript'>
+<!--
+function initValuate3()
+{
+ this.length = 3;
+ var choice,valuation,remark,data,answer;
+ choice = (document.domanda.radio30.checked==true);
+ answer = "";
+ remark = "";
+ valuation = parent.DecodeNumber(17,2,-100,100);
+ this[0] = new parent.AnsReport(choice,valuation,remark,0,answer);
+ choice = (document.domanda.radio31.checked==true);
+ answer = "";
+ remark = "";
+ valuation = parent.DecodeNumber(19,2,-100,100);
+ this[1] = new parent.AnsReport(choice,valuation,remark,0,answer);
+ choice = (document.domanda.radio32.checked==true);
+ answer = "";
+ remark = "";
+ valuation = parent.DecodeNumber(17,2,-100,100);
+ this[2] = new parent.AnsReport(choice,valuation,remark,0,answer);
+ parent.pesi[2]=parent.DecodeNumber(19,2,0,99);
+
+}
+
+//-->
+</SCRIPT>
+<CENTER><TABLE WIDTH=80%><TD>
+<IMG SRC='media/check.gif' CLASS='checkHide' ID='check'>
+<A NAME='qstAnchor2'>
+</A>
+<FONT style='font-family:Arial; font-size:14pt; '>question 3</FONT><TABLE WIDTH=400 BORDER=3 ID='hideAns' CLASS='cardHide'>
+<TD ID='hideTxt' ALIGN='CENTER'></TD>
+</TABLE>
+<P>
+<FONT style='font-family:Westminster; font-size:14pt; color:#000000; '>A partir de quel onglet du menu puis-je créer une nouvelle formation ?</FONT>
+<P>
+</TABLE></CENTER>
+<CENTER><TABLE WIDTH=80%>
+<TD ALIGN='CENTER' BGCOLOR='4682B4' WIDTH='10%'>
+<FONT style='font-family:Westminster; font-size:14pt; font-weight:bold;color:#FFFFFF; background:#4682B4; '> A </FONT><INPUT TYPE='checkbox' NAME='radio30'></TD>
+<TD ALIGN='LEFT' BGCOLOR='F0F8FF' WIDTH=90%>
+<FONT style='font-family:Westminster; font-size:14pt; color:#000000; background:#F0F8FF; '>Gestion des utilisateurs</FONT></TD>
+<TR>
+<TD ALIGN='CENTER' BGCOLOR='4682B4' WIDTH='10%'>
+<FONT style='font-family:Westminster; font-size:14pt; font-weight:bold;color:#FFFFFF; background:#4682B4; '> B </FONT><INPUT TYPE='checkbox' NAME='radio31'></TD>
+<TD ALIGN='LEFT' BGCOLOR='F0F8FF' WIDTH=90%>
+<FONT style='font-family:Westminster; font-size:14pt; color:#000000; background:#F0F8FF; '>Gestion des formations</FONT></TD>
+<TR>
+<TD ALIGN='CENTER' BGCOLOR='4682B4' WIDTH='10%'>
+<FONT style='font-family:Westminster; font-size:14pt; font-weight:bold;color:#FFFFFF; background:#4682B4; '> C </FONT><INPUT TYPE='checkbox' NAME='radio32'></TD>
+<TD ALIGN='LEFT' BGCOLOR='F0F8FF' WIDTH=90%>
+<FONT style='font-family:Westminster; font-size:14pt; color:#000000; background:#F0F8FF; '>Gestion de mes inscrits</FONT></TD>
+<TR>
+</TABLE></CENTER>
+<HR WIDTH='80%'>
+<SCRIPT LANGUAGE='JavaScript'>
+<!--
+function initValuate4()
+{
+ this.length = 7;
+ var choice,valuation,remark;
+ if (document.domanda.radio40[0].checked==true) choice=1;
+ else if (document.domanda.radio40[1].checked==true) choice=0;
+ else choice=-1;
+ valuation = parent.DecodeNumber(11,3,-1,1);
+ this[0] = new parent.AnsReport(choice,valuation,'',0);
+ if (document.domanda.radio41[0].checked==true) choice=1;
+ else if (document.domanda.radio41[1].checked==true) choice=0;
+ else choice=-1;
+ valuation = parent.DecodeNumber(11,3,-1,1);
+ this[1] = new parent.AnsReport(choice,valuation,'',0);
+ if (document.domanda.radio42[0].checked==true) choice=1;
+ else if (document.domanda.radio42[1].checked==true) choice=0;
+ else choice=-1;
+ valuation = parent.DecodeNumber(9,3,-1,1);
+ this[2] = new parent.AnsReport(choice,valuation,'',0);
+ if (document.domanda.radio43[0].checked==true) choice=1;
+ else if (document.domanda.radio43[1].checked==true) choice=0;
+ else choice=-1;
+ valuation = parent.DecodeNumber(9,3,-1,1);
+ this[3] = new parent.AnsReport(choice,valuation,'',0);
+ if (document.domanda.radio44[0].checked==true) choice=1;
+ else if (document.domanda.radio44[1].checked==true) choice=0;
+ else choice=-1;
+ valuation = parent.DecodeNumber(11,3,-1,1);
+ this[4] = new parent.AnsReport(choice,valuation,'',0);
+ if (document.domanda.radio45[0].checked==true) choice=1;
+ else if (document.domanda.radio45[1].checked==true) choice=0;
+ else choice=-1;
+ valuation = parent.DecodeNumber(11,3,-1,1);
+ this[5] = new parent.AnsReport(choice,valuation,'',0);
+ if (document.domanda.radio46[0].checked==true) choice=1;
+ else if (document.domanda.radio46[1].checked==true) choice=0;
+ else choice=-1;
+ valuation = parent.DecodeNumber(11,3,-1,1);
+ this[6] = new parent.AnsReport(choice,valuation,'',0);
+ parent.pesi[3]=parent.DecodeNumber(11,3,0,99);
+
+}
+
+//-->
+</SCRIPT>
+<CENTER><TABLE WIDTH=80%><TD>
+<IMG SRC='media/check.gif' CLASS='checkHide' ID='check'>
+<A NAME='qstAnchor3'>
+</A>
+<FONT style='font-family:Arial; font-size:14pt; '>question 4</FONT><TABLE WIDTH=400 BORDER=3 ID='hideAns' CLASS='cardHide'>
+<TD ID='hideTxt' ALIGN='CENTER'></TD>
+</TABLE>
+<P>
+<FONT style='font-family:Westminster; font-size:14pt; color:#000000; '>Répondez "vrai" ou "faux" aux questions suivantes</FONT>
+<P>
+</TABLE></CENTER>
+<CENTER><TABLE WIDTH=80%>
+<TD WIDTH=10% ALIGN='CENTER' BGCOLOR='4682B4'>
+<FONT style='font-family:Westminster; font-size:14pt; font-weight:bold;color:#FFFFFF; background:#4682B4; '> A </FONT></TD>
+<TD WIDTH=90% ALIGN='LEFT' BGCOLOR='F0F8FF'><FONT style='font-family:Westminster; font-size:14pt; color:#000000; background:#F0F8FF; '>Je peux créer un fil de discussion d'une formation une fois que des apprenants y ont été rattachés ?</FONT></TD>
+<TR><TD COLSPAN=2>
+<blockquote>
+<INPUT TYPE='radio' NAME='radio40'> <FONT style='font-family:"Westminster"; font-size:14pt; '>Vrai</FONT> <INPUT TYPE='radio' NAME='radio40'> <FONT style='font-family:"Westminster"; font-size:14pt; '>Faux</FONT> </blockquote>
+</TD>
+<TR>
+<TD WIDTH=10% ALIGN='CENTER' BGCOLOR='4682B4'>
+<FONT style='font-family:Westminster; font-size:14pt; font-weight:bold;color:#FFFFFF; background:#4682B4; '> B </FONT></TD>
+<TD WIDTH=90% ALIGN='LEFT' BGCOLOR='F0F8FF'><FONT style='font-family:Westminster; font-size:14pt; color:#000000; background:#F0F8FF; '>Le forum de la formation n'est accessible au formateur qui le créé qu'à partir du moment où des apprenants y ont préalablement été rattachés.</FONT></TD>
+<TR><TD COLSPAN=2>
+<blockquote>
+<INPUT TYPE='radio' NAME='radio41'> <FONT style='font-family:"Westminster"; font-size:14pt; '>Vrai</FONT> <INPUT TYPE='radio' NAME='radio41'> <FONT style='font-family:"Westminster"; font-size:14pt; '>Faux</FONT> </blockquote>
+</TD>
+<TR>
+<TD WIDTH=10% ALIGN='CENTER' BGCOLOR='4682B4'>
+<FONT style='font-family:Westminster; font-size:14pt; font-weight:bold;color:#FFFFFF; background:#4682B4; '> C </FONT></TD>
+<TD WIDTH=90% ALIGN='LEFT' BGCOLOR='F0F8FF'><FONT style='font-family:Westminster; font-size:14pt; color:#000000; background:#F0F8FF; '>Je peux supprimer une formation même si des apprenants y sont inscrits à partir du moment où la date de formation est dépassée.</FONT></TD>
+<TR><TD COLSPAN=2>
+<blockquote>
+<INPUT TYPE='radio' NAME='radio42'> <FONT style='font-family:"Westminster"; font-size:14pt; '>Vrai</FONT> <INPUT TYPE='radio' NAME='radio42'> <FONT style='font-family:"Westminster"; font-size:14pt; '>Faux</FONT> </blockquote>
+</TD>
+<TR>
+<TD WIDTH=10% ALIGN='CENTER' BGCOLOR='4682B4'>
+<FONT style='font-family:Westminster; font-size:14pt; font-weight:bold;color:#FFFFFF; background:#4682B4; '> D </FONT></TD>
+<TD WIDTH=90% ALIGN='LEFT' BGCOLOR='F0F8FF'><FONT style='font-family:Westminster; font-size:14pt; color:#000000; background:#F0F8FF; '>Je peux téléverser des fichiers compris entre 2 Mo et 3Mo  sur la plateforme en cliquant sur "Choisir le fichier"</FONT></TD>
+<TR><TD COLSPAN=2>
+<blockquote>
+<INPUT TYPE='radio' NAME='radio43'> <FONT style='font-family:"Westminster"; font-size:14pt; '>Vrai</FONT> <INPUT TYPE='radio' NAME='radio43'> <FONT style='font-family:"Westminster"; font-size:14pt; '>Faux</FONT> </blockquote>
+</TD>
+<TR>
+<TD WIDTH=10% ALIGN='CENTER' BGCOLOR='4682B4'>
+<FONT style='font-family:Westminster; font-size:14pt; font-weight:bold;color:#FFFFFF; background:#4682B4; '> E </FONT></TD>
+<TD WIDTH=90% ALIGN='LEFT' BGCOLOR='F0F8FF'><FONT style='font-family:Westminster; font-size:14pt; color:#000000; background:#F0F8FF; '>Il y a deux types de "Dossiers Partagés" sur Formagri</FONT></TD>
+<TR><TD COLSPAN=2>
+<blockquote>
+<INPUT TYPE='radio' NAME='radio44'> <FONT style='font-family:"Westminster"; font-size:14pt; '>Vrai</FONT> <INPUT TYPE='radio' NAME='radio44'> <FONT style='font-family:"Westminster"; font-size:14pt; '>Faux</FONT> </blockquote>
+</TD>
+<TR>
+<TD WIDTH=10% ALIGN='CENTER' BGCOLOR='4682B4'>
+<FONT style='font-family:Westminster; font-size:14pt; font-weight:bold;color:#FFFFFF; background:#4682B4; '> F </FONT></TD>
+<TD WIDTH=90% ALIGN='LEFT' BGCOLOR='F0F8FF'><FONT style='font-family:Westminster; font-size:14pt; color:#000000; background:#F0F8FF; '>Le tableau de suivi (cf image ci-dessous) indique le nombre d'activités réalisées par l'apprenant au total  depuis sa première connexion</FONT><P ALIGN='LEFT'><IMG SRC='media/mm0_suivi_apprenant.jpg' ></P>
+</TD>
+<TR><TD COLSPAN=2>
+<blockquote>
+<INPUT TYPE='radio' NAME='radio45'> <FONT style='font-family:"Westminster"; font-size:14pt; '>Vrai</FONT> <INPUT TYPE='radio' NAME='radio45'> <FONT style='font-family:"Westminster"; font-size:14pt; '>Faux</FONT> </blockquote>
+</TD>
+<TR>
+<TD WIDTH=10% ALIGN='CENTER' BGCOLOR='4682B4'>
+<FONT style='font-family:Westminster; font-size:14pt; font-weight:bold;color:#FFFFFF; background:#4682B4; '> G </FONT></TD>
+<TD WIDTH=90% ALIGN='LEFT' BGCOLOR='F0F8FF'><FONT style='font-family:Westminster; font-size:14pt; color:#000000; background:#F0F8FF; '>En mode conception, un module non duplicable n'est pas visible des autres utilisateurs</FONT></TD>
+<TR><TD COLSPAN=2>
+<blockquote>
+<INPUT TYPE='radio' NAME='radio46'> <FONT style='font-family:"Westminster"; font-size:14pt; '>Vrai</FONT> <INPUT TYPE='radio' NAME='radio46'> <FONT style='font-family:"Westminster"; font-size:14pt; '>Faux</FONT> </blockquote>
+</TD>
+<TR>
+</TABLE></CENTER>
+<HR WIDTH='80%'>
+</FORM>
+</BODY>
+</HTML>

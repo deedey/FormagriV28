@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evaluation id="6" label="Modalité 2" masteryScore="75" positiveFeedback="Bonne réponse" negativeFeedback="Mauvaise réponse">
+	<interaction id="1" label="Look! The cardiologist ... put the pacemaker in position." type="choice" weighting="1">
+		<choice label="is about to" correct="true"/>
+		<choice label="is likely to"/>
+		<choice label="will be"/>
+		<choice label="is due to"/>
+	</interaction>
+	<interaction id="2" label="Pregnant women ... avoid unnecessary contact with rubella even when they believe themselves immune." type="choice" weighting="1">
+		<choice label="can"/>
+		<choice label="should" correct="true"/>
+		<choice label="shouldn't"/>
+		<choice label="can't"/>
+	</interaction>
+	<interaction id="3" label="I think you ... seen your doctor earlier about that hayfever." type="choice" weighting="1">
+		<choice label="should have" correct="true"/>
+		<choice label="must have"/>
+		<choice label="may have"/>
+		<choice label="could"/>
+	</interaction>
+	<interaction id="4" label="If I could repeat this experience abroad, I ... do a few things differently." type="choice" weighting="1">
+		<choice label="would" correct="true"/>
+		<choice label="will"/>
+		<choice label="have"/>
+		<choice label="can"/>
+	</interaction>
+	<interaction id="5" label="Chemotherapy should ...." type="choice" weighting="1">
+		<choice label="have being considered"/>
+		<choice label="have been considered" correct="true"/>
+		<choice label="have considering"/>
+		<choice label="to have been considered"/>
+	</interaction>
+	<interaction id="6" label="The chickenpox virus ... stay in a dormant state in the spinal column for many years." type="choice" weighting="1">
+		<choice label="should"/>
+		<choice label="must"/>
+		<choice label="would"/>
+		<choice label="can" correct="true"/>
+	</interaction>
+	<interaction id="7" label="Heavy coffee consumption ... produce signs of caffeine poisoning." type="choice" weighting="1">
+		<choice label="is likely to" correct="true"/>
+		<choice label="will be likely to"/>
+		<choice label="is likely"/>
+		<choice label="was likely"/>
+	</interaction>
+	<interaction id="8" label="Anemia ... be associated with chronic renal disease." type="choice" weighting="1">
+		<choice label="would"/>
+		<choice label="would have"/>
+		<choice label="may have"/>
+		<choice label="may" correct="true"/>
+	</interaction>
+	<interaction id="9" label="Fats are high in calories and ... only be eaten in small amounts." type="choice" weighting="1">
+		<choice label="shouldn't"/>
+		<choice label="should" correct="true"/>
+		<choice label="have to"/>
+		<choice label="haven't to"/>
+	</interaction>
+	<interaction id="10" label="Because they were ... to identify the virus, they could not cure the disease." type="choice" weighting="1">
+		<choice label="able"/>
+		<choice label="unable" correct="true"/>
+		<choice label="likely"/>
+		<choice label="due"/>
+	</interaction>
+	<interaction id="11" label="You ... take your medicine twice a day." type="choice" weighting="1">
+		<choice label="ought"/>
+		<choice label="have"/>
+		<choice label="should have"/>
+		<choice label="should" correct="true"/>
+	</interaction>
+	<interaction id="12" label="&quot;You needn't decide now&quot;. The doctor told the patient that he ..." type="choice" weighting="1">
+		<choice label="didn't have to decide now"/>
+		<choice label="didn't have to decide then" correct="true"/>
+		<choice label="hadn't to decide now"/>
+		<choice label="hadn't to decide then"/>
+	</interaction>
+	<interaction id="13" label="The use of certain medicines ... be restricted because of their price." type="choice" weighting="1">
+		<choice label="must have"/>
+		<choice label="should have"/>
+		<choice label="must" correct="true"/>
+		<choice label="ought"/>
+	</interaction>
+	<interaction id="14" label="Adults without immunity to measles, ... be vaccinated especially in outbreaks of the disease since findings show the high risk of mortality." type="choice" weighting="1">
+		<choice label="would have"/>
+		<choice label="should have"/>
+		<choice label="should" correct="true"/>
+		<choice label="might"/>
+	</interaction>
+	<interaction id="15" label="AIDS is ... continue spreading in underdeveloped countries." type="choice" weighting="1">
+		<choice label="bound"/>
+		<choice label="sure"/>
+		<choice label="will"/>
+		<choice label="likely to" correct="true"/>
+	</interaction>
+	<interaction id="16" label="If the findings had been analysed on time, we ... dispatched the reports before the deadline." type="choice" weighting="1">
+		<choice label="may have"/>
+		<choice label="will have"/>
+		<choice label="might have" correct="true"/>
+		<choice label="should have"/>
+	</interaction>
+	<interaction id="17" label="They proposed that students ... tested in English before admission to university." type="choice" weighting="1">
+		<choice label="are"/>
+		<choice label="will be"/>
+		<choice label="were"/>
+		<choice label="should be" correct="true"/>
+	</interaction>
+</evaluation>

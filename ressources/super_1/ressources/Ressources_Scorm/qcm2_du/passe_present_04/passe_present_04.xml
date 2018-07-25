@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evaluation id="2" label="Passé présent 4" masteryScore="75" positiveFeedback="Bonne réponse" negativeFeedback="Mauvaise réponse">
+	<interaction id="1" label="Eye drops that claim to get the red out may wind up making eyes even redder. Reason : drops work by constricting blood vessels, but as the medicine ..., the vessels can react by dilating beyond their original size." type="choice" weighting="1">
+		<choice label="is wearing off"/>
+		<choice label="wears off" correct="true"/>
+		<choice label="wore off"/>
+		<choice label="is worn off"/>
+	</interaction>
+	<interaction id="2" label="For a long time these various factors (involved in the development of cancer) ... to work in different ways, but now researchers ... how they might interact in a multifactorial, sequential process resulting in malignancy." type="choice" weighting="1">
+		<choice label="have seemed / have studied"/>
+		<choice label="were seeming / study"/>
+		<choice label="were seeming / are studying"/>
+		<choice label="seemed / are studying" correct="true"/>
+	</interaction>
+	<interaction id="3" label="In 1979 a successful treatment for severe, chronic psoriasis .... It ... first coating the skin with a dye that absorbs ultraviolet light and then shining ultraviolet light on the painted area. ... this technique causes an increased incidence of mild skin cancers, it is reserved for severe cases of psoriasis." type="choice" weighting="1">
+		<choice label="was introduced / consist on / Because"/>
+		<choice label="was introduced / consists of / Because" correct="true"/>
+		<choice label="has been introduced / consist in / Although"/>
+		<choice label="has been introduced / consists in / Although"/>
+	</interaction>
+	<interaction id="4" label="Bacteria ... by the Dutch naturalist Anton van Leewenhoek with the aid of a simple microscope of his own construction." type="choice" weighting="1">
+		<choice label="were first observed" correct="true"/>
+		<choice label="was first observing"/>
+		<choice label="have first observed"/>
+		<choice label="was first observed"/>
+	</interaction>
+	<interaction id="5" label="Doctors ... the AIDS drugs AZTW for pregnant women who test HIV positive. New findings confirm AZT can cut by two-thirds a mother's risk of transmitting HIV to her child - even if blood levels of the virus are extremely low." type="choice" weighting="1">
+		<choice label="prescribed"/>
+		<choice label="have been prescribing" correct="true"/>
+		<choice label="had prescribed"/>
+		<choice label="are prescribed"/>
+	</interaction>
+</evaluation>

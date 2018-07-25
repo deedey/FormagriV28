@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="viewport" content="width=device-width, user-scalable=1" />
+        <link rel="stylesheet" href="assets/jquery.mobile-1.3.2.min.css" />
+        <link rel="stylesheet" href="assets/css/general.css" />
+        <script src="assets/jquery-1.8.2.min.js"></script>
+        <script src="assets/jquery.mobile-1.3.2.min.js"></script>
+        <script type="text/javascript">
+           var _gaq=_gaq||[];var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';_gaq.push(['_require', 'inpage_linkid', pluginUrl]);_gaq.push(['_setAccount','UA-42020054-1']);_gaq.push(['_trackPageview']);_gaq.push(['_setCustomVar', 1, window.location.host, window.location.host, 1]);_gaq.push(['_setDomainName','none']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s)})();
+        </script>
+        <title> Formagri Notifier</title>
+        <script type="text/javascript">
+           var leHost = window.location.host.replace('.educagri.fr','');
+	   document.title = "Notify sur "+leHost.replace('ef-','');
+        </script>
+<style>
+.ui-dialog-contain {
+	width: 92.5%;
+	max-width: 800px;height:500px;
+	margin: 10% auto 15px auto;
+	padding: 0;
+	background-color: #fff;
+	position: relative;
+	top: -15px;
+}
+.ui-panel.ui-panel-open {
+        position:fixed;
+}
+.ui-panel-inner {
+        position: absolute;
+        top: 1px;
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+}
+.fermer{margin-top:40px;}
+.alerte{text-align:center;color:#fff;background:#000;padding:20px;margin:15%;font-size:22px;}
+.monLi{color:#fff;background:#000;padding:4px;margin:2px;text-align:center;}
+</style>
+</head>
+<body onunload="quitter();" onload="javascript:$('#titregeneral').text('Formagri Notify');">
+
+<!-- page1 -->
+<div data-role="page" class="ui-responsive-panel" id="page1" data-url="page1">
+
+        <!-- header -->
+	<div data-role="header" data-theme="b" data-position="fixed" id="debutConnect">
+		<h1 id='titregeneral'></h1>
+                <a href="#nav-panel" data-icon="bars" id="menuBase" data-iconpos="right"
+                   class="ui-btn-right" style="display:none;">Menu</a>
+	</div>
+        <!-- /header -->
+        <!-- content -->
+	<div data-role="content" id="commencer">
+               <div data-role="content" id="popupLogin" data-theme="a" class="ui-corner-all"
+                  style="width:250px;margin:2px auto;text-align:center;">
+                   <form>
+                         <div>
+                              <label for="user" class="ui-hidden-accessible">Username:</label>
+                              <input type="text" name="user" id="user" value='' placeholder="Votre identifiant" data-theme="a">
+                              <label for="pass" class="ui-hidden-accessible">Password:</label>
+                              <input type="password" name="pass" id="pass" value='' placeholder="Votre mot de passe" data-theme="a">
+                              <button type="button" data-theme="b" id="Connect" >Connexion</button>
+                         </div>
+                   </form>
+             </div>
+        </div>
+        <!-- /content -->
+        <!-- panel -->
+        <div data-role="panel" data-position-fixed="true" data-display="overlay" data-theme="b" id="nav-panel"
+             data-dismissible="false" data-swipe-close="false">
+             <div data-role="collapsible-set" data-theme="b" data-iconpos="left"
+                  data-content-theme="d" id="AccueilCollapse" data-inset="false" style="margin-top:-15px !important;">
+                  <div data-role="collapsible">
+                       <h3 id="AccueilTitre" onClick="$('#NbrMails').load('NbrMails.php');">Accueil</h3>
+                           <ul data-role="listview" id="AccueilGeneral">
+                               <li id='MenuItem1'><a href="#page1" onClick= "$.mobile.loading( 'show', { theme: 'b', text: '', textonly: false });
+                                                             $('#commencer').load('graphique.php');
+                                                             $.mobile.loading( 'hide');
+                                                             $('#nav-panel').panel('close');
+                                                             $('#titregeneral').html(readCookie('NameUser'));
+                                                             $( window ).orientationchange();">Bilan graphique</a></li>
+                               <li id='MenuItem2'><a href="#page1" onClick= "$.mobile.loading( 'show', { theme: 'b', text: '', textonly: false });
+                                                             $('#commencer').load('lireMails.php');
+                                                             $.mobile.loading( 'hide');
+                                                             $('#nav-panel').panel('close');
+                                                             $('#titregeneral').html(readCookie('NameUser'));">
+                                                             <div style="clear:both;float:left;">Messagerie</div>
+                                                             <div style="float:left;padding:2px 0 0 4px;font-size:12px !important;" id="NbrMails">
+                                                             </div></a></li>
+                               <li id='MenuItem3'><a href="#page1" onClick= "deconnexion();">Déconnexion</a></li>
+                           </ul>
+                  </div><!-- /collapsible -->
+                  <div data-role="collapsible">
+                       <h3 id="VosFormations">Formations</h3>
+                           <ul data-role="listview" id="Formations">
+                           </ul>
+                  </div><!-- /collapsible -->
+                  <div data-role="collapsible">
+                       <h3 id="QuoiDeNeuf">Quoi de neuf ?</h3>
+                           <ul data-role="listview" id="DuNouveau">
+                              <li id="Forums"><a href="#page1"
+                                  onClick= "$.mobile.loading( 'show', { theme: 'b', text: '', textonly: false });
+                                  $('#commencer').load('formateur/acces_forum.inc.php');
+                                  $('#nav-panel').panel('close');
+                                  $.mobile.loading( 'hide');">
+                                  <div style="clear:both;float:left;">Forums</div>
+                                  <div style="float:left;padding:2px 0 0 4px;font-size:12px !important;" id="NbrPosts">
+                                  </div></a>
+                              </li>
+                              <li id="FormationNew"><a href="#page1"
+                                  onClick= "$.mobile.loading( 'show', { theme: 'b', text: '', textonly: false });
+                                  $('#commencer').load('formateur/acces_contenu.inc.php?objet=formation');
+                                  $('#nav-panel').panel('close');
+                                  $.mobile.loading( 'hide');">
+                                  Formations</a>
+                              </li>
+                              <li id="Modules"><a href="#page1"
+                                  onClick= "$.mobile.loading( 'show', { theme: 'b', text: '', textonly: false });
+                                  $('#commencer').load('formateur/acces_contenu.inc.php?objet=module');
+                                  $('#nav-panel').panel('close');
+                                  $.mobile.loading( 'hide');">
+                                  Modules</a>
+                              </li>
+                              <li id="Séquences"><a href="#page1"
+                                  onClick= "$.mobile.loading( 'show', { theme: 'b', text: '', textonly: false });
+                                  $('#commencer').load('formateur/acces_contenu.inc.php?objet=sequence');
+                                  $('#nav-panel').panel('close');
+                                  $.mobile.loading( 'hide');">
+                                  Séquences</a>
+                              </li>
+                              <li id="Activités"><a href="#page1"
+                                  onClick= "$.mobile.loading( 'show', { theme: 'b', text: '', textonly: false });
+                                  $('#commencer').load('formateur/acces_contenu.inc.php?objet=activite');
+                                  $('#nav-panel').panel('close');
+                                  $.mobile.loading( 'hide');">
+                                  Activités</a>
+                              </li>
+                              <li id="Ressources"><a href="#page1"
+                                  onClick= "$.mobile.loading( 'show', { theme: 'b', text: '', textonly: false });
+                                  $('#commencer').load('formateur/acces_ress.inc.php');
+                                  $('#nav-panel').panel('close');
+                                  $.mobile.loading( 'hide');">
+                                  Ressources</a>
+                              </li>
+                              <li id="Dossiers"><a href="#page1"
+                                  onClick= "$.mobile.loading( 'show', { theme: 'b', text: '', textonly: false });
+                                  $('#commencer').load('formateur/acces_dosspar.inc.php');
+                                  $('#nav-panel').panel('close');
+                                  $.mobile.loading( 'hide');">
+                                  Dossiers</a>
+                              </li>
+                           </ul>
+                  </div><!-- /collapsible -->
+             </div><!-- /collapsible-set -->
+        </div>
+        <!-- /panel -->
+</div>
+<!-- /page1 -->
+<SCRIPT language="Javascript">
+// Bind to the navigate event
+$( document ).bind( "mobileinit", function() {
+    $.mobile.collapsibleset.prototype.options.initSelector = "#AccueilCollapse";
+});
+
+function log(obj)
+{
+   console.log(obj);
+}
+function createCookie(name,value,days) {
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime()+(days*24*60*60*1000));
+		var expires = "; expires="+date.toGMTString();
+	}
+	else var expires = "";
+	document.cookie = name+"="+value+expires+"; path=/";
+}
+function getCookieVal(offset){
+              var endstr=document.cookie.indexOf (";", offset);
+              if (endstr==-1)
+                 endstr=document.cookie.length;
+              return unescape(document.cookie.substring(offset, endstr));
+}
+
+function readCookie(nom) {
+              var arg=nom+"=";
+              var alen=arg.length;
+              var clen=document.cookie.length;
+              var i=0;
+              while (i<clen){
+                    var j=i+alen;
+                    if (document.cookie.substring(i, j)==arg)
+                        return getCookieVal(j);
+                    i=document.cookie.indexOf(" ",i)+1;
+                    if (i==0)
+                        break;
+
+              }
+              return null;
+}
+function isEmpty(elm) {
+      var elmstr = elm.value + "";
+      if (elmstr.length == 0)
+       return true;
+     return false;
+}
+
+function isset ()
+{
+  var a = arguments,
+    l = a.length,
+    i = 0,
+    undef;
+
+  if (l === 0)
+  {
+    throw new Error('Empty isset');
+  }
+
+  while (i !== l)
+  {
+    if (a[i] === undef || a[i] === null)
+    {
+      return false;
+    }
+    i++;
+  }
+  return true;
+}
+function deconnexion()
+{
+     $.ajax({
+        type: 'POST',
+        url: 'quitter.php',
+        success: function(Response){
+                 $('#nav-panel').panel('close');
+                 $('#debutConnect').css('display','none');
+                 $('#commencer').html(Response);
+                 setTimeout(function() {top.opener=null;top.close();return false;},2000);
+        }
+     });
+}
+
+function quitter()
+{
+     $.ajax({
+        type: 'POST',
+        url: 'quitter.php',
+     });
+}
+
+function initMobile(){
+   var leNom=readCookie('NameUser');
+   if (leNom.length > 0){
+     $('#page1').show();
+     initializeListView();
+   }else
+     $('#popupLogin').show();
+
+}
+// Bind to the click of the example link
+var listView=$("#Formations");
+$( "#Connect" ).click(function( event ) {
+  event.preventDefault();
+  $.ajax({
+      type: 'POST',
+      url: 'ModExtChr.php',
+      data: {user:$('#user').val(),pass:$('#pass').val(),lms:$('#lms').val()},
+      beforeSend:function(){
+          $.mobile.loading( 'show', { theme: "b", text: "foo", textonly: false });
+      },
+      success: function(Response){
+          if (Response == "NULL"){
+              $('#popupLogin').append("Ce login ou ce mot de passe sont incorrects<p>Recommencez SVP !");
+              $.mobile.loading( 'hide');
+          }
+          else
+          {
+              $('#popupLogin').html(Response+'<p>vous êtes connecté(e) à Formagri');
+              setTimeout(function() {$('#popupLogin').hide();},2000);
+              $('#titregeneral').html(Response);
+              createCookie('NameUser',Response,0);
+              $('#menuBase').css('display','block');
+              //$('#nav-panel').panel('open');
+              initializeListView();
+              $.mobile.loading( 'hide');
+          }
+      }
+  });
+});
+
+function initializeListView()
+{
+   if(readCookie('typUtil') == 'APPRENANT')
+   {
+      $.ajax({
+        type: 'POST',
+        dataType:"json",
+        url: 'mobAnnonce.php',
+        beforeSend:function(){
+             $.mobile.loading( 'show', { theme: "b", text: "foo", textonly: false });
+        },
+        success: function(Response){
+                 //log(Response);
+                 $.mobile.loading( 'hide');
+                    populateListView(Response.items);
+                    $('#NbrMails').load('NbrMails.php');
+                    $('#AccueilGeneral').children().trigger("expand");
+                    $('#commencer').load('graphique.php');
+                    $('#QuoiDeNeuf').remove();
+                 $('#titregeneral').html(readCookie('NameUser'));
+        }
+      });
+   }
+   else
+   {
+      $('#commencer').load('lireMails.php');
+      $('#NbrMails').load('NbrMails.php');
+      $('#MenuItem1').remove();
+      $('#VosFormations').remove();
+      $('#titregeneral').html(readCookie('NameUser'));
+      $.mobile.loading( 'hide');
+      $('#AccueilGeneral').children().trigger("expand");
+      $('#nav-panel').panel('close');
+   }
+}
+
+  function populateListView(items)
+  {
+       var item,itemHtml,i,content;
+       listView.empty();
+       for(i in items)
+       {
+             item=items[i];
+             if (item.grp_nom_lb.length > 28)
+                 var nomGroupe = item.grp_nom_lb.substring(0,25)+"...";
+             else
+                 var nomGroupe = item.grp_nom_lb;
+             content="<li id='groupe"+item.grp_cdn+"' class='ui-btn ui-btn-up-d ui-btn-icon-right ui-li-has-arrow "+
+                     "ui-li ui-last-child' data-theme='d' data-iconpos='right' data-icon='arrow-r' data-wrapperels='div' "+
+                     "data-iconshadow='true' data-shadow='false' data-corners='false'><div class='ui-btn-inner ui-li'>"+
+                     "<div class='ui-btn-text'><a class='ui-link-inherit' href='#groupe' title='"+item.grp_nom_lb+"'>"+
+                     nomGroupe+"</a></div>";
+             content +="<span class='ui-icon ui-icon-arrow-r ui-icon-shadow'>&nbsp;</span>";
+             content +="</div><ul style='display:none;' data-role='listview' id='ulPopup"+item.grp_cdn+
+                     "' data-theme='d' data-count-theme='b' data-divider-theme='e' data-inset='true'>"+
+                     "</ul></li>";
+            itemHtml= $(content).appendTo(listView);
+            itemHtml.data(item);
+
+       }
+       populateListViewHandlers();
+  }
+  var currentModule;
+  function populateListViewHandlers()
+  {
+       listView.on("click","li",function()
+       {
+         listView.refresh;
+         var me=$(this);
+         currentModule=me.data();
+         //log(me.data());
+         //log(currentModule.grp_formdesc_cmt);
+         $.ajax({
+                 type: 'POST',
+                 dataType:"json",
+                 url: 'NotifGrp.php?id_grp='+currentModule.grp_cdn,
+                 beforeSend:function(){
+                     $.mobile.loading( 'show', { theme: "b", text: "foo", textonly: false });
+                 },
+                 success: function(Response){
+                          //log(Response);
+                          $.mobile.loading( 'hide');
+                          //$('#commencer').empty();
+                          $('#titregeneral').html(currentModule.grp_nom_lb);
+                          content = populateListRecupMessages(Response.Messages,currentModule.grp_cdn);
+                          content += populateListRecupForum(Response.Forum,currentModule.grp_cdn);
+                          content += populateListRecupSequences(Response.Sequences,currentModule.grp_cdn);
+                          if (content.length == 0)
+                          {
+                              content="<li class='monLi'>RAS pour cette formation</li>";
+                          }
+                          $('#ulPopup'+currentModule.grp_cdn).empty();
+                          $('#ulPopup'+currentModule.grp_cdn).append(content);
+                          $('#ulPopup'+currentModule.grp_cdn).toggle();
+                 }
+         });
+       });
+  }
+  function populateListRecupMessages(items,id_grp)
+  {
+       var item,i;
+       for(i in items)
+       {
+             item=items[i];
+             if (items[0].NbrAnnonce > 0)
+             {
+                  content = '<li id="annonce" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-count" '+
+                            'data-theme="c" data-iconpos="right" data-icon="arrow-r" data-wrapperels="div" data-iconshadow="true" '+
+                            'data-shadow="false" data-corners="false"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"'+
+                           ' onClick="$(\'#commencer\').load(\'Annonces.php?id_grp='+id_grp+'\');$(\'#nav-panel\').panel(\'close\');">'+
+                            '<a class="ui-link-inherit" href="#" title="Nouvelles annonces relatives à la formation">Annonces'+
+                            '<span class="ui-li-count ui-btn-up-c ui-btn-corner-all">'+items[0].NbrAnnonce+'</span></a></div>'+
+                            '<span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>';
+             }
+             else
+                 content = '';
+             return content;
+       }
+
+  }
+  function populateListRecupForum(items,id_grp)
+  {
+       var item,i;
+       for(i in items)
+       {
+             item=items[i];
+             if (items.Forum > 0)
+             {
+                 content = '<li id="forum" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-count" '+
+                           'data-theme="c" data-iconpos="right" data-icon="arrow-r" data-wrapperels="div" data-iconshadow="true" '+
+                           'data-shadow="false" data-corners="false"><div class="ui-btn-inner ui-li" ><div class="ui-btn-text">'+
+                           '<a class="ui-link-inherit" onClick="$(\'#commencer\').load(\'PostsForum.php?id_grp='+id_grp+'\');'+
+                           '$(\'#nav-panel\').panel(\'close\');" href="#" title="Nouveaux messages sur le forum">Dans le forum'+
+                           '<span class="ui-li-count ui-btn-up-c ui-btn-corner-all">'+items.Forum+
+                           '</span></a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>';
+             }
+             else
+                 content = '';
+             return content;
+       }
+  }
+  function populateListRecupSequences(items,id_grp)
+  {
+       var item,i;
+       for(i in items)
+       {
+             item=items[i];
+             if (items.seqUrgente > 0)
+             {
+                content = '<li id="seqU" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-count" data-theme="c" '+
+                          'data-iconpos="right" data-icon="arrow-r" data-wrapperels="div" data-iconshadow="true" '+
+                          'data-shadow="false" data-corners="false"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">'+
+                          '<a class="ui-link-inherit" onClick="$(\'#commencer\').load(\'DetailSeqs.php?toutes=1&SU=1&id_grp='+id_grp+'\');'+
+                           '$(\'#nav-panel\').panel(\'close\');" href="#" title="Séquences à valider d\'urgence">'+
+                          'Séqs urgentes<span class="ui-li-count ui-btn-up-c ui-btn-corner-all">'+
+                          items.seqUrgente+'</span></a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">'+
+                          '&nbsp;</span></div></li>';
+             }
+             else
+                 content = '';
+             if (items.seqDepassee > 0)
+             {
+                 content += '<li id="seqD" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-count" data-theme="c" '+
+                            'data-iconpos="right" data-icon="arrow-r" data-wrapperels="div" data-iconshadow="true" '+
+                            'data-shadow="false" data-corners="false"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">'+
+                            '<a class="ui-link-inherit" onClick="$(\'#commencer\').load(\'DetailSeqs.php?toutes=1&SD=1&id_grp='+id_grp+'\');'+
+                           '$(\'#nav-panel\').panel(\'close\');" href="#" title="Séquences dépassées à ré-activer par le formateur">'+
+                            'Séq dépassées<span class="ui-li-count ui-btn-up-c ui-btn-corner-all">'+items.seqDepassee+
+                            '</span></a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>';
+             }
+             else
+                 content += '';
+             return content;
+       }
+
+  }
+//});
+
+</SCRIPT>
+</body>
+</html>

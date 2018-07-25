@@ -1,0 +1,217 @@
+<?php
+if ($lg == "ru"){
+  $code_langage = "ru";
+  $charset = "Windows-1251";
+  putenv("TZ=Europe/Moscow");
+}elseif ($lg == "fr"){
+  $code_langage = "fr";
+  $charset = "iso-8859-1";
+  putenv("TZ=Europe/Paris");
+}elseif ($lg == "en"){
+  $code_langage = "en";
+  $charset = "iso-8859-1";
+}
+/*
+if (isset($lien_origine) && $lien_origine != '' && !strstr($_SERVER['REQUEST_URI'],'modif_rep_fic.php')){
+   session_unregister("lien_origine");
+   session_unregister("affi_mouve");
+}
+*/
+?>
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=<?php  echo $charset;?>">
+<META HTTP-EQUIV="Content-Language" CONTENT="<?php  echo $code_langage ;?>">
+<META HTTP-EQUIV="Expires" CONTENT="Fri, Jan 01 1900 00:00:00 GMT">
+<META NAME="ROBOTS" CONTENT="No Follow">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<TITLE>Formagri</TITLE>
+<link rel="shortcut icon" href="images/icone.ico" type="image/x-icon" />
+<STYLE>
+.INPUT { background-color: #FFFFFF ; font-family: Arial;font-size: 12px; color: #333333 ; }
+.SELECT { background-color: #FFFFFF ; font-family: Arial ;font-size: 12px; color: #333333 ; }
+.TEXTAREA { background-color: #FFFFFF ; font-family: Arial ;font-size: 12px; color: #333333 ; }
+BODY { font-family: arial; font-size: 12px; color: #333333 }
+TD   { font-family: arial; font-size: 12px; color: #333333 }
+TH   { font-family: arial; font-size: 12px; color: #333333 }
+A         {font-family:arial;font-size:12px;color:#24677A;text-decoration:none}
+A:link    {font-family:arial;font-size:12px;color:#24677A;font-weight:bold}
+A:visited {font-family:arial;font-size:12px;color:#24677A;font-weight:bold}
+A:hover   {font-family:arial;font-size:12px;color:#D45211;font-weight:bold}
+
+#titre A:link{background-repeat:no-repeat;background-position:1% 50%;color:#3BACC4;}
+#titre A:visited{background-repeat:no-repeat;background-position:1% 50%;color:#3BACC4;}
+#titre A:hover {background-repeat:no-repeat;background-position:1% 50%;color:#D45211;}
+
+#menu A:link{background-repeat:no-repeat;background-position:1% 50%;color:#002D44;}
+#menu A:visited{background-repeat:no-repeat;background-position:1% 50%;color:#002D44;}
+#menu A:hover {background-repeat:no-repeat;background-position:1% 50%;color:#D45211;}
+
+#sequence A:link{background-repeat:no-repeat;background-position:1% 50%;color:#24677A;}
+#sequence A:visited{background-repeat:no-repeat;background-position:1% 50%;color:#24677A;}
+#sequence A:hover {background-repeat:no-repeat;background-position:1% 50%;color:#D45211;}
+
+#seqinv A:link{background-repeat:no-repeat;background-position:1% 50%;color:#D45211;}
+#seqinv A:visited{background-repeat:no-repeat;background-position:1% 50%;color:#D45211;}
+#seqinv A:hover {background-repeat:no-repeat;background-position:1% 50%;color:#24677A;}
+
+#parcours A:link{background-repeat:no-repeat;background-position:1% 50%;color:#002D44;}
+#parcours A:visited{background-repeat:no-repeat;background-position:1% 50%;color:#002D44;}
+#parcours A:hover {background-repeat:no-repeat;background-position:1% 50%;color:#FFFFFF;}
+
+#parcseqtype A:link{background-repeat:no-repeat;background-position:1% 50%;color:red;}
+#parcseqtype A:visited{background-repeat:no-repeat;background-position:1% 50%;color:red;}
+#parcseqtype A:hover {background-repeat:no-repeat;background-position:1% 50%;color:#D45211;}
+
+.clq {LEFT: 0px; VISIBILITY: hidden; POSITION: absolute; TOP: 0px}
+.mar { font-family: arial;font-size:9px;color:'#800000' }
+.small {font-family:arial;color:navy;font-size:11px;}
+.admin {font-family:arial;color:#9999FF;font-size:13px}
+.texte {font-family:arial;color:navy;font-size:13px}
+.Softricks_Calendar {
+        position: absolute;
+        visibility: visible;
+        top: 200;
+        left: 10;
+        height: 250;
+        width: 260;
+}
+<?php if ($typ_user == 'APPRENANT' && $nombre_groupes > 1){?>
+<!--
+#slidemenubar, #slidemenubar2{
+position:absolute;
+border:1.5px solid black;
+line-height:20px;
+}
+-->
+<?php }?>
+</STYLE>
+
+<SCRIPT  LANGUAGE="JavaScript1.2" SRC="calendrier_<?php echo $lg;?>.js"></SCRIPT>
+<script language="javascript" type="text/javascript" src="<?php echo $adresse_http;?>/tinymce/jscripts/tiny_mce/tiny_mce.js"></script>
+<script language="javascript" type="text/javascript">
+tinyMCE.init({
+        mode : "textareas",
+        force_br_newlines : true,
+        theme_advanced_toolbar_align : "left",
+        theme_advanced_toolbar_location : "top",
+        theme_advanced_buttons1 : "bold,italic,underline,separator,"
+        + "justifyleft,justifycenter,justifyright,justifyfull,formatselect,"
+        + "bullist,numlist",
+        theme_advanced_buttons2 : "",
+        theme_advanced_buttons3 : "",
+        language : "fr"
+});
+</script>
+
+<SCRIPT LANGUAGE="JavaScript">
+function popupload(cible,nom,lg,ht) {
+//Javascript:popupload('telecharger.pgi?cmd=frame','telecharger','470','280');
+  var win = window.open(cible, nom, 'width='+lg+',height='+ht+',resizable=yes,scrollbars=yes,status=yes,menubar=no,toolbar=no,location=no,directories=no,closed=no,opener=no');
+}
+function appel_w(sel_val) {
+  var fset=sel_val.substring(0,2);
+  var f2=sel_val;
+  var url1 = ""+f2+"";
+  if ( fset == "tr" )
+   parent.main.location=url1
+}
+function appel_wpop(sel_val) {
+  var fset=sel_val.substring(0,2);
+  var f2=sel_val;
+  var url1 = ""+f2+"";
+  if ( fset == "tr" )
+   window.open('','','width=680,height=380,resizable=yes,status=no').location=url1
+}
+</script>
+<script language="javascript" src="functions.js"></script>
+<script language="javascript">
+function TryCallFunction() {
+        var sd = document.MForm.mydate1.value.split("\/");
+        document.MForm.iday.value = sd[1];
+        document.MForm.imonth.value = sd[0];
+        document.MForm.iyear.value = sd[2];
+}
+function TryCallFunction1() {
+        var sd = document.MForm.ma_date.value.split("\/");
+        document.MForm.iday1.value = sd[1];
+        document.MForm.imonth1.value = sd[0];
+        document.MForm.iyear1.value = sd[2];
+}
+
+function Today() {
+        var dd = new Date();
+        return((dd.getMonth()+1) + "/" + dd.getDate() + "/" + dd.getFullYear());
+}
+function popup(f,nom, w, h) {
+   window.open(f, nom, 'resizable,screenX=0,screenY=0,scrollbars=yes,menubar=yes,width=' + w + ',height=' + h);
+}
+
+function tinypopup(f,nom, w, h) {
+   window.open(f, nom, 'resizable,screenX=0,screenY=0,scrollbars=no,menubar=no,width=' + w + ',height=' + h);
+}
+msgconfm="<?php  echo $mess_admin_valid_modif;?>"
+function confm() {
+        if ( confirm(msgconfm) )
+                return(true);
+        return(false);
+}
+msgconf="<?php  echo $mess_admin_valid_supp;?>"
+function conf() {
+        if ( confirm(msgconf) )
+                return(true);
+        return(false);
+}
+msgconfv="<?php  echo $mess_gen_val_sais;?>"
+function confv() {
+        if ( confirm(msgconfv) )
+                return(true);
+        return(false);
+}
+msgconfseq="<?php  echo $mess_seq_presc;?>"
+function confseq() {
+        if ( confirm(msgconfseq) )
+                return(true);
+        return(false);
+}
+function makevisible(cur,which){
+   if(document.getElementById){
+        if (which==0){
+           if(document.all)
+              cur.filters.alpha.opacity=100
+           else
+              cur.style.setProperty("-moz-opacity", 1, "");
+        }else{
+           if(document.all)
+              cur.filters.alpha.opacity=1
+           else
+              cur.style.setProperty("-moz-opacity", .01, "");
+        }
+   }
+}
+//--></SCRIPT>
+</HEAD>
+<?php
+$bouton_gauche = "<TABLE cellpadding='0' cellspacing='0'><TR><TD><IMG SRC='$adresse_http/images/complement/cg.gif' border='0'></TD>
+                 <TD background='$adresse_http/images/complement/milieu.gif' align='center'><DIV id='sequence'>";
+$bouton_droite = "</DIV></TD><TD><IMG SRC='$adresse_http/images/complement/cd.gif' border='0'></TD><TR></TABLE>";
+$nom_user = GetDataField ($connect,"select util_nom_lb from utilisateur where util_cdn='$id_user'","util_nom_lb");
+$prenom_user = GetDataField ($connect,"select util_prenom_lb from utilisateur where util_cdn='$id_user'","util_prenom_lb");
+$image = GetDataField($connect,"select param_etat_lb from param_foad where param_cdn=1","param_etat_lb");
+if (strstr(getenv("HTTP_USER_AGENT"),"MSIE"))
+  $typ_agent ='msie';
+$i_body= "<BODY bgcolor=\"#FFFFFF\" marginwidth='0' marginheight='0' leftmargin='0'";
+if ($complement != '1' && $typ_agent == 'msie')
+   $i_body .= " topmargin='40'";
+else
+   $i_body .= " topmargin='0'";
+if ($typ_user == 'APPRENANT' && $nombre_groupes >1 and $nerienfaire == 1){
+  $i_body .= "onMouseover=\"if ((document.all||document.getElementById)&&window.parent.pull) window.parent.pull()\" onMouseout=\"if ((document.all||document.getElementById)&&window.parent.pull) window.parent.draw()\"";
+}
+echo $i_body.">";
+if ($complement != '1' && $typ_agent != 'msie')
+   echo "&nbsp;<P>";
+?>
+  <div id="overDiv" style="position:absolute; visibility:hidden;z-index:1000;"></div>
+  <SCRIPT LANGUAGE="JavaScript" SRC="<?php echo $adresse_http;?>/overlib.js"><!-- overLIB (c) Erik Bosrup --></SCRIPT>

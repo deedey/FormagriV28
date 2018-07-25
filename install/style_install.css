@@ -1,0 +1,85 @@
+.le_formulaire{
+    width:430px;
+    cursor:pointer;
+    font-size:12px;
+    padding:5px;
+    font-family: arial, tahoma, verdana;
+    font-weight:bold;
+    color: #24677A;
+    border:1px solid #D45211;
+    background-color: #F4F4F4;
+}
+#monform td {
+    height:35px;border-bottom:1px groove #000;
+}
+.warning{
+    width:800px;
+    font-size:14px;
+    padding:5px;
+    font-family: arial, tahoma, verdana;
+    font-weight:bold;
+    text-align: center;
+    color: red;
+    border:1px solid #D45211;
+    background-color: #F4F4F4;
+}
+.formid{
+    font-family: arial, tahoma,  serif;
+    font-size: 11px;
+    background-color: #CEE6EC;  /*#F4F4F4; */
+    border:2px dotted #D45211;
+    width: 900px;
+    visibility:hidden;
+}
+.hidden{visibility :visible;}
+.visible{visibility :hidden;}
+.contenu {
+        visibility: visible;
+        font-family: arial, tahoma,  serif;
+        background-color: #F4F4F4;   /*#CEE6EC;*/
+        border:1px solid #D45211;
+        padding:1px;
+        text-align: left;
+        font-size: 12px;
+        width: 300px;
+        padding-top: 3px;
+        padding-left: 2px;
+        padding-right: 2px;
+        margin-top : 1px;
+        height: 80px;
+}
+.input {
+        font-family: arial, tahoma,  serif;
+        font-size: 11px;
+        background-color: #CEE6EC;  /*#F4F4F4; */
+        border:1px solid  #24677A; /* #D45211;*/
+}
+.cacher {
+        visibility: visible;
+        font-size: 150%;
+        padding-top: 3px;
+        padding-left: 2px;
+        padding-right: 2px;
+        font-family: arial, tahoma,  serif;
+        text-align: center;
+        color: #FFFFFF;
+        background-color:#002D45;
+        width: 300px;
+        height: 30px;
+        border: 1px solid #D45211; /*#24677A;*/
+}
+
+.montrer {
+        visibility: visible;
+        font-size: 150%;
+        padding-top: 3px;
+        padding-left: 2px;
+        padding-right: 2px;
+        font-family: arial, tahoma,  serif;
+        text-align: center;
+        color: #FFFFFF;
+        background-color:#002D45;
+        width: 300px;
+        height: 30px;
+        border: 1px solid #D45211;
+}

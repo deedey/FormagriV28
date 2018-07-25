@@ -1,0 +1,55 @@
+<div id="manual">
+<h3>Introduction</h3>
+Ce module permet l'importation des utilisateurs du <b>LDAP</b> -Lightweight Directory Access Protocol-  (active directory, open ldap etc) vers la table utilisateur (user_id par exemple)
+de la base de données Formagri/Ceres.<BR/>Plusieurs ldap et base de données mysql peuvent être paramètrés.<BR/>
+Il gère aussi les authentifications externes (<b>LDAP</b> ou <b>CAS</b> -Central Authentication Service-) si leurs installations sont disponibles.<BR/>
+Le sommaire est organisé selon la disposition des liens de l'interface.
+<h3>Configuration d’un serveur</h3>
+<span>
+Pour ajouter un serveur, cliquez sur le lien 'Configurer un serveur’, cliquez sur nouveau puis sélectionnez le type de serveur et enfin saisissez les champs requis.
+</span>
+<h3>Configurer une importation</h3>
+
+<span>Pour configurer une importation, cliquez sur le lien 'Configurer une importation' ( il faut au préalable avoir configuré un serveur ldap et un serveur mysql).<BR/>
+Choisissez une base ldap et une base mysql , cliquez sur 'charger les champs', Sélectionnez le champ à mettre en relation puis cliquez sur 'ajouter ces 2 champs'.<BR/>
+Vous pouvez ajouter autant de champs que les 2 bases le permettent !<BR/>
+Et enfin cliquez sur 'enregistrer cette importation'.
+</span>
+
+<h3>Executer une importation</h3>
+<span>
+Pour exécuter une importation, cliquez sur le lien ' Executer une importation, sélectionnez une importation configurée, et cliquez sur le bouton 'charger la liste'.<BR/>
+Un filtre, par défaut, est proposé (chargemement de toutes les lignes) sinon saisissez-en un ( pour revenir au filtre par défaut, effacez votre saisie) !
+<br/>Cochez les lignes à importer, valider sur le bouton 'Exécuter l'importation'<BR/>
+3 états vont se manifester  sur les lignes importées :<BR/>
+ - un pictogramme de mise à jour vous indique que la ligne a été mise à jour<BR/>
+ - un pictogramme d'échec d'importation vous indique que la ligne n'a pu être importée (voir solution plus bas)<BR/>
+ - un pictogramme de succès vous indiquant que la ligne a été importée avec succès.
+</span>
+
+<h3>Consulter</h3>
+<span>
+Vous pouvez consulter les lignes figurant dans votre base mysql qui ne proviennent pas du ldap.<BR/>
+Ces lignes ne peuvent être mise en relation avec votre base ldap, en effet aucun élément ne peut faire correspondre une ligne de votre base mysql avec celle de votre base ldap !
+<br/>Néanmoins une solution alternative peut être envisagée ; faites une première importation d'un utilisateur en utilisant une importation déjà configurée
+, allez dans mysql, recopier le contenu du champ   'ldap_config_import_id ', ajouter la valeur 'dn' de l'utilisateur dans le champ 'ldap_user_id ',
+et à la prochaine importation l'utilsateur sera mis à jour.
+</span>
+
+<h3>Authentification externe</h3>
+<span>
+Pour activer un mode d'authentification externe, cliquez sur le lien 'Mode authentification', sélectionnez un serveur que vous avez déjà paramétré et activez le mode sélectionné en appuyant sur le bouton 'ok'.<BR/>
+Pour revenir à une authentification mysql, activer le mode à  <b>'Serveur interne'</b>.
+</span>
+
+<h3>&raquo;&nbsp;Problèmes liés à l'importation</h3>
+<span>
+Fermer complètement votre navigateur et  reconfigurer votre importation.
+</span>
+
+<h3>&raquo;&nbsp;Problèmes liés à l'authentification</h3>
+<span>
+Supprimer manuellement  le fichier baseConfig qui se trouve dans le répertoire Ldap2Mysql/config/
+</span>
+
+</div>

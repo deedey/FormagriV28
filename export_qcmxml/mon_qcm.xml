@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evaluation id="3" label="Comparaison" masteryScore="75" positiveFeedback="Bonne réponse" negativeFeedback="Mauvaise réponse">
+        <interaction id="1" label="He was shot through ..." type="choice" weighting="1">
+                <choice label="the very heart"/>
+                <choice label="the heart" correct="true"/>
+                <choice label="heart"/>
+                <choice label="his own heart"/>
+        </interaction>
+        <interaction id="2" label="... electoral campaign promises are forgotten, ..." type="choice" weighting="1">
+                <choice label="The quicker / the better" correct="true"/>
+                <choice label="Quicker / the better"/>
+                <choice label="The quickest"/>
+                <choice label="Quickest / the best"/>
+        </interaction>
+        <interaction id="3" label="... students in the U.S. take Spanish as a foreign language." type="choice" weighting="1">
+                <choice label="Most of"/>
+                <choice label="The most"/>
+                <choice label="The most of the"/>
+                <choice label="Most of the" correct="true"/>
+        </interaction>
+</evaluation>

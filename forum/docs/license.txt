@@ -1,0 +1,74 @@
+  ----------------------------------------------------------------------- 
+   Copyright (c) 2000 The Phorum Development Team.  All rights reserved.
+  -----------------------------------------------------------------------
+ 
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  1. Redistributions of source code must retain the above copyright
+     notice, this list of conditions and the following disclaimer. 
+ 
+  2. Redistributions in binary form must reproduce the above 
+     copyright notice, this list of conditions and the following 
+     disclaimer in the documentation and/or other materials provided
+     with the distribution.
+ 
+  3. Redistributions of any form whatsoever must retain the following
+     acknowledgment:
+      "This product includes Phorum, freely available from
+       http://phorum.org/".
+       
+  4. All advertising materials mentioning features or use of this
+     software must display the following acknowledgment:
+      "This product includes Phorum, freely available from
+       http://phorum.org/".
+ 
+  5. The Phorum Dev Team may publish revised and/or new versions
+     of the license from time to time. Each version will be given a
+     distinguishing version number. Once covered code has been
+     published under a particular version of the license, you may
+     always continue to use it under the terms of that version. You
+     may also choose to use such covered code under the terms of any
+     subsequent version of the license published by the
+     Phorum Dev Team. No one other than the Phorum Dev Team has the
+     right to modify the terms applicable to covered code created
+     under this License.
+     
+  6. The name "Phorum" must not be used to endorse or promote products 
+     derived from this software without prior written permission
+     from the Phorum Development Team.  This does not apply to add-on
+     libraries or tools that work in conjunction with Phorum.  In such
+     a case the Phorum name may be used to indicate that the product
+     supports Phorum.
+ 
+  6. Products derived from this software may not be called "Phorum",
+     nor may "Phorum" appear in their name, without prior written
+     permission of the Phorum Development Team.
+
+
+  THIS SOFTWARE IS PROVIDED BY THE PHORUM DEVELOPMENT TEAM ``AS IS'' AND
+  ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+  THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A 
+  PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE PHORUM
+  DEVELOPMENT TEAM OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, 
+  INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES 
+  (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR 
+  SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+  STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+  OF THE POSSIBILITY OF SUCH DAMAGE.
+
+  -------------------------------------------------------------------- 
+
+  This software consists of voluntary contributions made by many
+  individuals on behalf of the Phorum Development Team.
+
+  The Phorum Development Team can be contacted via Email at core@phorum.org.
+  
+  For more information on the Phorum Development Team and the Phorum 
+  project, please see http://phorum.org.
+  
+  Phorum License Version 1.2 written September 8, 2000
+  

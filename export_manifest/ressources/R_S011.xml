@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
+<general>
+<title>
+<langstring><![CDATA[Connaissance Maaf]]></langstring>
+</title>
+<description>
+<langstring><![CDATA[Par Preferences Formations]]></langstring>
+</description>
+</general>
+<lifecycle><version><langstring xml:lang="fr-FR"></langstring></version>
+<status><source><langstring xml:lang="x-none">LOMv1.0</langstring></source>
+<value><langstring xml:lang="x-none">Final</langstring></value></status>
+<contribute><role><source><langstring xml:lang="x-none">LOMv1.0</langstring></source>
+<value><langstring xml:lang="x-none">Auteur</langstring></value></role>
+<centity><vcard>begin:vcard fn: Administrateur  Formagri end:vcard</vcard></centity>
+<date><datetime>2015-07-28</datetime>
+<description><langstring xml:lang="fr-FR">Date de dernière modification sinon de création</langstring>
+</description></date></contribute>
+</lifecycle>
+</lom>

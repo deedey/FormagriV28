@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Genere par Formagri V 2.6.2 [Support SCORM v1.2 (c)]
+Le lundi  4 avril 2011 sur la plate-forme http://ef-dev2.educagri.fr par Dey Bendifallah : ADMINISTRATEUR-->
+<evaluation id="2" label="Mon média" masteryScore="60" positiveFeedback="Bonne réponse" negativeFeedback="Mauvaise réponse">
+    <interaction id="1" label="l'espoir fait...." type="choice" weighting="2">
+        <choice label="vivre"  correct="true" />
+        <choice label="rougir" />
+        <choice label="danser" />
+        <choice label="gueuler" />
+    </interaction>
+    <interaction id="2" label="Le temps d'aujourd'hui est bien....." type="choice" weighting="1">
+        <choice label="pluvieux" />
+        <choice label="neigeux" />
+        <choice label="brumeux" />
+        <choice label="ensoleillé"  correct="true" />
+    </interaction>
+    <interaction id="3" label="Que voulez-vous que je vous......." type="choice" weighting="2">
+        <choice label="disent" />
+        <choice label="chantes" />
+        <choice label="raconte"  correct="true" />
+        <choice label="proposent" />
+    </interaction>
+</evaluation>

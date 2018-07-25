@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evaluation id="2" label="Passif 1" masteryScore="75" positiveFeedback="Bonne réponse" negativeFeedback="Mauvaise réponse">
+	<interaction id="1" label="He was said ... a cruel man." type="choice" weighting="1">
+		<choice label="he was"/>
+		<choice label="to be" correct="true"/>
+		<choice label="as being"/>
+		<choice label="being"/>
+	</interaction>
+	<interaction id="2" label=" I've been ... he is very sick." type="choice" weighting="1">
+		<choice label="told to"/>
+		<choice label="told" correct="true"/>
+		<choice label="said"/>
+		<choice label="told me"/>
+	</interaction>
+	<interaction id="3" label="I have read about ... cold and calculating." type="choice" weighting="1">
+		<choice label="that she is"/>
+		<choice label="her being" correct="true"/>
+		<choice label="her to be"/>
+		<choice label="she might be"/>
+	</interaction>
+	<interaction id="4" label="She was surprised at being so rudely ..." type="choice" weighting="1">
+		<choice label="spoken to" correct="true"/>
+		<choice label="spoken from"/>
+		<choice label="spoken at"/>
+		<choice label="spoken"/>
+	</interaction>
+	<interaction id="5" label="He had been seen ... the premises after dark." type="choice" weighting="1">
+		<choice label="for leaving"/>
+		<choice label="leave"/>
+		<choice label="to leave" correct="true"/>
+		<choice label="as leaving"/>
+	</interaction>
+	<interaction id="6" label="He is ... very bad-tempered." type="choice" weighting="1">
+		<choice label="said he is"/>
+		<choice label="said to be" correct="true"/>
+		<choice label="told to be"/>
+		<choice label="said being"/>
+	</interaction>
+	<interaction id="7" label="All workers are ... to have a physical yearly." type="choice" weighting="1">
+		<choice label="supposing"/>
+		<choice label="looking forward"/>
+		<choice label="supposed" correct="true"/>
+		<choice label="looked forward"/>
+	</interaction>
+	<interaction id="8" label="Today, about half of hearing aid users ... small, behind-the hear models." type="choice" weighting="1">
+		<choice label="are worn"/>
+		<choice label="have worn"/>
+		<choice label="wore"/>
+		<choice label="wear" correct="true"/>
+	</interaction>
+	<interaction id="9" label="He is ... to be terminally ill." type="choice" weighting="1">
+		<choice label="said" correct="true"/>
+		<choice label="told"/>
+		<choice label="saying"/>
+		<choice label="telling"/>
+	</interaction>
+	<interaction id="10" label=" Cells become damaged or ... out and die." type="choice" weighting="1">
+		<choice label="worn" correct="true"/>
+		<choice label="wear"/>
+		<choice label="wore"/>
+		<choice label="wearing"/>
+	</interaction>
+	<interaction id="11" label="It is well ... that Parkinson's disease involves the destructions of cells in a tiny region of the brain." type="choice" weighting="1">
+		<choice label="known" correct="true"/>
+		<choice label="knows"/>
+		<choice label="knew"/>
+		<choice label="knowing"/>
+	</interaction>
+	<interaction id="12" label="Up to 5% ... treated with the old-style radical mastectomy." type="choice" weighting="1">
+		<choice label="have still being"/>
+		<choice label="can still being"/>
+		<choice label="were still been"/>
+		<choice label="were still being" correct="true"/>
+	</interaction>
+	<interaction id="13" label="Their blood cholesterol needs ..." type="choice" weighting="1">
+		<choice label="be lowered"/>
+		<choice label="lowering" correct="true"/>
+		<choice label="to be lowest"/>
+		<choice label="to lower"/>
+	</interaction>
+	<interaction id="14" label="The scientists are ... to have discovered a new strain of the virus." type="choice" weighting="1">
+		<choice label="said" correct="true"/>
+		<choice label="told"/>
+		<choice label="saying"/>
+		<choice label="telling"/>
+	</interaction>
+	<interaction id="15" label="Nurse Brown is ... seriously ill." type="choice" weighting="1">
+		<choice label="said to be" correct="true"/>
+		<choice label="said she is"/>
+		<choice label="told to be"/>
+		<choice label="told she is"/>
+	</interaction>
+	<interaction id="16" label="Cells that have a short lifespan are continually ...." type="choice" weighting="1">
+		<choice label="being replaced" correct="true"/>
+		<choice label="be replaced"/>
+		<choice label="replace"/>
+		<choice label="having replaced"/>
+	</interaction>
+	<interaction id="17" label="Experiments must be ... on animals before human experimentation is allowed." type="choice" weighting="1">
+		<choice label="performed" correct="true"/>
+		<choice label="realize"/>
+		<choice label="do"/>
+		<choice label="carried"/>
+	</interaction>
+	<interaction id="18" label="&quot;Put your arm behind your head&quot;. He ... put his arm behind his head." type="choice" weighting="1">
+		<choice label="was told to" correct="true"/>
+		<choice label="was told"/>
+		<choice label="was said"/>
+		<choice label="said"/>
+	</interaction>
+	<interaction id="19" label="Somatic cells containing two sets of chromosomes are ... as diploid cells." type="choice" weighting="1">
+		<choice label="referring"/>
+		<choice label="referred"/>
+		<choice label="referred to" correct="true"/>
+		<choice label="referring to"/>
+	</interaction>
+	<interaction id="20" label="The patient was ... he could leave the hospital at once." type="choice" weighting="1">
+		<choice label="said"/>
+		<choice label="told" correct="true"/>
+		<choice label="said to be"/>
+		<choice label="told to be"/>
+	</interaction>
+	<interaction id="21" label="The new treatment ... to be more effective than a placebo in a double blind trial." type="choice" weighting="1">
+		<choice label="has never been shown" correct="true"/>
+		<choice label="has never showed"/>
+		<choice label="has never shown"/>
+		<choice label="never has shown"/>
+	</interaction>
+	<interaction id="22" label="Many civilians were ... when the bomb exploded in the city centre." type="choice" weighting="1">
+		<choice label="wounded" correct="true"/>
+		<choice label="wound"/>
+		<choice label="wounding"/>
+		<choice label="wind"/>
+	</interaction>
+	<interaction id="23" label="This medicine is ... have very dangerous secondary effects." type="choice" weighting="1">
+		<choice label="said it"/>
+		<choice label="told it"/>
+		<choice label="told to"/>
+		<choice label="said to" correct="true"/>
+	</interaction>
+	<interaction id="24" label="This medicine should ... in pregnancy or to patients in ischaemic heart disease or hepatic disease." type="choice" weighting="1">
+		<choice label="not be given" correct="true"/>
+		<choice label="not have given"/>
+		<choice label="being given"/>
+		<choice label="not to be given"/>
+	</interaction>
+	<interaction id="25" label="Several attempts have already ... to identify the virus." type="choice" weighting="1">
+		<choice label="make"/>
+		<choice label="made"/>
+		<choice label="been made" correct="true"/>
+		<choice label="being made"/>
+	</interaction>
+</evaluation>

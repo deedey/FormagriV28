@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evaluation id="2" label="Passé présent 2" masteryScore="75" positiveFeedback="Bonne réponse" negativeFeedback="Mauvaise réponse">
+	<interaction id="1" label="... taking the medicine that I prescribed for you?" type="choice" weighting="1">
+		<choice label="You are"/>
+		<choice label="Are you being"/>
+		<choice label="Have you been" correct="true"/>
+		<choice label="You have been"/>
+	</interaction>
+	<interaction id="2" label="If only she ... more careful crossing the road, she wouldn't be in hospital." type="choice" weighting="1">
+		<choice label="has been"/>
+		<choice label="was"/>
+		<choice label="is"/>
+		<choice label="had been" correct="true"/>
+	</interaction>
+	<interaction id="3" label="Where ... the new consultant ... from? Is he American?" type="choice" weighting="1">
+		<choice label="has / come"/>
+		<choice label="does / come" correct="true"/>
+		<choice label="is / coming"/>
+		<choice label="did / came"/>
+	</interaction>
+	<interaction id="4" label="He ... smoking but I am not absolutely sure yet." type="choice" weighting="1">
+		<choice label="may stopped"/>
+		<choice label="may have stopped" correct="true"/>
+		<choice label="should stop"/>
+		<choice label="stops"/>
+	</interaction>
+	<interaction id="5" label="Researchers ... the virus that causes A.I.D.S. in the mid 1980s." type="choice" weighting="1">
+		<choice label="discover"/>
+		<choice label="are discovering"/>
+		<choice label="discovered" correct="true"/>
+		<choice label="will discover"/>
+	</interaction>
+	<interaction id="6" label="Nicotine patches ... successfully in recent years to help people stop the smoking habit." type="choice" weighting="1">
+		<choice label="have been used" correct="true"/>
+		<choice label="are being used"/>
+		<choice label="have been using"/>
+		<choice label="have being used"/>
+	</interaction>
+	<interaction id="7" label="Nurse Brown is very tired. She ... all day long." type="choice" weighting="1">
+		<choice label="worked"/>
+		<choice label="works"/>
+		<choice label="has been working" correct="true"/>
+		<choice label="working"/>
+	</interaction>
+	<interaction id="8" label="He ... his leg, so he can't walk now." type="choice" weighting="1">
+		<choice label="broke"/>
+		<choice label="breaks"/>
+		<choice label="has broken" correct="true"/>
+		<choice label="had broken"/>
+	</interaction>
+	<interaction id="9" label="Because he ... a lot, he did not mind practising in a third world country." type="choice" weighting="1">
+		<choice label="travel"/>
+		<choice label="had travelled" correct="true"/>
+		<choice label="has travelled"/>
+		<choice label="was travelling"/>
+	</interaction>
+	<interaction id="10" label="Life expectancy in developed countries ... from 65 in 1950 to 74 in 1985." type="choice" weighting="1">
+		<choice label="rose" correct="true"/>
+		<choice label="had risen"/>
+		<choice label="was rising"/>
+		<choice label="has risen"/>
+	</interaction>
+	<interaction id="11" label="Physiologists in Edinburgh, who ... the functioning of rat ovaries, believe that there is now a possibility of helping women who ... sterile through chemotherapy treatment for cancer." type="choice" weighting="1">
+		<choice label="studies / are becoming"/>
+		<choice label="studied / becomes"/>
+		<choice label="are studying / has become"/>
+		<choice label="have been studying / became" correct="true"/>
+	</interaction>
+	<interaction id="12" label="He should ... the experiment on non-human subjects first." type="choice" weighting="1">
+		<choice label="to carry out"/>
+		<choice label="have carried out" correct="true"/>
+		<choice label="have to carry out"/>
+		<choice label="carried out"/>
+	</interaction>
+	<interaction id="13" label="We were worried because the operation ... finished before 11 o'clock." type="choice" weighting="1">
+		<choice label="wasn't being"/>
+		<choice label="hadn't being"/>
+		<choice label="hasn't been"/>
+		<choice label="hadn't been" correct="true"/>
+	</interaction>
+	<interaction id="14" label="The little boy was ... motionless in the middle of the street." type="choice" weighting="1">
+		<choice label="lay"/>
+		<choice label="laying"/>
+		<choice label="lying" correct="true"/>
+		<choice label="lied"/>
+	</interaction>
+	<interaction id="15" label="Over the last few years, chemists ... hundreds of synthetic materials." type="choice" weighting="1">
+		<choice label="have been developing" correct="true"/>
+		<choice label="were developing"/>
+		<choice label="are developing"/>
+		<choice label="developed"/>
+	</interaction>
+	<interaction id="16" label="The skin ... a route for the delivery of drugs." type="choice" weighting="1">
+		<choice label="has become recently"/>
+		<choice label="has recently become" correct="true"/>
+		<choice label="recently becomes"/>
+		<choice label="recently has become"/>
+	</interaction>
+	<interaction id="17" label="His temperature reached 39°5 two hours ago and ..." type="choice" weighting="1">
+		<choice label="raises"/>
+		<choice label="still rises"/>
+		<choice label="is still rising" correct="true"/>
+		<choice label="is raising"/>
+	</interaction>
+	<interaction id="18" label="I ... on the news last night that there ... a terrible epidemic of cholera since the recent flooding." type="choice" weighting="1">
+		<choice label="heard / has been" correct="true"/>
+		<choice label="have heard / has been"/>
+		<choice label="have heard / was"/>
+		<choice label="had heard / was"/>
+	</interaction>
+	<interaction id="19" label="The patient told his doctor that he ... headaches since he was a child." type="choice" weighting="1">
+		<choice label="had"/>
+		<choice label="have had"/>
+		<choice label="had been having" correct="true"/>
+		<choice label="has had"/>
+	</interaction>
+	<interaction id="20" label="&quot;The results of in-vitro and in-vivo testing have been very promising&quot;. He pointed out that the results of in-vitro and in-vivo testing ... very promising." type="choice" weighting="1">
+		<choice label="were"/>
+		<choice label="has been"/>
+		<choice label="have been"/>
+		<choice label="had been" correct="true"/>
+	</interaction>
+	<interaction id="21" label="Increasingly, drug manufacturers ... to make heavy investments in anti-pollution equipment." type="choice" weighting="1">
+		<choice label="are having" correct="true"/>
+		<choice label="have to"/>
+		<choice label="must"/>
+		<choice label="might"/>
+	</interaction>
+	<interaction id="22" label="The research, performed between 1990 and 1994, ... in part by the university of Texas in Austin." type="choice" weighting="1">
+		<choice label="was supported" correct="true"/>
+		<choice label="is supported"/>
+		<choice label="has been supported"/>
+		<choice label="had been supported"/>
+	</interaction>
+	<interaction id="23" label="He was first elected chairman in 1966, and ... chairman ...." type="choice" weighting="1">
+		<choice label="was / since"/>
+		<choice label="has been / ever since" correct="true"/>
+		<choice label="had been / then"/>
+		<choice label="has been / long ago"/>
+	</interaction>
+</evaluation>

@@ -1,0 +1,24 @@
+<pre>
+SELECT * FROM scorm_util_module_1, scorm_module ,utilisateur,prescription_1 WHERE user_module_no = '3' AND  presc_parc_no = '4' AND util_cdn='3' AND presc_utilisateur_no ='3' AND presc_seq_no = '7' AND  mod_cdn = '28' AND `mod_module_no` = '28' AND `mod_seq_no` = '7'
+</pre>
+
+<pre>
+SELECT * FROM scorm_util_module_1, scorm_module ,utilisateur,prescription_1 WHERE user_module_no = '3' AND  presc_parc_no = '4' AND util_cdn='3' AND presc_utilisateur_no ='3' AND presc_seq_no = '7' AND  mod_cdn = '28' AND `mod_module_no` = '28' AND `mod_seq_no` = '7'
+</pre>
+
+<pre>
+SELECT * FROM scorm_util_module_1, scorm_module ,utilisateur,prescription_1 WHERE user_module_no = '3' AND  presc_parc_no = '4' AND util_cdn='3' AND presc_utilisateur_no ='3' AND presc_seq_no = '7' AND  mod_cdn = '28' AND `mod_module_no` = '28' AND `mod_seq_no` = '7'
+</pre>
+
+<pre>
+SELECT * FROM scorm_util_module_1, scorm_module ,utilisateur,prescription_1 WHERE user_module_no = '3' AND  presc_parc_no = '4' AND util_cdn='3' AND presc_utilisateur_no ='3' AND presc_seq_no = '7' AND  mod_cdn = '28' AND `mod_module_no` = '28' AND `mod_seq_no` = '7'
+</pre>
+
+<pre>
+SELECT * FROM scorm_util_module_1, scorm_module ,utilisateur,prescription_1 WHERE user_module_no = '3' AND  presc_parc_no = '4' AND util_cdn='3' AND presc_utilisateur_no ='3' AND presc_seq_no = '7' AND  mod_cdn = '28' AND `mod_module_no` = '28' AND `mod_seq_no` = '7'
+</pre>
+
+<pre>
+SELECT * FROM scorm_util_module_1, scorm_module ,utilisateur,prescription_1 WHERE user_module_no = '3' AND  presc_parc_no = '4' AND util_cdn='3' AND presc_utilisateur_no ='3' AND presc_seq_no = '7' AND  mod_cdn = '28' AND `mod_module_no` = '28' AND `mod_seq_no` = '7'
+</pre>
+

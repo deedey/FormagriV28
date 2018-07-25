@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Expires" CONTENT="Fri, Jan 01 1900 00:00:00 GMT">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<META http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="content-language" content="en">
+<meta name="author" content="">
+<META HTTP-EQUIV="Reply-to" CONTENT="@.com">
+<meta name="generator" content="PHPEd 1.80">
+<META NAME="description" CONTENT="">
+<meta name="keywords" content="">
+<META NAME="Creation_Date" CONTENT="08/15/2000">
+<meta name="revisit-after" content="15 days">
+        <title>Aucune ressource en ligne liйe</title>
+<link rel="stylesheet" type="text/css" href="my.css">
+</head>
+<body>
+<script        language=javascript        src="APIWrapper.js"></script>
+<script        language=javascript        src="SCOFunctions.js"></script>
+<title>Page blanche</title>
+</head>
+<body onunload="return unloadPage('incomplete')">
+
+<H4>Ceci indique que la ressources йtait prйvue mais n'a pas йtй liйe finalement<BR>
+Renseignez-vous auprиs de votre formateur ou tuteur</H4>
+        <script        language="javascript">
+        loadPage();
+        var   studentName = "!";
+        var   lmsStudentName = doLMSGetValue(  "cmi.core.student_name" );
+
+        if ( lmsStudentName  != "" )
+        {
+           studentName = " " + lmsStudentName +   "!";
+        }
+
+        document.write("Cliquer sur le bouton -Valider- pour enregistrer votre passage, " +studentName);
+        </script>
+
+
+        <hr>
+        <form>
+                <table cols="3"        width="100%" align="center">
+                        <tr>
+                        <td        align="middle"><input type = "button" value        = "  Validez  " onClick = "doQuit('completed')" id=button2 name=button2></td>
+                        </tr>
+                </table>
+        </form>
+</body>
+</html>

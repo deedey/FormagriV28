@@ -1,0 +1,14 @@
+BODY {font-family:arial;color:navy;font-size:13px;background="../images/fondtitre.jpg";overflow=true;}
+.small {font-family:arial;color:navy;font-size:11px;}
+.admin {font-family:arial;color:#9999FF;font-size:12px}
+.texte {font-family:arial;color:#333333;font-size:12px}
+
+A {color:#FF8000;font-size:13px;font-weight:bold; }
+a:link,a:visited {text-decoration:none}
+a:hover,a:active{text-decoration:none;}
+
+#sequence A:link{background-repeat:no-repeat;background-position:1% 50%;color:#24677A;}
+#sequence A:visited{background-repeat:no-repeat;background-position:1% 50%;color:#24677A;}
+#sequence A:hover {background-repeat:no-repeat;background-position:1% 50%;color:#D45211;}
+
+INPUT {font-family:arial;color:navy;font-size:13px}

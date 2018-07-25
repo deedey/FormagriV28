@@ -1,0 +1,51 @@
+.pasdedevoir{
+     color: black;
+     float:left;
+     font-family: arial;
+     font-size: 11px;
+     text-align: left;
+     /*
+     padding:0 0 0 30px;
+     background:url('../images/icones_files/odf.png') no-repeat left top;
+     */
+}
+
+.autocorrectif{
+     color: blue;
+     float:left;
+     font-family: arial;
+     font-size: 11px;
+     text-align: left;
+     padding:0 0 0 30px;
+     background:url('../images/icones_files/odp.png') no-repeat left top;
+
+}
+.correction{
+     color: green;
+     float:left;
+     font-family: arial;
+     font-size: 11px;
+     text-align: left;
+     padding:0 0 0 30px;
+     background:url('../images/icones_files/ods.png') no-repeat left top;
+}
+
+.arenvoyer{
+     color: red;
+     float:left;
+     font-family: arial;
+     font-size: 11px;
+     text-align: left;
+     padding:0 0 0 30px;
+     background:url('../images/icones_files/odt.png') no-repeat left top;
+}
+
+.tincanApi{
+     color: #835B5B;
+     float:left;
+     font-family: arial;
+     font-size: 11px;
+     text-align: left;
+     padding:0 0 0 30px;
+     background:url('../images/gest_parc/xApi.gif') no-repeat left top;
+}

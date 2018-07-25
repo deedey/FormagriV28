@@ -1,0 +1,27 @@
+.tiret_hauteur{
+     float:left;
+     background-color:#FFF;
+     width: 2px;
+     height: 10px;
+     border-left:2px dashed #FFF;
+     border-right:2px dotted #8b0000;
+     margin-right:5px;
+}
+
+.trait_vertic{
+     float:left;
+     background-color:#FFF;
+     width: 2px;
+     height: 10px;
+     border-left:2px dashed #FFF;
+     border-right:2px solid #000;
+     margin-right:5px;
+}
+.carre_rouge{
+     float:left;
+     background-color:red;
+     width: 4px;
+     height: 8px;
+     margin-right:5px;
+     margin-left:3px;
+}

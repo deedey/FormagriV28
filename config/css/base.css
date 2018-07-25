@@ -1,0 +1,215 @@
+body {
+	background : #FFFFFF;
+	padding-top : 0; 
+	padding-right : 0; 
+	background-position : 0 0; 
+	border-top-width : 0; 
+	border-right-width : 0; 
+	border-bottom-width : 0; 
+	border-left-width : 0;
+	margin-left : 0px;
+	margin-top : 0px;
+}
+
+table, td, tr, th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.texte {  
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px; 
+	color: #000000;
+	text-decoration: none;
+}
+
+.texte2 {  
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 12px; 
+	color: #ff6600; 
+	text-decoration: none; 
+}
+.bordure_haut {
+	border-top: 1px solid #000000;
+	border-right: 0px none #000000;
+	border-bottom: 0px none #000000;
+	border-left: 0px none #000000;
+
+}
+
+.texte3 {  
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px; 
+	color: #60378b;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.titre {  
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 14px; 
+	color: #407EAD; 
+	font-style: italic; 
+	font-weight: bold;
+}
+
+.titreangl {  
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 14px; 
+	color: #60378b; 
+	font-style: italic; 
+	font-weight: bolder;
+}
+
+a {
+	color: #828CAB;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #FF6600;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.tabcell {  
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 12px; 
+	font-weight: bold; 
+	color: #FFFFFF; 
+	text-decoration: none;
+	/*background-color: #407EAD;*/
+	background-color: #037285;
+	text-align: left;
+}
+
+.tabcell2 {  
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 12px; 
+	font-weight: bold; 
+	color: #60378b; 
+	text-decoration: none;
+	background-color: #E9DAF8;
+}
+
+.Atabcell {  
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 12px; 
+	font-weight: bold; 
+	color: #60378b; 
+	text-decoration: none;
+	background-color: #B5BED8;
+	text-align: center;
+}
+
+.Btabcell {  
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 12px; 
+	font-weight: bold; 
+	color: #FF6600; 
+	text-decoration: none;
+	background-color: #FDD1A2;
+	text-align: center;
+}
+
+.fondcell1 {  
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 12px; 
+	text-decoration: none;
+	background-color: #E9DAF8;
+}
+
+.fondcell2 {  
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 12px; 
+	text-decoration: none;
+	background-color: #FDD1A2;
+}
+
+/* contours tableau */
+.tabCentre {	
+	border: 1px solid #bd86f4;
+	margin:5px;
+}
+
+.traitBottom {	
+	border-bottom: 1px solid #bd86f4;
+}
+
+.traitBottomLeftRight {	
+	border-bottom: 1px solid #bd86f4;
+	border-left: 1px solid #bd86f4;
+	border-right: 1px solid #bd86f4;
+}
+
+.traitLeftRight {	
+	border-left: 1px solid #bd86f4;
+	border-right: 1px solid #bd86f4;
+}
+
+.traitTop {	
+	border-top: 1px solid #bd86f4;
+}
+
+.traitTopLeftRight {	
+	border-top: 1px solid #bd86f4;
+	border-left: 1px solid #bd86f4;
+	border-right: 1px solid #bd86f4;
+}
+
+/*  bouton formulaire */
+.form {
+	border: 1px solid #bd86f4;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #bd86f4;
+}
+
+.boutton {
+	border-bottom: 1pt solid #105981;
+	border-left: 1pt solid #ffffff;
+	border-right: 1pt solid #105981;
+	border-top: 1pt solid #ffffff;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	background-color: #BD86F4;
+}
+
+.consigne {
+	color: #F7AD00;
+	font-size: 14px;
+	font-weight: bold;
+}
+/* login */
+.lien {font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-weight: bold; font-style: normal; color: #000000; TEXT-DECORATION: none; }
+.lien:hover {font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-weight: bold; font-style: normal; color: #FFC000; TEXT-DECORATION: none;}
+.lien_2 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; font-style: normal; color: #407EAD; TEXT-DECORATION: none; }
+.lien_2:hover {font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; font-style: normal; color: #FFC000; TEXT-DECORATION: none;}
+
+.texte {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; text-decoration: none;}
+.invite { font-family: Arial, Helvetica, sans-serif; font-size: 10px; line-height: normal; 	font-weight: normal; font-style: normal; text-align: center;}
+.erreur { font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: normal; 	font-weight: bold; font-style: normal; text-align: center;}
+
+/* Header */
+.bandeau {font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-weight: bold; font-style: italic; color: #FFFFFF; }
+.borduresR {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	line-height: normal;
+	font-weight: normal;
+	font-style: normal;
+	text-align: center;
+	border-top: 1px solid #407EAD;
+	border-right: 1px solid #407EAD;
+	border-bottom: 1px solid #407EAD;
+	border-left: 1px solid #407EAD;
+}
+.menu {font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; font-style: normal; color: #FFFFFF; }
